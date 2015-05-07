@@ -13,7 +13,7 @@
  * @package WordPress
  */
 
-// 注意:
+// 注意: 
 // Windows の "メモ帳" でこのファイルを編集しないでください !
 // 問題なく使えるテキストエディタ
 // (http://wpdocs.sourceforge.jp/Codex:%E8%AB%87%E8%A9%B1%E5%AE%A4 参照)
