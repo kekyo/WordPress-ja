@@ -4,7 +4,7 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: Enhances multibyte string I/O functionality of WordPress.
 Author: Kuraishi (tenpura)
-Version: 1.5
+Version: 1.5.1
 Author URI: http://eastcoder.com/
 Text Domain: wp-multibyte-patch
 Domain Path: /languages
@@ -45,7 +45,7 @@ class multibyte_patch {
 	var $has_mbfunctions;
 	var $textdomain = 'wp-multibyte-patch';
 	var $lang_dir = 'languages';
-	var $required_version = '3.2';
+	var $required_version = '3.3-RC2';
 	var $query_based_vars = array();
 
 	function guess_encoding($string, $encoding = '') {
@@ -202,7 +202,7 @@ class multibyte_patch {
 		return ($this->conf['ascii_threshold'] < round(@(mb_strlen($string, $encoding) / strlen($string)) * 100)) ? true : false;
 	}
 
-	function wp_trim_excerpt($text) {
+	function wp_trim_excerpt($text = '') {
 		$raw_excerpt = $text;
 
 		$blog_encoding = $this->blog_encoding;
@@ -214,7 +214,7 @@ class multibyte_patch {
 
 			$text = apply_filters('the_content', $text);
 			$text = str_replace(']]>', ']]&gt;', $text);
-			$text = strip_tags($text);
+			$text = wp_strip_all_tags($text);
 			$excerpt_length = apply_filters('excerpt_length', $this->conf['excerpt_length']);
 			$excerpt_mblength = apply_filters('excerpt_mblength', $this->conf['excerpt_mblength']);
 			$excerpt_more = apply_filters('excerpt_more', $this->conf['excerpt_more']);

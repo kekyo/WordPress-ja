@@ -9,13 +9,14 @@ var wpLink;
 		riverBottomThreshold: 5,
 		keySensitivity: 100,
 		lastSearch: '',
-		textarea: function() { return edCanvas; },
+		textarea: '',
 
 		init : function() {
 			inputs.dialog = $('#wp-link');
 			inputs.submit = $('#wp-link-submit');
 			// URL
 			inputs.url = $('#url-field');
+			inputs.nonce = $('#_ajax_linking_nonce');
 			// Secondary options
 			inputs.title = $('#link-title-field');
 			// Advanced Options
@@ -30,10 +31,13 @@ var wpLink;
 			inputs.dialog.keydown( wpLink.keydown );
 			inputs.dialog.keyup( wpLink.keyup );
 			inputs.submit.click( function(e){
-				wpLink.update();
 				e.preventDefault();
+				wpLink.update();
 			});
-			$('#wp-link-cancel').click( wpLink.close );
+			$('#wp-link-cancel').click( function(e){
+				e.preventDefault();
+				wpLink.close();
+			});
 			$('#internal-toggle').click( wpLink.toggleInternalLinking );
 
 			rivers.elements.bind('river-select', wpLink.updateFields );
@@ -49,12 +53,17 @@ var wpLink;
 			wpLink.range = null;
 
 			if ( ! wpLink.isMCE() && document.selection ) {
-				wpLink.textarea().focus();
+				wpLink.textarea.focus();
 				wpLink.range = document.selection.createRange();
 			}
 		},
 
 		open : function() {
+			if ( !wpActiveEditor )
+				return;
+
+			this.textarea = $('#'+wpActiveEditor).get(0);
+
 			// Initialize the dialog if necessary (html mode).
 			if ( ! inputs.dialog.data('wpdialog') ) {
 				inputs.dialog.wpdialog({
@@ -102,7 +111,7 @@ var wpLink;
 			// If link exists, select proper values.
 			if ( e = ed.dom.getParent(ed.selection.getNode(), 'A') ) {
 				// Set URL and description.
-				inputs.url.val( e.href );
+				inputs.url.val( ed.dom.getAttrib(e, 'href') );
 				inputs.title.val( ed.dom.getAttrib(e, 'title') );
 				// Set open in new tab.
 				if ( "_blank" == ed.dom.getAttrib(e, 'target') )
@@ -127,7 +136,7 @@ var wpLink;
 
 		onClose: function() {
 			if ( ! wpLink.isMCE() ) {
-				wpLink.textarea().focus();
+				wpLink.textarea.focus();
 				if ( wpLink.range ) {
 					wpLink.range.moveToBookmark( wpLink.range.getBookmark() );
 					wpLink.range.select();
@@ -152,7 +161,7 @@ var wpLink;
 
 		htmlUpdate : function() {
 			var attrs, html, start, end, cursor,
-				textarea = wpLink.textarea();
+				textarea = wpLink.textarea;
 
 			if ( ! textarea )
 				return;
@@ -564,7 +573,7 @@ var wpLink;
 				query = {
 					action : 'wp-link-ajax',
 					page : this.page,
-					'_ajax_linking_nonce' : $('#_ajax_linking_nonce').val()
+					'_ajax_linking_nonce' : inputs.nonce.val()
 				};
 
 			if ( this.search )

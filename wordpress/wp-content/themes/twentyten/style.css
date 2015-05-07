@@ -4,7 +4,7 @@ Theme Name: Twenty Ten
 Theme URI: http://wordpress.org/
 Description: 2010年版の WordPress テーマ「Twenty Ten」は、スタイリッシュで、カスタマイズ可能で、簡潔で、読みやすいデザインです。カスタムメニュー、ヘッダー画像、背景をあなたなりにアレンジしてみてください。Twenty Ten テーマでは6つのウィジェットエリア (サイドバーに2つ、フッターに4つ) と、アイキャッチ画像 (ギャラリー投稿のサムネイルと、投稿やページのカスタムヘッダー画像) に対応しています。印刷用、管理画面のビジュアルエディター用、アサイドおよびギャラリーカテゴリー用のスタイルシートが用意されています。また、サイドバーを取り去った1カラムページのテンプレートもあります。
 Author: the WordPress team
-Version: 1.2
+Version: 1.3
 License: GNU General Public License
 License URI: license.txt
 Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
@@ -286,6 +286,7 @@ pre {
 	color: #222;
 	line-height: 18px;
 	margin-bottom: 18px;
+	overflow: auto;
 	padding: 1.5em;
 }
 abbr,
