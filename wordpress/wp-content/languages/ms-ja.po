@@ -2,17 +2,18 @@
 # This file is distributed under the same license as the Multisite package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress Multisite 3.0.4 ja\n"
+"Project-Id-Version: WordPress Multisite 3.0.5 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2010-12-30 00:52:15+00:00\n"
-"PO-Revision-Date: 2010-12-30 10:31+0900\n"
+"POT-Creation-Date: 2011-02-08 01:50:48+00:00\n"
+"PO-Revision-Date: 2011-02-08 11:13+0900\n"
+"Last-Translator: Mako N <mako@pasero.net>\n"
+"Language-Team: wp-ja <wpja.team@gmail.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/0.1\n"
-"Last-Translator: Mako N <mako@pasero.net>\n"
-"Language-Team: wp-ja <wpja.team@gmail.com>\n"
 
 #: wp-includes/ms-default-constants.php:113
 msgid "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a subdomain configuration. Use is_subdomain_install() to check whether a subdomain configuration is enabled."
@@ -41,7 +42,7 @@ msgstr "半角英字の小文字と半角数字のみ使えます。"
 
 #: wp-includes/ms-functions.php:433
 msgid "Please enter a username"
-msgstr "ユーザー名を入力してください。"
+msgstr "ユーザー名を入力してください"
 
 #: wp-includes/ms-functions.php:441
 msgid "That username is not allowed"
@@ -1690,7 +1691,7 @@ msgstr "この RSS / Atom フィードからの最新の投稿をすべてのサ
 
 #: wp-admin/ms-options.php:105
 msgid "A good one to use would be the feed from your main site: "
-msgstr "例えば、メインサイトのフィードを使うとよいでしょう: "
+msgstr "たとえば、メインサイトのフィードを使うとよいでしょう: "
 
 #: wp-admin/ms-options.php:108
 msgid "Registration Settings"
@@ -1718,7 +1719,7 @@ msgstr "新規サイトおよびユーザーアカウントの登録をどちら
 
 #: wp-admin/ms-options.php:122
 msgid "Disable or enable registration and who or what can be registered. (Default is disabled.)"
-msgstr "登録の許可 / 非許可、誰が何を登録できるのかを設定します (デフォルトでは登録は無効になっています) 。"
+msgstr "登録の許可 / 非許可、だれが何を登録できるのかを設定します (デフォルトでは登録は無効になっています) 。"
 
 #: wp-admin/ms-options.php:124
 msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."

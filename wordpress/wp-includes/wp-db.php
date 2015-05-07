@@ -748,7 +748,7 @@ class wpdb {
 <ul>
 <li>そのデータベースは作成済みですか ?</li>
 <li>ユーザー <code>%2$s</code> に <code>%1$s</code> データベースを使用する権限はありますか ?</li>
-<li>システムによっては、例えば <code>username_%1$s</code> のように、データベース名の前にユーザー名が付加される場合があります。その可能性はありませんか ?</li>
+<li>システムによっては、たとえば <code>username_%1$s</code> のように、データベース名の前にユーザー名が付加される場合があります。その可能性はありませんか ?</li>
 </ul>
 <p>データベースのセットアップ方法が分からなければ<strong>お使いのサーバー管理者</strong>にお問い合わせください。もし何をしてもうまくいかなければ、<a href="http://ja.forums.wordpress.org/">WordPress 日本語フォーラム</a>で助言がもらえるかもしれません。(訳注: オリジナルのリンク先は<a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a>)</p>'/*/WP_I18N_DB_SELECT_DB*/, $db, $this->dbuser ), 'db_select_fail' );
 			return;

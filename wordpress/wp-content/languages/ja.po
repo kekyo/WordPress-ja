@@ -2,17 +2,18 @@
 # This file is distributed under the same license as the 3.0.x package.
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.0.4 ja\n"
+"Project-Id-Version: 3.0.5 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2010-12-30 00:52:02+00:00\n"
-"PO-Revision-Date: 2010-12-30 10:30+0900\n"
+"POT-Creation-Date: 2011-02-08 01:50:34+00:00\n"
+"PO-Revision-Date: 2011-02-08 11:20+0900\n"
+"Last-Translator: Mako N <mako@pasero.net>\n"
+"Language-Team: wp-ja <wpja.team@gmail.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/0.1\n"
-"Last-Translator: Mako N <mako@pasero.net>\n"
-"Language-Team: wp-ja <wpja.team@gmail.com>\n"
 
 #: wp-includes/js/tinymce/langs/wp-langs.php:26
 msgid "Do you want to use the WYSIWYG mode for this textarea?"
@@ -1854,7 +1855,7 @@ msgstr "WordPress には今日の主要な Web ブラウザすべてで作動す
 
 #: wp-includes/js/tinymce/wp-mce-help.php:186
 msgid "While using the editor, most basic keyboard shortcuts work like in any other text editor. For example: Shift+Enter inserts line break, Ctrl+C = copy, Ctrl+X = cut, Ctrl+Z = undo, Ctrl+Y = redo, Ctrl+A = select all, etc. (on Mac use the Command key instead of Ctrl). See the Hotkeys tab for all available keyboard shortcuts."
-msgstr "他のテキストエディターがサポートするようなキーボードショートカットは、基本的なものはどれも使用できるようになっています。例えば: Shift+Enter で改行を挿入、Ctrl+C でコピー、Ctrl+X でカット、Ctrl+Z で元に戻す、Ctrl+Y でやり直し、Ctrl+A ですべて選択、など (Mac の場合は Ctrl の代わりに Command キーを使います)。利用可能なすべてのキーボードショートカットは「ホットキー」タブでご確認ください。"
+msgstr "他のテキストエディターがサポートするようなキーボードショートカットは、基本的なものはどれも使用できるようになっています。たとえば: Shift+Enter で改行を挿入、Ctrl+C でコピー、Ctrl+X でカット、Ctrl+Z で元に戻す、Ctrl+Y でやり直し、Ctrl+A ですべて選択、など (Mac の場合は Ctrl の代わりに Command キーを使います)。利用可能なすべてのキーボードショートカットは「ホットキー」タブでご確認ください。"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:187
 msgid "If you do not like the way the rich editor works, you may turn it off from Your Profile submenu, under Users in the admin menu."
@@ -1882,7 +1883,7 @@ msgstr "リッチエディター内の HTML"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:196
 msgid "Any HTML entered directly into the rich editor will show up as text when the post is viewed. What you see is what you get. When you want to include HTML elements that cannot be generated with the toolbar buttons, you must enter it by hand in the HTML editor. Examples are tables and &lt;code&gt;. To do this, click the HTML tab and edit the code, then switch back to Visual mode. If the code is valid and understood by the editor, you should see it rendered immediately."
-msgstr "リッチエディターに直接入力した HTML コードは、投稿が表示される際にはテキストとして表示されます。入力したものがそのまま表示されるわけです。ツールバーボタンで入力できない HTML 要素を入力するには、HTML エディターに入力しなければなりません。例えばテーブルや &lt;code&gt; などです。HTML エディターで入力するには、HTML タブをクリックしてコードを編集し、その後ビジュアルモードに戻します。そのコードが有効でエディターが理解できれば、レンダリングされたものをすぐに見ることができます。"
+msgstr "リッチエディターに直接入力した HTML コードは、投稿が表示される際にはテキストとして表示されます。入力したものがそのまま表示されるわけです。ツールバーボタンで入力できない HTML 要素を入力するには、HTML エディターに入力しなければなりません。たとえばテーブルや &lt;code&gt; などです。HTML エディターで入力するには、HTML タブをクリックしてコードを編集し、その後ビジュアルモードに戻します。そのコードが有効でエディターが理解できれば、レンダリングされたものをすぐに見ることができます。"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:197
 msgid "Pasting in the Rich Editor"
@@ -1928,7 +1929,7 @@ msgstr "スペルをチェック"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:228
 msgid "Justify Text"
-msgstr "均等割り付け"
+msgstr "均等割付"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:230
 msgid "Insert link"
@@ -4479,7 +4480,7 @@ msgid "Upload stopped."
 msgstr "アップロードを中止しました。"
 
 #: wp-includes/script-loader.php:212
-#: wp-admin/async-upload.php:48
+#: wp-admin/async-upload.php:55
 msgid "Dismiss"
 msgstr "却下"
 
@@ -4492,7 +4493,7 @@ msgid "moved to the trash."
 msgstr "ゴミ箱へ移動しました。"
 
 #: wp-includes/script-loader.php:216
-#: wp-admin/async-upload.php:49
+#: wp-admin/async-upload.php:56
 msgid "&#8220;%s&#8221; has failed to upload due to an error"
 msgstr "&#8220;%s&#8221; は、エラーのためアップロードに失敗しました"
 
@@ -4560,7 +4561,7 @@ msgstr "OK"
 
 #: wp-includes/script-loader.php:287
 #: wp-includes/script-loader.php:315
-#: wp-admin/includes/post.php:1125
+#: wp-admin/includes/post.php:1127
 #: wp-admin/includes/dashboard.php:610
 #: wp-admin/includes/meta-boxes.php:83
 #: wp-admin/includes/meta-boxes.php:129
@@ -5996,14 +5997,14 @@ msgid "You are not allowed to post as this user."
 msgstr "記事を投稿する権限がありません。"
 
 #: wp-admin/includes/post.php:143
-#: wp-admin/includes/post.php:1300
+#: wp-admin/includes/post.php:1302
 #: wp-admin/admin-ajax.php:1000
 #: wp-admin/admin-ajax.php:1190
 msgid "You are not allowed to edit this page."
 msgstr "このページを編集する権限がありません。"
 
 #: wp-admin/includes/post.php:145
-#: wp-admin/includes/post.php:1303
+#: wp-admin/includes/post.php:1305
 #: wp-admin/admin-ajax.php:1003
 #: wp-admin/admin-ajax.php:1193
 #: wp-admin/upload.php:35
@@ -6030,90 +6031,90 @@ msgstr "このサイトにページを作成する権限がありません。"
 msgid "You are not allowed to create posts or drafts on this site."
 msgstr "このサイトに投稿または下書きを作成する権限がありません。"
 
-#: wp-admin/includes/post.php:926
+#: wp-admin/includes/post.php:928
 msgid "Images"
 msgstr "画像"
 
-#: wp-admin/includes/post.php:926
+#: wp-admin/includes/post.php:928
 msgid "Manage Images"
 msgstr "画像の管理"
 
-#: wp-admin/includes/post.php:926
+#: wp-admin/includes/post.php:928
 msgid "Image <span class=\"count\">(%s)</span>"
 msgid_plural "Images <span class=\"count\">(%s)</span>"
 msgstr[0] "画像 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:927
+#: wp-admin/includes/post.php:929
 msgid "Audio"
 msgstr "音声"
 
-#: wp-admin/includes/post.php:927
+#: wp-admin/includes/post.php:929
 msgid "Manage Audio"
 msgstr "音声の管理"
 
-#: wp-admin/includes/post.php:927
+#: wp-admin/includes/post.php:929
 msgid "Audio <span class=\"count\">(%s)</span>"
 msgid_plural "Audio <span class=\"count\">(%s)</span>"
 msgstr[0] "音声 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:928
+#: wp-admin/includes/post.php:930
 msgid "Video"
 msgstr "動画"
 
-#: wp-admin/includes/post.php:928
+#: wp-admin/includes/post.php:930
 msgid "Manage Video"
 msgstr "動画の管理"
 
-#: wp-admin/includes/post.php:928
+#: wp-admin/includes/post.php:930
 msgid "Video <span class=\"count\">(%s)</span>"
 msgid_plural "Video <span class=\"count\">(%s)</span>"
 msgstr[0] "動画 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:1088
+#: wp-admin/includes/post.php:1090
 msgid "Click to edit this part of the permalink"
 msgstr "クリックしてパーマリンクのこの部分を編集"
 
-#: wp-admin/includes/post.php:1090
+#: wp-admin/includes/post.php:1092
 msgid "Temporary permalink. Click to edit this part."
 msgstr "これは一時的なパーマリンクです。この部分を編集するにはクリックしてください。"
 
-#: wp-admin/includes/post.php:1094
-#: wp-admin/includes/post.php:1122
+#: wp-admin/includes/post.php:1096
+#: wp-admin/includes/post.php:1124
 msgid "Permalink:"
 msgstr "パーマリンク:"
 
-#: wp-admin/includes/post.php:1096
+#: wp-admin/includes/post.php:1098
 msgid "Change Permalinks"
 msgstr "パーマリンクの変更"
 
-#: wp-admin/includes/post.php:1145
-#: wp-admin/includes/post.php:1146
+#: wp-admin/includes/post.php:1147
+#: wp-admin/includes/post.php:1148
 msgid "Set featured image"
 msgstr "アイキャッチ画像を設定"
 
-#: wp-admin/includes/post.php:1158
+#: wp-admin/includes/post.php:1160
 msgid "Remove featured image"
 msgstr "アイキャッチ画像を削除"
 
-#: wp-admin/includes/post.php:1216
+#: wp-admin/includes/post.php:1218
 #: wp-admin/includes/dashboard.php:747
 #: wp-admin/includes/dashboard.php:749
 msgid "Somebody"
-msgstr "誰か"
+msgstr "だれか"
 
-#: wp-admin/includes/post.php:1220
+#: wp-admin/includes/post.php:1222
 msgid "Warning: %s is currently editing this post"
 msgstr "注意: %s さんが現在この投稿を編集中"
 
-#: wp-admin/includes/post.php:1223
+#: wp-admin/includes/post.php:1225
 msgid "Warning: %s is currently editing this page"
 msgstr "注意: %s さんが現在このページを編集中"
 
-#: wp-admin/includes/post.php:1226
+#: wp-admin/includes/post.php:1228
 msgid "Warning: %s is currently editing this."
 msgstr "注意: 現在 %s さんがこのページを編集中です。"
 
-#: wp-admin/includes/post.php:1284
+#: wp-admin/includes/post.php:1286
 msgid "Preview not available. Please save as a draft first."
 msgstr "プレビューできません。まず下書きとして保存してください。"
 
@@ -7588,7 +7589,7 @@ msgstr "サムネイル設定"
 
 #: wp-admin/includes/image-edit.php:165
 msgid "The thumbnail image can be cropped differently. For example it can be square or contain only a portion of the original image to showcase it better. Here you can select whether to apply changes to all image sizes or make the thumbnail different."
-msgstr "サムネイル画像は元サイズの画像と異なるトリミングをすることができます。例えば正方形にしたり、見やすくするために画像の一部のみを含めたりといったことが可能です。ここではすべてのサイズの画像を変更するか、サムネイル画像のみを変更するか選択できます。"
+msgstr "サムネイル画像は元サイズの画像と異なるトリミングをすることができます。たとえば正方形にしたり、見やすくするために画像の一部のみを含めたりといったことが可能です。ここではすべてのサイズの画像を変更するか、サムネイル画像のみを変更するか選択できます。"
 
 #: wp-admin/includes/image-edit.php:169
 msgid "Current thumbnail"
@@ -8032,7 +8033,7 @@ msgstr "先頭に固定表示"
 
 #: wp-admin/includes/template.php:1124
 msgid "Not Sticky"
-msgstr "通常通り表示"
+msgstr "通常どおり表示"
 
 #: wp-admin/includes/template.php:1132
 msgid "Make this post sticky"
@@ -9801,7 +9802,7 @@ msgstr "サイトの表示状態"
 
 #: wp-admin/options-privacy.php:42
 msgid "I would like my site to be visible to everyone, including search engines (like Google, Bing, Technorati) and archivers"
-msgstr "サイトを検索エンジン (Google、Bing、Technorati など) やアーカイブも含め、誰にでも読めるようにする"
+msgstr "サイトを検索エンジン (Google、Bing、Technorati など) やアーカイブも含め、だれにでも読めるようにする"
 
 #: wp-admin/options-privacy.php:44
 msgid "I would like to block search engines, but allow normal visitors"
@@ -10045,7 +10046,7 @@ msgstr "%s に下書きを保存しました。"
 #: wp-admin/admin-ajax.php:989
 #: wp-admin/admin-ajax.php:1201
 msgid "Someone"
-msgstr "誰か"
+msgstr "だれか"
 
 #: wp-admin/admin-ajax.php:991
 msgid "Autosave disabled: %s is currently editing this page."
@@ -10086,6 +10087,7 @@ msgstr ""
 
 #: wp-admin/edit-tags.php:128
 #: wp-admin/post.php:156
+#: wp-admin/async-upload.php:38
 msgid "You are not allowed to edit this item."
 msgstr "この項目を編集する権限がありません。"
 
@@ -10095,7 +10097,7 @@ msgstr "サイトのセクションを定義したり、関係のある投稿を
 
 #: wp-admin/edit-tags.php:177
 msgid "You can assign keywords to your posts using Post Tags. Unlike categories, tags have no hierarchy, meaning there&#8217;s no relationship from one tag to another."
-msgstr "投稿タグを使って投稿にキーワードを割り振ることができます。カテゴリーと違い、タグには階層がありません。つまり、あるタグは他のタグとの関係性を持たないと言うことです。"
+msgstr "投稿タグを使って投稿にキーワードを割り振ることができます。カテゴリーと違い、タグには階層がありません。つまり、あるタグは他のタグとの関係性を持たないということです。"
 
 #: wp-admin/edit-tags.php:179
 msgid "What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index."
@@ -10119,7 +10121,7 @@ msgstr "<strong>スラッグ</strong> - &#8220;スラッグ&#8221; は、URL に
 
 #: wp-admin/edit-tags.php:192
 msgid "<strong>Parent</strong> - Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional. To create a subcategory, just choose another category from the Parent dropdown."
-msgstr "<strong>親</strong> - タグとは異なり、カテゴリーは階層構造を持つことができます。例えば、ジャズというカテゴリーの下にビバップやビッグバンドという子カテゴリーを作る、といったようなことです。これはオプションです。子カテゴリーを作るには、親のドロップダウンで別のカテゴリーを選択します。"
+msgstr "<strong>親</strong> - タグとは異なり、カテゴリーは階層構造を持つことができます。たとえば、ジャズというカテゴリーの下にビバップやビッグバンドという子カテゴリーを作る、といったようなことです。これはオプションです。子カテゴリーを作るには、親のドロップダウンで別のカテゴリーを選択します。"
 
 #: wp-admin/edit-tags.php:194
 msgid "<strong>Description</strong> - The description is not prominent by default; however, some themes may display it."
@@ -10195,7 +10197,7 @@ msgstr "親"
 #: wp-admin/edit-tags.php:411
 #: wp-admin/edit-tag-form.php:53
 msgid "Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional."
-msgstr "タグとは異なり、カテゴリーは階層構造を持つことができます。例えば、ジャズというカテゴリーの下にビバップやビッグバンドという子カテゴリーを作る、といったようなことです。これはオプションです。"
+msgstr "タグとは異なり、カテゴリーは階層構造を持つことができます。たとえば、ジャズというカテゴリーの下にビバップやビッグバンドという子カテゴリーを作る、といったようなことです。これはオプションです。"
 
 #: wp-admin/edit-tags.php:416
 #: wp-admin/edit-tag-form.php:59
@@ -10270,6 +10272,7 @@ msgid "You can&#8217;t edit this item because it is in the Trash. Please restore
 msgstr "この項目はゴミ箱に入っているため編集できません。元の状態に復元し、再度お試しください。"
 
 #: wp-admin/post.php:162
+#: wp-admin/async-upload.php:35
 msgid "Unknown post type."
 msgstr "無効な投稿形式。"
 
@@ -10765,7 +10768,7 @@ msgstr "新規ユーザーの追加"
 
 #: wp-admin/user-new.php:112
 msgid "To add a new user to your site, fill in the form on this screen. If you&#8217;re not sure which role to assign, you can use the link below to review the different roles and their capabilities. Here is a basic overview of roles:"
-msgstr "サイトに新しいユーザーを追加するには、この画面の欄に入力してください。どの権限グループを割り当てればよいかわからない場合、下のリンクをクリックして権限グループやできることの違いをチェックできます。権限グループの基本的な概要は以下の通りです:"
+msgstr "サイトに新しいユーザーを追加するには、この画面の欄に入力してください。どの権限グループを割り当てればよいかわからない場合、下のリンクをクリックして権限グループやできることの違いをチェックできます。権限グループの基本的な概要は以下のとおりです:"
 
 #: wp-admin/user-new.php:114
 msgid "Administrators have access to all the administration features."
@@ -10833,7 +10836,7 @@ msgstr "現在の設定では<a href=\"%1$s\">自分でユーザー登録</a>す
 
 #: wp-admin/user-new.php:194
 msgid "You can add new users to your site in two ways:"
-msgstr "サイトに新しいユーザーを追加する方法は二通りあります。"
+msgstr "サイトに新しいユーザーを追加する方法は二とおりあります。"
 
 #: wp-admin/user-new.php:194
 msgid "Enter the username and email address of an existing user on this site."
@@ -10907,7 +10910,7 @@ msgstr "ほとんどのテーマでは、サイトのタイトルはページの
 
 #: wp-admin/options-general.php:56
 msgid "The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory."
-msgstr "WordPress URL とサイト URL は同一 (例: example.com) または異なるものを指定できます。例えば、WordPress コアファイル (example.com/wordpress) をルートではなくサブディレクトリに置く場合などです。"
+msgstr "WordPress URL とサイト URL は同一 (例: example.com) または異なるものを指定できます。たとえば、WordPress コアファイル (example.com/wordpress) をルートではなくサブディレクトリに置く場合などです。"
 
 #: wp-admin/options-general.php:57
 msgid "If you want site visitors to be able to register themselves, as opposed to being registered by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site administrator."
@@ -10967,7 +10970,7 @@ msgstr "メンバーシップ"
 
 #: wp-admin/options-general.php:104
 msgid "Anyone can register"
-msgstr "誰でもユーザー登録ができるようにする"
+msgstr "だれでもユーザー登録ができるようにする"
 
 #: wp-admin/options-general.php:108
 msgid "New User Default Role"
@@ -11593,7 +11596,7 @@ msgstr "<strong>トラックバックの送信</strong> - トラックバック�
 
 #: wp-admin/edit-form-advanced.php:177
 msgid "<strong>Discussion</strong> - You can turn comments and pings on or off, and if there are comments on the post, you can see them here and moderate them."
-msgstr "<strong>ディスカッション</strong> - コメントや ping を有効化、無効化することができます。投稿にコメントがあれば、ここで読んで承認できます。"
+msgstr "<strong>ディスカッション</strong> - コメントや ping を有効化、無効化することができます。投稿にコメントがあれば、ここで読んでモデレートできます。"
 
 #: wp-admin/edit-form-advanced.php:178
 msgid "You can also create posts with the <a href=\"%s\">Press This bookmarklet</a>."
@@ -11613,7 +11616,7 @@ msgstr "ページの作成は投稿の作成にとてもよく似ています。
 
 #: wp-admin/edit-form-advanced.php:186
 msgid "<strong>Parent</strong> - You can arrange your pages in hierarchies. For example, you could have an &#8220;About&#8221; page that has &#8220;Life Story&#8221; and &#8220;My Dog&#8221; pages under it. There are no limits to how many levels you can nest pages."
-msgstr "<strong>親</strong> - ページ間に階層構造を持たせることができます。例えば、&#8220;自己紹介&#8221; ページの下に &#8220;身の上話&#8221; や &#8220;愛犬のこと&#8221; といったページを置くことができます。ページ階層の深さに制限はありません。"
+msgstr "<strong>親</strong> - ページ間に階層構造を持たせることができます。たとえば、&#8220;自己紹介&#8221; ページの下に &#8220;身の上話&#8221; や &#8220;愛犬のこと&#8221; といったページを置くことができます。ページ階層の深さに制限はありません。"
 
 #: wp-admin/edit-form-advanced.php:187
 msgid "<strong>Template</strong> - Some themes have custom templates you can use for certain pages that might have additional features or custom layouts. If so, you&#8217;ll see them in this dropdown menu."
@@ -12058,7 +12061,7 @@ msgstr "コメントが投稿されたとき"
 
 #: wp-admin/options-discussion.php:124
 msgid "A comment is held for moderation"
-msgstr "承認のためにコメントが保留されたとき"
+msgstr "コメントがモデレーションのために保留されたとき"
 
 #: wp-admin/options-discussion.php:128
 #: wp-admin/options-discussion.php:129
@@ -12076,7 +12079,7 @@ msgstr "すでに承認されたコメントの投稿者のコメントを許可
 #: wp-admin/options-discussion.php:138
 #: wp-admin/options-discussion.php:139
 msgid "Comment Moderation"
-msgstr "コメント承認"
+msgstr "コメントモデレーション"
 
 #: wp-admin/options-discussion.php:140
 msgid "Hold a comment in the queue if it contains %s or more links. (A common characteristic of comment spam is a large number of hyperlinks.)"
@@ -12794,7 +12797,7 @@ msgstr "ビジュアルリッチエディターを使用しない"
 
 #: wp-admin/user-edit.php:209
 msgid "Enable keyboard shortcuts for comment moderation."
-msgstr "コメント承認用のキーボードショートカットを有効にする。"
+msgstr "コメントモデレーション用のキーボードショートカットを有効にする。"
 
 #: wp-admin/user-edit.php:209
 msgid "<a href=\"http://codex.wordpress.org/Keyboard_Shortcuts\">More information</a>"
@@ -13449,7 +13452,7 @@ msgstr "カテゴリー、タグ、作成者、投稿名の構造タグで始ま
 
 #: wp-admin/options-permalink.php:23
 msgid "The Optional fields let you customize the &#8220;category&#8221; and &#8220;tag&#8221; base names that will appear in archive URLs. For example, the page listing all posts in the &#8220;Uncategorized&#8221; category could be <code>/topics/uncategorized</code> instead of <code>/category/uncategorized</code>."
-msgstr "このオプションフィールドを使えば、アーカイブ URL に表示される &#8220;カテゴリー&#8221; と &#8220;タグ&#8221; のベース名を変更できます。例えば、すべての &#8220;未分類&#8221; カテゴリーに属する投稿を表示するページを、 <code>/category/uncategorized</code> ではなく <code>/topics/uncategorized</code> にするなどです。"
+msgstr "このオプションフィールドを使えば、アーカイブ URL に表示される &#8220;カテゴリー&#8221; と &#8220;タグ&#8221; のベース名を変更できます。たとえば、すべての &#8220;未分類&#8221; カテゴリーに属する投稿を表示するページを、 <code>/category/uncategorized</code> ではなく <code>/topics/uncategorized</code> にするなどです。"
 
 #: wp-admin/options-permalink.php:26
 msgid "<a href=\"http://codex.wordpress.org/Settings_Permalinks_SubPanel\" target=\"_blank\">Permalinks Settings Documentation</a>"
@@ -13514,11 +13517,11 @@ msgstr "オプション"
 
 #: wp-admin/options-permalink.php:234
 msgid "If you like, you may enter custom structures for your category and tag <abbr title=\"Universal Resource Locator\">URL</abbr>s here. For example, using <kbd>topics</kbd> as your category base would make your category links like <code>http://example.org/topics/uncategorized/</code>. If you leave these blank the defaults will be used."
-msgstr "お望みなら、カテゴリーとタグ <abbr title=\"Universal Resource Locator\">URL</abbr> 用のカスタム構造を設定することもできます。例えばカテゴリーベースとして <kbd>topics</kbd> と入力すると、 <code>http://example.org/topics/uncategorized/</code> のようなカテゴリーリンクが作成されます。このフィールドが空の場合はデフォルトの設定が使用されます。"
+msgstr "お望みなら、カテゴリーとタグ <abbr title=\"Universal Resource Locator\">URL</abbr> 用のカスタム構造を設定することもできます。たとえばカテゴリーベースとして <kbd>topics</kbd> と入力すると、 <code>http://example.org/topics/uncategorized/</code> のようなカテゴリーリンクが作成されます。このフィールドが空の場合はデフォルトの設定が使用されます。"
 
 #: wp-admin/options-permalink.php:236
 msgid "If you like, you may enter custom structures for your category and tag <abbr title=\"Universal Resource Locator\">URL</abbr>s here. For example, using <code>topics</code> as your category base would make your category links like <code>http://example.org/index.php/topics/uncategorized/</code>. If you leave these blank the defaults will be used."
-msgstr "お望みなら、カテゴリーとタグ <abbr title=\"Universal Resource Locator\">URL</abbr> 用のカスタム構造を設定することもできます。例えばカテゴリーベースとして <code>topics</code> と入力すると、 <code>http://example.org/index.php/topics/uncategorized/</code> のようなカテゴリーリンクが作成されます。このフィールドが空の場合はデフォルトの設定が使用されます。"
+msgstr "お望みなら、カテゴリーとタグ <abbr title=\"Universal Resource Locator\">URL</abbr> 用のカスタム構造を設定することもできます。たとえばカテゴリーベースとして <code>topics</code> と入力すると、 <code>http://example.org/index.php/topics/uncategorized/</code> のようなカテゴリーリンクが作成されます。このフィールドが空の場合はデフォルトの設定が使用されます。"
 
 #. translators: prefix for category permalinks
 #: wp-admin/options-permalink.php:241
@@ -14173,7 +14176,7 @@ msgstr "カテゴリーを表示するにはこのサイトの投稿を編集す
 #: xmlrpc.php:1189
 #: xmlrpc.php:1195
 msgid "You are not allowed to moderate comments on this site."
-msgstr "このサイトのコメントを承認する権限がありません。"
+msgstr "このサイトのコメントをモデレートする権限がありません。"
 
 #: xmlrpc.php:1038
 #: xmlrpc.php:1160
@@ -14488,7 +14491,7 @@ msgstr ""
 "<ul>\n"
 "<li>そのデータベースは作成済みですか ?</li>\n"
 "<li>ユーザー <code>%2$s</code> に <code>%1$s</code> データベースを使用する権限はありますか ?</li>\n"
-"<li>システムによっては、例えば <code>username_%1$s</code> のように、データベース名の前にユーザー名が付加される場合があります。その可能性はありませんか ?</li>\n"
+"<li>システムによっては、たとえば <code>username_%1$s</code> のように、データベース名の前にユーザー名が付加される場合があります。その可能性はありませんか ?</li>\n"
 "</ul>\n"
 "<p>データベースのセットアップ方法が分からなければ<strong>お使いのサーバー管理者</strong>にお問い合わせください。もし何をしてもうまくいかなければ、<a href=\"http://ja.forums.wordpress.org/\">WordPress 日本語フォーラム</a>で助言がもらえるかもしれません。(訳注: オリジナルのリンク先は<a href='http://wordpress.org/support/'>WordPress サポートフォーラム (英語)</a>)</p>"
 
