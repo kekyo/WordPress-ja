@@ -1,5 +1,5 @@
 <?php // Do not delete these lines
-	if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+	if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 		die ('Please do not load this page directly. Thanks!');
 
 	if (!empty($post->post_password)) { // if there's a password
@@ -27,6 +27,7 @@
 	<?php foreach ($comments as $comment) : ?>
 
 		<li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
+			<?php echo get_avatar( $comment, 32 ); ?>	
 			<?php printf(__('<cite>%s</cite> Says:', 'kubrick'), get_comment_author_link()); ?>
 			<?php if ($comment->comment_approved == '0') : ?>
 			<em><?php _e('Your comment is awaiting moderation.', 'kubrick'); ?></em>
@@ -73,7 +74,7 @@
 
 <?php if ( $user_ID ) : ?>
 
-<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account', 'kubrick'); ?>"><?php _e('Logout &raquo;', 'kubrick'); ?></a></p>
+<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account', 'kubrick'); ?>"><?php _e('Log out &raquo;', 'kubrick'); ?></a></p>
 
 <?php else : ?>
 

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 	<div id="content" class="narrowcolumn">
-<?php is_tag(); ?>
-		<?php if (have_posts()) : ?>
+
+<?php if (have_posts()) : ?>
 
  	  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
  	  <?php /* If this is a category archive */ if (is_category()) { ?>

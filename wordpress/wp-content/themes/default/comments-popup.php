@@ -42,7 +42,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $pos
 <?php foreach ($comments as $comment) { ?>
 	<li id="comment-<?php comment_ID() ?>">
 	<?php comment_text() ?>
-	<p><cite><?php comment_type(__('Comment', 'kubrick', __('Trackback', 'kubrick'), __('Pingback', 'kubrick')); ?> <?php printf(__('by %1$s &#8212; %2$s @ <a href="#comment-%3$s">%4$s</a>', 'kubrick'), get_comment_author_link(), get_comment_date(), get_comment_ID(), get_comment_time()); ?></cite></p>
+	<p><cite><?php comment_type(__('Comment', 'kubrick'), __('Trackback', 'kubrick'), __('Pingback', 'kubrick')); ?> <?php printf(__('by %1$s &#8212; %2$s @ <a href="#comment-%3$s">%4$s</a>', 'kubrick'), get_comment_author_link(), get_comment_date(), get_comment_ID(), get_comment_time()); ?></cite></p>
 	</li>
 
 <?php } // end for each comment ?>
@@ -57,7 +57,7 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $pos
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 <?php if ( $user_ID ) : ?>
-	<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Logout &raquo;</a>', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity, get_option('siteurl') . '/wp-login.php?action=logout'); ?></p>
+	<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity, get_option('siteurl') . '/wp-login.php?action=logout'); ?></p>
 <?php else : ?>
 	<p>
 	  <input type="text" name="author" id="author" class="textarea" value="<?php echo $comment_author; ?>" size="28" tabindex="1" />
@@ -102,7 +102,7 @@ endwhile;
 
 <!-- // this is just the end of the motor - don't touch that line either :) -->
 <?php //} ?>
-<p class="credit"><?php timer_stop(1); ?> <cite><?php printf(__('Powered by <a href="%s" title="Powered by WordPress, state-of-the-art semantic personal publishing platform"><strong>Wordpress</strong></a>', 'kubrick'), 'http://wordpress.org/'); ?></cite></p>
+<p class="credit"><?php timer_stop(1); ?> <cite><?php printf(__('Powered by <a href="%s" title="Powered by WordPress, state-of-the-art semantic personal publishing platform"><strong>WordPress</strong></a>', 'kubrick'), 'http://wordpress.org/'); ?></cite></p>
 <?php // Seen at http://www.mijnkopthee.nl/log2/archive/2003/05/28/esc(18) ?>
 <script type="text/javascript">
 <!--

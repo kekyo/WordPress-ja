@@ -82,8 +82,8 @@ function kubrick_header_display_string() {
 add_action('admin_menu', 'kubrick_add_theme_page');
 
 function kubrick_add_theme_page() {
-	if ( $_GET['page'] == basename(__FILE__) ) {
-		if ( 'save' == $_REQUEST['action'] ) {
+	if ( isset( $_GET['page'] ) && $_GET['page'] == basename(__FILE__) ) {
+		if ( isset( $_REQUEST['action'] ) && 'save' == $_REQUEST['action'] ) {
 			check_admin_referer('kubrick-header');
 			if ( isset($_REQUEST['njform']) ) {
 				if ( isset($_REQUEST['defaults']) ) {
@@ -159,7 +159,7 @@ function kubrick_theme_page_head() {
 		kUpdate(ColorPicker_targetInput.id);
 	}
 	function PopupWindow_populate(contents) {
-		contents += '<br /><p style="text-align:center;margin-top:0px;"><input type="button" value="<?php echo attribute_escape(__('Close Color Picker', 'kubrick')); ?>" onclick="cp.hidePopup(\'prettyplease\')"></input></p>';
+		contents += '<br /><p style="text-align:center;margin-top:0px;"><input type="button" class="button-secondary" value="<?php echo attribute_escape(__('Close Color Picker', 'kubrick')); ?>" onclick="cp.hidePopup(\'prettyplease\')"></input></p>';
 		this.contents = contents;
 		this.populated = false;
 	}
@@ -356,7 +356,7 @@ function kubrick_theme_page_head() {
 }
 
 function kubrick_theme_page() {
-	if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.__('Options saved.', 'kubrick').'</strong></p></div>';
+	if ( isset( $_REQUEST['saved'] ) ) echo '<div id="message" class="updated fade"><p><strong>'.__('Options saved.', 'kubrick').'</strong></p></div>';
 ?>
 <div class='wrap'>
 	<div id="kubrick-header">
@@ -388,11 +388,11 @@ function kubrick_theme_page() {
 		<div id="jsForm">
 			<form style="display:inline;" method="post" name="hicolor" id="hicolor" action="<?php echo attribute_escape($_SERVER['REQUEST_URI']); ?>">
 				<?php wp_nonce_field('kubrick-header'); ?>
-	<input type="button" onclick="tgt=document.getElementById('fontcolor');colorSelect(tgt,'pick1');return false;" name="pick1" id="pick1" value="<?php echo attribute_escape(__('Font Color', 'kubrick')); ?>"></input>
-		<input type="button" onclick="tgt=document.getElementById('uppercolor');colorSelect(tgt,'pick2');return false;" name="pick2" id="pick2" value="<?php echo attribute_escape(__('Upper Color', 'kubrick')); ?>"></input>
-		<input type="button" onclick="tgt=document.getElementById('lowercolor');colorSelect(tgt,'pick3');return false;" name="pick3" id="pick3" value="<?php echo attribute_escape(__('Lower Color', 'kubrick')); ?>"></input>
-				<input type="button" name="revert" value="<?php echo attribute_escape(__('Revert', 'kubrick')); ?>" onclick="kRevert()" />
-				<input type="button" value="<?php echo attribute_escape(__('Advanced', 'kubrick')); ?>" onclick="toggleAdvanced()" />
+	<input type="button" class="button-secondary" onclick="tgt=document.getElementById('fontcolor');colorSelect(tgt,'pick1');return false;" name="pick1" id="pick1" value="<?php echo attribute_escape(__('Font Color', 'kubrick')); ?>"></input>
+		<input type="button" class="button-secondary" onclick="tgt=document.getElementById('uppercolor');colorSelect(tgt,'pick2');return false;" name="pick2" id="pick2" value="<?php echo attribute_escape(__('Upper Color', 'kubrick')); ?>"></input>
+		<input type="button" class="button-secondary" onclick="tgt=document.getElementById('lowercolor');colorSelect(tgt,'pick3');return false;" name="pick3" id="pick3" value="<?php echo attribute_escape(__('Lower Color', 'kubrick')); ?>"></input>
+				<input type="button" class="button-secondary" name="revert" value="<?php echo attribute_escape(__('Revert', 'kubrick')); ?>" onclick="kRevert()" />
+				<input type="button" class="button-secondary" value="<?php echo attribute_escape(__('Advanced', 'kubrick')); ?>" onclick="toggleAdvanced()" />
 				<input type="hidden" name="action" value="save" />
 				<input type="hidden" name="fontdisplay" id="fontdisplay" value="<?php echo attribute_escape(kubrick_header_display()); ?>" />
 				<input type="hidden" name="fontcolor" id="fontcolor" value="<?php echo attribute_escape(kubrick_header_color()); ?>" />
@@ -408,8 +408,8 @@ function kubrick_theme_page() {
 					<label for="advfontcolor"><?php _e('Font Color (CSS):', 'kubrick'); ?> </label><input type="text" id="advfontcolor" onchange="advUpdate(this.value, 'fontcolor')" value="<?php echo attribute_escape(kubrick_header_color()); ?>" /><br />
 					<label for="advuppercolor"><?php _e('Upper Color (HEX):');?> </label><input type="text" id="advuppercolor" onchange="advUpdate(this.value, 'uppercolor')" value="#<?php echo attribute_escape(kubrick_upper_color()); ?>" /><br />
 					<label for="advlowercolor"><?php _e('Lower Color (HEX):'); ?> </label><input type="text" id="advlowercolor" onchange="advUpdate(this.value, 'lowercolor')" value="#<?php echo attribute_escape(kubrick_lower_color()); ?>" /><br />
-					<input type="button" name="default" value="<?php echo attribute_escape(__('Select Default Colors', 'kubrick')); ?>" onclick="kDefaults()" /><br />
-					<input type="button" onclick="toggleDisplay();return false;" name="pick" id="pick" value="<?php echo attribute_escape(__('Toggle Text Display', 'kubrick')); ?>"></input><br />
+					<input type="button" class="button-secondary" name="default" value="<?php echo attribute_escape(__('Select Default Colors', 'kubrick')); ?>" onclick="kDefaults()" /><br />
+					<input type="button" class="button-secondary" onclick="toggleDisplay();return false;" name="pick" id="pick" value="<?php echo attribute_escape(__('Toggle Text Display', 'kubrick')); ?>"></input><br />
 				</form>
 			</div>
 		</div>

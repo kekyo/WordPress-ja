@@ -1,5 +1,8 @@
 <?php
 define('WP_INSTALLING', true);
+//These two defines are required to allow us to use require_wp_db() to load the database class while being wp-content/wp-db.php aware
+define('ABSPATH', dirname(dirname(__FILE__)).'/');
+define('WPINC', 'wp-includes');
 
 require_once('../wp-includes/compat.php');
 require_once('../wp-includes/functions.php');
@@ -10,12 +13,12 @@ if (!file_exists('../wp-config-sample.php'))
 
 $configFile = file('../wp-config-sample.php');
 
-if ( !is_writable('../')) 
+if ( !is_writable('../'))
 	wp_die("インストールディレクトリに書き込めません。インストールするディレクトリの属性を変更するか、手動で wp-config.php を作成してください。");
 
 // Check if wp-config.php has been created
 if (file_exists('../wp-config.php'))
-	wp_die("<p>'wp-config.php' ファイルは既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、このファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
+	wp_die("<p>wp-config.php' ファイルは既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、このファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];
@@ -28,60 +31,10 @@ function display_header(){
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>WordPress &rsaquo; セットアップ設定ファイル</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style media="screen" type="text/css">
-	<!--
-	html {
-		background: #eee;
-	}
-	body {
-		background: #fff;
-		color: #000;
-		font-family: Georgia, "Times New Roman", Times, serif;
-		margin-left: 20%;
-		margin-right: 20%;
-		padding: .2em 2em;
-	}
+<title>WordPress &rsaquo; セットアップ設定ファイル</title>
+<link rel="stylesheet" href="<?php echo $admin_dir; ?>css/install.css" type="text/css" />
 
-	h1 {
-		color: #006;
-		font-size: 18px;
-		font-weight: lighter;
-	}
-
-	h2 {
-		font-size: 16px;
-	}
-
-	p, li, dt {
-		line-height: 140%;
-		padding-bottom: 2px;
-	}
-
-	ul, ol {
-		padding: 5px 5px 5px 20px;
-	}
-	#logo {
-		margin-bottom: 2em;
-	}
-	.step a, .step input {
-		font-size: 2em;
-	}
-	td input {
-		font-size: 1.5em;
-	}
-	.step, th {
-		text-align: right;
-	}
-	#footer {
-		text-align: center;
-		border-top: 1px solid #ccc;
-		padding-top: 1em;
-		font-style: italic;
-	}
-	-->
-	</style>
 </head>
 <body>
 <h1 id="logo"><img alt="WordPress" src="images/wordpress-logo.png" /></h1>
@@ -99,24 +52,25 @@ switch($step) {
 	<li>データベースのユーザー名</li>
 	<li>データベースのパスワード</li>
 	<li>データベースのホスト名</li>
-	<li>テーブル接頭語 (あなたが 1 つのデータベースで複数の WordPress を構築する場合)</li>
+	<li>テーブル接頭語 (1 つのデータベースに複数の WordPress を構築する場合) </li>
 </ol>
-<p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。その場合は設定ファイルにデータベース情報を記入することです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存します。</strong></p>
-<p>これらのデータベース情報はインターネットサービスプロバイダが提供しています。データベース情報がわからない場合、作業を続行する前にプロバイダーと連絡を取る必要があります。すべての準備が整っているなら、<a href="setup-config.php?step=1">次に進みましょう !</a></p>
+<p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。この機能は設定ファイルにデータベース情報を記入するだけです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存します。</strong></p>
+<p>これらのデータベース情報はインターネットサービスプロバイダーが提供しています。データベース情報がわからない場合、作業を続行する前にプロバイダーと連絡を取る必要があります。すべての準備が整っているなら&hellip;</p>
+
+<p><a href="setup-config.php?step=1" class="button">次に進みましょう !</a></p>
 <?php
 	break;
 
 	case 1:
 		display_header();
 	?>
-</p>
 <form method="post" action="setup-config.php?step=2">
-	<p>以下にデータベース接続のためのデータを入力してください。これらのデータについて分からない点があれば、あなたのホストに連絡を取ってください。</p>
-	<table>
+	<p>以下にデータベース接続のためのデータを入力してください。これらのデータについて分からない点があれば、ホストに連絡を取ってください。</p>
+	<table class="form-table">
 		<tr>
 			<th scope="row">データベース名</th>
 			<td><input name="dbname" type="text" size="25" value="wordpress" /></td>
-			<td>WP を稼動させたいデータベースの名前</td>
+			<td>WP を稼動させたいデータベースの名前。</td>
 		</tr>
 		<tr>
 			<th scope="row">ユーザー名</th>
@@ -131,16 +85,16 @@ switch($step) {
 		<tr>
 			<th scope="row">データベースのホスト名</th>
 			<td><input name="dbhost" type="text" size="25" value="localhost" /></td>
-			<td>この値は 99% 変える必要はないでしょう</td>
+			<td>この値は 99% 変える必要はないでしょう。</td>
 		</tr>
 		<tr>
 			<th scope="row">テーブル接頭語</th>
 			<td><input name="prefix" type="text" id="prefix" value="wp_" size="25" /></td>
-			<td>1 つのデータベースで複数の WordPress を動かすときに変更します</td>
+			<td>1 つのデータベースで複数の WordPress を動かすときに変更します。</td>
 		</tr>
 	</table>
 	<h2 class="step">
-	<input name="submit" type="submit" value="作成する" />
+	<input name="submit" type="submit" value="作成する" class="button" />
 	</h2>
 </form>
 <?php
@@ -161,7 +115,7 @@ switch($step) {
 	define('DB_HOST', $dbhost);
 
 	// We'll fail here if the values are no good.
-	require_once('../wp-includes/wp-db.php');
+	require_wp_db();
 	if ( !empty($wpdb->error) )
 		wp_die($wpdb->error->get_error_message());
 
@@ -190,14 +144,15 @@ switch($step) {
 	}
 	fclose($handle);
 	chmod('../wp-config.php', 0666);
-	
+
 	display_header();
 ?>
-<p>インストールの一部が完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているならば、<a href="install.php">インストールを実行しましょう !</a></p>
+<p>インストールの一部が完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているならば&hellip;</p>
+
+<p><a href="install.php" class="button">インストールを実行しましょう !</a></p>
 <?php
 	break;
 }
 ?>
-<p id="footer"><a href="http://wordpress.org/">WordPress</a>, personal publishing platform.</p>
 </body>
 </html>

@@ -10,8 +10,6 @@ if ( is_single() ) {
 }
 wp_title(); ?></title>
 
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>"/> <!-- leave this for stats -->
-
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -20,7 +18,7 @@ wp_title(); ?></title>
 
 <?php
 // Checks to see whether it needs a sidebar or not
-if ( !$withcomments && !is_single() ) {
+if (!empty($withcomments) && !is_single() ) {
 ?>
 	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/images/kubrickbg-<?php bloginfo('text_direction'); ?>.jpg") repeat-y top; border: none; }
 <?php } else { // No sidebar ?>

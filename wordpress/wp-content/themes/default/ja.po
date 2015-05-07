@@ -1,18 +1,34 @@
+# WordPress 用日本語リソース (UTF-8) 
+# Japanese (UTF-8) translation for WordPress
+#
+# Copyright (c) 2005-2008
+# このファイルは WordPress 本体と同じライセンスのもと配布されています。
+# This file is distributed under the same license as the WordPress package.
+#
+# WordPress 日本語版作成チーム / WP ja translation team
+# <http://groups.google.com/group/wp-ja-pkg/web/members>
+#
+#  誤字脱字誤訳、あるいはよりよい訳などありましたら以下までぜひお知らせください。
+#  また、翻訳、校正、コミットをお手伝いしていただける方も随時募集中です。
+#  連絡先 / Contact: wpja.team@gmail.com (件名か内容に「日本語リソース」と入れてください)
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: default-theme\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2007-10-27 09:19+0900\n"
-"Last-Translator: tai <tekapo@gmail.com>\n"
-"Language-Team: wp-ja <tekapo@gmail.com>\n"
+"Project-Id-Version: WordPress 2.5 ja 1.0\n"
+"Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
+"POT-Creation-Date: 2008-03-26 13:02+0200\n"
+"PO-Revision-Date: 2008-03-27 00:50+0900\n"
+"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
+"Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;_c\n"
 "X-Poedit-Basepath: /Users/Shared/workshop\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: wp-i18n/theme/branches/2.3\n"
 
 #: 404.php:5
@@ -35,7 +51,7 @@ msgid "Archive for %s|Daily archive page"
 msgstr "%s のアーカイブ|日別アーカイブのページ"
 
 #: archive.php:13
-#: comments.php:36
+#: comments.php:37
 #: index.php:11
 msgid "F jS, Y"
 msgstr "Y 年 n 月 j 日"
@@ -92,6 +108,7 @@ msgstr "%s のパーマリンク"
 
 #: archive.php:33
 #: attachment.php:28
+#: image.php:24
 #: sidebar.php:24
 #: single.php:27
 msgid "l, F jS, Y"
@@ -149,18 +166,19 @@ msgid "Archives by Subject:"
 msgstr "カテゴリー別アーカイブ:"
 
 #: attachment.php:14
-#: single.php:13
 #, php-format
 msgid "Permanent Link: %s"
 msgstr "パーマリンク: %s"
 
 #: attachment.php:18
+#: image.php:12
 #: index.php:14
 #: single.php:16
 msgid "Read the rest of this entry &raquo;"
 msgstr "この投稿の続きを読む &raquo;"
 
 #: attachment.php:20
+#: image.php:14
 #: page.php:11
 #: single.php:18
 msgid "Pages:"
@@ -173,34 +191,40 @@ msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
 msgstr "この投稿は %1$s %2$s %3$s に %4$s カテゴリーに公開されました。"
 
 #: attachment.php:29
+#: image.php:26
 #: single.php:28
 #, php-format
 msgid "You can follow any responses to this entry through the <a href='%s'>RSS 2.0</a> feed."
 msgstr "この投稿へのコメントは <a href='%s'>RSS 2.0</a> フィードで購読することができます。"
 
 #: attachment.php:33
+#: image.php:30
 #: single.php:32
 #, php-format
 msgid "You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
 msgstr "<a href=\"#respond\">コメントを残すか</a>、ご自分のサイトから<a href=\"%s\" rel=\"trackback\">トラックバック</a>することができます。"
 
 #: attachment.php:37
+#: image.php:34
 #: single.php:36
 #, php-format
 msgid "Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
 msgstr "現在コメントは受け付けておりませんが、ご自分のサイトから<a href=\"%s\" rel=\"trackback\">トラックバック</a>を送ることはできます。"
 
 #: attachment.php:41
+#: image.php:38
 #: single.php:40
 msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
 msgstr "このページの一番下でコメントを残すことができます。トラックバック / ピンバックは現在受け付けていません。"
 
 #: attachment.php:45
+#: image.php:42
 #: single.php:44
 msgid "Both comments and pings are currently closed."
 msgstr "現在コメント、トラックバックともに受け付けておりません。"
 
 #: attachment.php:47
+#: image.php:44
 #: page.php:16
 #: single.php:46
 msgid "Edit this entry."
@@ -231,74 +255,74 @@ msgstr "コメント / トラックバック % 件"
 msgid "to &#8220;%s&#8221;"
 msgstr "<!-- to &#8220;%s&#8221; -->"
 
-#: comments.php:30
+#: comments.php:31
 #, php-format
 msgid "<cite>%s</cite> Says:"
 msgstr "<cite>%s</cite> より: "
 
-#: comments.php:32
+#: comments.php:33
 msgid "Your comment is awaiting moderation."
-msgstr "あなたのコメントは管理者の承認待ちです。"
+msgstr "コメントは管理者の承認待ちです。"
 
-#: comments.php:36
+#: comments.php:37
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"
 
-#: comments.php:36
+#: comments.php:37
 msgid "edit"
 msgstr "編集"
 
-#: comments.php:58
+#: comments.php:59
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: comments.php:66
+#: comments.php:67
 msgid "Leave a Reply"
 msgstr "コメントをどうぞ"
 
-#: comments.php:69
+#: comments.php:70
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "コメントを投稿するには<a href=\"%s\">ログイン</a>してください。"
 
-#: comments.php:76
+#: comments.php:77
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。"
 
-#: comments.php:76
+#: comments.php:77
 msgid "Log out of this account"
 msgstr "このアカウントからログアウト"
 
-#: comments.php:76
-msgid "Logout &raquo;"
+#: comments.php:77
+msgid "Log out &raquo;"
 msgstr "ログアウト &raquo;"
 
-#: comments.php:81
+#: comments.php:82
 #: comments-popup.php:64
 msgid "Name"
 msgstr "お名前"
 
-#: comments.php:81
-#: comments.php:84
+#: comments.php:82
+#: comments.php:85
 msgid "(required)"
 msgstr " (必須)"
 
-#: comments.php:84
+#: comments.php:85
 msgid "Mail (will not be published)"
 msgstr "メールアドレス (公開されません)"
 
-#: comments.php:87
+#: comments.php:88
 msgid "Website"
 msgstr "ウェブサイト"
 
-#: comments.php:91
+#: comments.php:92
 #, php-format
 msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
 msgstr "<strong>XHTML:</strong> 次のタグを使用できます: <code>%s</code>"
 
-#: comments.php:95
+#: comments.php:96
 msgid "Submit Comment"
 msgstr "コメント送信"
 
@@ -321,16 +345,16 @@ msgid "The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack th
 msgstr "この投稿へのトラックバック <acronym title=\"Universal Resource Locator\">URL</acronym>: <em>%s</em>"
 
 #: comments-popup.php:45
+msgid "Comment"
+msgstr "コメント"
+
+#: comments-popup.php:45
 msgid "Trackback"
 msgstr "トラックバック"
 
 #: comments-popup.php:45
 msgid "Pingback"
 msgstr "ピンバック"
-
-#: comments-popup.php:45
-msgid "Comment"
-msgstr "コメント"
 
 #: comments-popup.php:45
 #, php-format
@@ -352,7 +376,7 @@ msgstr "改行と段落タグは自動で挿入されます。メールアドレ
 
 #: comments-popup.php:60
 #, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Logout &raquo;</a>"
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウト &raquo;</a>"
 
 #: comments-popup.php:71
@@ -381,8 +405,8 @@ msgstr "このウインドウを閉じる。"
 
 #: comments-popup.php:105
 #, php-format
-msgid "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>Wordpress</strong></a>"
-msgstr "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>Wordpress</strong></a>"
+msgid "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgstr "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
 
 #: footer.php:6
 #, php-format
@@ -508,14 +532,24 @@ msgstr "テキスト表示の切替え"
 msgid "&raquo; Blog Archive"
 msgstr "&raquo; ブログアーカイブ"
 
-#: header.php:16
+#: header.php:14
 #, php-format
 msgid "%s RSS Feed"
 msgstr "%s RSS フィード"
 
+#: image.php:24
+#, php-format
+msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
+msgstr "この投稿は %1$s %2$s に %3$s カテゴリーに公開されました。"
+
+#: image.php:57
+#: single.php:58
+msgid "Sorry, no posts matched your criteria."
+msgstr "該当する投稿は見つかりませんでした。"
+
 #: index.php:30
 msgid "Sorry, but you are looking for something that isn&#8217;t here."
-msgstr "すみませんが、お探しの物はここにはありません。"
+msgstr "お探しの物はここにはありません。"
 
 #: links.php:11
 msgid "Links:"
@@ -606,8 +640,4 @@ msgstr "XFN"
 #: sidebar.php:61
 msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
 msgstr "Powered by WordPress, state-of-the-art semantic personal publishing platform."
-
-#: single.php:58
-msgid "Sorry, no posts matched your criteria."
-msgstr "該当する投稿は見つかりませんでした。"
 
