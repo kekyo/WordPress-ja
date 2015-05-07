@@ -2,14 +2,14 @@
 /**
  * @package Hello_Dolly
  * @author Matt Mullenweg
- * @version 1.5
+ * @version 1.5.1
  */
 /*
 Plugin Name: Hello Dolly
 Plugin URI: http://wordpress.org/#
 Description: これはただのプラグインではありません。Louis Armstrong によって歌われた最も有名な二つの単語、Hello, Dolly に要約された同一世代のすべての人々の希望と情熱を象徴するものです。このプラグインが有効にされると、すべての管理画面の右上に <cite>Hello, Dolly</cite> からの歌詞がランダムに表示されます。
 Author: Matt Mullenweg
-Version: 1.5
+Version: 1.5.1
 Author URI: http://ma.tt/
 */
 
@@ -62,6 +62,9 @@ add_action('admin_footer', 'hello_dolly');
 
 // We need some CSS to position the paragraph
 function dolly_css() {
+	// This makes sure that the posinioning is also good for right-to-left languages
+	$x = ( 'rtl' == get_bloginfo( 'text_direction' ) ) ? 'left' : 'right';
+
 	echo "
 	<style type='text/css'>
 	#dolly {
@@ -69,7 +72,7 @@ function dolly_css() {
 		top: 4.5em;
 		margin: 0;
 		padding: 0;
-		right: 215px;
+		$x: 215px;
 		font-size: 11px;
 	}
 	</style>

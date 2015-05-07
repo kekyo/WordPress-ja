@@ -37,7 +37,7 @@ get_header(); ?>
 	<?php else : ?>
 
 		<h2 class="center"><?php _e('No posts found. Try a different search?', 'kubrick'); ?></h2>
-		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+		<?php get_search_form(); ?>
 
 	<?php endif; ?>
 

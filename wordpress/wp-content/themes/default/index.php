@@ -34,7 +34,7 @@ get_header(); ?>
 
 		<h2 class="center"><?php _e('Not Found', 'kubrick'); ?></h2>
 		<p class="center"><?php _e('Sorry, but you are looking for something that isn&#8217;t here.', 'kubrick'); ?></p>
-		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+		<?php get_search_form(); ?>
 
 	<?php endif; ?>
 
