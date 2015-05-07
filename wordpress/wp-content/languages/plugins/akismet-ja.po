@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-01 07:16:11+0000\n"
+"PO-Revision-Date: 2015-02-19 05:15:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,10 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Development\n"
 
+#: views/notice.php:96
+msgid "Your Pro subscription allows the use of Akismet on only one site. Please <a href=\"http://docs.akismet.com/billing/add-more-sites/\">purchase additional Pro subscriptions</a> or upgrade to an Enterprise subscription that allows the use of Akismet on unlimited sites.<br /><br />If you have any questions, please get in touch with our support team."
+msgstr "あなたのプロサブスクリプションは1つのサイトでのみ Akismet を使用することができます。<a href=\"http://docs.akismet.com/billing/add-more-sites/\">追加のプロサブスクリプションをご購入いただく</a>か無制限のサイトで Akismet を使用できるエンタープライズサブスクリプションにアップグレードしてください。<br /><br />ご質問があれば、サポートチームまでご連絡ください。"
+
 #: views/config.php:97
-msgid "Spam in the <a href=\"%s\">spam folder</a> older than 1 day is deleted automatically."
+msgid "Spam in the <a href=\"%1$s\">spam folder</a> older than 1 day is deleted automatically."
 msgid_plural "Spam in the <a href=\"%1$s\">spam folder</a> older than %2$d days is deleted automatically."
-msgstr[0] "<a href=\"%1$s\">スパムフォルダー</a>内の%2$d日より古いスパムは自動的に削除されます。"
+msgstr[0] "<a href=\"%1$s\">スパムフォルダー</a>内の%2$d日以上経過したスパムは自動的に削除されます。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://akismet.com/"
+msgstr "http://akismet.com/"
+
+#. Description of the plugin/theme
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"http://akismet.com/get/\">Sign up for an Akismet API key</a>, and 3) Go to your Akismet configuration page, and save your API key."
+msgstr "何百万もの利用実績がある Akismet は<strong>あなたのブログをコメントスパムやトラックバックスパムから守る</strong>最良の方法です。あなたが布団の中にいるときでさえ Akismet はサイトをスパムから守ります。始めるには: 1) 今読んでいるこの説明の左側にある「有効化」リンクをクリック、2) <a href=\"http://akismet.com/get/\">サインアップして Akismet API キーを取得</a>、それから 3) Akismet の設定ページに移動して API キーを保存してください。"
 
 #: class.akismet-admin.php:700
 msgid "Please check your <a href=\"%s\">Akismet configuration</a> and contact your web host if problems persist."
@@ -106,10 +118,6 @@ msgstr "サブスクリプションがありません。"
 #: views/notice.php:95
 msgid "You're using your Akismet key on more sites than your Pro subscription allows."
 msgstr "Pro サブスクリプションに含まれる数よりも多いサイトで Akismet キーを使用しています。"
-
-#: views/notice.php:96
-msgid "If you would like to use Akismet on more than 10 sites, you will need to <a href=\"%s\" target=\"_blank\">upgrade to an Enterprise subscription</a>. If you have any questions, please <a href=\"%s\" target=\"_blank\">get in touch with our support team</a>"
-msgstr "Akismet を10サイト以上で使いたい場合は<a href=\"%s\" target=\"_blank\">エンタープライズサブスクリプションにアップグレード</a>する必要があります。質問があれば<a href=\"%s\" target=\"_blank\">サポートチーム</a>にご連絡ください。"
 
 #: views/notice.php:98
 msgid "You're using Akismet on far too many sites for your Pro subscription."
@@ -257,10 +265,20 @@ msgstr "強: 広範囲に普及している特にひどいスパムを自動的�
 msgid "Safe: always put spam in the Spam folder for review."
 msgstr "安全: レビューできるようスパムを常にスパムフォルダに移動します。"
 
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/wordpress-plugins/"
+msgstr "http://automattic.com/wordpress-plugins/"
+
 #: class.akismet-admin.php:53
 msgid "Comment History"
 msgstr "コメント履歴"
 
+#. #-#-#-#-#  akismet.pot (Akismet 3.0.5b1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:76 class.akismet-admin.php:78
 #: class.akismet-admin.php:757 views/config.php:3
 msgid "Akismet"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Twenty Thirteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-11 12:51:33+0000\n"
+"PO-Revision-Date: 2015-01-18 11:53:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,7 +16,7 @@ msgstr ""
 #: content-quote.php:16 content-status.php:16 content-video.php:26
 #: content.php:44 functions.php:478
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "%s の続きを読む <span class=\"meta-nav\">&rarr;</span>"
+msgstr "続きを読む %s <span class=\"meta-nav\">&rarr;</span>"
 
 #: 404.php:16
 msgid "Not Found"

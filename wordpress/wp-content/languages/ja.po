@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-19 02:47:19+0000\n"
+"PO-Revision-Date: 2015-01-21 12:00:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,16 @@ msgstr ""
 msgctxt "text direction"
 msgid "ltr"
 msgstr "ltr"
+
+#: wp-includes/link-template.php:2313
+msgctxt "previous post"
+msgid "Previous"
+msgstr "前へ"
+
+#: wp-includes/link-template.php:2314
+msgctxt "next post"
+msgid "Next"
+msgstr "次へ"
 
 #: wp-includes/class-wp-editor.php:998
 #: wp-includes/js/tinymce/wp-mce-help.php:118 wp-includes/script-loader.php:98
@@ -63,7 +73,7 @@ msgid "Rich Text Area. Press Alt-Shift-H for help"
 msgstr "リッチテキストエリア。Alt-Shift-H キーでヘルプを表示できます。"
 
 #. translators: 1: month, 2: day of month
-#: wp-includes/date.php:437
+#: wp-includes/date.php:449
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "次の値は有効な日付の形式ではありません: %1$s月%2$s日"
 
@@ -107,7 +117,7 @@ msgstr "タイプの配列を渡す必要があります。"
 msgid "A term with the name and slug already exists with this parent."
 msgstr "この親項目にはすでに同じ名前とスラッグの子項目があります。"
 
-#: wp-includes/wp-db.php:1077
+#: wp-includes/wp-db.php:1042
 msgid "%s must set a database connection for use with escaping."
 msgstr "エスケープして使うには %s にデータベース接続の設定をする必要があります。"
 
@@ -159,10 +169,6 @@ msgstr "ゴミ箱"
 #: wp-includes/media-template.php:578
 msgid "Edit Selection"
 msgstr "選択範囲を編集"
-
-#: wp-includes/link-template.php:2313
-msgid "Previous"
-msgstr "前"
 
 #: wp-includes/link-template.php:2259
 msgid "Newer posts"
@@ -246,7 +252,7 @@ msgstr "月別: %s"
 
 #: wp-includes/general-template.php:1153
 msgid "Day: %s"
-msgstr "﻿日: %s"
+msgstr "﻿日別: %s"
 
 #: wp-includes/general-template.php:1153
 msgctxt "daily archives date format"
@@ -260,7 +266,7 @@ msgstr "アサイド"
 
 #: wp-includes/general-template.php:1149
 msgid "Year: %s"
-msgstr "﻿年: %s"
+msgstr "﻿年別: %s"
 
 #: wp-includes/general-template.php:1147
 msgid "Author: %s"
@@ -279,7 +285,7 @@ msgid "Do not pass style tags to wp_add_inline_style()."
 msgstr "wp_add_inline_style() にはスタイルタグを含めないでください。"
 
 #. translators: 1: year, 2: month, 3: day of month
-#: wp-includes/date.php:420
+#: wp-includes/date.php:432
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "日付として正しい値ではありません: %1$s年 %2$s月 %3$s日"
 
@@ -289,7 +295,7 @@ msgstr "﻿％s に返信"
 
 #. translators: Date query invalid date message: 1: invalid value, 2: type of
 #. value, 3: minimum valid value, 4: maximum valid value
-#: wp-includes/date.php:391
+#: wp-includes/date.php:402
 msgid "Invalid value %1$s for %2$s. Expected value should be between %3$s and %4$s."
 msgstr "%1$s は %2$s の無効な値です。%3$sから%4$sまでの間で指定して下さい。"
 
@@ -1222,7 +1228,7 @@ msgstr "動画プレイリストに追加"
 msgid "Invalid menu ID."
 msgstr "無効なメニュー ID です。"
 
-#: wp-includes/wp-db.php:1022
+#: wp-includes/wp-db.php:987
 msgid ""
 "<h1>Can&#8217;t select database</h1>\n"
 "<p>We were able to connect to the database server (which means your username and password is okay) but not able to select the <code>%1$s</code> database.</p>\n"
@@ -1242,11 +1248,11 @@ msgstr ""
 "</ul>\n"
 "<p>もしデータベースの設置方法が分からない場合は<strong>ご利用中のホスティングサービスに連絡</strong>してください。それでもうまく行かなければ、<a href=\"http://ja.forums.wordpress.org/\">WordPress サポートフォーラム</a>でヘルプを得られるかもしれません。</p>"
 
-#: wp-includes/wp-db.php:1193
+#: wp-includes/wp-db.php:1158
 msgid "The query argument of %s must have a placeholder."
 msgstr "%s のクエリー引数にはプレースホルダーが必要です。"
 
-#: wp-includes/wp-db.php:1466
+#: wp-includes/wp-db.php:1431
 msgid ""
 "\n"
 "<h1>Error establishing a database connection</h1>\n"
@@ -1540,22 +1546,22 @@ msgstr "非表示文字を表示"
 msgid "Insert Read More tag"
 msgstr "「続きを読む」タグを挿入"
 
-#: wp-includes/general-template.php:2780
+#: wp-includes/general-template.php:2793
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "サンライズ"
 
-#: wp-includes/general-template.php:2786
+#: wp-includes/general-template.php:2799
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "エクトプラズム"
 
-#: wp-includes/general-template.php:2792
+#: wp-includes/general-template.php:2805
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "オーシャン"
 
-#: wp-includes/general-template.php:2798
+#: wp-includes/general-template.php:2811
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "コーヒー"
@@ -1620,17 +1626,17 @@ msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#: wp-includes/general-template.php:2752
+#: wp-includes/general-template.php:2765
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "デフォルト"
 
-#: wp-includes/general-template.php:2762
+#: wp-includes/general-template.php:2775
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "ライト"
 
-#: wp-includes/general-template.php:2774
+#: wp-includes/general-template.php:2787
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "ミッドナイト"
@@ -1652,7 +1658,7 @@ msgstr "no-subset"
 msgid "Menu"
 msgstr "メニュー"
 
-#: wp-includes/update.php:555
+#: wp-includes/update.php:553
 msgid "Translation Updates"
 msgstr "翻訳の更新"
 
@@ -2411,11 +2417,11 @@ msgstr "テキスト"
 msgid "Hex Value"
 msgstr "16進値"
 
-#: wp-includes/class-wp-customize-manager.php:1033
+#: wp-includes/class-wp-customize-manager.php:1056
 msgid "Header Text Color"
 msgstr "ヘッダーテキスト色"
 
-#: wp-includes/class-wp-customize-manager.php:1011
+#: wp-includes/class-wp-customize-manager.php:1034
 msgid "Colors"
 msgstr "色"
 
@@ -2448,12 +2454,12 @@ msgstr "この XML-RPC メソッドへ不完全な変数が渡されました。
 msgid "Sorry, you cannot stick a private post."
 msgstr "非公開設定の投稿を固定表示にすることはできません。"
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "You can edit your menu content on the Menus screen in the Appearance section."
 msgstr "メニューの項目は「外観」の「メニュー」画面で編集できます。"
 
 #: wp-includes/class-wp-customize-control.php:925
-#: wp-includes/class-wp-customize-manager.php:1056
+#: wp-includes/class-wp-customize-manager.php:1079
 msgid "Header Image"
 msgstr "ヘッダー画像"
 
@@ -2497,32 +2503,32 @@ msgstr "その名称は利用できません。"
 msgid "Username must be at least 4 characters."
 msgstr "ユーザー名は4文字以上必要です。"
 
-#: wp-includes/class-wp-customize-manager.php:1207
+#: wp-includes/class-wp-customize-manager.php:1230
 msgid "A static page"
 msgstr "固定ページ"
 
-#: wp-includes/class-wp-customize-manager.php:1027
+#: wp-includes/class-wp-customize-manager.php:1050
 msgid "Display Header Text"
 msgstr "ヘッダーテキストを表示する"
 
-#: wp-includes/class-wp-customize-manager.php:1048
+#: wp-includes/class-wp-customize-manager.php:1071
 msgid "Background Color"
 msgstr "背景色"
 
 #: wp-includes/class-wp-customize-control.php:894
-#: wp-includes/class-wp-customize-manager.php:1076
+#: wp-includes/class-wp-customize-manager.php:1099
 msgid "Background Image"
 msgstr "背景画像"
 
-#: wp-includes/class-wp-customize-manager.php:1098
+#: wp-includes/class-wp-customize-manager.php:1121
 msgid "Background Repeat"
 msgstr "背景の繰り返し"
 
-#: wp-includes/class-wp-customize-manager.php:1115
+#: wp-includes/class-wp-customize-manager.php:1138
 msgid "Background Position"
 msgstr "背景の位置"
 
-#: wp-includes/class-wp-customize-manager.php:1131
+#: wp-includes/class-wp-customize-manager.php:1154
 msgid "Background Attachment"
 msgstr "背景スクロール"
 
@@ -2534,35 +2540,35 @@ msgstr "画像の変更"
 msgid "Sorry, you are not allowed to edit this post type."
 msgstr "この投稿タイプを編集する権限がありません。"
 
-#: wp-includes/class-wp-customize-manager.php:1135
+#: wp-includes/class-wp-customize-manager.php:1158
 msgid "Scroll"
 msgstr "スクロール"
 
-#: wp-includes/class-wp-customize-manager.php:1136
+#: wp-includes/class-wp-customize-manager.php:1159
 msgid "Fixed"
 msgstr "固定"
 
-#: wp-includes/class-wp-customize-manager.php:1102
+#: wp-includes/class-wp-customize-manager.php:1125
 msgid "No Repeat"
 msgstr "繰り返しなし"
 
-#: wp-includes/class-wp-customize-manager.php:1103
+#: wp-includes/class-wp-customize-manager.php:1126
 msgid "Tile"
 msgstr "タイル"
 
-#: wp-includes/class-wp-customize-manager.php:1104
+#: wp-includes/class-wp-customize-manager.php:1127
 msgid "Tile Horizontally"
 msgstr "水平方向に繰り返し"
 
-#: wp-includes/class-wp-customize-manager.php:1105
+#: wp-includes/class-wp-customize-manager.php:1128
 msgid "Tile Vertically"
 msgstr "垂直方向に繰り返し"
 
-#: wp-includes/class-wp-customize-manager.php:1218
+#: wp-includes/class-wp-customize-manager.php:1241
 msgid "Front page"
 msgstr "フロントページ"
 
-#: wp-includes/class-wp-customize-manager.php:1230
+#: wp-includes/class-wp-customize-manager.php:1253
 msgid "Posts page"
 msgstr "投稿ページ"
 
@@ -2670,11 +2676,11 @@ msgstr "スタイルシートが読み取り可能ではありません。"
 msgid "The \"%s\" theme is not a valid parent theme."
 msgstr "\"%s\" テーマは有効な親テーマではありません。"
 
-#: wp-includes/class-wp-customize-manager.php:1155
+#: wp-includes/class-wp-customize-manager.php:1178
 msgid "Navigation"
 msgstr "ナビゲーション"
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "Your theme supports %s menu. Select which menu you would like to use."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "ご利用中のテーマは%s個のメニューに対応しています。各位置に表示するメニューを選んでください。"
@@ -2683,32 +2689,32 @@ msgstr[0] "ご利用中のテーマは%s個のメニューに対応していま�
 msgid "Refresh"
 msgstr "再読み込み"
 
-#: wp-includes/class-wp-customize-manager.php:1188
+#: wp-includes/class-wp-customize-manager.php:1211
 msgid "Static Front Page"
 msgstr "固定フロントページ"
 
-#: wp-includes/class-wp-customize-manager.php:1191
+#: wp-includes/class-wp-customize-manager.php:1214
 msgid "Your theme supports a static front page."
 msgstr "テーマは固定フロントページをサポートしています。"
 
-#: wp-includes/class-wp-customize-manager.php:1206
+#: wp-includes/class-wp-customize-manager.php:1229
 msgid "Your latest posts"
 msgstr "最新の投稿"
 
-#: wp-includes/class-wp-customize-manager.php:1202
+#: wp-includes/class-wp-customize-manager.php:1225
 msgid "Front page displays"
 msgstr "フロントページの表示"
 
-#: wp-includes/class-wp-customize-manager.php:982
+#: wp-includes/class-wp-customize-manager.php:1005
 msgid "Site Title & Tagline"
 msgstr "サイトタイトルとキャッチフレーズ"
 
-#: wp-includes/class-wp-customize-manager.php:1004
+#: wp-includes/class-wp-customize-manager.php:1027
 msgid "Tagline"
 msgstr "キャッチフレーズ"
 
 #: wp-includes/class-wp-customize-control.php:475
-#: wp-includes/class-wp-customize-manager.php:1162
+#: wp-includes/class-wp-customize-manager.php:1185
 #: wp-includes/default-widgets.php:1362
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; 選択 &mdash;"
@@ -3021,7 +3027,7 @@ msgstr "ドキュメンテーション"
 msgid "Support Forums"
 msgstr "サポートフォーラム"
 
-#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2678
+#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2691
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -3097,7 +3103,7 @@ msgstr "ファイルサイズの上限を超えているようです。別のフ
 msgid "This file is not an image. Please try another."
 msgstr "このファイルは画像ではありません。別のファイルをお試しください。"
 
-#: wp-includes/general-template.php:2768
+#: wp-includes/general-template.php:2781
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "ブルー"
@@ -3154,7 +3160,7 @@ msgstr "フルスクリーンモードを終了"
 
 #: wp-includes/class-wp-editor.php:1330
 msgid "Just write."
-msgstr "Just write."
+msgstr "書くだけ。"
 
 #: wp-includes/script-loader.php:432
 msgid "Approve and Reply"
@@ -4108,16 +4114,16 @@ msgstr ""
 msgid "This is the short link."
 msgstr "これは短縮 URL です。"
 
-#: wp-includes/update.php:549
+#: wp-includes/update.php:547
 msgid "%d WordPress Update"
 msgstr "%d件の WordPress 更新"
 
-#: wp-includes/update.php:553
+#: wp-includes/update.php:551
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "%d件のテーマ更新"
 
-#: wp-includes/update.php:551
+#: wp-includes/update.php:549
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "%d件のプラグイン更新"
@@ -4442,11 +4448,11 @@ msgstr "お使いのサーバーの PHP では WordPress に必要な MySQL 拡�
 msgid "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config.php</code> can only contain numbers, letters, and underscores."
 msgstr "<strong>エラー</strong>: <code>wp-config.php</code> 内の <code>$table_prefix</code> には半角英数字と下線のみしか使えません。"
 
-#: wp-includes/wp-db.php:1262
+#: wp-includes/wp-db.php:1227
 msgid "WordPress database error %1$s for query %2$s made by %3$s"
 msgstr "WordPress データベースエラー: %1$s for query %2$s made by %3$s"
 
-#: wp-includes/wp-db.php:1264
+#: wp-includes/wp-db.php:1229
 msgid "WordPress database error %1$s for query %2$s"
 msgstr "WordPress データベースエラー: %1$s for query %2$s"
 
@@ -4820,11 +4826,11 @@ msgstr "%1$s %2$s %3$s による投稿のフィード"
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s 検索結果: &#8220;%3$s&#8221; フィード"
 
-#: wp-includes/general-template.php:2614
+#: wp-includes/general-template.php:2612
 msgid "&laquo; Previous"
 msgstr "&laquo; 前へ"
 
-#: wp-includes/general-template.php:2615
+#: wp-includes/general-template.php:2613
 msgid "Next &raquo;"
 msgstr "次へ &raquo;"
 
@@ -6006,7 +6012,7 @@ msgstr "もう一度ログインしてください。"
 msgid "Sidebar %d"
 msgstr "サイドバー %d"
 
-#: wp-includes/wp-db.php:2714
+#: wp-includes/wp-db.php:2100
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が必要です。"
 
@@ -6168,7 +6174,7 @@ msgstr "%s のアカウントをいますぐ取得"
 msgid "Just a username, please."
 msgstr "ユーザー登録のみ。"
 
-#: wp-includes/link-template.php:2314 wp-signup.php:453
+#: wp-signup.php:453
 msgid "Next"
 msgstr "次ページへ"
 
@@ -6275,7 +6281,7 @@ msgstr "新規追加"
 msgid "First Post"
 msgstr "最初の投稿"
 
-#: wp-includes/class-wp-customize-manager.php:993
+#: wp-includes/class-wp-customize-manager.php:1016
 #: wp-includes/class-wp-xmlrpc-server.php:430
 msgid "Site Title"
 msgstr "サイトのタイトル"
@@ -6546,79 +6552,6 @@ msgstr "カテゴリーなし"
 msgid "%s topic"
 msgid_plural "%s topics"
 msgstr[0] "%s件のトピック"
-
-#: wp-includes/class-pop3.php:82
-msgid "No server specified"
-msgstr "サーバーが設定されていません"
-
-#: wp-includes/class-pop3.php:90 wp-includes/class-pop3.php:102
-#: wp-includes/class-pop3.php:123 wp-includes/class-pop3.php:246
-#: wp-includes/class-pop3.php:300 wp-includes/class-pop3.php:311
-#: wp-includes/class-pop3.php:359 wp-includes/class-pop3.php:393
-#: wp-includes/class-pop3.php:426 wp-includes/class-pop3.php:525
-#: wp-includes/class-pop3.php:548
-msgid "Error "
-msgstr "エラー "
-
-#: wp-includes/class-pop3.php:115
-msgid "no login ID submitted"
-msgstr "ログイン ID が入力されていません"
-
-#: wp-includes/class-pop3.php:118 wp-includes/class-pop3.php:138
-msgid "connection not established"
-msgstr "接続できません"
-
-#: wp-includes/class-pop3.php:135 wp-includes/class-pop3.php:171
-msgid "No password submitted"
-msgstr "パスワードが入力されていません"
-
-#: wp-includes/class-pop3.php:143
-msgid "Authentication failed"
-msgstr "認証失敗"
-
-#: wp-includes/class-pop3.php:162 wp-includes/class-pop3.php:205
-#: wp-includes/class-pop3.php:230 wp-includes/class-pop3.php:272
-#: wp-includes/class-pop3.php:346 wp-includes/class-pop3.php:386
-#: wp-includes/class-pop3.php:416 wp-includes/class-pop3.php:450
-#: wp-includes/class-pop3.php:513 wp-includes/class-pop3.php:578
-msgid "No connection to server"
-msgstr "サーバーに接続されていません"
-
-#: wp-includes/class-pop3.php:168
-msgid "No login ID submitted"
-msgstr "ログイン ID が入力されていません"
-
-#: wp-includes/class-pop3.php:176
-msgid "No server banner"
-msgstr "サーバーバナーなし"
-
-#: wp-includes/class-pop3.php:176 wp-includes/class-pop3.php:186
-msgid "abort"
-msgstr "中止"
-
-#: wp-includes/class-pop3.php:186
-msgid "apop authentication failed"
-msgstr "APOP 認証失敗"
-
-#: wp-includes/class-pop3.php:323
-msgid "Premature end of list"
-msgstr "リストの途中終了"
-
-#: wp-includes/class-pop3.php:456
-msgid "Empty command string"
-msgstr "コマンド文字列は空です"
-
-#: wp-includes/class-pop3.php:476
-msgid "connection does not exist"
-msgstr "接続がありません"
-
-#: wp-includes/class-pop3.php:583
-msgid "No msg number submitted"
-msgstr "No msg number submitted"
-
-#: wp-includes/class-pop3.php:589
-msgid "Command failed "
-msgstr "コマンドは失敗しました"
 
 #: wp-includes/category-template.php:998
 msgid "Feed for all posts filed under %s"
@@ -6948,19 +6881,19 @@ msgstr "メディアを追加"
 msgid "Saved."
 msgstr "保存しました。"
 
-#: wp-includes/class-wp-customize-manager.php:1119
+#: wp-includes/class-wp-customize-manager.php:1142
 #: wp-includes/class-wp-editor.php:952 wp-includes/media-template.php:600
 #: wp-includes/media-template.php:831 wp-includes/media-template.php:897
 msgid "Left"
 msgstr "左"
 
-#: wp-includes/class-wp-customize-manager.php:1120
+#: wp-includes/class-wp-customize-manager.php:1143
 #: wp-includes/class-wp-editor.php:953 wp-includes/media-template.php:603
 #: wp-includes/media-template.php:834 wp-includes/media-template.php:900
 msgid "Center"
 msgstr "中央"
 
-#: wp-includes/class-wp-customize-manager.php:1121
+#: wp-includes/class-wp-customize-manager.php:1144
 #: wp-includes/class-wp-editor.php:954 wp-includes/media-template.php:606
 #: wp-includes/media-template.php:837 wp-includes/media-template.php:903
 msgid "Right"

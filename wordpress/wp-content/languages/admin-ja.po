@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-12-19 02:42:25+0000\n"
+"PO-Revision-Date: 2015-01-29 10:53:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,11 +10,11 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Administration\n"
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:145
 msgid "Expanded JavaScript APIs in the customizer enable a new media experience as well as dynamic and contextual controls, sections, and panels."
 msgstr "カスタマイザーの拡張された JavaScript API は、新しいメディア体験、動的で文脈に即したコントロール、セクション、パネルを実現します。"
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:142
 msgid "Metadata, date, and term queries now support advanced conditional logic, like nested clauses and multiple operators &mdash; %s."
 msgstr "メタデータ、日付、タクソノミーのクエリーが高度の条件ロジック(ネストされた節や複数の演算子 &mdash; %s)をサポートするようになりました。"
 
@@ -34,88 +34,88 @@ msgstr "これらのおすすめは、あなたや他のユーザーがインス
 msgid "You can enable distraction-free writing mode using the icon to the right. This feature is not available for old browsers or devices with small screens, and requires that the full-height editor be enabled in Screen Options."
 msgstr "右側のアイコンを使用して集中執筆モードを有効にすることができます。この機能は、古いブラウザーや小型のスクリーンを備えたデバイスでは使用できません。またフルハイトエディターを表示オプションで有効にする必要があります。"
 
-#: wp-admin/about.php:116
+#: wp-admin/about.php:124
 msgid "The <a href=\"%s\">plugin installer</a> suggests plugins for you to try. Recommendations are based on the plugins you and other users have installed."
 msgstr "<a href=\"%s\">プラグインのインストール</a> は試用をおすすめするプラグインを表示します。これはあなたや他のユーザーがインストールしているプラグインに基づいています。"
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:111
 msgid "Embedding videos from Vine is as simple as pasting a URL onto its own line in a post. See the <a href=\"%s\">full list</a> of supported embeds."
 msgstr "Vine の動画は、投稿中の単独行に URL をペーストするだけで簡単に埋め込むことができます。埋め込み機能がサポートするその他のサービスは<a href=\"%s\">一覧</a>を参照してください。"
 
-#: wp-admin/about.php:109
+#: wp-admin/about.php:117
 msgid "If you&#8217;ve ever worried you forgot to sign out from a shared computer, you can now go to <a href=\"%s\">your profile</a> and log out everywhere."
 msgstr "共有されたコンピューターからサインアウトするのを忘れて心配したことがありませんか。これからは<a href=\"%s\">あなたのプロフィール</a>より全ての場所からログアウトすることができます。"
 
-#: wp-admin/about.php:45
+#: wp-admin/about.php:53
 msgid "Introducing Twenty&nbsp;Fifteen"
 msgstr "Twenty&nbsp;Fifteen の導入"
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:85
 msgid "Sometimes, you just need to concentrate on putting your thoughts into words. Try turning on <strong>distraction-free writing mode</strong>. When you start typing, all the distractions will fade away, letting you focus solely on your writing. All your editing tools instantly return when you need them."
 msgstr "時には思考を言葉にのせることに集中しなければなりません。<strong>集中執筆モード</strong>をオンにしてみてください。入力を開始すると、すべての気の散るものが消え去り、単に執筆に集中できます。すべての編集ツールは必要な時にすぐに戻ってきます。"
 
-#: wp-admin/about.php:54
+#: wp-admin/about.php:62
 msgid "The straightforward typography is readable on any screen size."
 msgstr "直線的なタイポグラフィはどんな画面サイズでも読むことができます。"
 
-#: wp-admin/about.php:53
+#: wp-admin/about.php:61
 msgid "Twenty Fifteen has flawless language support, with help from <a href=\"%s\">Google&#8217;s Noto font family</a>."
 msgstr "Twenty Fifteen は <a href=\"%s\">Google の Noto フォントファミリー</a>のおかげで完璧に言語をサポートします。"
 
-#: wp-admin/about.php:52
+#: wp-admin/about.php:60
 msgid "Our newest default theme, Twenty Fifteen, is a blog-focused theme designed for clarity."
 msgstr "最新のデフォルトテーマ、Twenty Fifteen はブログに特化した明快さのためにデザインされたテーマです。"
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:157
 msgid "Continued improvements to inline code documentation have made the <a href=\"%s\">developer reference</a> more complete than ever."
 msgstr "インラインドキュメントへの継続的な改善により<a href=\"%s\">開発者リファレンス</a>はこれまでになく完全なものになりました。"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:156
 msgid "Developer Reference"
 msgstr "開発者リファレンス"
 
-#: wp-admin/about.php:145
+#: wp-admin/about.php:153
 msgid "%s tells WordPress to handle the complexities of document titles."
 msgstr "%s は WordPress にドキュメントタイトルの複雑なものを扱うように指示します。"
 
 #. translators: %s: "<title>" tag
-#: wp-admin/about.php:142
+#: wp-admin/about.php:150
 msgid "%s tags in themes"
 msgstr "テーマの %s タグ"
 
-#: wp-admin/about.php:114
+#: wp-admin/about.php:122
 msgid "Plugin recommendations"
 msgstr "プラグインのおすすめ"
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:141
 msgid "Complex Queries"
 msgstr "複雑なクエリー"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:110
 msgid "Vine embeds"
 msgstr "Vine 埋め込み"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:116
 msgid "Log out everywhere"
 msgstr "どこでもログアウト"
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:100
 msgid "Right now, WordPress %1$s is already translated into %2$s languages, with more always in progress. You can switch to any translation on the <a href=\"%3$s\">General Settings</a> screen."
 msgstr "現在、WordPress %1$s はすでに %2$s の言語に翻訳されており、より多くが作業中です。<a href=\"%3$s\">一般設定</a> からどの翻訳にも切り替えできます。"
 
-#: wp-admin/about.php:68
+#: wp-admin/about.php:76
 msgid "Distraction-free writing"
 msgstr "集中執筆"
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:92
 msgid "The Finer Points"
 msgstr "よりすばらしい点"
 
-#: wp-admin/about.php:89
+#: wp-admin/about.php:97
 msgid "Choose a language"
 msgstr "言語を選択"
 
-#: wp-admin/about.php:55
+#: wp-admin/about.php:63
 msgid "Your content always takes center stage, whether viewed on a phone, tablet, laptop, or desktop computer."
 msgstr "コンテンツは携帯やタブレット、ラップトップ、デスクトップ、どれで見ていても常に主役です。"
 
@@ -280,28 +280,28 @@ msgstr "すべてのカテゴリー"
 msgid "Filter by comment type"
 msgstr "コメントの種類で絞り込む"
 
-#: wp-admin/includes/ajax-actions.php:2793
+#: wp-admin/includes/ajax-actions.php:2823
 msgid "You are now logged out everywhere else."
-msgstr "他でもすべてログアウトしました。"
+msgstr "他のすべてでログアウトしました。"
 
 #. translators: 1: User's display name.
-#: wp-admin/includes/ajax-actions.php:2797
+#: wp-admin/includes/ajax-actions.php:2827
 msgid "%s has been logged out."
 msgstr "%s をログアウトしました。"
 
-#: wp-admin/includes/ajax-actions.php:2785
+#: wp-admin/includes/ajax-actions.php:2815
 msgid "Could not log out user sessions. Please try again."
 msgstr "﻿ユーザーセッションをログアウトできませんでした。もう一度やり直してください。"
 
-#: wp-admin/includes/ajax-actions.php:2708
+#: wp-admin/includes/ajax-actions.php:2738
 msgid "This preview is unavailable in the editor."
 msgstr "﻿このプレビューはエディタでは表示できません。"
 
-#: wp-admin/includes/ajax-actions.php:1847
+#: wp-admin/includes/ajax-actions.php:1859
 msgid "You don't have permission to attach files to this post."
 msgstr "この投稿にファイルと添付する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:1838
+#: wp-admin/includes/ajax-actions.php:1845
 msgid "You don't have permission to upload files."
 msgstr "ファイルをアップロードする権限がありません。"
 
@@ -403,13 +403,13 @@ msgstr "アイテムをクリックするとメディアをプレビューした
 msgid "You can also delete individual items and access the extended edit screen from the details dialog."
 msgstr "詳細ダイアログから個々の項目を削除することや、拡張された編集にアクセスすることもできます。"
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:144
 msgid "Customizer API"
 msgstr "カスタマイザー API"
 
 #: wp-admin/plugin-install.php:78
 msgid "If you just want to get an idea of what&#8217;s available, you can browse Featured and Popular plugins by using the links in the upper left of the screen. These sections rotate regularly."
-msgstr "簡単にどんなものがあるのかを知りたいだけなら、画面に左上の「おすすめ」と「人気」プラグインのリンクを利用して閲覧することができます。このセクションは定期的に入れ替わります。"
+msgstr "簡単にどんなものがあるのか知りたいだけなら、画面左上の「注目」と「人気」プラグインのリンクを利用して閲覧することができます。このセクションは定期的に入れ替わります。"
 
 #: wp-admin/upload.php:35
 msgid "All the files you&#8217;ve uploaded are listed in the Media Library, with the most recent uploads listed first."
@@ -492,7 +492,7 @@ msgstr "この情報は <code>wp-config.php</code> ファイルを作成する�
 
 #: wp-admin/theme-install.php:73
 msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter. Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
-msgstr "テーマはキーワード、作成者、タグで検索したり、より特定的に特徴フィルター一覧にある条件で検索したりできます。さらに、テーマをおすすめ、最新、最近の更新別に表示することも可能です。好きなテーマを見つけたら、プレビューまたはインストールできます。"
+msgstr "テーマはキーワード、作成者、タグで検索したり、より特定的に特徴フィルター一覧にある条件で検索したりできます。「注目」「人気」または「最新」のテーマを閲覧することも可能です。好きなテーマを見つけたら、プレビューまたはインストールできます。"
 
 #: wp-admin/theme-install.php:212
 msgctxt "theme"
@@ -529,7 +529,7 @@ msgstr "確認を必要とするメールを送信せずにユーザを追加す
 msgid "The WordPress team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working."
 msgstr "WordPress チームがお助けします。このメールを %s に転送すれば、サイトが正しく動作するようご協力します。"
 
-#: wp-admin/includes/ajax-actions.php:2678
+#: wp-admin/includes/ajax-actions.php:2708
 msgid "%s failed to embed."
 msgstr "%s の埋め込みに失敗しました。"
 
@@ -697,7 +697,7 @@ msgstr "<span>%1$s %2$s</span> %3$s"
 #: wp-admin/theme-install.php:132
 msgctxt "themes"
 msgid "Featured"
-msgstr "おすすめ"
+msgstr "注目"
 
 #: wp-admin/theme-install.php:133
 msgctxt "themes"
@@ -1168,8 +1168,8 @@ msgid "Manage Uploads"
 msgstr "更新を管理"
 
 #: wp-admin/includes/class-wp-upgrader.php:2024
-#: wp-admin/includes/update-core.php:817 wp-admin/includes/update-core.php:892
-#: wp-admin/includes/update-core.php:915
+#: wp-admin/includes/update-core.php:818 wp-admin/includes/update-core.php:893
+#: wp-admin/includes/update-core.php:916
 msgid "The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "いくつかのファイルをコピーできないため、最新版のインストールができません。これはたいていの場合、ファイルのパーミッションが適切でないことが原因です。"
 
@@ -1339,7 +1339,7 @@ msgstr "テーマを更新中: %s"
 msgid "Updating plugin: %s"
 msgstr "プラグインを更新中: %s"
 
-#: wp-admin/includes/update-core.php:948
+#: wp-admin/includes/update-core.php:949
 msgid "There is not enough free disk space to complete the update."
 msgstr "更新を完了するのに十分な空きディスク領域がありません。"
 
@@ -1425,13 +1425,13 @@ msgstr "ファイルのチェックサム (%1$s) が期待値 (%2$s) と一致�
 
 #: wp-admin/includes/file.php:1151
 msgid "This password will not be stored on the server."
-msgstr "このパスワードは、サーバ上に保存されません。"
+msgstr "このパスワードはサーバー上に保存されません。"
 
-#: wp-admin/includes/update-core.php:845
+#: wp-admin/includes/update-core.php:846
 msgid "Preparing to install the latest version&#8230;"
 msgstr "最新版をインストールする準備をしています&#8230;"
 
-#: wp-admin/includes/update-core.php:905
+#: wp-admin/includes/update-core.php:906
 msgid "Copying the required files&#8230;"
 msgstr "必要なファイルをコピーしています&#8230;"
 
@@ -2173,7 +2173,7 @@ msgid "Uploaded to"
 msgstr "アップロード先"
 
 #: wp-admin/custom-background.php:432 wp-admin/custom-header.php:871
-#: wp-admin/includes/ajax-actions.php:1862
+#: wp-admin/includes/ajax-actions.php:1879
 msgid "The uploaded file is not a valid image. Please try again."
 msgstr "アップロードしたファイルは有効な画像ではありません。もう一度お試しください。"
 
@@ -2341,7 +2341,7 @@ msgstr "お気に入りを取得"
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "「%s」オプショングループは削除されました。他の設定グループを使ってください。"
 
-#: wp-admin/includes/update-core.php:1174 wp-admin/update-core.php:431
+#: wp-admin/includes/update-core.php:1175 wp-admin/update-core.php:431
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "WordPress %1$s へようこそ。「WordPress について」の画面に移動します。移動したくない場合は、<a href=\"%2$s\">ここ</a>をクリックしてください。"
 
@@ -2965,6 +2965,16 @@ msgctxt "start of week"
 msgid "1"
 msgstr "1"
 
+#. translators: default GMT offset or timezone string. Must be either a valid
+#. offset (-12 to 14)
+#. or a valid timezone string (America/New_York). See
+#. http:us3.php.net/manual/en/timezones.php
+#. for all timezone strings supported by PHP.
+#: wp-admin/includes/schema.php:361
+msgctxt "default GMT offset or timezone string"
+msgid "0"
+msgstr "Asia/Tokyo"
+
 #. translators: 1: month number (01, 02, etc.), 2: month abbreviation
 #: wp-admin/includes/template.php:750
 msgid "%1$s-%2$s"
@@ -3516,24 +3526,24 @@ msgstr "サイトを見るときにツールバーを表示する"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:199
+#: wp-admin/about.php:207
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
-#: wp-admin/about.php:206
+#: wp-admin/about.php:48 wp-admin/about.php:214
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:203
+#: wp-admin/about.php:211
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:195
+#: wp-admin/about.php:46 wp-admin/about.php:203
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
@@ -3542,7 +3552,7 @@ msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正
 msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab in the upper corner."
 msgstr "WordPress のダッシュボードへようこそ ! これはサイトにログインすると表示される画面で、ここから WordPress のすべてのサイト管理機能へアクセスできます。どの画面にいても右上のヘルプタブをクリックすればヘルプ情報を得られます。"
 
-#: wp-admin/about.php:188
+#: wp-admin/about.php:196
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "メンテナンス & セキュリティリリース"
@@ -3551,18 +3561,18 @@ msgstr[0] "メンテナンス & セキュリティリリース"
 msgid "What&#8217;s New"
 msgstr "新着情報"
 
-#: wp-admin/about.php:187
+#: wp-admin/about.php:195
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "セキュリティリリース"
 
-#: wp-admin/about.php:186
+#: wp-admin/about.php:45 wp-admin/about.php:194
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "メンテナンスリリース"
 
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:191
+#: wp-admin/about.php:199
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応しました。"
@@ -3571,11 +3581,11 @@ msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に�
 msgid "This screen allows you to choose your default permalink structure. You can choose from common settings or create custom URL structures."
 msgstr "この画面ではデフォルトのパーマリンク構造を選択できます。共通設定から選ぶか、独自の URL 構造を作成できます。"
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:166
 msgid "Return to Updates"
 msgstr "更新ページへ戻る"
 
-#: wp-admin/includes/update-core.php:1175 wp-admin/update-core.php:432
+#: wp-admin/includes/update-core.php:1176 wp-admin/update-core.php:432
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "WordPress %1$s へようこそ。<a href=\"%2$s\">詳細を読む</a>。"
 
@@ -3871,11 +3881,11 @@ msgstr "add_meta_box() を使用するために wp-admin/includes/template.php �
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s へようこそ"
 
-#: wp-admin/about.php:162
+#: wp-admin/about.php:170
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:166
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ戻る"
 
@@ -3887,7 +3897,7 @@ msgstr "WordPress は、世界中の熱心な人々によって作られてい�
 msgid "Core Developers"
 msgstr "コア開発者"
 
-#: wp-admin/about.php:129
+#: wp-admin/about.php:137
 msgid "Under the Hood"
 msgstr "開発者向けの変更"
 
@@ -6413,7 +6423,7 @@ msgid "You cannot update because <a href=\"http://codex.wordpress.org/Version_%1
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Version_%1$s\">WordPress %1$s</a> は MySQL %2$s 以降を必要とするため、更新を実行できません。現在稼働しているバージョンは %3$s です。"
 
 #: wp-admin/includes/class-wp-upgrader.php:2671
-#: wp-admin/includes/update-core.php:1171 wp-admin/update-core.php:430
+#: wp-admin/includes/update-core.php:1172 wp-admin/update-core.php:430
 msgid "WordPress updated successfully"
 msgstr "WordPress の更新を完了しました。"
 
@@ -6487,7 +6497,7 @@ msgid "Must-Use <span class=\"count\">(%s)</span>"
 msgid_plural "Must-Use <span class=\"count\">(%s)</span>"
 msgstr[0] "必須 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/about.php:162
+#: wp-admin/about.php:170
 msgid "Go to Dashboard"
 msgstr "ダッシュボードへ移動"
 
@@ -6742,27 +6752,27 @@ msgstr "WordPress テーマディレクトリが見つかりません。"
 msgid "Could not fully remove the theme %s."
 msgstr "テーマ %s を完全に削除できませんでした。"
 
-#: wp-admin/includes/update-core.php:838
+#: wp-admin/includes/update-core.php:839
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "WordPress %1$s は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、更新をインストールできません。現在稼働している PHP のバージョンは %4$s、 MySQL のバージョンは %5$s です。"
 
-#: wp-admin/includes/update-core.php:840
+#: wp-admin/includes/update-core.php:841
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "WordPress %1$s は PHP %2$s 以降を必要とするため、更新をインストールできません。現在稼働しているバージョンは %3$s です。"
 
-#: wp-admin/includes/update-core.php:842
+#: wp-admin/includes/update-core.php:843
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "WordPress %1$s は MySQL %2$s 以降を必要とするため、更新をインストールできません。現在稼働しているバージョンは %3$s です。"
 
-#: wp-admin/includes/update-core.php:796
+#: wp-admin/includes/update-core.php:797
 msgid "Verifying the unpacked files&#8230;"
 msgstr "展開したファイルをチェックしています…"
 
-#: wp-admin/includes/update-core.php:809
+#: wp-admin/includes/update-core.php:810
 msgid "The update could not be unpacked"
 msgstr "更新用ファイルを展開できませんでした"
 
-#: wp-admin/includes/update-core.php:1052
+#: wp-admin/includes/update-core.php:1053
 msgid "Upgrading database&#8230;"
 msgstr "データベースをアップグレードしています…"
 
@@ -7595,7 +7605,7 @@ msgstr "変更を保存するには事前にこのファイルを書き込み可
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:65
 msgctxt "Plugin Installer"
 msgid "Featured"
-msgstr "おすすめ"
+msgstr "注目"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:66
 msgctxt "Plugin Installer"
@@ -8529,11 +8539,11 @@ msgstr "ディスカッション"
 msgid "Slug"
 msgstr "スラッグ"
 
-#: wp-admin/edit-form-advanced.php:541 wp-admin/includes/ajax-actions.php:2059
+#: wp-admin/edit-form-advanced.php:541 wp-admin/includes/ajax-actions.php:2089
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "最後の編集: %2$s %3$s - %1$s"
 
-#: wp-admin/edit-form-advanced.php:543 wp-admin/includes/ajax-actions.php:2061
+#: wp-admin/edit-form-advanced.php:543 wp-admin/includes/ajax-actions.php:2091
 msgid "Last edited on %1$s at %2$s"
 msgstr "最後の編集: %1$s %2$s"
 
@@ -8854,7 +8864,7 @@ msgstr "目的のフォルダはすでに存在しています。"
 
 #: wp-admin/includes/class-wp-upgrader.php:133 wp-admin/includes/file.php:632
 #: wp-admin/includes/file.php:735 wp-admin/includes/file.php:786
-#: wp-admin/includes/update-core.php:1125
+#: wp-admin/includes/update-core.php:1126
 msgid "Could not create directory."
 msgstr "ディレクトリを作成できませんでした。"
 
@@ -8863,12 +8873,12 @@ msgid "Incompatible Archive."
 msgstr "互換性のないアーカイブ。"
 
 #: wp-admin/includes/class-wp-upgrader.php:136
-#: wp-admin/includes/update-core.php:897
+#: wp-admin/includes/update-core.php:898
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "メンテナンスモードを有効にします…"
 
 #: wp-admin/includes/class-wp-upgrader.php:137
-#: wp-admin/includes/update-core.php:980
+#: wp-admin/includes/update-core.php:981
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "メンテナンスモードを無効にします…"
 
@@ -9247,8 +9257,8 @@ msgid "Could not extract file from archive."
 msgstr "アーカイブからファイルを展開できません。"
 
 #: wp-admin/includes/file.php:651 wp-admin/includes/file.php:748
-#: wp-admin/includes/file.php:781 wp-admin/includes/update-core.php:1017
-#: wp-admin/includes/update-core.php:1120
+#: wp-admin/includes/file.php:781 wp-admin/includes/update-core.php:1018
+#: wp-admin/includes/update-core.php:1121
 msgid "Could not copy file."
 msgstr "ファイルをコピーできませんでした。"
 
@@ -9910,7 +9920,7 @@ msgstr "いますぐインストール"
 msgid "No plugins match your request."
 msgstr "マッチするプラグインはありません。"
 
-#: wp-admin/includes/ajax-actions.php:2627
+#: wp-admin/includes/ajax-actions.php:2657
 #: wp-admin/includes/plugin-install.php:471
 msgid "(based on %s rating)"
 msgid_plural "(based on %s ratings)"
@@ -10304,7 +10314,7 @@ msgstr "&raquo;"
 msgid "Comment %d does not exist"
 msgstr "コメント %d は存在しません"
 
-#: wp-admin/includes/taxonomy.php:113
+#: wp-admin/includes/taxonomy.php:116
 msgid "You did not enter a category name."
 msgstr "カテゴリー名が入力されていません。"
 
