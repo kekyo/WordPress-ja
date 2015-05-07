@@ -5,6 +5,8 @@
  * The permissions for the base directory must allow for writing files in order
  * for the wp-config.php to be created using this page.
  *
+ * @internal This file must be parsable by PHP4.
+ *
  * @package WordPress
  * @subpackage Administration
  */
@@ -40,10 +42,12 @@ define('WP_DEBUG', false);
 /**#@-*/
 
 require_once(ABSPATH . WPINC . '/load.php');
+require_once(ABSPATH . WPINC . '/version.php');
+wp_check_php_mysql_versions();
+
 require_once(ABSPATH . WPINC . '/compat.php');
 require_once(ABSPATH . WPINC . '/functions.php');
 require_once(ABSPATH . WPINC . '/class-wp-error.php');
-require_once(ABSPATH . WPINC . '/version.php');
 
 if (!file_exists(ABSPATH . 'wp-config-sample.php'))
 	wp_die('wp-config-sample.php が見つかりません。WordPress インストールファイルから再アップロードしてください。');
@@ -57,12 +61,6 @@ if (file_exists(ABSPATH . 'wp-config.php'))
 // Check if wp-config.php exists above the root directory but is not part of another install
 if (file_exists(ABSPATH . '../wp-config.php') && ! file_exists(ABSPATH . '../wp-settings.php'))
 	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
-
-if ( version_compare( $required_php_version, phpversion(), '>' ) )
-	wp_die( sprintf( /*WP_I18N_OLD_PHP*/'サーバーの PHP のバージョンは %1$s です。WordPress は %2$s 以上でご利用になれます。'/*/WP_I18N_OLD_PHP*/, phpversion(), $required_php_version ) );
-
-if ( !extension_loaded('mysql') && !file_exists(ABSPATH . 'wp-content/db.php') )
-	wp_die( /*WP_I18N_OLD_MYSQL*/'お使いのサーバーの PHP では WordPress に必要な MySQL 拡張を利用できないようです。'/*/WP_I18N_OLD_MYSQL*/ );
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];

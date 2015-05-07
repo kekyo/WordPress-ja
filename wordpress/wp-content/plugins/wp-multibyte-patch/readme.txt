@@ -1,9 +1,9 @@
 === WP Multibyte Patch ===
-Contributors: tenpura
+Contributors: Kuraishi (tenpura)
 Tags: multibyte, i18n
-Requires at least: 3.0
-Tested up to: 3.0.1
-Stable tag: 1.3
+Requires at least: 3.2-RC2
+Tested up to: 3.2
+Stable tag: 1.4.2
 
 Enhances multibyte string I/O functionality of WordPress.
 

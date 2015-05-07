@@ -10,11 +10,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Continent and city\n"
+"Project-Id-Version: 3.2 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-06-29 19:39:16+00:00\n"
-"PO-Revision-Date: 2011-07-01 00:21+0900\n"
-"Last-Translator: tenpura <210pura@gmail.com>\n"
+"POT-Creation-Date: 2011-02-23 17:37:08+00:00\n"
+"PO-Revision-Date: 2011-07-09 23:03+0900\n"
+"Last-Translator: odyssey <odysseygate@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,6 +23,8 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Language: ja\n"
 
+#. Continent and city translations for timezone selection.
+#. * This file is not included anywhere. It exists solely for use by xgettext.
 #: wp-admin/includes/continents-cities.php:7
 msgid "Africa"
 msgstr "アフリカ"

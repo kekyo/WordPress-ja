@@ -1,4 +1,4 @@
-body * {
+body *:not(textarea) {
 	font-style: normal !important;
-	font-family: Arial, Helvetica, sans-serif !important;
+	font-family: Arial, "Bitstream Vera Sans", Helvetica, Verdana, sans-serif !important;
 }

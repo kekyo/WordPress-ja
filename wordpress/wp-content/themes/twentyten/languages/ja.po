@@ -12,11 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Ten\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/twentyten\n"
-"POT-Creation-Date: 2011-06-13 13:27:47+00:00\n"
-"PO-Revision-Date: 2011-07-01 00:22+0900\n"
-"Last-Translator: tenpura <210pura@gmail.com>\n"
+"POT-Creation-Date: 2011-06-30 13:35:50+00:00\n"
+"PO-Revision-Date: 2011-06-30 23:18+0900\n"
+"Last-Translator: odyssey <odysseygate@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,45 +54,27 @@ msgstr "フルサイズ画像へのリンク"
 
 #: loop-attachment.php:63
 #: loop-attachment.php:111
+#: loop-single.php:56
 #: loop.php:100
 #: loop.php:123
 #: loop.php:165
 #: loop-page.php:30
-#: loop-single.php:56
 msgid "Edit"
 msgstr "編集"
 
 #: loop-attachment.php:104
+#: functions.php:248
 #: loop.php:115
 #: loop.php:143
-#: functions.php:248
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "続きを読む <span class=\"meta-nav\">&rarr;</span>"
 
 #: loop-attachment.php:105
+#: loop-single.php:34
 #: loop.php:144
 #: loop-page.php:29
-#: loop-single.php:34
 msgid "Pages:"
 msgstr "ページ:"
-
-#. #-#-#-#-#  twentyten.pot (Twenty Ten 1.2)  #-#-#-#-#
-#. Theme URI of the plugin/theme
-#: footer.php:33
-msgid "http://wordpress.org/"
-msgstr "http://ja.wordpress.org/"
-
-#: footer.php:33
-msgid "Semantic Personal Publishing Platform"
-msgstr "セマンティックなパブリッシングツール"
-
-#: footer.php:33
-msgid "Proudly powered by %s."
-msgstr "Proudly powered by %s."
-
-#: category.php:16
-msgid "Category Archives: %s"
-msgstr "カテゴリー別アーカイブ: %s"
 
 #: sidebar.php:27
 msgid "Archives"
@@ -103,32 +84,30 @@ msgstr "アーカイブ"
 msgid "Meta"
 msgstr "メタ情報"
 
-#: tag.php:16
-msgid "Tag Archives: %s"
-msgstr "タグ別アーカイブ: %s"
+#: loop-single.php:21
+#: loop-single.php:61
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
 
-#: comments.php:18
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "この投稿はパスワードで保護されています。コメントを表示するにはパスワードを入力してください。"
+#: loop-single.php:22
+#: loop-single.php:62
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
 
-#: comments.php:35
-msgid "One Response to %2$s"
-msgid_plural "%1$s Responses to %2$s"
-msgstr[0] "%2$s への%1$s件のコメント"
+#: loop-single.php:43
+#: author.php:37
+msgid "About %s"
+msgstr "%s の紹介"
 
-#: comments.php:41
-#: comments.php:60
-msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
-msgstr "<span class=\"meta-nav\">&larr;</span> 古いコメント"
+#: loop-single.php:47
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%s の投稿をすべて表示 <span class=\"meta-nav\">&rarr;</span>"
 
-#: comments.php:42
-#: comments.php:61
-msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
-msgstr "新しいコメント <span class=\"meta-nav\">&rarr;</span>"
-
-#: comments.php:72
-msgid "Comments are closed."
-msgstr "コメントは受け付けていません。"
+#: author.php:27
+msgid "Author Archives: %s"
+msgstr "作成者別アーカイブ: %s"
 
 #: 404.php:16
 #: loop.php:33
@@ -139,81 +118,13 @@ msgstr "見つかりません"
 msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
 msgstr "リクエストされたページが存在しません。検索で見つかるかもしれません。"
 
-#: loop.php:25
-#: loop.php:178
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&larr;</span> 古い投稿"
+#: header.php:33
+msgid "Page %s"
+msgstr "ページ %s"
 
-#: loop.php:26
-#: loop.php:179
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "新しい投稿 <span class=\"meta-nav\">&rarr;</span>"
-
-#: loop.php:35
-msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
-msgstr "リクエストされたアーカイブには何も見つかりませんでした。検索すれば関連投稿が見つかるかもしれません。"
-
-#: loop.php:60
-#: loop.php:95
-#: loop.php:96
-msgctxt "gallery category slug"
-msgid "gallery"
-msgstr "gallery"
-
-#: loop.php:62
-#: loop.php:83
-#: loop.php:131
-msgid "Permalink to %s"
-msgstr "%s へのパーマリンク"
-
-#: loop.php:82
-msgid "This gallery contains <a %1$s>%2$s photo</a>."
-msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
-msgstr[0] "このギャラリーには<a %1$s>%2$s枚の写真</a>が含まれています。"
-
-#: loop.php:93
-msgid "View Galleries"
-msgstr "ギャラリーを表示"
-
-#: loop.php:93
-#: loop.php:96
-msgid "More Galleries"
-msgstr "その他のギャラリー"
-
-#: loop.php:96
-msgid "View posts in the Gallery category"
-msgstr "ギャラリーカテゴリーの投稿を表示"
-
-#: loop.php:99
-#: loop.php:122
-#: loop.php:164
-msgid "Leave a comment"
-msgstr "コメントをどうぞ"
-
-#: loop.php:99
-#: loop.php:122
-#: loop.php:164
-msgid "1 Comment"
-msgstr "1件のコメント"
-
-#: loop.php:99
-#: loop.php:122
-#: loop.php:164
-msgid "% Comments"
-msgstr "%件のコメント"
-
-#: loop.php:106
-msgctxt "asides category slug"
-msgid "asides"
-msgstr "asides"
-
-#: loop.php:151
-msgid "<span class=\"%1$s\">Posted in</span> %2$s"
-msgstr "<span class=\"%1$s\">カテゴリー:</span> %2$s"
-
-#: loop.php:160
-msgid "<span class=\"%1$s\">Tagged</span> %2$s"
-msgstr "<span class=\"%1$s\">タグ:</span> %2$s"
+#: header.php:83
+msgid "Skip to content"
+msgstr "コンテンツへ移動"
 
 #: functions.php:100
 msgid "Primary Navigation"
@@ -345,22 +256,19 @@ msgstr "カテゴリー: %1$s &nbsp; <a href=\"%3$s\" title=\"%4$s へのパー�
 msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "<a href=\"%3$s\" title=\"%4$s へのパーマリンク\" rel=\"bookmark\">パーマリンク</a>をブックマーク"
 
-#: header.php:33
-msgid "Page %s"
-msgstr "ページ %s"
+#. #-#-#-#-#  twentyten.pot (Twenty Ten 1.2)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#: footer.php:33
+msgid "http://wordpress.org/"
+msgstr "http://ja.wordpress.org/"
 
-#: header.php:83
-msgid "Skip to content"
-msgstr "コンテンツへ移動"
+#: footer.php:33
+msgid "Semantic Personal Publishing Platform"
+msgstr "セマンティックなパブリッシングツール"
 
-#: author.php:27
-msgid "Author Archives: %s"
-msgstr "作成者別アーカイブ: %s"
-
-#: author.php:37
-#: loop-single.php:43
-msgid "About %s"
-msgstr "%s の紹介"
+#: footer.php:33
+msgid "Proudly powered by %s."
+msgstr "Proudly powered by %s."
 
 #: search.php:16
 msgid "Search Results for: %s"
@@ -374,21 +282,85 @@ msgstr "見つかりません"
 msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
 msgstr "ご指定の検索条件に合う投稿がありませんでした。他のキーワードでもう一度検索してみてください。"
 
-#: loop-single.php:21
-#: loop-single.php:61
-msgctxt "Previous post link"
-msgid "&larr;"
-msgstr "&larr;"
+#: loop.php:25
+#: loop.php:178
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> 古い投稿"
 
-#: loop-single.php:22
-#: loop-single.php:62
-msgctxt "Next post link"
-msgid "&rarr;"
-msgstr "&rarr;"
+#: loop.php:26
+#: loop.php:179
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "新しい投稿 <span class=\"meta-nav\">&rarr;</span>"
 
-#: loop-single.php:47
-msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr "%s の投稿をすべて表示 <span class=\"meta-nav\">&rarr;</span>"
+#: loop.php:35
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "リクエストされたアーカイブには何も見つかりませんでした。検索すれば関連投稿が見つかるかもしれません。"
+
+#: loop.php:60
+#: loop.php:95
+#: loop.php:96
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr "gallery"
+
+#: loop.php:62
+#: loop.php:83
+#: loop.php:131
+msgid "Permalink to %s"
+msgstr "%s へのパーマリンク"
+
+#: loop.php:82
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "このギャラリーには<a %1$s>%2$s枚の写真</a>が含まれています。"
+
+#: loop.php:93
+msgid "View Galleries"
+msgstr "ギャラリーを表示"
+
+#: loop.php:93
+#: loop.php:96
+msgid "More Galleries"
+msgstr "その他のギャラリー"
+
+#: loop.php:96
+msgid "View posts in the Gallery category"
+msgstr "ギャラリーカテゴリーの投稿を表示"
+
+#: loop.php:99
+#: loop.php:122
+#: loop.php:164
+msgid "Leave a comment"
+msgstr "コメントをどうぞ"
+
+#: loop.php:99
+#: loop.php:122
+#: loop.php:164
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: loop.php:99
+#: loop.php:122
+#: loop.php:164
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#: loop.php:106
+msgctxt "asides category slug"
+msgid "asides"
+msgstr "asides"
+
+#: loop.php:151
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">カテゴリー:</span> %2$s"
+
+#: loop.php:160
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">タグ:</span> %2$s"
+
+#: tag.php:16
+msgid "Tag Archives: %s"
+msgstr "タグ別アーカイブ: %s"
 
 #: archive.php:33
 msgid "Daily Archives: <span>%s</span>"
@@ -405,6 +377,33 @@ msgstr "年別アーカイブ: <span>%s</span>"
 #: archive.php:39
 msgid "Blog Archives"
 msgstr "ブログアーカイブ"
+
+#: category.php:16
+msgid "Category Archives: %s"
+msgstr "カテゴリー別アーカイブ: %s"
+
+#: comments.php:18
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "この投稿はパスワードで保護されています。コメントを表示するにはパスワードを入力してください。"
+
+#: comments.php:35
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "%2$s への%1$s件のコメント"
+
+#: comments.php:41
+#: comments.php:60
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> 古いコメント"
+
+#: comments.php:42
+#: comments.php:61
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "新しいコメント <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
 
 #. Theme Name of the plugin/theme
 msgid "Twenty Ten"

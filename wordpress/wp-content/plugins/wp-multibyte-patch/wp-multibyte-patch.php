@@ -3,15 +3,15 @@
 Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: Enhances multibyte string I/O functionality of WordPress.
-Author: tenpura
-Version: 1.3
+Author: Kuraishi (tenpura)
+Version: 1.4.2
 Author URI: http://eastcoder.com/
 Text Domain: wp-multibyte-patch
 Domain Path: /languages
 */
 
 /*
-    Copyright (C) 2010 tenpura (Email: 210pura at gmail dot com), Tinybit Inc.
+    Copyright (C) 2011 Kuraishi (Email: 210pura at gmail dot com), Tinybit Inc.
            This program is licensed under the GNU GPL Version 2.
 */
 
@@ -31,6 +31,7 @@ class multibyte_patch {
 		'patch_get_comment_excerpt' => true,
 		'patch_process_search_terms' => true,
 		'patch_admin_custom_css' => true,
+		'patch_wplink_js' => true,
 		'patch_word_count_js' => true,
 		'patch_sanitize_file_name' => true,
 		'patch_bp_create_excerpt' => false,
@@ -42,7 +43,7 @@ class multibyte_patch {
 	var $has_mbfunctions;
 	var $textdomain = 'wp-multibyte-patch';
 	var $lang_dir = 'languages';
-	var $required_version = '3.0';
+	var $required_version = '3.2-RC2';
 	var $query_based_vars = array();
 
 	function guess_encoding($string, $encoding = '') {
@@ -123,7 +124,7 @@ class multibyte_patch {
 		$linea = $this->pingback_ping_linea;
 
 		$linea = preg_replace("/" . preg_quote('<!DOC', '/') . "/i", '<DOC', $linea);
-		$linea = preg_replace("/\s+/", ' ', $linea);
+		$linea = preg_replace("/[\r\n\t ]+/", ' ', $linea);
 		$linea = preg_replace("/ <(h1|h2|h3|h4|h5|h6|p|th|td|li|dt|dd|pre|caption|input|textarea|button|body)[^>]*>/i", "\n\n", $linea);
 
 		preg_match("/<meta[^<>]+charset=\"*([a-zA-Z0-9\-_]+)\"*[^<>]*>/i", $linea, $matches);
@@ -316,6 +317,13 @@ class multibyte_patch {
 		}
 	}
 
+	function import_l10n_entry($text, $from_domain, $to_domain = 'default') {
+		global $l10n;
+
+		if(isset($l10n[$to_domain]->entries) && isset($l10n[$from_domain]->entries[$text]))
+			$l10n[$to_domain]->entries[$text] = $l10n[$from_domain]->entries[$text];
+	}
+
 	function filters() {
 		// remove filter
 		if(false !== $this->conf['patch_wp_trim_excerpt'])
@@ -355,11 +363,11 @@ class multibyte_patch {
 		if(method_exists($this, 'admin_custom_css') && false !== $this->conf['patch_admin_custom_css'])
 			add_action('admin_head' , array(&$this, 'admin_custom_css'), 99);
 
+		if(method_exists($this, 'wplink_js') && false !== $this->conf['patch_wplink_js'])
+			add_action('wp_default_scripts' , array(&$this, 'wplink_js'), 9);
+
 		if(method_exists($this, 'word_count_js') && false !== $this->conf['patch_word_count_js'])
 			add_action('wp_default_scripts' , array(&$this, 'word_count_js'), 9);
-
-		if(method_exists($this, 'word_count_js_localize') && false !== $this->conf['patch_word_count_js'])
-			add_action('wp_default_scripts' , array(&$this, 'word_count_js_localize'), 11);
 	}
 
 	function mbfunctions_exist() {
@@ -387,7 +395,7 @@ class multibyte_patch {
 		}
 	}
 
-	function multibyte_patch() {
+	function __construct() {
 		global $wpmp_conf;
 		$this->conf = array_merge($this->conf, $wpmp_conf);
 
