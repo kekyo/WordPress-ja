@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Ten\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/twentyten\n"
-"POT-Creation-Date: 2011-02-22 08:27:25+00:00\n"
-"PO-Revision-Date: 2011-02-25 10:43+0900\n"
+"POT-Creation-Date: 2011-06-13 13:27:47+00:00\n"
+"PO-Revision-Date: 2011-07-01 00:22+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "Language: ja\n"
@@ -27,6 +27,7 @@ msgstr ""
 msgid "Return to %s"
 msgstr "%s に戻る"
 
+#. translators: %s - title of parent post
 #: loop-attachment.php:23
 msgid "<span class=\"meta-nav\">&larr;</span> %s"
 msgstr "<span class=\"meta-nav\">&larr;</span> %s"
@@ -218,34 +219,42 @@ msgstr "<span class=\"%1$s\">タグ:</span> %2$s"
 msgid "Primary Navigation"
 msgstr "メインナビゲーション"
 
+#. translators: header image description
 #: functions.php:140
 msgid "Berries"
 msgstr "ベリー"
 
+#. translators: header image description
 #: functions.php:146
 msgid "Cherry Blossoms"
 msgstr "桜"
 
+#. translators: header image description
 #: functions.php:152
 msgid "Concave"
 msgstr "凹面"
 
+#. translators: header image description
 #: functions.php:158
 msgid "Fern"
 msgstr "シダ"
 
+#. translators: header image description
 #: functions.php:164
 msgid "Forest Floor"
 msgstr "フォレスト・フロア"
 
+#. translators: header image description
 #: functions.php:170
 msgid "Inkwell"
 msgstr "インクウェル"
 
+#. translators: header image description
 #: functions.php:176
 msgid "Path"
 msgstr "パス"
 
+#. translators: header image description
 #: functions.php:182
 msgid "Sunset"
 msgstr "夕焼け"
@@ -258,6 +267,7 @@ msgstr "%s <span class=\"says\">より:</span>"
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは管理者のモデレーション待ちです。"
 
+#. translators: 1: date, 2: time
 #: functions.php:340
 msgid "%1$s at %2$s"
 msgstr "%1$s %2$s"

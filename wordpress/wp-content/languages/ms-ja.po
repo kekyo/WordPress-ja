@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Multisite\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-05-25 18:18:28+00:00\n"
-"PO-Revision-Date: 2011-05-30 07:10+0900\n"
+"POT-Creation-Date: 2011-06-29 19:19:05+00:00\n"
+"PO-Revision-Date: 2011-07-01 00:22+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "Language: ja\n"
@@ -985,10 +985,12 @@ msgstr "[%s] 新しいメールアドレス"
 msgid "Your email address has not been updated yet. Please check your inbox at %s for a confirmation email."
 msgstr "メールアドレスの変更はまだ完了していません。%s へ届いた確認メールをチェックしてください。"
 
+#. translators: Gigabytes
 #: wp-admin/includes/ms.php:413
 msgid "GB"
 msgstr "GB"
 
+#. translators: Megabytes
 #: wp-admin/includes/ms.php:416
 msgid "MB"
 msgstr "MB"
@@ -1033,6 +1035,7 @@ msgstr "<code>/* 編集が必要なのはここまでです ! WordPress でブ�
 msgid "Thank you for Updating! Please visit the <a href=\"%s\">Update Network</a> page to update all your sites."
 msgstr "更新していただきありがとうございます ! <a href=\"%s\">ネットワークの更新</a>ページへ移動して、すべてのサイトをアップグレードしてください。"
 
+#. translators: My sites label
 #: wp-admin/includes/ms.php:618
 msgid "Primary Site"
 msgstr "基本のサイト"
@@ -1269,6 +1272,7 @@ msgid "You are about to remove the following theme:"
 msgid_plural "You are about to remove the following themes:"
 msgstr[0] "以下のテーマを削除しようとしています。"
 
+#. translators: 1: theme name, 2: theme author
 #: wp-admin/network/themes.php:133
 msgid "Are you sure you wish to delete these themes?"
 msgstr "本当にこれらのテーマを削除しますか ?"
