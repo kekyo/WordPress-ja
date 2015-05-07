@@ -527,7 +527,7 @@ class wpdb {
 	<li>ホスト名に間違いはありませんか ?</li>
 	<li>データベースサーバーは動いていますか ?</li>
 </ul>
-<p>上記の用語がよく分からなければ<strong>サーバーの管理者にお問い合わせください</strong>。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
+<p>上記の用語がよく分からなければ、サーバーの管理者にお問い合わせください。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
 '/*/WP_I18N_DB_CONN_ERROR*/, $dbhost ), 'db_connect_fail' );
 			return;
 		}
@@ -1048,7 +1048,7 @@ class wpdb {
 	<li>ホスト名に間違いはありませんか ?</li>
 	<li>データベースサーバーは動いていますか ?</li>
 </ul>
-<p>上記の用語がよく分からなければ<strong>サーバーの管理者にお問い合わせください</strong>。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
+<p>上記の用語がよく分からなければ、サーバーの管理者にお問い合わせください。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
 '/*/WP_I18N_DB_CONN_ERROR*/, $details['db_host'] ), 'db_connect_fail' );
 		}
 		$this->select( $details[ 'db_name' ], $this->$dbhname );
