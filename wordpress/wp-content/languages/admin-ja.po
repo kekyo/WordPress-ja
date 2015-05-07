@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-12-12 09:05:13+0000\n"
+"PO-Revision-Date: 2013-12-14 12:14:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -315,7 +315,7 @@ msgstr "<strong>表示オプション</strong> - 表示オプションを使っ�
 
 #: wp-admin/index.php:67
 msgid "<strong>Site Content</strong> - Displays a summary of the content on your site and identifies which theme and version of WordPress you are using."
-msgstr "<strong>サイトのコンテンツ</strong> - サイト内のコンテンツ概要、現在利用中のテーマ名、WordPress のバージョンを表示します。"
+msgstr "<strong>概要</strong> - サイト内のコンテンツ概要、現在利用中のテーマ名、WordPress のバージョンを表示します。"
 
 #: wp-admin/index.php:68
 msgid "<strong>Activity</strong> - Shows the upcoming scheduled posts, recently published posts, and the most recent comments on your posts and allows you to moderate them."
