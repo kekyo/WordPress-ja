@@ -28,7 +28,7 @@
 		</div>
 
 		<?php while (have_posts()) : the_post(); ?>
-		<div class="post">
+		<div <?php post_class(); ?>>
 				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'kubrick'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a></h3>
 				<small><?php the_time(__('l, F jS, Y', 'kubrick')) ?></small>
 
@@ -43,17 +43,23 @@
 		<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link(__('&laquo; Older Entries'), 'kubrick'); ?></div>
+			<div class="alignleft"><?php next_posts_link(__('&laquo; Older Entries', 'kubrick')); ?></div>
 			<div class="alignright"><?php previous_posts_link(__('Newer Entries &raquo;', 'kubrick')); ?></div>
 		</div>
-
-	<?php else : ?>
-
-		<h2 class="center"><?php _e('Not Found', 'kubrick'); ?></h2>
-		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-
-	<?php endif; ?>
-
+	<?php else :
+		if ( is_category() ) { // If this is a category archive
+			printf("<h2 class='center'>".__("Sorry, but there aren't any posts in the %s category yet.", 'kubrick').'</h2>', single_cat_title('',false));
+		} else if ( is_date() ) { // If this is a date archive
+			echo('<h2>'.__("Sorry, but there aren't any posts with this date.", 'kubrick').'</h2>');
+		} else if ( is_author() ) { // If this is a category archive
+			$userdata = get_userdatabylogin(get_query_var('author_name'));
+			printf("<h2 class='center'>".__("Sorry, but there aren't any posts by %s yet.", 'kubrick')."</h2>", $userdata->display_name);
+		} else {
+			echo("<h2 class='center'>".__('No posts found.', 'kubrick').'</h2>');
+		}
+	  get_search_form();
+	endif;
+?>
 	</div>
 
 <?php get_sidebar(); ?>

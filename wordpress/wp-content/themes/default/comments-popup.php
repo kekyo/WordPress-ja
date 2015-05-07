@@ -1,7 +1,4 @@
 <?php
-/* Don't remove these lines. */
-add_filter('comment_text', 'popuplinks');
-while ( have_posts()) : the_post();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -19,6 +16,13 @@ while ( have_posts()) : the_post();
 
 <h1 id="header"><a href="" title="<?php echo get_option('blogname'); ?>"><?php echo get_option('blogname'); ?></a></h1>
 
+<?php
+/* Don't remove these lines. */
+add_filter('comment_text', 'popuplinks');
+if ( have_posts() ) :
+while( have_posts()) : the_post();
+?>
+
 <h2 id="comments"><?php _e('Comments', 'kubrick'); ?></h2>
 
 <p><a href="<?php echo get_post_comments_feed_link($post->ID); ?>"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post.', 'kubrick'); ?></a></p>
@@ -33,7 +37,7 @@ $commenter = wp_get_current_commenter();
 extract($commenter);
 $comments = get_approved_comments($id);
 $post = get_post($id);
-if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
+if ( post_password_required($post) ) {  // and it doesn't match the cookie
 	echo(get_the_password_form());
 } else { ?>
 
@@ -57,13 +61,11 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $pos
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 <?php if ( $user_ID ) : ?>
-	<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity, get_option('siteurl') . '/wp-login.php?action=logout'); ?></p>
+	<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out &raquo;</a>', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity, wp_logout_url()); ?></p>
 <?php else : ?>
 	<p>
 	  <input type="text" name="author" id="author" class="textarea" value="<?php echo $comment_author; ?>" size="28" tabindex="1" />
 	   <label for="author"><?php _e('Name', 'kubrick'); ?></label>
-	<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
-	<input type="hidden" name="redirect_to" value="<?php echo attribute_escape($_SERVER["REQUEST_URI"]); ?>" />
 	</p>
 
 	<p>
@@ -84,6 +86,8 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $pos
 	</p>
 
 	<p>
+	  <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+	  <input type="hidden" name="redirect_to" value="<?php echo attribute_escape($_SERVER["REQUEST_URI"]); ?>" />
 	  <input name="submit" type="submit" tabindex="5" value="<?php _e('Say It!' , 'kubrick'); ?>" />
 	</p>
 	<?php do_action('comment_form', $post->ID); ?>
@@ -97,9 +101,11 @@ if (!empty($post->post_password) && $_COOKIE['wp-postpass_'. COOKIEHASH] != $pos
 <div><strong><a href="javascript:window.close()"><?php _e('Close this window.', 'kubrick'); ?></a></strong></div>
 
 <?php // if you delete this the sky will fall on your head
-endwhile;
+endwhile; // have_posts()
+else: // have_posts()
 ?>
-
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
 <!-- // this is just the end of the motor - don't touch that line either :) -->
 <?php //} ?>
 <p class="credit"><?php timer_stop(1); ?> <cite><?php printf(__('Powered by <a href="%s" title="Powered by WordPress, state-of-the-art semantic personal publishing platform"><strong>WordPress</strong></a>', 'kubrick'), 'http://wordpress.org/'); ?></cite></p>

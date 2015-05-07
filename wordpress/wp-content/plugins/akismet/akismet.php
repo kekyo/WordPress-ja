@@ -3,7 +3,7 @@
 Plugin Name: Akismet
 Plugin URI: http://akismet.com/
 Description: Akismet はコメントがスパムかどうか Akismet ウェブサービスに確認します。このプラグインを使用するには <a href="http://wordpress.com/api-keys/">WordPress.com API キー</a>が必要です。"コメント"メニュー以下で捕らえたコメントを閲覧することができます。Akismet が捕らえたスパムコメントの数を表示するにはテンプレートに <code>&lt;?php akismet_counter(); ?></code> を挿入します。<a href="http://wordpress.org/extend/plugins/stats/">WP Stats plugin</a> もご覧ください。
-Version: 2.2.1
+Version: 2.2.3
 Author: Matt Mullenweg
 Author URI: http://ma.tt/
 */
@@ -24,6 +24,15 @@ function akismet_init() {
 	add_action('admin_menu', 'akismet_stats_page');
 }
 add_action('init', 'akismet_init');
+
+function akismet_admin_init() {
+	if ( function_exists( 'get_plugin_page_hook' ) )
+		$hook = get_plugin_page_hook( 'akismet-stats-display', 'index.php' );
+	else
+		$hook = 'dashboard_page_akismet-stats-display';
+	add_action('admin_head-'.$hook, 'akismet_stats_script');
+}
+add_action('admin_init', 'akismet_admin_init');
 
 if ( !function_exists('wp_nonce_field') ) {
 	function akismet_nonce_field($action = -1) { return; }
@@ -163,7 +172,6 @@ addLoadEvent(resizeIframeInit);
 </script><?php
 }
 
-add_action('admin_head-dashboard_page_akismet-stats-display', 'akismet_stats_script');
 
 function akismet_stats_display() {
 	global $akismet_api_host, $akismet_api_port, $wpcom_api_key;

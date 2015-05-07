@@ -360,7 +360,6 @@ function kubrick_theme_page() {
 ?>
 <div class='wrap'>
 	<div id="kubrick-header">
-	<h2><?php _e('Header Image and Color', 'kubrick'); ?></h2>
 		<div id="headwrap">
 			<div id="header">
 				<div id="headerimg">
@@ -399,15 +398,15 @@ function kubrick_theme_page() {
 				<input type="hidden" name="uppercolor" id="uppercolor" value="<?php echo attribute_escape(kubrick_upper_color()); ?>" />
 				<input type="hidden" name="lowercolor" id="lowercolor" value="<?php echo attribute_escape(kubrick_lower_color()); ?>" />
 				<input type="hidden" name="headerimage" id="headerimage" value="<?php echo attribute_escape(kubrick_header_image()); ?>" />
-				<p class="submit"><input type="submit" name="submitform" class="defbutton" value="<?php echo attribute_escape(__('Update Header &raquo;', 'kubrick')); ?>" onclick="cp.hidePopup('prettyplease')" /></p>
+				<p class="submit"><input type="submit" name="submitform" class="button-primary" value="<?php echo attribute_escape(__('Update Header &raquo;', 'kubrick')); ?>" onclick="cp.hidePopup('prettyplease')" /></p>
 			</form>
 			<div id="colorPickerDiv" style="z-index: 100;background:#eee;border:1px solid #ccc;position:absolute;visibility:hidden;"> </div>
 			<div id="advanced">
 				<form id="jsAdvanced" style="display:none;" action="">
 					<?php wp_nonce_field('kubrick-header'); ?>
 					<label for="advfontcolor"><?php _e('Font Color (CSS):', 'kubrick'); ?> </label><input type="text" id="advfontcolor" onchange="advUpdate(this.value, 'fontcolor')" value="<?php echo attribute_escape(kubrick_header_color()); ?>" /><br />
-					<label for="advuppercolor"><?php _e('Upper Color (HEX):');?> </label><input type="text" id="advuppercolor" onchange="advUpdate(this.value, 'uppercolor')" value="#<?php echo attribute_escape(kubrick_upper_color()); ?>" /><br />
-					<label for="advlowercolor"><?php _e('Lower Color (HEX):'); ?> </label><input type="text" id="advlowercolor" onchange="advUpdate(this.value, 'lowercolor')" value="#<?php echo attribute_escape(kubrick_lower_color()); ?>" /><br />
+					<label for="advuppercolor"><?php _e('Upper Color (HEX):', 'kubrick');?> </label><input type="text" id="advuppercolor" onchange="advUpdate(this.value, 'uppercolor')" value="#<?php echo attribute_escape(kubrick_upper_color()); ?>" /><br />
+					<label for="advlowercolor"><?php _e('Lower Color (HEX):', 'kubrick'); ?> </label><input type="text" id="advlowercolor" onchange="advUpdate(this.value, 'lowercolor')" value="#<?php echo attribute_escape(kubrick_lower_color()); ?>" /><br />
 					<input type="button" class="button-secondary" name="default" value="<?php echo attribute_escape(__('Select Default Colors', 'kubrick')); ?>" onclick="kDefaults()" /><br />
 					<input type="button" class="button-secondary" onclick="toggleDisplay();return false;" name="pick" id="pick" value="<?php echo attribute_escape(__('Toggle Text Display', 'kubrick')); ?>"></input><br />
 				</form>

@@ -1,9 +1,30 @@
 <?php
+/**
+ * Retrieves and creates the wp-config.php file.
+ *
+ * The permissions for the base directory must allow for writing files in order
+ * for the wp-config.php to be created using this page.
+ *
+ * @package WordPress
+ * @subpackage Administration
+ */
+
+/**
+ * We are installing.
+ *
+ * @package WordPress
+ */
 define('WP_INSTALLING', true);
-//These three defines are required to allow us to use require_wp_db() to load the database class while being wp-content/wp-db.php aware
+
+/**#@+
+ * These three defines are required to allow us to use require_wp_db() to load
+ * the database class while being wp-content/db.php aware.
+ * @ignore
+ */
 define('ABSPATH', dirname(dirname(__FILE__)).'/');
 define('WPINC', 'wp-includes');
 define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
+/**#@-*/
 
 require_once('../wp-includes/compat.php');
 require_once('../wp-includes/functions.php');
@@ -22,7 +43,7 @@ if (file_exists('../wp-config.php'))
 	wp_die("<p>ファイル 'wp-config.php' は既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
 
 // Check if wp-config.php exists above the root directory
-if (file_exists('../../wp-config.php'))
+if (file_exists('../../wp-config.php') && ! file_exists('../../wp-load.php'))
 	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。 このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
 
 if (isset($_GET['step']))
@@ -30,7 +51,15 @@ if (isset($_GET['step']))
 else
 	$step = 0;
 
-function display_header(){
+/**
+ * Display setup wp-config.php file header.
+ *
+ * @ignore
+ * @since 2.3.0
+ * @package WordPress
+ * @subpackage Installer_WP_Config
+ */
+function display_header() {
 	header( 'Content-Type: text/html; charset=utf-8' );
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -38,7 +67,7 @@ function display_header(){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>WordPress &rsaquo; セットアップ設定ファイル</title>
-<link rel="stylesheet" href="<?php echo $admin_dir; ?>css/install.css" type="text/css" />
+<link rel="stylesheet" href="css/install.css" type="text/css" />
 
 </head>
 <body>
@@ -60,7 +89,7 @@ switch($step) {
 	<li>テーブル接頭辞 (1 つのデータベースに複数の WordPress を構築する場合) </li>
 </ol>
 <p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。この機能は設定ファイルにデータベース情報を記入するだけです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存します。</strong></p>
-<p>これらのデータベース情報はインターネットサービスプロバイダーが提供しています。データベース情報がわからない場合、作業を続行する前にプロバイダーと連絡を取る必要があります。すべての準備が整っているなら&hellip;</p>
+<p>これらのデータベース情報はホスティング先から提供されます。データベース情報がわからない場合、作業を続行する前にホスティング先と連絡を取ってください。すべての準備が整っているなら&hellip;</p>
 
 <p class="step"><a href="setup-config.php?step=1" class="button">次に進みましょう !</a></p>
 <?php
@@ -112,10 +141,14 @@ switch($step) {
 	if (empty($prefix)) $prefix = 'wp_';
 
 	// Test the db connection.
+	/**#@+
+	 * @ignore
+	 */
 	define('DB_NAME', $dbname);
 	define('DB_USER', $uname);
 	define('DB_PASSWORD', $passwrd);
 	define('DB_HOST', $dbhost);
+	/**#@-*/
 
 	// We'll fail here if the values are no good.
 	require_wp_db();

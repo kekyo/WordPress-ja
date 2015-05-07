@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.6\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2008-08-15 21:16+0900\n"
+"POT-Creation-Date: 2008-12-11 09:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "Archive for %s|Daily archive page"
 msgstr ""
 
-#: archive.php:13 comments.php:37 index.php:11
+#: archive.php:13 index.php:11
 msgid "F jS, Y"
 msgstr ""
 
@@ -111,8 +111,22 @@ msgstr ""
 msgid "Comments Closed"
 msgstr ""
 
-#: archive.php:52 index.php:29
-msgid "Not Found"
+#: archive.php:51
+#, php-format
+msgid "Sorry, but there aren't any posts in the %s category yet."
+msgstr ""
+
+#: archive.php:53
+msgid "Sorry, but there aren't any posts with this date."
+msgstr ""
+
+#: archive.php:56
+#, php-format
+msgid "Sorry, but there aren't any posts by %s yet."
+msgstr ""
+
+#: archive.php:58
+msgid "No posts found."
 msgstr ""
 
 #: archives.php:13
@@ -123,6 +137,307 @@ msgstr ""
 msgid "Archives by Subject:"
 msgstr ""
 
+#: comments-popup.php:6
+#, php-format
+msgid "%1$s - Comments on %2$s"
+msgstr ""
+
+#: comments-popup.php:26
+msgid "Comments"
+msgstr ""
+
+#: comments-popup.php:28
+msgid ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on "
+"this post."
+msgstr ""
+
+#: comments-popup.php:31
+#, php-format
+msgid ""
+"The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this "
+"entry is: <em>%s</em>"
+msgstr ""
+
+#: comments-popup.php:49
+msgid "Comment"
+msgstr ""
+
+#: comments-popup.php:49
+msgid "Trackback"
+msgstr ""
+
+#: comments-popup.php:49
+msgid "Pingback"
+msgstr ""
+
+#: comments-popup.php:49
+#, php-format
+msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
+msgstr ""
+
+#: comments-popup.php:55
+msgid "No comments yet."
+msgstr ""
+
+#: comments-popup.php:59
+msgid "Leave a comment"
+msgstr ""
+
+#: comments-popup.php:60
+#, php-format
+msgid ""
+"Line and paragraph breaks automatic, e-mail address never displayed, "
+"<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>%"
+"s</code>"
+msgstr ""
+
+#: comments-popup.php:64
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+
+#: comments-popup.php:68 comments.php:67
+msgid "Name"
+msgstr ""
+
+#: comments-popup.php:73
+msgid "E-mail"
+msgstr ""
+
+#: comments-popup.php:78
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr ""
+
+#: comments-popup.php:83
+msgid "Your Comment"
+msgstr ""
+
+#: comments-popup.php:91
+msgid "Say It!"
+msgstr ""
+
+#: comments-popup.php:96
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: comments-popup.php:101
+msgid "Close this window."
+msgstr ""
+
+#: comments-popup.php:107 image.php:58 single.php:58
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: comments-popup.php:111
+#, php-format
+msgid ""
+"Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art "
+"semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgstr ""
+
+#: comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:15
+msgid "No Responses"
+msgstr ""
+
+#: comments.php:15
+msgid "One Response"
+msgstr ""
+
+#: comments.php:15
+msgid "% Responses"
+msgstr ""
+
+#: comments.php:15
+#, php-format
+msgid "to &#8220;%s&#8221;"
+msgstr ""
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:48
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:48
+#, php-format
+msgid "Leave a Reply for %s"
+msgstr ""
+
+#: comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:62
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr ""
+
+#: comments.php:62
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:62
+msgid "Log out &raquo;"
+msgstr ""
+
+#: comments.php:67 comments.php:70
+msgid "(required)"
+msgstr ""
+
+#: comments.php:70
+msgid "Mail (will not be published)"
+msgstr ""
+
+#: comments.php:73
+msgid "Website"
+msgstr ""
+
+#: comments.php:77
+#, php-format
+msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+msgstr ""
+
+#: comments.php:81
+msgid "Submit Comment"
+msgstr ""
+
+#: footer.php:6
+#, php-format
+msgid "%1$s is proudly powered by %2$s"
+msgstr ""
+
+#: footer.php:8
+#, php-format
+msgid "%1$s and %2$s."
+msgstr ""
+
+#: footer.php:8
+msgid "Entries (RSS)"
+msgstr ""
+
+#: footer.php:8
+msgid "Comments (RSS)"
+msgstr ""
+
+#: footer.php:9
+#, php-format
+msgid "%d queries. %s seconds."
+msgstr ""
+
+#: functions.php:149
+msgid "Customize Header"
+msgstr ""
+
+#: functions.php:149
+msgid "Header Image and Color"
+msgstr ""
+
+#: functions.php:162
+msgid "Close Color Picker"
+msgstr ""
+
+#: functions.php:359
+msgid "Options saved."
+msgstr ""
+
+#: functions.php:375 functions.php:382
+msgid "Save"
+msgstr ""
+
+#: functions.php:376
+msgid "Font Color:"
+msgstr ""
+
+#: functions.php:376
+#, php-format
+msgid "Any CSS color (%s or %s or %s)"
+msgstr ""
+
+#: functions.php:377
+msgid "Upper Color:"
+msgstr ""
+
+#: functions.php:377 functions.php:378
+#, php-format
+msgid "HEX only (%s or %s)"
+msgstr ""
+
+#: functions.php:378
+msgid "Lower Color:"
+msgstr ""
+
+#: functions.php:380
+msgid "Toggle Text"
+msgstr ""
+
+#: functions.php:381
+msgid "Use Defaults"
+msgstr ""
+
+#: functions.php:390
+msgid "Font Color"
+msgstr ""
+
+#: functions.php:391
+msgid "Upper Color"
+msgstr ""
+
+#: functions.php:392
+msgid "Lower Color"
+msgstr ""
+
+#: functions.php:393
+msgid "Revert"
+msgstr ""
+
+#: functions.php:394
+msgid "Advanced"
+msgstr ""
+
+#: functions.php:401
+msgid "Update Header &raquo;"
+msgstr ""
+
+#: functions.php:407
+msgid "Font Color (CSS):"
+msgstr ""
+
+#: functions.php:408
+msgid "Upper Color (HEX):"
+msgstr ""
+
+#: functions.php:409
+msgid "Lower Color (HEX):"
+msgstr ""
+
+#: functions.php:410
+msgid "Select Default Colors"
+msgstr ""
+
+#: functions.php:411
+msgid "Toggle Text Display"
+msgstr ""
+
+#: header.php:10
+#, php-format
+msgid "%s RSS Feed"
+msgstr ""
+
+#: header.php:11
+#, php-format
+msgid "%s Atom Feed"
+msgstr ""
+
 #: image.php:13 index.php:14 single.php:16
 msgid "Read the rest of this entry &raquo;"
 msgstr ""
@@ -131,9 +446,9 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: single.php:27
+#: image.php:25
 #, php-format
-msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
+msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
 msgstr ""
 
 #: image.php:27 single.php:28
@@ -171,327 +486,8 @@ msgstr ""
 msgid "Edit this entry."
 msgstr ""
 
-#: comments.php:9
-msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-
-#: comments.php:23
-msgid "No Responses"
-msgstr ""
-
-#: comments.php:23
-msgid "One Response"
-msgstr ""
-
-#: comments.php:23
-msgid "% Responses"
-msgstr ""
-
-#: comments.php:23
-#, php-format
-msgid "to &#8220;%s&#8221;"
-msgstr ""
-
-#: comments.php:31
-#, php-format
-msgid "<cite>%s</cite> Says:"
-msgstr ""
-
-#: comments.php:33
-msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: comments.php:37
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: comments.php:37
-msgid "edit"
-msgstr ""
-
-#: comments.php:59
-msgid "Comments are closed."
-msgstr ""
-
-#: comments.php:67
-msgid "Leave a Reply"
-msgstr ""
-
-#: comments.php:70
-#, php-format
-msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-
-#: comments.php:77
-#, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
-msgstr ""
-
-#: comments.php:77
-msgid "Log out of this account"
-msgstr ""
-
-#: comments.php:77
-msgid "Log out &raquo;"
-msgstr ""
-
-#: comments.php:82 comments-popup.php:64
-msgid "Name"
-msgstr ""
-
-#: comments.php:82 comments.php:85
-msgid "(required)"
-msgstr ""
-
-#: comments.php:85
-msgid "Mail (will not be published)"
-msgstr ""
-
-#: comments.php:88
-msgid "Website"
-msgstr ""
-
-#: comments.php:92
-#, php-format
-msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
-msgstr ""
-
-#: comments.php:96
-msgid "Submit Comment"
-msgstr ""
-
-#: comments-popup.php:9
-#, php-format
-msgid "%1$s - Comments on %2$s"
-msgstr ""
-
-#: comments-popup.php:22
-msgid "Comments"
-msgstr ""
-
-#: comments-popup.php:24
-msgid ""
-"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on "
-"this post."
-msgstr ""
-
-#: comments-popup.php:27
-#, php-format
-msgid ""
-"The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this "
-"entry is: <em>%s</em>"
-msgstr ""
-
-#: comments-popup.php:45
-msgid "Comment"
-msgstr ""
-
-#: comments-popup.php:45
-msgid "Trackback"
-msgstr ""
-
-#: comments-popup.php:45
-msgid "Pingback"
-msgstr ""
-
-#: comments-popup.php:45
-#, php-format
-msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
-msgstr ""
-
-#: comments-popup.php:51
-msgid "No comments yet."
-msgstr ""
-
-#: comments-popup.php:55
-msgid "Leave a comment"
-msgstr ""
-
-#: comments-popup.php:56
-#, php-format
-msgid ""
-"Line and paragraph breaks automatic, e-mail address never displayed, "
-"<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>%"
-"s</code>"
-msgstr ""
-
-#: comments-popup.php:60
-#, php-format
-msgid ""
-"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
-"this account\">Log out &raquo;</a>"
-msgstr ""
-
-#: comments-popup.php:71
-msgid "E-mail"
-msgstr ""
-
-#: comments-popup.php:76
-msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
-msgstr ""
-
-#: comments-popup.php:81
-msgid "Your Comment"
-msgstr ""
-
-#: comments-popup.php:87
-msgid "Say It!"
-msgstr ""
-
-#: comments-popup.php:92
-msgid "Sorry, the comment form is closed at this time."
-msgstr ""
-
-#: comments-popup.php:97
-msgid "Close this window."
-msgstr ""
-
-#: comments-popup.php:105
-#, php-format
-msgid ""
-"Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art "
-"semantic personal publishing platform\"><strong>WordPress</strong></a>"
-msgstr ""
-
-#: footer.php:6
-#, php-format
-msgid "%1$s is proudly powered by %2$s"
-msgstr ""
-
-#: footer.php:8
-#, php-format
-msgid "%1$s and %2$s."
-msgstr ""
-
-#: footer.php:8
-msgid "Entries (RSS)"
-msgstr ""
-
-#: footer.php:8
-msgid "Comments (RSS)"
-msgstr ""
-
-#: footer.php:9
-#, php-format
-msgid "%d queries. %s seconds."
-msgstr ""
-
-#: functions.php:149
-msgid "Customize Header"
-msgstr ""
-
-#: functions.php:149 functions.php:363
-msgid "Header Image and Color"
-msgstr ""
-
-#: functions.php:162
-msgid "Close Color Picker"
-msgstr ""
-
-#: functions.php:359
-msgid "Options saved."
-msgstr ""
-
-#: functions.php:376 functions.php:383
-msgid "Save"
-msgstr ""
-
-#: functions.php:377
-msgid "Font Color:"
-msgstr ""
-
-#: functions.php:377
-#, php-format
-msgid "Any CSS color (%s or %s or %s)"
-msgstr ""
-
-#: functions.php:378
-msgid "Upper Color:"
-msgstr ""
-
-#: functions.php:378 functions.php:379
-#, php-format
-msgid "HEX only (%s or %s)"
-msgstr ""
-
-#: functions.php:379
-msgid "Lower Color:"
-msgstr ""
-
-#: functions.php:381
-msgid "Toggle Text"
-msgstr ""
-
-#: functions.php:382
-msgid "Use Defaults"
-msgstr ""
-
-#: functions.php:391
-msgid "Font Color"
-msgstr ""
-
-#: functions.php:392
-msgid "Upper Color"
-msgstr ""
-
-#: functions.php:393
-msgid "Lower Color"
-msgstr ""
-
-#: functions.php:394
-msgid "Revert"
-msgstr ""
-
-#: functions.php:395
-msgid "Advanced"
-msgstr ""
-
-#: functions.php:402
-msgid "Update Header &raquo;"
-msgstr ""
-
-#: functions.php:408
-msgid "Font Color (CSS):"
-msgstr ""
-
-#: functions.php:409
-msgid "Upper Color (HEX):"
-msgstr ""
-
-#: functions.php:410
-msgid "Lower Color (HEX):"
-msgstr ""
-
-#: functions.php:411
-msgid "Select Default Colors"
-msgstr ""
-
-#: functions.php:412
-msgid "Toggle Text Display"
-msgstr ""
-
-#: header.php:9
-msgid "&raquo; Blog Archive"
-msgstr ""
-
-#: header.php:14
-#, php-format
-msgid "%s RSS Feed"
-msgstr ""
-
-#: header.php:15
-#, php-format
-msgid "%s Atom Feed"
-msgstr ""
-
-#: image.php:25
-#, php-format
-msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
-msgstr ""
-
-#: image.php:58 single.php:58
-msgid "Sorry, no posts matched your criteria."
+#: index.php:29
+msgid "Not Found"
 msgstr ""
 
 #: index.php:30
@@ -506,20 +502,20 @@ msgstr ""
 msgid "Read the rest of this page &raquo;"
 msgstr ""
 
-#: searchform.php:2
-msgid "Search for:"
-msgstr ""
-
-#: searchform.php:4
-msgid "Search"
-msgstr ""
-
 #: search.php:7
 msgid "Search Results"
 msgstr ""
 
 #: search.php:33
 msgid "No posts found. Try a different search?"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search"
 msgstr ""
 
 #: sidebar.php:10
@@ -601,6 +597,11 @@ msgstr ""
 #: sidebar.php:61
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: single.php:27
+#, php-format
+msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
 msgstr ""
 
 #: single.php:46

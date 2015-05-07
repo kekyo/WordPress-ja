@@ -1,53 +1,32 @@
 <?php // Do not delete these lines
 	if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 		die ('Please do not load this page directly. Thanks!');
-
-	if (!empty($post->post_password)) { // if there's a password
-		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
-			?>
-
-			<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'kubrick'); ?></p>
-
-			<?php
-			return;
-		}
+	
+	if ( post_password_required() ) { ?>
+		<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.', 'kubrick'); ?></p> 
+	<?php
+		return;
 	}
-
-	/* This variable is for alternating comment background */
-	$oddcomment = 'class="alt" ';
 ?>
 
 <!-- You can start editing here. -->
 
-<?php if ($comments) : ?>
+<?php if ( have_comments() ) : ?>
 	<h3 id="comments"><?php comments_number(__('No Responses', 'kubrick'), __('One Response', 'kubrick'), __('% Responses', 'kubrick'));?> <?php printf(__('to &#8220;%s&#8221;', 'kubrick'), the_title('', '', false)); ?></h3>
 
+	<div class="navigation">
+		<div class="alignleft"><?php previous_comments_link() ?></div>
+		<div class="alignright"><?php next_comments_link() ?></div>
+	</div>
+
 	<ol class="commentlist">
-
-	<?php foreach ($comments as $comment) : ?>
-
-		<li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
-			<?php echo get_avatar( $comment, 32 ); ?>	
-			<?php printf(__('<cite>%s</cite> Says:', 'kubrick'), get_comment_author_link()); ?>
-			<?php if ($comment->comment_approved == '0') : ?>
-			<em><?php _e('Your comment is awaiting moderation.', 'kubrick'); ?></em>
-			<?php endif; ?>
-			<br />
-
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title=""><?php printf(__('%1$s at %2$s', 'kubrick'), get_comment_date(__('F jS, Y', 'kubrick')), get_comment_time()); ?></a> <?php edit_comment_link(__('edit', 'kubrick'),'&nbsp;&nbsp;',''); ?></small>
-
-			<?php comment_text() ?>
-
-		</li>
-
-	<?php
-		/* Changes every other comment to a different class */
-		$oddcomment = ( empty( $oddcomment ) ) ? 'class="alt" ' : '';
-	?>
-
-	<?php endforeach; /* end for each comment */ ?>
-
+	<?php wp_list_comments();?>
 	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"><?php previous_comments_link() ?></div>
+		<div class="alignright"><?php next_comments_link() ?></div>
+	</div>
 
  <?php else : // this is displayed if there are no comments so far ?>
 
@@ -64,7 +43,13 @@
 
 <?php if ('open' == $post->comment_status) : ?>
 
-<h3 id="respond"><?php _e('Leave a Reply', 'kubrick'); ?></h3>
+<div id="respond">
+
+<h3><?php comment_form_title( __('Leave a Reply', 'kubrick'), __('Leave a Reply for %s' , 'kubrick') ); ?></h3>
+
+<div id="cancel-comment-reply"> 
+	<small><?php cancel_comment_reply_link() ?></small>
+</div> 
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'kubrick'), get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode(get_permalink())); ?></p>
@@ -74,7 +59,7 @@
 
 <?php if ( $user_ID ) : ?>
 
-<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="<?php _e('Log out of this account', 'kubrick'); ?>"><?php _e('Log out &raquo;', 'kubrick'); ?></a></p>
+<p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'kubrick'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out of this account', 'kubrick'); ?>"><?php _e('Log out &raquo;', 'kubrick'); ?></a></p>
 
 <?php else : ?>
 
@@ -94,12 +79,13 @@
 <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
 
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'kubrick'); ?>" />
-<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+<?php comment_id_fields(); ?> 
 </p>
 <?php do_action('comment_form', $post->ID); ?>
 
 </form>
 
 <?php endif; // If registration required and not logged in ?>
+</div>
 
 <?php endif; // if you delete this the sky will fall on your head ?>
