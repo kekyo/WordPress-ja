@@ -10,10 +10,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.2 ja\n"
+"Project-Id-Version: 3.2.1 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
 "POT-Creation-Date: 2011-02-23 17:37:08+00:00\n"
-"PO-Revision-Date: 2011-07-09 23:03+0900\n"
+"PO-Revision-Date: 2011-07-13 21:32+0900\n"
 "Last-Translator: odyssey <odysseygate@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"

@@ -24,4 +24,11 @@ $wpmp_conf['patch_wplink_js'] = true;
 $wpmp_conf['patch_word_count_js'] = true;
 $wpmp_conf['patch_sanitize_file_name'] = true;
 $wpmp_conf['patch_bp_create_excerpt'] = false;
-?>
+
+/**
+ * Set the encoding for wp_mail().
+ * Available options are "JIS", "UTF-8" and "auto".
+ * "auto" picks  "JIS" or "UTF-8" automatically.
+ * This option is specific to Japanese.
+ */
+$wpmp_conf['mail_mode'] = 'JIS';

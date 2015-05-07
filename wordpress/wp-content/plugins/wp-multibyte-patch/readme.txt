@@ -1,17 +1,16 @@
 === WP Multibyte Patch ===
-Contributors: Kuraishi (tenpura)
-Tags: multibyte, i18n
-Requires at least: 3.2-RC2
-Tested up to: 3.2
-Stable tag: 1.4.2
+Contributors: tenpura
+Tags: multibyte,i18n,wp-multibyte-patch,Japanese
+Requires at least: 3.2
+Tested up to: 3.2.1
+Stable tag: 1.5
 
-Enhances multibyte string I/O functionality of WordPress.
+Multibyte functionality enhancement for the WordPress Japanese package.
 
 == Description ==
 
-Enhances multibyte string I/O functionality of WordPress.
-
-[日本語の説明を読む](http://eastcoder.com/code/wp-multibyte-patch/)
+Multibyte functionality enhancement for the WordPress Japanese package.
+[日本語の説明を読む](http://eastcoder.com/code/wp-multibyte-patch/ "Documentation in Japanese")
 
 == Installation ==
 

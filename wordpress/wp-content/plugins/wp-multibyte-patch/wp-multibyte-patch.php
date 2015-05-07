@@ -4,7 +4,7 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: Enhances multibyte string I/O functionality of WordPress.
 Author: Kuraishi (tenpura)
-Version: 1.4.2
+Version: 1.5
 Author URI: http://eastcoder.com/
 Text Domain: wp-multibyte-patch
 Domain Path: /languages
@@ -16,6 +16,8 @@ Domain Path: /languages
 */
 
 class multibyte_patch {
+
+	// Do not edit this section. Use wpmp-config.php instead.
 
 	var $conf = array(
 		'excerpt_length' => 55,
@@ -43,7 +45,7 @@ class multibyte_patch {
 	var $has_mbfunctions;
 	var $textdomain = 'wp-multibyte-patch';
 	var $lang_dir = 'languages';
-	var $required_version = '3.2-RC2';
+	var $required_version = '3.2';
 	var $query_based_vars = array();
 
 	function guess_encoding($string, $encoding = '') {
@@ -395,9 +397,23 @@ class multibyte_patch {
 		}
 	}
 
-	function __construct() {
-		global $wpmp_conf;
+	function load_conf() {
+		$wpmp_conf = array();
+
+		if(file_exists(WP_CONTENT_DIR . '/wpmp-config.php'))
+			require_once(WP_CONTENT_DIR . '/wpmp-config.php');
+
+		if(is_multisite()) {
+			$blog_id = get_current_blog_id();
+			if(file_exists(WP_CONTENT_DIR . '/wpmp-config-blog-' . $blog_id . '.php'))
+				require_once(WP_CONTENT_DIR . '/wpmp-config-blog-' . $blog_id . '.php');
+		}
+
 		$this->conf = array_merge($this->conf, $wpmp_conf);
+	}
+
+	function __construct() {
+		$this->load_conf();
 
 		$this->blog_encoding = get_option('blog_charset');
 		$this->has_mbfunctions = $this->mbfunctions_exist();
@@ -410,25 +426,14 @@ class multibyte_patch {
 }
 
 if(defined('WP_PLUGIN_URL')) {
-	global $wpmp_conf, $wpmp;
-	$wpmp_conf = array();
-	$wpmp_conf['base_dir'] = dirname(__FILE__);
+	global $wpmp;
 
-	if(file_exists($wpmp_conf['base_dir'] . '/wpmp-config.php'))
-		require_once($wpmp_conf['base_dir'] . '/wpmp-config.php');
-
-	if(file_exists($wpmp_conf['base_dir'] . '/ext/' . get_locale() . '/class.php')) {
-		if(file_exists($wpmp_conf['base_dir'] . '/ext/' . get_locale() . '/config.php'))
-			require_once($wpmp_conf['base_dir'] . '/ext/' . get_locale() . '/config.php');
-
-		require_once($wpmp_conf['base_dir'] . '/ext/' . get_locale() . '/class.php');
+	if(file_exists(dirname(__FILE__) . '/ext/' . get_locale() . '/class.php')) {
+		require_once(dirname(__FILE__) . '/ext/' . get_locale() . '/class.php');
 		$wpmp = new multibyte_patch_ext();
 	}
-	elseif(file_exists($wpmp_conf['base_dir'] . '/ext/default/class.php')) {
-		if(file_exists($wpmp_conf['base_dir'] . '/ext/default/config.php'))
-			require_once($wpmp_conf['base_dir'] . '/ext/default/config.php');
-
-		require_once($wpmp_conf['base_dir'] . '/ext/default/class.php');
+	elseif(file_exists(dirname(__FILE__) . '/ext/default/class.php')) {
+		require_once(dirname(__FILE__) . '/ext/default/class.php');
 		$wpmp = new multibyte_patch_ext();
 	}
 	else

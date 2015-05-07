@@ -3,7 +3,7 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.4.2
+Plugin Version: 1.5
 Description: Japanese Locale Extension.
 Author: Kuraishi (tenpura)
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
@@ -154,8 +154,8 @@ class multibyte_patch_ext extends multibyte_patch {
 	}
 
 	function __construct() {
-		// auto, jis, UTF-8
-		$this->conf['mail_mode'] = 'jis';
+		// auto, JIS, UTF-8
+		$this->conf['mail_mode'] = 'JIS';
 		// Treats any post as a multibyte text.
 		$this->conf['ascii_threshold'] = 100;
 		$this->debug_suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '.dev' : '';
