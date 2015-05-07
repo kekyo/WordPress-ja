@@ -446,6 +446,8 @@ if ( ! CUSTOM_TAGS ) {
 		'nsub',    'sube',   'supe',    'oplus',  'otimes', 'perp',
 		'sdot',    'lceil',  'rceil',   'lfloor', 'rfloor', 'lang',
 		'rang',    'loz',    'spades',  'clubs',  'hearts', 'diams',
+		'sup1',    'sup2',   'sup3',    'frac14', 'frac12', 'frac34',
+		'there4',
 	);
 
 	$allowedposttags = array_map( '_wp_add_global_attributes', $allowedposttags );
@@ -1119,7 +1121,7 @@ function wp_kses_normalize_entities($string) {
 
 	# Change back the allowed entities in our entity whitelist
 
-	$string = preg_replace_callback('/&amp;([A-Za-z]{2,8});/', 'wp_kses_named_entities', $string);
+	$string = preg_replace_callback('/&amp;([A-Za-z]{2,8}[0-9]{0,2});/', 'wp_kses_named_entities', $string);
 	$string = preg_replace_callback('/&amp;#(0*[0-9]{1,7});/', 'wp_kses_normalize_entities2', $string);
 	$string = preg_replace_callback('/&amp;#[Xx](0*[0-9A-Fa-f]{1,6});/', 'wp_kses_normalize_entities3', $string);
 
@@ -1405,7 +1407,7 @@ function safecss_filter_attr( $css, $deprecated = '' ) {
 	$css = wp_kses_no_null($css);
 	$css = str_replace(array("\n","\r","\t"), '', $css);
 
-	if ( preg_match( '%[\\\\(&=}]|/\*%', $css ) ) // remove any inline css containing \ ( & } = or comments
+	if ( preg_match( '%[\\(&=}]|/\*%', $css ) ) // remove any inline css containing \ ( & } = or comments
 		return '';
 
 	$css_array = explode( ';', trim( $css ) );
