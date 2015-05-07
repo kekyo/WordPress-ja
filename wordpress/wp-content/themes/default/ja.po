@@ -1,7 +1,7 @@
 # WordPress 用日本語リソース (UTF-8) 
 # Japanese (UTF-8) translation for WordPress
 #
-# Copyright (c) 2005-2008
+# Copyright (c) 2005-2009
 # このファイルは WordPress 本体と同じライセンスのもと配布されています。
 # This file is distributed under the same license as the WordPress package.
 #
@@ -14,10 +14,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wordpress 2.7 beta3 ja\n"
+"Project-Id-Version: wordpress 2.7.1 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2008-08-15 21:16+0900\n"
-"PO-Revision-Date: 2008-11-17 21:04+0900\n"
+"POT-Creation-Date: 2008-12-11 09:48+0200\n"
+"PO-Revision-Date: 2009-02-11 15:27+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -165,12 +165,12 @@ msgstr "%s カテゴリーに投稿はありません。"
 msgid "Sorry, but there aren't any posts with this date."
 msgstr "この日付に投稿はありません。"
 
-#: archive.php:55
+#: archive.php:56
 #, php-format
 msgid "Sorry, but there aren't any posts by %s yet."
 msgstr "%s からの投稿はありません。"
 
-#: archive.php:57
+#: archive.php:58
 msgid "No posts found."
 msgstr "投稿は見つかりませんでした。"
 
@@ -182,89 +182,95 @@ msgstr "月別のアーカイブ:"
 msgid "Archives by Subject:"
 msgstr "カテゴリー別アーカイブ:"
 
-#: comments-popup.php:9
+#: comments-popup.php:6
 #, php-format
 msgid "%1$s - Comments on %2$s"
 msgstr "%1$s - %2$s へのコメント"
 
-#: comments-popup.php:22
+#: comments-popup.php:26
 msgid "Comments"
 msgstr "コメント"
 
-#: comments-popup.php:24
+#: comments-popup.php:28
 msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on this post."
 msgstr "このコメント欄の <abbr title=\"Really Simple Syndication\">RSS</abbr> フィード"
 
-#: comments-popup.php:27
+#: comments-popup.php:31
 #, php-format
 msgid "The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this entry is: <em>%s</em>"
 msgstr "この投稿へのトラックバック <acronym title=\"Universal Resource Locator\">URL</acronym>: <em>%s</em>"
 
-#: comments-popup.php:45
+#: comments-popup.php:49
 msgid "Comment"
 msgstr "コメント"
 
-#: comments-popup.php:45
+#: comments-popup.php:49
 msgid "Trackback"
 msgstr "トラックバック"
 
-#: comments-popup.php:45
+#: comments-popup.php:49
 msgid "Pingback"
 msgstr "ピンバック"
 
-#: comments-popup.php:45
+#: comments-popup.php:49
 #, php-format
 msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
 msgstr "&#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>: %1$s より"
 
-#: comments-popup.php:51
+#: comments-popup.php:55
 msgid "No comments yet."
 msgstr "コメントはまだありません。"
 
-#: comments-popup.php:55
+#: comments-popup.php:59
 msgid "Leave a comment"
 msgstr "コメントをどうぞ"
 
-#: comments-popup.php:56
+#: comments-popup.php:60
 #, php-format
 msgid "Line and paragraph breaks automatic, e-mail address never displayed, <acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>%s</code>"
 msgstr "改行と段落タグは自動で挿入されます。メールアドレスは表示されません。利用可能な <acronym title=\"Hypertext Markup Language\">HTML</acronym> タグ: <code>%s</code>"
 
-#: comments-popup.php:60
+#: comments-popup.php:64
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウト &raquo;</a>"
 
-#: comments-popup.php:64
-#: comments.php:62
+#: comments-popup.php:68
+#: comments.php:67
 msgid "Name"
 msgstr "お名前"
 
-#: comments-popup.php:71
+#: comments-popup.php:73
 msgid "E-mail"
 msgstr "メールアドレス"
 
-#: comments-popup.php:76
+#: comments-popup.php:78
 msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
 msgstr "<abbr title=\"Universal Resource Locator\">URL</abbr>"
 
-#: comments-popup.php:81
+#: comments-popup.php:83
 msgid "Your Comment"
 msgstr "コメント"
 
-#: comments-popup.php:87
+#: comments-popup.php:91
 msgid "Say It!"
 msgstr "送信する !"
 
-#: comments-popup.php:92
+#: comments-popup.php:96
 msgid "Sorry, the comment form is closed at this time."
 msgstr "コメントフォームは現在閉鎖中です。"
 
-#: comments-popup.php:97
+#: comments-popup.php:101
 msgid "Close this window."
 msgstr "このウインドウを閉じる。"
 
-#: comments-popup.php:105
+#: comments-popup.php:107
+#: image.php:58
+#: single.php:58
+msgid "Sorry, no posts matched your criteria."
+msgstr "該当する投稿は見つかりませんでした。"
+
+#: comments-popup.php:111
 #, php-format
 msgid "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
 msgstr "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
@@ -290,56 +296,56 @@ msgstr "コメント / トラックバック % 件"
 msgid "to &#8220;%s&#8221;"
 msgstr "<!-- to &#8220;%s&#8221; -->"
 
-#: comments.php:33
+#: comments.php:38
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: comments.php:43
+#: comments.php:48
 msgid "Leave a Reply"
 msgstr "コメントをどうぞ"
 
-#: comments.php:43
+#: comments.php:48
 #, php-format
 msgid "Leave a Reply for %s"
 msgstr "%s にコメントする"
 
-#: comments.php:50
+#: comments.php:55
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "コメントを投稿するには<a href=\"%s\">ログイン</a>してください。"
 
-#: comments.php:57
+#: comments.php:62
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。"
 
-#: comments.php:57
+#: comments.php:62
 msgid "Log out of this account"
 msgstr "このアカウントからログアウト"
 
-#: comments.php:57
+#: comments.php:62
 msgid "Log out &raquo;"
 msgstr "ログアウト &raquo;"
 
-#: comments.php:62
-#: comments.php:65
+#: comments.php:67
+#: comments.php:70
 msgid "(required)"
 msgstr " (必須)"
 
-#: comments.php:65
+#: comments.php:70
 msgid "Mail (will not be published)"
 msgstr "メールアドレス (公開されません)"
 
-#: comments.php:68
+#: comments.php:73
 msgid "Website"
 msgstr "ウェブサイト"
 
-#: comments.php:72
+#: comments.php:77
 #, php-format
 msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
 msgstr "<strong>XHTML:</strong> 次のタグを使用できます: <code>%s</code>"
 
-#: comments.php:76
+#: comments.php:81
 msgid "Submit Comment"
 msgstr "コメント送信"
 
@@ -462,16 +468,12 @@ msgstr "デフォルト設定に戻す"
 msgid "Toggle Text Display"
 msgstr "テキスト表示の切替え"
 
-#: header.php:9
-msgid "&raquo; Blog Archive"
-msgstr "&raquo; ブログアーカイブ"
-
-#: header.php:14
+#: header.php:10
 #, php-format
 msgid "%s RSS Feed"
 msgstr "%s RSS フィード"
 
-#: header.php:15
+#: header.php:11
 #, php-format
 msgid "%s Atom Feed"
 msgstr "%s Atom フィード"
@@ -525,11 +527,6 @@ msgstr "現在コメント、トラックバックともに受け付けており
 #: page.php:16
 msgid "Edit this entry."
 msgstr "この投稿を編集する。"
-
-#: image.php:58
-#: single.php:58
-msgid "Sorry, no posts matched your criteria."
-msgstr "該当する投稿は見つかりませんでした。"
 
 #: index.php:29
 msgid "Not Found"

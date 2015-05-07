@@ -42,7 +42,7 @@ define('DB_COLLATE', '');
  * 認証用ユニークキー
  *
  * それぞれを異なるユニーク (一意) な文字列に変更してください。
- * {@link http://api.wordpress.org/secret-key/1.1/ WordPress.org の秘密鍵サービス}
+ * {@link https://api.wordpress.org/secret-key/1.1/ WordPress.org の秘密鍵サービス}
  * で自動生成することもできます。
  *
  * @since 2.6.0

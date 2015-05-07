@@ -15,5 +15,5 @@ $wpmp_conf['patch_wp_trim_excerpt'] = true;
 $wpmp_conf['patch_get_comment_excerpt'] = true;
 $wpmp_conf['patch_process_search_terms'] = true;
 $wpmp_conf['patch_admin_custom_css'] = true;
-
+$wpmp_conf['patch_word_count_js'] = true;
 ?>
