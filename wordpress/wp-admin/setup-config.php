@@ -17,10 +17,14 @@
 define('WP_INSTALLING', true);
 
 /**
+ * We are blissfully unaware of anything.
+ */
+define('WP_SETUP_CONFIG', true);
+
+/**
  * Disable error reporting
  *
- * Set this to error_reporting( E_ALL ) or error_reporting( E_ALL | E_STRICT ) f
-or debugging
+ * Set this to error_reporting( E_ALL ) or error_reporting( E_ALL | E_STRICT ) for debugging
  */
 error_reporting(0);
 
@@ -32,11 +36,14 @@ error_reporting(0);
 define('ABSPATH', dirname(dirname(__FILE__)).'/');
 define('WPINC', 'wp-includes');
 define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
+define('WP_DEBUG', false);
 /**#@-*/
 
+require_once(ABSPATH . WPINC . '/load.php');
 require_once(ABSPATH . WPINC . '/compat.php');
 require_once(ABSPATH . WPINC . '/functions.php');
 require_once(ABSPATH . WPINC . '/classes.php');
+require_once(ABSPATH . WPINC . '/version.php');
 
 if (!file_exists(ABSPATH . 'wp-config-sample.php'))
 	wp_die('wp-config-sample.php が見つかりません。WordPress インストールファイルから再アップロードしてください。');
@@ -49,13 +56,13 @@ if (file_exists(ABSPATH . 'wp-config.php'))
 
 // Check if wp-config.php exists above the root directory but is not part of another install
 if (file_exists(ABSPATH . '../wp-config.php') && ! file_exists(ABSPATH . '../wp-settings.php'))
-	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。 このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
+	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
 
-if ( version_compare( '4.3', phpversion(), '>' ) )
-	wp_die( sprintf( /*WP_I18N_OLD_PHP*/'サーバーの PHP のバージョンは %s です。WordPress は 4.3 以上でご利用になれます。'/*/WP_I18N_OLD_PHP*/, phpversion() ) );
+if ( version_compare( $required_php_version, phpversion(), '>' ) )
+	wp_die( sprintf( /*WP_I18N_OLD_PHP*/'サーバーの PHP のバージョンは %1$s です。WordPress は %2$s 以上でご利用になれます。'/*/WP_I18N_OLD_PHP*/, phpversion(), $required_php_version ) );
 
 if ( !extension_loaded('mysql') && !file_exists(ABSPATH . 'wp-content/db.php') )
-	wp_die( /*WP_I18N_OLD_MYSQL*/'お使いのサーバーの PHP では MySQL 拡張を利用できないようです。'/*/WP_I18N_OLD_MYSQL*/ );
+	wp_die( /*WP_I18N_OLD_MYSQL*/'お使いのサーバーの PHP では WordPress に必要な MySQL 拡張を利用できないようです。'/*/WP_I18N_OLD_MYSQL*/ );
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];
@@ -97,12 +104,12 @@ switch($step) {
 	<li>データベースのユーザー名</li>
 	<li>データベースのパスワード</li>
 	<li>データベースのホスト名</li>
-	<li>テーブル接頭辞 (1 つのデータベースに複数の WordPress を構築する場合) </li>
+	<li>テーブル接頭辞 (1つのデータベースに複数の WordPress を構築する場合)</li>
 </ol>
-<p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。この機能は設定ファイルにデータベース情報を記入するだけです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存します。</strong></p>
+<p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。この機能は設定ファイルにデータベース情報を記入するだけです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存してもかまいません。</strong></p>
 <p>これらのデータベース情報はホスティング先から提供されます。データベース情報がわからない場合、作業を続行する前にホスティング先と連絡を取ってください。すべての準備が整っているなら&hellip;</p>
 
-<p class="step"><a href="setup-config.php?step=1" class="button">次に進みましょう !</a></p>
+<p class="step"><a href="setup-config.php?step=1<?php if ( isset( $_GET['noapi'] ) ) echo '&amp;noapi'; ?>" class="button">次に進みましょう !</a></p>
 <?php
 	break;
 
@@ -110,7 +117,7 @@ switch($step) {
 		display_header();
 	?>
 <form method="post" action="setup-config.php?step=2">
-	<p>以下にデータベース接続のためのデータを入力してください。これらのデータについて分からない点があれば、ホストに連絡を取ってください。</p>
+	<p>以下にデータベース接続のための詳細を入力してください。これらのデータについて分からない点があれば、ホストに連絡を取ってください。</p>
 	<table class="form-table">
 		<tr>
 			<th scope="row"><label for="dbname">データベース名</label></th>
@@ -130,14 +137,15 @@ switch($step) {
 		<tr>
 			<th scope="row"><label for="dbhost">データベースのホスト名</label></th>
 			<td><input name="dbhost" id="dbhost" type="text" size="25" value="localhost" /></td>
-			<td>この値は 99% 変える必要はないでしょう。</td>
+			<td><code>localhost</code> のままで動かない場合、ウェブホストからこの情報を得る必要があります。</td>
 		</tr>
 		<tr>
 			<th scope="row"><label for="prefix">テーブル接頭辞</label></th>
 			<td><input name="prefix" id="prefix" type="text" id="prefix" value="wp_" size="25" /></td>
-			<td>1 つのデータベースで複数の WordPress を動かすときに変更します。</td>
+			<td>1つのデータベースで複数の WordPress を動かすときに変更します。</td>
 		</tr>
 	</table>
+	<?php if ( isset( $_GET['noapi'] ) ) { ?><input name="noapi" type="hidden" value="true" /><?php } ?>
 	<p class="step"><input name="submit" type="submit" value="作成する" class="button" /></p>
 </form>
 <?php
@@ -149,7 +157,12 @@ switch($step) {
 	$passwrd = trim($_POST['pwd']);
 	$dbhost  = trim($_POST['dbhost']);
 	$prefix  = trim($_POST['prefix']);
-	if (empty($prefix)) $prefix = 'wp_';
+	if ( empty($prefix) )
+		$prefix = 'wp_';
+
+	// Validate $prefix: it can only contain letters, numbers and underscores
+	if ( preg_match( '|[^a-z0-9_]|i', $prefix ) )
+		wp_die( /*WP_I18N_BAD_PREFIX*/'<strong>エラー</strong>: "Table_Prefix" には半角英数字と下線のみしか使えません。'/*/WP_I18N_BAD_PREFIX*/ );
 
 	// Test the db connection.
 	/**#@+
@@ -166,16 +179,49 @@ switch($step) {
 	if ( !empty($wpdb->error) )
 		wp_die($wpdb->error->get_error_message());
 
+	// Fetch or generate keys and salts.
+	$no_api = isset( $_POST['noapi'] );
+	require_once( ABSPATH . WPINC . '/plugin.php' );
+	require_once( ABSPATH . WPINC . '/l10n.php' );
+	require_once( ABSPATH . WPINC . '/pomo/translations.php' );
+	if ( ! $no_api ) {
+		require_once( ABSPATH . WPINC . '/class-http.php' );
+		require_once( ABSPATH . WPINC . '/http.php' );
+		wp_fix_server_vars();
+		/**#@+
+		 * @ignore
+		 */
+		function get_bloginfo() {
+			return ( ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . str_replace( $_SERVER['PHP_SELF'], '/wp-admin/setup-config.php', '' ) );
+		}
+		/**#@-*/
+		$secret_keys = wp_remote_get( 'https://api.wordpress.org/secret-key/1.1/salt/' );
+	}
+
+	if ( $no_api || is_wp_error( $secret_keys ) ) {
+		$secret_keys = array();
+		require_once( ABSPATH . WPINC . '/pluggable.php' );
+		for ( $i = 0; $i < 8; $i++ ) {
+			$secret_keys[] = wp_generate_password( 64, true, true );
+		}
+	} else {
+		$secret_keys = explode( "\n", wp_remote_retrieve_body( $secret_keys ) );
+		foreach ( $secret_keys as $k => $v ) {
+			$secret_keys[$k] = substr( $v, 28, 64 );
+		}
+	}
+	$key = 0;
+
 	foreach ($configFile as $line_num => $line) {
 		switch (substr($line,0,16)) {
 			case "define('DB_NAME'":
-				$configFile[$line_num] = str_replace("putyourdbnamehere", $dbname, $line);
+				$configFile[$line_num] = str_replace("database_name_here", $dbname, $line);
 				break;
 			case "define('DB_USER'":
-				$configFile[$line_num] = str_replace("'usernamehere'", "'$uname'", $line);
+				$configFile[$line_num] = str_replace("'username_here'", "'$uname'", $line);
 				break;
 			case "define('DB_PASSW":
-				$configFile[$line_num] = str_replace("'yourpasswordhere'", "'$passwrd'", $line);
+				$configFile[$line_num] = str_replace("'password_here'", "'$passwrd'", $line);
 				break;
 			case "define('DB_HOST'":
 				$configFile[$line_num] = str_replace("localhost", $dbhost, $line);
@@ -183,16 +229,26 @@ switch($step) {
 			case '$table_prefix  =':
 				$configFile[$line_num] = str_replace('wp_', $prefix, $line);
 				break;
+			case "define('AUTH_KEY":
+			case "define('SECURE_A":
+			case "define('LOGGED_I":
+			case "define('NONCE_KE":
+			case "define('AUTH_SAL":
+			case "define('SECURE_A":
+			case "define('LOGGED_I":
+			case "define('NONCE_SA":
+				$configFile[$line_num] = str_replace('put your unique phrase here', $secret_keys[$key++], $line );
+				break;
 		}
 	}
 	if ( ! is_writable(ABSPATH) ) :
 		display_header();
 ?>
-<p>残念ですが、<code>wp-config.php</code> ファイルへの書き込みができません。</p>
-<p><code>wp-config.php</code> を手動で作成して、次のテキストをそこに貼り付けしてください。</p>
-<textarea cols="90" rows="15"><?php
+<p><code>wp-config.php</code> ファイルへの書き込みができません。</p>
+<p><code>wp-config.php</code> を手動で作成して、次のテキストをそこに貼り付けてください。</p>
+<textarea cols="98" rows="15" class="code"><?php
 		foreach( $configFile as $line ) {
-			echo htmlentities($line);
+			echo htmlentities($line, ENT_COMPAT, 'UTF-8');
 		}
 ?></textarea>
 <p>それが済んだら、「インストール実行」をクリックしてください。</p>
@@ -209,7 +265,7 @@ switch($step) {
 ?>
 <p>この部分のインストールは無事完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているなら&hellip;</p>
 
-<p class="step"><a href="install.php" class="button">インストールを実行しましょう !</a></p>
+<p class="step"><a href="install.php" class="button">インストール実行</a></p>
 <?php
 	endif;
 	break;

@@ -1,7 +1,7 @@
 
-WP Multibyte Patch 1.1.6
+WP Multibyte Patch 1.2
 
-動作対象: WordPress 2.6 以上
+動作対象: WordPress 3.0 以上
 プラグイン URI: http://eastcoder.com/code/wp-multibyte-patch/
 作者: tenpura (Email: 210pura at gmail dot com)
 

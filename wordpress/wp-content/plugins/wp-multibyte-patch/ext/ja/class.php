@@ -3,15 +3,15 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.1.6
+Plugin Version: 1.2
 Description: Japanese Locale Extension.
 Author: tenpura
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
 */
 
 /*
-    Copyright (C) 2009 tenpura (Email: 210pura at gmail dot com)
-           This program is licensed under the GNU GPL.
+    Copyright (C) 2010 tenpura (Email: 210pura at gmail dot com)
+           This program is licensed under the GNU GPL Version 2.
 */
 
 if(class_exists('multibyte_patch')) :
@@ -109,26 +109,16 @@ class multibyte_patch_ext extends multibyte_patch {
 	}
 
 	function admin_custom_css() {
-	    $url =  dirname(WP_PLUGIN_URL . '/' . plugin_basename(__FILE__)) . '/admin.css';
-
-		if(is_ssl())
-			$url = preg_replace("/^http\:\/\//i", 'https://', $url);
-
-	    echo "\n" . '<link rel="stylesheet" type="text/css" href="' . $url . '" />' . "\n";
+	    echo "\n" . '<link rel="stylesheet" type="text/css" href="' . plugin_dir_url(__FILE__) . 'admin.css' . '" />' . "\n";
 	}
 
 	function word_count_js(&$scripts) {
-		$src =  dirname(WP_PLUGIN_URL . '/' . plugin_basename(__FILE__)) . '/word-count.js';
-
-		if(is_ssl())
-			$src = preg_replace("/^http\:\/\//i", 'https://', $src);
-
-		$scripts->add('word-count', $src, array('jquery'), '20090422');
+		$scripts->add('word-count', plugin_dir_url(__FILE__) . 'word-count.js', array('jquery'), '20090422');
 	}
 
 	function word_count_js_localize(&$scripts) {
 		$scripts->localize( 'word-count', 'wordCountL10n', array(
-			'count' => '文字数: %d',
+			'count' => __('%d characters', 'wp-multibyte-patch'),
 			'l10n_print_after' => 'try{convertEntities(wordCountL10n);}catch(e){};'
 		));
 	}

@@ -20,9 +20,9 @@
 define( 'ABSPATH', dirname(__FILE__) . '/' );
 
 if ( defined('E_RECOVERABLE_ERROR') )
-	error_reporting(E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR);
+	error_reporting(E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR);
 else
-	error_reporting(E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING);
+	error_reporting(E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING);
 
 if ( file_exists( ABSPATH . 'wp-config.php') ) {
 
@@ -47,7 +47,7 @@ if ( file_exists( ABSPATH . 'wp-config.php') ) {
 	require_once( ABSPATH . '/wp-includes/functions.php' );
 	require_once( ABSPATH . '/wp-includes/plugin.php' );
 	$text_direction = /*WP_I18N_TEXT_DIRECTION*/'ltr'/*/WP_I18N_TEXT_DIRECTION*/;
-	wp_die(sprintf(/*WP_I18N_NO_CONFIG*/'ファイルが見つかりません。インストールを開始するには <code>wp-config.php</code> ファイルが必要です。お困りでしたら<a href=\'http://wpdocs.sourceforge.jp/wp-config.php_%%E3%%81%%AE%%E7%%B7%%A8%%E9%%9B%%86\'>「wp-config.php の編集」</a> を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href=\'%ssetup-config.php\' class=\'button\'><code>wp-config.php</code> ファイルを作成する</a>'/*/WP_I18N_NO_CONFIG*/, $path), /*WP_I18N_ERROR_TITLE*/'WordPress &rsaquo; エラー'/*/WP_I18N_ERROR_TITLE*/, array('text_direction' => $text_direction));
+	wp_die(sprintf(/*WP_I18N_NO_CONFIG*/'ファイルが見つかりません。インストールを開始するには <code>wp-config.php</code> ファイルが必要です。お困りでしたら<a href=\'http://wpdocs.sourceforge.jp/wp-config.php_%%E3%%81%%AE%%E7%%B7%%A8%%E9%%9B%%86\'>「wp-config.php の編集」</a> を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href=\'%ssetup-config.php\' class=\'button\'>設定ファイルを作成する</a>'/*/WP_I18N_NO_CONFIG*/, $path), /*WP_I18N_ERROR_TITLE*/'WordPress &rsaquo; エラー'/*/WP_I18N_ERROR_TITLE*/, array('text_direction' => $text_direction));
 
 }
 

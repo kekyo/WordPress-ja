@@ -2,15 +2,17 @@
 /*
 Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
-Description: WP Multibyte Patch は本家版、日本語版 WordPress のマルチバイト文字の取り扱いに関する不具合の累積的修正と強化を行うプラグインです。 <a href="http://eastcoder.com/code/wp-multibyte-patch/">&raquo; 詳しい説明を読む</a>
+Description: Enhances multibyte string I/O functionality of WordPress.
 Author: tenpura
-Version: 1.1.6
+Version: 1.2
 Author URI: http://eastcoder.com/
+Text Domain: wp-multibyte-patch
+Domain Path: /languages
 */
 
 /*
-    Copyright (C) 2009 tenpura (Email: 210pura at gmail dot com)
-           This program is licensed under the GNU GPL.
+    Copyright (C) 2010 tenpura (Email: 210pura at gmail dot com)
+           This program is licensed under the GNU GPL Version 2.
 */
 
 class multibyte_patch {
@@ -33,6 +35,8 @@ class multibyte_patch {
 
 	var $blog_encoding;
 	var $has_mbfunctions;
+	var $textdomain = 'wp-multibyte-patch';
+	var $lang_dir = 'languages';
 
 	function guess_encoding($string, $encoding = '') {
 		$blog_encoding = $this->blog_encoding;
@@ -198,45 +202,47 @@ class multibyte_patch {
 			$text = apply_filters('the_content', $text);
 			$text = str_replace(']]>', ']]&gt;', $text);
 			$text = strip_tags($text);
+			$excerpt_length = apply_filters('excerpt_length', $this->conf['excerpt_length']);
+			$excerpt_mblength = apply_filters('excerpt_mblength', $this->conf['excerpt_mblength']);
 			$excerpt_more = apply_filters('excerpt_more', ' [...]');
 
 			if($this->is_almost_ascii($text, $blog_encoding)) {
-				$words = explode(' ', $text, $this->conf['excerpt_length'] + 1);
+				$words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
 
-				if(count($words) > $this->conf['excerpt_length']) {
+				if ( count($words) > $excerpt_length ) {
 					array_pop($words);
-					array_push($words, $excerpt_more);
+					$text = implode(' ', $words);
+					$text = $text . $excerpt_more;
+				} else {
 					$text = implode(' ', $words);
 				}
 			}
-			elseif(mb_strlen($text, $blog_encoding) > $this->conf['excerpt_mblength']) {
-				$text = mb_substr($text, 0, $this->conf['excerpt_mblength'], $blog_encoding) . $excerpt_more;
+			elseif(mb_strlen($text, $blog_encoding) > $excerpt_mblength) {
+				$text = mb_substr($text, 0, $excerpt_mblength, $blog_encoding) . $excerpt_more;
 			}
 		}
 
 		return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 	}
 
-	function get_comment_excerpt() {
-		global $comment;
+	// param $excerpt could already be truncated to 20 words or less by the original get_comment_excerpt() function.
+	function get_comment_excerpt($excerpt = '') {
+		$excerpt = preg_replace("/\.\.\.$/", '', $excerpt);
 		$blog_encoding = $this->blog_encoding;
 
-		$comment_text = strip_tags($comment->comment_content);
-
-		if($this->is_almost_ascii($comment_text, $blog_encoding)) {
-			$words = explode(' ', $comment_text, $this->conf['comment_excerpt_length'] + 1);
+		if($this->is_almost_ascii($excerpt, $blog_encoding)) {
+			$words = explode(' ', $excerpt, $this->conf['comment_excerpt_length'] + 1);
 
 			if(count($words) > $this->conf['comment_excerpt_length']) {
 				array_pop($words);
-				array_push($words, '[...]');
-				$comment_text = implode(' ', $words);
+				$excerpt = implode(' ', $words) . '...';
 			}
 		}
-		elseif(mb_strlen($comment_text, $blog_encoding) > $this->conf['comment_excerpt_mblength']) {
-			$comment_text = mb_substr($comment_text, 0, $this->conf['comment_excerpt_mblength'], $blog_encoding) . ' [...]';
+		elseif(mb_strlen($excerpt, $blog_encoding) > $this->conf['comment_excerpt_mblength']) {
+			$excerpt = mb_substr($excerpt, 0, $this->conf['comment_excerpt_mblength'], $blog_encoding) . '...';
 		}
 
-		return $comment_text;
+		return $excerpt;
 	}
 
 	function sanitize_file_name($name) {
@@ -248,19 +254,17 @@ class multibyte_patch {
 		return $name;
 	}
 
-	function deactivation_conditionals() {
+	function activation_check() {
 		global $wp_version;
-		return (version_compare($wp_version, '2.6', '<') || !$this->has_mbfunctions) ? true : false;
-	}
+		$required_version = '3.0';
 
-	function deactivate_self() {
-		$plugin = plugin_basename(__FILE__);
-		$current = get_option('active_plugins');
-		$key = array_search($plugin, $current);
-
-		if(false !== $key && null !== $key) {
-			array_splice($current, $key, 1);
-			update_option('active_plugins', $current);
+		if(version_compare(substr($wp_version, 0, strlen($required_version)), $required_version, '<')) {
+			deactivate_plugins(__FILE__);
+			wp_die(sprintf(__('Sorry, WP Multibyte Patch requires WordPress %s or later.', 'wp-multibyte-patch'), $required_version));
+		}
+		elseif(!$this->has_mbfunctions) {
+			deactivate_plugins(__FILE__);
+			wp_die(__('Sorry, WP Multibyte Patch requires mbstring functions.', 'wp-multibyte-patch'));
 		}
 	}
 
@@ -319,16 +323,15 @@ class multibyte_patch {
 		$this->blog_encoding = get_option('blog_charset');
 		$this->has_mbfunctions = $this->mbfunctions_exist();
 
-		if($this->deactivation_conditionals()) {
-			$this->deactivate_self();
-			return;
-		}
+		load_textdomain($this->textdomain, plugin_dir_path(__FILE__) . $this->lang_dir . '/' . $this->textdomain . '-' . get_locale() . '.mo');
+		register_activation_hook(__FILE__, array(&$this, 'activation_check'));
 
 		$this->filters();
 	}
 }
 
 if(defined('WP_PLUGIN_URL')) {
+	global $wpmp_conf, $wpmp;
 	$wpmp_conf = array();
 	$wpmp_conf['base_dir'] = dirname(__FILE__);
 
