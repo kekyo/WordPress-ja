@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-03-22 02:16:54+0000\n"
+"PO-Revision-Date: 2014-10-21 06:28:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,7 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Network Admin\n"
 
+#. translators: 1: a filename like .htaccess. 2: a file path.
 #: wp-admin/network.php:477 wp-admin/network.php:513
 msgid "Add the following to your %1$s file in %2$s, <strong>replacing</strong> other WordPress rules:"
 msgstr "%2$s にある %1$s ファイルに含まれる他の WordPress ルールを<strong>置き換える</strong>かたちで以下を追加してください。"
@@ -105,15 +106,15 @@ msgstr "クイックタスク"
 #: wp-admin/network/menu.php:59 wp-admin/network/upgrade.php:18
 #: wp-admin/network/upgrade.php:42 wp-admin/network/upgrade.php:107
 msgid "Upgrade Network"
-msgstr "ネットワークを更新"
+msgstr "ネットワークをアップグレード"
 
 #: wp-admin/network/upgrade.php:25
 msgid "Only use this screen once you have updated to a new version of WordPress through Updates/Available Updates (via the Network Administration navigation menu or the Toolbar). Clicking the Upgrade Network button will step through each site in the network, five at a time, and make sure any database updates are applied."
-msgstr "この画面は、ネットワーク管理メニューまたはツールバーから「更新 / 利用可能な更新」を使って新バージョンの WordPress へアップグレードした際にのみご利用ください。「ネットワークを更新」をクリックすると、ネットワーク内の各サイトを5つずつチェックしてデータベースの更新を適用します。"
+msgstr "この画面は、ネットワーク管理メニューまたはツールバーから「更新 / 利用可能な更新」を使って新バージョンの WordPress へアップグレードした際にのみご利用ください。「ネットワークをアップグレード」をクリックすると、ネットワーク内の各サイトを5つずつチェックしてデータベースの更新を適用します。"
 
 #: wp-admin/network/upgrade.php:32
 msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Updates_Screen\" target=\"_blank\">Documentation on Upgrade Network</a>"
-msgstr "<a href=\"http://wpdocs.sourceforge.jp/Network_Admin_Updates_Screen\" target=\"_blank\">ネットワーク更新の解説</a>"
+msgstr "<a href=\"http://wpdocs.sourceforge.jp/Network_Admin_Updates_Screen\" target=\"_blank\">ネットワークのアップグレードの解説</a>"
 
 #: wp-admin/network/upgrade.php:102
 msgid "Database Upgrade Required"
@@ -222,6 +223,7 @@ msgstr "<a href=\"http://wpdocs.sourceforge.jp/Network_Admin_Themes_Screen\" tar
 msgid "Info"
 msgstr "情報"
 
+#. translators: 1: theme name, 2: theme author
 #: wp-admin/network/themes.php:142
 msgid "Are you sure you wish to delete these themes?"
 msgstr "ほんとうにこれらのテーマを削除しますか ?"
@@ -674,7 +676,7 @@ msgstr "エラー: ネットワークを作成できませんでした。"
 
 #: wp-admin/network.php:120
 msgid "Once you add this code and refresh your browser, multisite should be enabled. This screen, now in the Network Admin navigation menu, will keep an archive of the added code. You can toggle between Network Admin and Site Admin by clicking on the Network Admin or an individual site name under the My Sites dropdown in the Toolbar."
-msgstr "このコードを追加してブラウザを再読み込みすると、マルチサイトが有効化されます。追加コードのアーカイブは「ネットワーク管理」」ナビゲーションメニューからアクセスできるこの画面に保存されます。同メニューをクリックするか、ツールバードロップダウンにある「参加サイト」から各サイト名をクリックすることで、ネットワーク管理画面とサイト管理画面を切り替えられます。"
+msgstr "このコードを追加してブラウザーで再読み込みを行うと、マルチサイトが有効化されます。追加コードのアーカイブは「ネットワーク管理」」ナビゲーションメニューからアクセスできるこの画面に保存されます。同メニューをクリックするか、ツールバードロップダウンにある「参加サイト」から各サイト名をクリックすることで、ネットワーク管理画面とサイト管理画面を切り替えられます。"
 
 #: wp-admin/network/site-info.php:17 wp-admin/network/site-settings.php:17
 #: wp-admin/network/site-users.php:17
@@ -763,7 +765,7 @@ msgstr "何らかの理由でこのプロセスが失敗した場合、ユーザ
 
 #: wp-admin/network/upgrade.php:26
 msgid "If a version update to core has not happened, clicking this button won&#8217;t affect anything."
-msgstr "コアに対するバージョンアップが発生しなければ、このボタンのクリックしても何も起きません。"
+msgstr "コアに対するバージョンの更新が発生しなければ、このボタンのクリックしても何も起きません。"
 
 #: wp-admin/network/users.php:232
 msgid "This table shows all users across the network and the sites to which they are assigned."

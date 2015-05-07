@@ -38,6 +38,7 @@ msgstr "次のギャラリー"
 msgid "More asides"
 msgstr "次のアサイド"
 
+#. translators: used with More archives link
 #: inc/widgets.php:206
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
@@ -52,6 +53,7 @@ msgstr "featured"
 msgid "Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts."
 msgstr "最近のアサイド、引用、動画、音声、画像、ギャラリー、リンクの投稿の一覧を表示したい場合はこのウィジェットを使ってください。"
 
+#. Theme URI of the plugin/theme
 msgid "http://wordpress.org/themes/twentyfourteen"
 msgstr "http://wordpress.org/themes/twentyfourteen"
 
@@ -93,6 +95,7 @@ msgstr "タグ名"
 msgid "Don&rsquo;t display tag on front end."
 msgstr "フロントエンドにタグを表示しない。"
 
+#. Description of the plugin/theme
 msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
 msgstr "2014年のデフォルトテーマでは、おしゃれで現代的なレスポンシブデザインのマガジンスタイル・サイトを作ることができます。お気に入りのホームページコンテンツをグリッドまたはスライダー形式でおすすめしましょう。3つのウィジェットエリアを使ってサイトをカスタマイズしたり、全幅ページテンプレートや執筆者を表示できる参加者ページでコンテンツのレイアウトを変えてみたりしてみませんか。WordPress でマガジンサイトを作るのが今までになく簡単になりました。"
 
@@ -213,6 +216,7 @@ msgstr "表示する投稿数:"
 msgid "Post format to show:"
 msgstr "表示する投稿フォーマット:"
 
+#. Template Name of the plugin/theme
 msgid "Contributor Page"
 msgstr "参加者ページ"
 
@@ -298,6 +302,8 @@ msgstr "%件のコメント"
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "続きを読む <span class=\"meta-nav\">&rarr;</span>"
 
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.2)  #-#-#-#-#
+#. Author URI of the plugin/theme
 #: footer.php:21
 msgid "http://wordpress.org/"
 msgstr "http://ja.wordpress.org/"
@@ -411,12 +417,16 @@ msgstr "引用"
 msgid "Search Results for: %s"
 msgstr "検索結果: %s"
 
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.2)  #-#-#-#-#
+#. Theme Name of the plugin/theme
 #: inc/customizer.php:99
 msgid "Twenty Fourteen"
 msgstr "Twenty Fourteen"
 
+#. Author of the plugin/theme
 msgid "the WordPress team"
 msgstr "WordPress チーム"
 
+#. Template Name of the plugin/theme
 msgid "Full Width Page"
 msgstr "全幅ページ"
