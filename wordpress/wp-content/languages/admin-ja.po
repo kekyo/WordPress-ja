@@ -3096,59 +3096,59 @@ msgstr "固定ページを編集する権限がありません。"
 msgid "You are not allowed to edit posts."
 msgstr "投稿を編集する権限がありません。"
 
-#: wp-admin/includes/post.php:509 wp-admin/includes/upgrade.php:1275
+#: wp-admin/includes/post.php:514 wp-admin/includes/upgrade.php:1275
 msgid "Auto Draft"
 msgstr "自動下書き"
 
-#: wp-admin/includes/post.php:598
+#: wp-admin/includes/post.php:603
 msgid "You are not allowed to create pages on this site."
 msgstr "このサイトにページを作成する権限がありません。"
 
-#: wp-admin/includes/post.php:600
+#: wp-admin/includes/post.php:605
 msgid "You are not allowed to create posts or drafts on this site."
 msgstr "このサイトに投稿または下書きを作成する権限がありません。"
 
-#: wp-admin/includes/post.php:1126
+#: wp-admin/includes/post.php:1131
 msgid "Click to edit this part of the permalink"
 msgstr "クリックしてパーマリンクのこの部分を編集"
 
-#: wp-admin/includes/post.php:1128
+#: wp-admin/includes/post.php:1133
 msgid "Temporary permalink. Click to edit this part."
 msgstr "これは一時的なパーマリンクです。この部分を編集するにはクリックしてください。"
 
-#: wp-admin/includes/post.php:1132 wp-admin/includes/post.php:1160
+#: wp-admin/includes/post.php:1137 wp-admin/includes/post.php:1165
 msgid "Permalink:"
 msgstr "パーマリンク:"
 
-#: wp-admin/includes/post.php:1134
+#: wp-admin/includes/post.php:1139
 msgid "Change Permalinks"
 msgstr "パーマリンクの変更"
 
-#: wp-admin/includes/post.php:1201
+#: wp-admin/includes/post.php:1206
 msgid "Remove featured image"
 msgstr "アイキャッチ画像を削除"
 
-#: wp-admin/includes/post.php:1323
+#: wp-admin/includes/post.php:1328
 msgid "This content is currently locked."
 msgstr "このコンテンツは現在ロックされています。"
 
-#: wp-admin/includes/post.php:1325
+#: wp-admin/includes/post.php:1330
 msgid "If you take over, %s will be blocked from continuing to edit."
 msgstr "編集を引き継ぐと、%s さんは編集を続けられなくなります。"
 
-#: wp-admin/includes/post.php:1339
+#: wp-admin/includes/post.php:1344
 msgid "Take over"
 msgstr "編集を引き継ぐ"
 
-#: wp-admin/includes/post.php:1353
+#: wp-admin/includes/post.php:1358
 msgid "Saving revision..."
 msgstr "リビジョンを保存…"
 
-#: wp-admin/includes/post.php:1354
+#: wp-admin/includes/post.php:1359
 msgid "Your latest changes were saved as a revision."
 msgstr "最近の変更をリビジョンとして保存しました。"
 
-#: wp-admin/includes/post.php:1440
+#: wp-admin/includes/post.php:1445
 msgid "Preview not available. Please save as a draft first."
 msgstr "プレビューできません。まず下書きとして保存してください。"
 
@@ -5351,14 +5351,14 @@ msgstr "ユーザー <a href=\"#%s\">%s</a> を追加しました。"
 
 #: wp-admin/includes/ajax-actions.php:1110
 #: wp-admin/includes/ajax-actions.php:1352 wp-admin/includes/post.php:194
-#: wp-admin/includes/post.php:1459 wp-admin/press-this.php:35
+#: wp-admin/includes/post.php:1464 wp-admin/press-this.php:35
 #: wp-admin/upload.php:62
 msgid "You are not allowed to edit this post."
 msgstr "この投稿を編集する権限がありません。"
 
 #: wp-admin/includes/ajax-actions.php:1113
 #: wp-admin/includes/ajax-actions.php:1349 wp-admin/includes/post.php:192
-#: wp-admin/includes/post.php:1456
+#: wp-admin/includes/post.php:1461
 msgid "You are not allowed to edit this page."
 msgstr "この固定ページを編集する権限がありません。"
 
@@ -8342,149 +8342,150 @@ msgstr "クレジット"
 msgid "Freedoms"
 msgstr "自由について"
 
-#: wp-admin/about.php:166
+#: wp-admin/about.php:170
 msgid "Maintenance Release"
 msgid_plural "Maintenance Releases"
 msgstr[0] "メンテナンスリリース"
 
-#: wp-admin/about.php:47 wp-admin/about.php:175
+#: wp-admin/about.php:43 wp-admin/about.php:51 wp-admin/about.php:179
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
 
-#: wp-admin/about.php:45 wp-admin/about.php:49 wp-admin/about.php:186
+#: wp-admin/about.php:45 wp-admin/about.php:49 wp-admin/about.php:53
+#: wp-admin/about.php:190
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
-#: wp-admin/about.php:54
+#: wp-admin/about.php:58
 msgid "Introducing a modern new&nbsp;design"
 msgstr "現代的な新デザインの導入"
 
-#: wp-admin/about.php:59
+#: wp-admin/about.php:63
 msgid "Modern aesthetic"
 msgstr "モダンデザイン"
 
-#: wp-admin/about.php:60
+#: wp-admin/about.php:64
 msgid "The new WordPress dashboard has a fresh, uncluttered design that embraces clarity and simplicity."
 msgstr "新しい WordPress のダッシュボードは、斬新で整理されたデザインの中に分かりやすさとシンプルさを両立したものになりました。"
 
-#: wp-admin/about.php:64
+#: wp-admin/about.php:68
 msgid "Clean typography"
 msgstr "スッキリしたタイポグラフィ"
 
-#: wp-admin/about.php:65
+#: wp-admin/about.php:69
 msgid "The Open Sans typeface provides simple, friendly text that is optimized for both desktop and mobile viewing. It&#8217;s even open source, just like WordPress."
 msgstr "Open Sans 書体は、デスクトップにもモバイルにも最適化された、シンプルで分かりやすいテキストを提供します。この書体はオープンソースでもあり、まるで WordPress のようです。"
 
-#: wp-admin/about.php:69
+#: wp-admin/about.php:73
 msgid "Refined contrast"
 msgstr "洗練されたコントラスト"
 
-#: wp-admin/about.php:70
+#: wp-admin/about.php:74
 msgid "We think beautiful design should never sacrifice legibility. With superior contrast and large, comfortable type, the new design is easy to read and a pleasure to navigate."
 msgstr "美しいデザインのために読みやすさが犠牲になるようなことは絶対に起こるべきではありません。しっかりしたコントラスト、読みやすいフォントなど、新しいデザインは読みやすく、ナビゲーションもしやすくなっています。"
 
-#: wp-admin/about.php:80
+#: wp-admin/about.php:84
 msgid "WordPress on every&nbsp;device"
 msgstr "WordPress をすべてのデバイスで"
 
-#: wp-admin/about.php:81
+#: wp-admin/about.php:85
 msgid "We all access the internet in different ways. Smartphone, tablet, notebook, desktop &mdash; no matter what you use, WordPress will adapt and you&#8217;ll feel right at home."
 msgstr "私達は皆様々な方法でインターネットにアクセスします。スマートフォン、タブレット、ノートパソコン、デスクトップ―使うものがなんであれ、WordPress は状況に合わせて変化し、不自由を感じることはないでしょう。"
 
-#: wp-admin/about.php:82
+#: wp-admin/about.php:86
 msgid "High definition at high&nbsp;speed"
 msgstr "高解像度を高速に"
 
-#: wp-admin/about.php:83
+#: wp-admin/about.php:87
 msgid "WordPress is sharper than ever with new vector-based icons that scale to your screen. By ditching pixels, pages load significantly faster, too."
 msgstr "スクリーンに合わせて大きさを変える、新しいベクターベースのアイコンを備え、WordPress はこれまでよりも賢くなりました。ピクセルを削り落とすことで、ページもより速く読み込むことができます。"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:106
 msgid "Pick a color"
 msgstr "カラフルな選択肢"
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:107
 msgid "We&#8217;ve included eight color schemes so you can pick your favorite. Choose from any of them below to change it instantly."
 msgstr "8つのカラースキームを同梱したので、好きなものを選ぶことができます。下にあるものの中からどれかを選ぶと、すぐに変わります。"
 
-#: wp-admin/about.php:108
+#: wp-admin/about.php:112
 msgid "To change your color scheme later, just <a href=\"%1$s\">visit your profile</a>."
 msgstr "後から配色を変えたい場合は<a href=\"%1$s\">プロフィール画面</a>へ移動してください。"
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:123
 msgid "Refined theme management"
 msgstr "テーマ管理をより快適に"
 
-#: wp-admin/about.php:120
+#: wp-admin/about.php:124
 msgid "The new themes screen lets you survey your themes at a glance. Or want more information? Click to discover more. Then sit back and use your keyboard&#8217;s navigation arrows to flip through every theme you&#8217;ve got."
 msgstr "新しいテーマ画面により、すぐにテーマを見渡すことができます。もっと情報が欲しいですか？それなら、クリックしてみてください。そのままページを移動したりせず、キーボードの左右の矢印キーを使うと、持っているすべてのテーマをめくって見ることができます。"
 
-#: wp-admin/about.php:121
+#: wp-admin/about.php:125
 msgid "Smoother widget experience"
 msgstr "ウィジェット管理をよりスムーズに"
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:126
 msgid "Drag-drag-drag. Scroll-scroll-scroll. Widget management can be complicated. With the new design, we&#8217;ve worked to streamline the widgets&nbsp;screen."
 msgstr "ドラッグ、ドラッグ、ドラッグ。スクロール、スクロール、スクロール。ウィジェットの管理は複雑になりがちです。新しいデザインでは、ウィジェットの画面の無駄をなくして簡素にするように取り組みました。"
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:127
 msgid "Have a large monitor? Multiple widget areas stack side-by-side to use the available space. Using a tablet? Just tap a widget to add it."
 msgstr "大画面のモニターをお持ちですか？複数のウィジェットエリアが開いたスペースを埋めるように、隣り合って並びます。タブレットを使っていますか？ウィジェットをタップするだけで追加できます。"
 
-#: wp-admin/about.php:134
+#: wp-admin/about.php:138
 msgid "Twenty Fourteen, a sleek new magazine&nbsp;theme"
 msgstr "おしゃれな新マガジンテーマ: Twenty Fourteen"
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:143
 msgid "Turn your blog into a&nbsp;magazine"
 msgstr "あなたのブログをマガジンに"
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:144
 msgid "Create a beautiful magazine-style site with WordPress and Twenty Fourteen. Choose a grid or a slider to display featured content on your homepage. Customize your site with three widget areas or change your layout with two page templates."
 msgstr "WordPress と Twenty Fourteen で美しいマガジンスタイルのサイトを作りましょう。グリッドかスライダーのどちらかを選び、ホームページにおすすめコンテンツを表示してください。3つのウィジェットエリアでサイトをカスタマイズするか、2つのページテンプレートでレイアウトを変えてください。"
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:145
 msgid "With a striking design that does not compromise our trademark simplicity, Twenty Fourteen is our most intrepid default theme yet."
 msgstr "Twenty Fourteen は、WordPress の特長でもある簡潔さを損ねることなく、人目を引くデザインで、今までの中で最も大胆不敵なデフォルトテーマです。"
 
-#: wp-admin/about.php:151
+#: wp-admin/about.php:155
 msgid "Return to Updates"
 msgstr "更新ページへ戻る"
 
-#: wp-admin/about.php:151
+#: wp-admin/about.php:155
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ戻る"
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:159
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:159
 msgid "Go to Dashboard"
 msgstr "ダッシュボードへ移動"
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:171
 msgid "Security Release"
 msgid_plural "Security Releases"
 msgstr[0] "セキュリティリリース"
 
-#: wp-admin/about.php:42 wp-admin/about.php:168
+#: wp-admin/about.php:42 wp-admin/about.php:172
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "メンテナンス & セキュリティリリース"
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:175
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応しました。"
 
-#: wp-admin/about.php:179
+#: wp-admin/about.php:183
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
-#: wp-admin/about.php:43 wp-admin/about.php:183
+#: wp-admin/about.php:47 wp-admin/about.php:187
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
@@ -8627,7 +8628,7 @@ msgid "Oops, no comment with this ID."
 msgstr "この ID のコメントはありません。"
 
 #: wp-admin/comment.php:68 wp-admin/comment.php:221
-#: wp-admin/includes/post.php:1283
+#: wp-admin/includes/post.php:1288
 msgid "Go back"
 msgstr "戻る"
 
