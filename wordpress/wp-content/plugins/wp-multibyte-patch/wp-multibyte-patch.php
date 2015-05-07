@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Multibyte Patch
 Description: Multibyte functionality enhancement for the WordPress Japanese package.
-Version: 2.1.1
+Version: 2.2
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Author: Seisuke Kuraishi
 Author URI: http://tinybit.co.jp/
@@ -15,7 +15,7 @@ Domain Path: /languages
  * Multibyte functionality enhancement for the WordPress Japanese package.
  *
  * @package WP_Multibyte_Patch
- * @version 2.1.1
+ * @version 2.2
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2014 Seisuke Kuraishi, Tinybit Inc.
  * @license http://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -48,6 +48,7 @@ class multibyte_patch {
 		'patch_force_twentytwelve_open_sans_off' => false,
 		'patch_force_twentythirteen_google_fonts_off' => false,
 		'patch_force_twentyfourteen_google_fonts_off' => false,
+		'patch_force_twentyfifteen_google_fonts_off' => false,
 		'patch_sanitize_file_name' => true,
 		'patch_bp_create_excerpt' => false,
 		'bp_excerpt_mblength' => 110,
@@ -61,7 +62,7 @@ class multibyte_patch {
 	var $debug_suffix = '';
 	var $textdomain = 'wp-multibyte-patch';
 	var $lang_dir = 'languages';
-	var $required_version = '3.9-RC1';
+	var $required_version = '4.0-beta4';
 	var $query_based_vars = array();
 
 	// For fallback purpose only. (1.6)
@@ -233,7 +234,8 @@ class multibyte_patch {
 		return preg_replace( "/<a [^<>]+>([^<>]+)<\/a>(" . preg_quote( $this->conf['bp_excerpt_more'], '/' ) . "<\/p>)$/", "$1$2", $content );
 	}
 
-	// param $excerpt could already be truncated to 20 words or less by the original get_comment_excerpt() function.
+	// $excerpt param could already be truncated to 20 words or less by the original get_comment_excerpt() function.
+	// $comment param (introduced in WP 4.1) should be used instead.
 	function get_comment_excerpt( $excerpt = '' ) {
 		$excerpt = preg_replace( "/\.\.\.$/", '', $excerpt );
 		$blog_encoding = $this->blog_encoding;
@@ -271,12 +273,12 @@ class multibyte_patch {
 
 	function wplink_js( &$scripts ) {
 		global $wp_version;
-		$script_required_version = '4.0-beta4';
+		$script_required_version = '4.1-RC1';
 
 		if ( version_compare( substr( $wp_version, 0, strlen( $script_required_version ) ), $script_required_version, '<' ) )
-			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/20140410/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20140410', 1 );
+			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/20140817/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20140817', 1 );
 		else
-			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20140817', 1 );
+			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20141214', 1 );
 	}
 
 	function word_count_js( &$scripts ) {
@@ -299,6 +301,19 @@ class multibyte_patch {
 
 	function force_twentyfourteen_google_fonts_off() {
 		wp_dequeue_style( 'twentyfourteen-lato' );
+	}
+
+	function force_twentyfifteen_google_fonts_off() {
+		global $wp_styles;
+
+		wp_dequeue_style( 'twentyfifteen-fonts' );
+
+		$styles = $wp_styles->query( 'twentyfifteen-style' );
+
+		if ( !empty( $styles->deps ) && is_array( $styles->deps ) ) {
+			if ( false !== $key = array_search( 'twentyfifteen-fonts', $styles->deps ) )
+				unset( $styles->deps[$key] );
+		}
 	}
 
 	function query_based_settings() {
@@ -339,6 +354,10 @@ class multibyte_patch {
 		if ( false !== $this->conf['patch_force_twentyfourteen_google_fonts_off'] && 'twentyfourteen' == get_template() ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'force_twentyfourteen_google_fonts_off' ), 99 );
 			add_action( 'admin_print_scripts-appearance_page_custom-header', array( $this, 'force_twentyfourteen_google_fonts_off' ), 99 );
+		}
+
+		if ( false !== $this->conf['patch_force_twentyfifteen_google_fonts_off'] && 'twentyfifteen' == get_template() ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'force_twentyfifteen_google_fonts_off' ), 99 );
 		}
 	}
 
@@ -433,6 +452,8 @@ class multibyte_patch {
 	function __construct() {
 		$this->load_conf();
 		$this->blog_encoding = get_option( 'blog_charset' );
+		if ( empty( $this->blog_encoding ) )
+			$this->blog_encoding = 'UTF-8';
 
 		// mbstring functions are required for non UTF-8 blog.
 		if ( !preg_match( "/^utf-?8$/i", $this->blog_encoding ) )

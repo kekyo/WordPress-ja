@@ -2,7 +2,7 @@
 /**
  * WordPress の基本設定
  *
- * このファイルは、MySQL、テーブル接頭辞、秘密鍵、言語、ABSPATH の設定を含みます。
+ * このファイルは、MySQL、テーブル接頭辞、秘密鍵、ABSPATH の設定を含みます。
  * より詳しい情報は {@link http://wpdocs.sourceforge.jp/wp-config.php_%E3%81%AE%E7%B7%A8%E9%9B%86 
  * wp-config.php の編集} を参照してください。MySQL の設定情報はホスティング先より入手できます。
  *
