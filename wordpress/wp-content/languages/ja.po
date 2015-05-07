@@ -1,4 +1,4 @@
-# Translation of WordPress 3.3 in Japanese
+# Translation of WordPress 3.3.1 in Japanese
 # This file is distributed under the same license as 3.3 package.
 #
 # WordPress 日本語版作成チーム / WP ja translation team
@@ -10,10 +10,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 3.3\n"
+"Project-Id-Version: WordPress 3.3.1\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-12-12 23:13:05+00:00\n"
-"PO-Revision-Date: 2011-12-13 12:40+0900\n"
+"POT-Creation-Date: 2012-01-03 21:15:50+00:00\n"
+"PO-Revision-Date: 2012-01-04 10:46+0900\n"
 "Last-Translator: Naoko McCracken <info@nao-net.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,23 +22,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/0.1\n"
 
-#: wp-includes/capabilities.php:542
-#: wp-includes/capabilities.php:562
-#: wp-includes/capabilities.php:588
+#: wp-includes/capabilities.php:547
+#: wp-includes/capabilities.php:567
+#: wp-includes/capabilities.php:593
 msgid "Use <code>WP_User->ID</code> instead."
 msgstr "代わりに <code>WP_User->ID</code> を使ってください。"
 
-#: wp-includes/capabilities.php:850
+#: wp-includes/capabilities.php:855
 msgid "Usage of user levels by plugins and themes is deprecated. Use roles and capabilities instead."
 msgstr "プラグインやテーマでのユーザーレベルの使用は推奨されていません。代わりに権限グループと権限を使ってください。"
 
-#: wp-includes/functions.wp-styles.php:28
-#: wp-includes/functions.wp-styles.php:55
-#: wp-includes/functions.wp-styles.php:83
-#: wp-includes/functions.wp-styles.php:104
-#: wp-includes/functions.wp-styles.php:135
-#: wp-includes/functions.wp-styles.php:157
-#: wp-includes/functions.wp-styles.php:181
+#: wp-includes/functions.wp-styles.php:30
+#: wp-includes/functions.wp-styles.php:57
+#: wp-includes/functions.wp-styles.php:85
+#: wp-includes/functions.wp-styles.php:106
+#: wp-includes/functions.wp-styles.php:137
+#: wp-includes/functions.wp-styles.php:159
+#: wp-includes/functions.wp-styles.php:183
 #: wp-includes/functions.wp-scripts.php:29
 #: wp-includes/functions.wp-scripts.php:56
 #: wp-includes/functions.wp-scripts.php:90
@@ -342,7 +342,7 @@ msgstr "アーカイブ"
 #: wp-admin/edit-link-form.php:28
 #: wp-admin/includes/class-wp-posts-list-table.php:273
 #: wp-admin/includes/class-wp-links-list-table.php:82
-#: wp-admin/press-this.php:498
+#: wp-admin/press-this.php:512
 msgid "Categories"
 msgstr "カテゴリー"
 
@@ -995,7 +995,7 @@ msgstr "一致するものが見つかりませんでした。"
 #: wp-admin/includes/widgets.php:182
 #: wp-admin/includes/meta-boxes.php:293
 #: wp-admin/includes/meta-boxes.php:697
-#: wp-admin/press-this.php:556
+#: wp-admin/press-this.php:570
 msgid "Add"
 msgstr "追加"
 
@@ -1069,7 +1069,7 @@ msgstr "これ以外のコメントは見つかりません。"
 #: wp-admin/includes/dashboard.php:563
 #: wp-admin/includes/meta-boxes.php:215
 #: wp-admin/includes/meta-boxes.php:216
-#: wp-admin/press-this.php:470
+#: wp-admin/press-this.php:484
 msgid "Publish"
 msgstr "公開"
 
@@ -1087,7 +1087,7 @@ msgstr "レビュー待ちとして保存"
 #: wp-includes/script-loader.php:327
 #: wp-admin/includes/dashboard.php:560
 #: wp-admin/includes/meta-boxes.php:31
-#: wp-admin/press-this.php:468
+#: wp-admin/press-this.php:482
 msgid "Save Draft"
 msgstr "下書きとして保存"
 
@@ -1753,52 +1753,52 @@ msgstr "&laquo; 戻る"
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; エラー"
 
-#: wp-includes/functions.php:3312
+#: wp-includes/functions.php:3321
 #: wp-includes/admin-bar.php:572
 #: wp-admin/widgets.php:35
 msgid "Widgets"
 msgstr "ウィジェット"
 
-#: wp-includes/functions.php:3458
-#: wp-includes/functions.php:3498
+#: wp-includes/functions.php:3467
+#: wp-includes/functions.php:3507
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になっています! 代わりに %3$s を使ってください。"
 
-#: wp-includes/functions.php:3460
-#: wp-includes/functions.php:3500
+#: wp-includes/functions.php:3469
+#: wp-includes/functions.php:3509
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されておりません。"
 
-#: wp-includes/functions.php:3542
+#: wp-includes/functions.php:3551
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました ! 代わりに %3$s を使ってください。"
 
-#: wp-includes/functions.php:3544
+#: wp-includes/functions.php:3553
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されていません。"
 
-#: wp-includes/functions.php:3576
+#: wp-includes/functions.php:3585
 msgid "(This message was added in version %s.)"
 msgstr "(このメッセージはバージョン %s で追加されました)"
 
-#: wp-includes/functions.php:3577
+#: wp-includes/functions.php:3586
 msgid "Please see <a href=\"http://codex.wordpress.org/Debugging_in_WordPress\">Debugging in WordPress</a> for more information."
 msgstr "詳細は <a href=\"http://wpdocs.sourceforge.jp/Debugging_in_WordPress\">WordPress のデバッグ</a>をご覧ください。"
 
-#: wp-includes/functions.php:3578
+#: wp-includes/functions.php:3587
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s が<strong>誤って</strong>呼び出されました。%2$s %3$s"
 
-#: wp-includes/functions.php:4289
+#: wp-includes/functions.php:4298
 msgid "Select a city"
 msgstr "町を選択してください"
 
-#: wp-includes/functions.php:4334
-#: wp-includes/functions.php:4338
+#: wp-includes/functions.php:4343
+#: wp-includes/functions.php:4347
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:4342
+#: wp-includes/functions.php:4351
 msgid "Manual Offsets"
 msgstr "マニュアルオフセット"
 
@@ -1976,7 +1976,7 @@ msgid "Add or remove tags"
 msgstr "タグの追加もしくは削除"
 
 #: wp-includes/taxonomy.php:415
-#: wp-admin/press-this.php:561
+#: wp-admin/press-this.php:575
 msgid "Choose from the most used tags"
 msgstr "よく使われているタグから選択"
 
@@ -2312,8 +2312,8 @@ msgstr "タグクラウド"
 #: wp-includes/default-widgets.php:1006
 #: wp-admin/includes/dashboard.php:550
 #: wp-admin/includes/class-wp-posts-list-table.php:276
-#: wp-admin/press-this.php:548
-#: wp-admin/press-this.php:552
+#: wp-admin/press-this.php:562
+#: wp-admin/press-this.php:566
 msgid "Tags"
 msgstr "タグ"
 
@@ -2834,7 +2834,7 @@ msgid "Add New Page"
 msgstr "新規固定ページを追加"
 
 #: wp-includes/post.php:1188
-#: wp-admin/press-this.php:583
+#: wp-admin/press-this.php:597
 msgid "Edit Post"
 msgstr "投稿の編集"
 
@@ -2954,7 +2954,7 @@ msgstr "下書きをプレビューする権限がありません。"
 
 #: wp-includes/post.php:5129
 #: wp-admin/includes/class-wp-posts-list-table.php:1006
-#: wp-admin/press-this.php:485
+#: wp-admin/press-this.php:499
 msgctxt "Post format"
 msgid "Standard"
 msgstr "標準"
@@ -3121,7 +3121,7 @@ msgstr "リンク先 URL を入力してください"
 #: wp-admin/includes/nav-menu.php:129
 #: wp-admin/includes/nav-menu.php:550
 #: wp-admin/includes/class-wp-links-list-table.php:81
-#: wp-admin/press-this.php:644
+#: wp-admin/press-this.php:658
 msgid "URL"
 msgstr "URL"
 
@@ -5497,7 +5497,7 @@ msgstr "引用"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:258
 #: wp-admin/press-this.php:160
-#: wp-admin/press-this.php:650
+#: wp-admin/press-this.php:664
 msgid "Insert Image"
 msgstr "画像の挿入"
 
@@ -6338,7 +6338,7 @@ msgstr "新規追加"
 #: wp-admin/edit-comments.php:158
 #: wp-admin/edit.php:226
 #: wp-admin/upload.php:181
-#: wp-admin/users.php:402
+#: wp-admin/users.php:403
 #: wp-admin/plugins.php:398
 #: wp-admin/edit-tags.php:268
 msgid "Search results for &#8220;%s&#8221;"
@@ -6365,7 +6365,7 @@ msgstr "リンクを検索"
 #: wp-admin/edit.php:22
 #: wp-admin/post-new.php:40
 #: wp-admin/users.php:13
-#: wp-admin/users.php:111
+#: wp-admin/users.php:112
 #: wp-admin/includes/bookmark.php:30
 #: wp-admin/press-this.php:17
 #: wp-admin/widgets.php:16
@@ -6738,7 +6738,7 @@ msgstr "例: <code>http://wordpress.org/</code> &#8212; <code>http://</code> を
 #: wp-admin/includes/class-wp-terms-list-table.php:101
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:144
 #: wp-admin/press-this.php:146
-#: wp-admin/press-this.php:647
+#: wp-admin/press-this.php:661
 msgid "Description"
 msgstr "説明"
 
@@ -7947,7 +7947,7 @@ msgstr "ツール"
 #: wp-admin/options-writing.php:128
 #: wp-admin/includes/dashboard.php:509
 #: wp-admin/press-this.php:302
-#: wp-admin/press-this.php:464
+#: wp-admin/press-this.php:478
 msgid "Press This"
 msgstr "Press This"
 
@@ -9348,132 +9348,132 @@ msgstr "このユーザーを編集する権限がありません。"
 msgid "You can&#8217;t give users that role."
 msgstr "ユーザーをこの権限グループに指定することはできません。"
 
-#: wp-admin/users.php:124
-#: wp-admin/users.php:171
+#: wp-admin/users.php:125
+#: wp-admin/users.php:172
 msgid "User deletion is not allowed from this screen."
 msgstr "この画面からユーザーを削除することはできません。"
 
-#: wp-admin/users.php:134
-#: wp-admin/users.php:181
+#: wp-admin/users.php:135
+#: wp-admin/users.php:182
 msgid "You can&#8217;t delete users."
 msgstr "ユーザーを削除する権限がありません。"
 
-#: wp-admin/users.php:144
+#: wp-admin/users.php:145
 msgid "You can&#8217;t delete that user."
 msgstr "このユーザーを削除できません。"
 
-#: wp-admin/users.php:196
+#: wp-admin/users.php:197
 msgid "Delete Users"
 msgstr "ユーザーの削除"
 
-#: wp-admin/users.php:197
+#: wp-admin/users.php:198
 msgid "You have specified this user for deletion:"
 msgid_plural "You have specified these users for deletion:"
 msgstr[0] "これらのユーザーを削除しようとしています"
 
-#: wp-admin/users.php:205
+#: wp-admin/users.php:206
 msgid "ID #%1s: %2s <strong>The current user will not be deleted.</strong>"
 msgstr "ID #%1s: %2s <strong>今現在あなたが使用しているユーザーアカウントなので削除できません。</strong>"
 
-#: wp-admin/users.php:207
-#: wp-admin/users.php:310
+#: wp-admin/users.php:208
+#: wp-admin/users.php:311
 msgid "ID #%1s: %2s"
 msgstr "ID #%1s: %2s"
 
-#: wp-admin/users.php:214
+#: wp-admin/users.php:215
 msgid "What should be done with posts and links owned by this user?"
 msgid_plural "What should be done with posts and links owned by these users?"
 msgstr[0] "このユーザーの投稿とリンクはどのように処理しますか ?"
 
-#: wp-admin/users.php:217
+#: wp-admin/users.php:218
 msgid "Delete all posts and links."
 msgstr "すべての投稿とリンクを削除。"
 
-#: wp-admin/users.php:219
+#: wp-admin/users.php:220
 msgid "Attribute all posts and links to:"
 msgstr "すべての投稿とリンクを次のユーザーに割り当てる:"
 
-#: wp-admin/users.php:223
+#: wp-admin/users.php:224
 msgid "Confirm Deletion"
 msgstr "削除を実行"
 
-#: wp-admin/users.php:225
+#: wp-admin/users.php:226
 msgid "There are no valid users selected for deletion."
 msgstr "削除できるユーザーが選択されていません。"
 
-#: wp-admin/users.php:237
-#: wp-admin/users.php:245
-#: wp-admin/users.php:274
-#: wp-admin/users.php:282
+#: wp-admin/users.php:238
+#: wp-admin/users.php:246
+#: wp-admin/users.php:275
+#: wp-admin/users.php:283
 msgid "You can&#8217;t remove users."
 msgstr "ユーザーを除外する権限がありません。"
 
-#: wp-admin/users.php:297
+#: wp-admin/users.php:298
 msgid "Remove Users from Site"
 msgstr "サイトからのユーザーの除外"
 
-#: wp-admin/users.php:298
+#: wp-admin/users.php:299
 msgid "You have specified these users for removal:"
 msgstr "以下のユーザーの除外が指定されました: "
 
-#: wp-admin/users.php:306
+#: wp-admin/users.php:307
 msgid "ID #%1s: %2s <strong>The current user will not be removed.</strong>"
 msgstr "ID #%1s: %2s <strong>現在のユーザーは削除されません。</strong>"
 
-#: wp-admin/users.php:308
+#: wp-admin/users.php:309
 msgid "ID #%1s: %2s <strong>You don't have permission to remove this user.</strong>"
 msgstr "ID #%1s: %2s <strong>このユーザーを除外する権限がありません。</strong>"
 
-#: wp-admin/users.php:317
+#: wp-admin/users.php:318
 msgid "Confirm Removal"
 msgstr "確認して削除を実行"
 
-#: wp-admin/users.php:319
+#: wp-admin/users.php:320
 msgid "There are no valid users selected for removal."
 msgstr "除外するユーザーが選択されていません。"
 
-#: wp-admin/users.php:348
+#: wp-admin/users.php:349
 msgid "%s user deleted"
 msgid_plural "%s users deleted"
 msgstr[0] "%s 人のユーザーを削除しました"
 
-#: wp-admin/users.php:351
+#: wp-admin/users.php:352
 msgid "New user created."
 msgstr "新規ユーザーを作成しました。"
 
-#: wp-admin/users.php:354
+#: wp-admin/users.php:355
 msgid "Changed roles."
 msgstr "権限グループを変更しました。"
 
-#: wp-admin/users.php:357
+#: wp-admin/users.php:358
 msgid "The current user&#8217;s role must have user editing capabilities."
 msgstr "現行のユーザーにはユーザーを編集する権限がありません。"
 
-#: wp-admin/users.php:358
+#: wp-admin/users.php:359
 msgid "Other user roles have been changed."
 msgstr "他のユーザーの権限グループを変更しました。"
 
-#: wp-admin/users.php:361
+#: wp-admin/users.php:362
 msgid "You can&#8217;t delete the current user."
 msgstr "このユーザーを削除する権限がありません。"
 
-#: wp-admin/users.php:362
+#: wp-admin/users.php:363
 msgid "Other users have been deleted."
 msgstr "他のユーザーを削除しました。"
 
-#: wp-admin/users.php:365
+#: wp-admin/users.php:366
 msgid "User removed from this site."
 msgstr "このサイトからユーザーを除外しました。"
 
-#: wp-admin/users.php:368
+#: wp-admin/users.php:369
 msgid "You can't remove the current user."
 msgstr "現在のユーザーは削除できません。"
 
-#: wp-admin/users.php:369
+#: wp-admin/users.php:370
 msgid "Other users have been removed."
 msgstr "他のユーザーを除外しました。"
 
-#: wp-admin/users.php:396
+#: wp-admin/users.php:397
 #: wp-admin/user-edit.php:186
 #: wp-admin/menu.php:176
 #: wp-admin/menu.php:178
@@ -9481,13 +9481,13 @@ msgctxt "user"
 msgid "Add New"
 msgstr "新規追加"
 
-#: wp-admin/users.php:398
+#: wp-admin/users.php:399
 #: wp-admin/user-edit.php:188
 msgctxt "user"
 msgid "Add Existing"
 msgstr "既存のユーザーを追加"
 
-#: wp-admin/users.php:409
+#: wp-admin/users.php:410
 #: wp-admin/includes/dashboard.php:468
 msgid "Search Users"
 msgstr "ユーザーを検索"
@@ -10070,229 +10070,232 @@ msgid "Don&#8217;t you wish all software came with these freedoms? So do we! For
 msgstr "すべてのソフトウェアがこのような自由を備えていたらなぁと思いませんか ? 私たちも思います ! より詳しい情報は、<a href=\"http://www.fsf.org/\">Free Software Foundation</a> を確認してください。"
 
 #: wp-admin/about.php:37
-msgid "Easier Uploading"
-msgstr "さらに簡単なアップロード"
-
-#: wp-admin/about.php:45
-msgid "File Type Detection"
-msgstr "ファイルタイプ検出"
-
-#: wp-admin/about.php:46
-msgid "We&#8217;ve streamlined things! Instead of needing to click on a specific upload icon based on your file type, now there&#8217;s just one. Once your file is uploaded, the appropriate fields will be displayed for entering information based on the file type."
-msgstr "いろんなことをもっとシンプルにしました。ファイルタイプによって違うアップロードアイコンをクリックしなくてもすむように、ひとつにまとめました。ファイルがアップロードされたら、ファイルタイプに適した情報記入欄が表示されます。"
-
-#: wp-admin/about.php:48
-msgid "Drag-and-Drop Media Uploader"
-msgstr "ドラッグ＆ドロップメディアアップローダー"
-
-#: wp-admin/about.php:49
-msgid "Adding photos or other files to posts and pages just got easier. Drag files from your desktop and drop them into the uploader. Add one file at a time, or many at once."
-msgstr "写真やその他のファイルを投稿に追加しやすくなりました。デスクトップ上のファイルをアップローダーにドラッグしてください。ファイルを一個ずつ追加することも、複数追加することもできます。"
-
-#: wp-admin/about.php:51
-msgid "More File Formats"
-msgstr "さらに多くのファイル形式"
-
-#: wp-admin/about.php:52
-msgid "We&#8217;ve added the rar and 7z file formats to the list of allowed file types in the uploader."
-msgstr "アップローダーで rar および 7z 形式のファイルを扱えるよう対応しました。"
-
-#: wp-admin/about.php:58
-msgid "Dashboard Design"
-msgstr "ダッシュボードのデザイン"
-
-#: wp-admin/about.php:61
-msgid "Flyout Menus"
-msgstr "フライアウトメニュー"
-
-#: wp-admin/about.php:62
-msgid "Speed up navigating the dashboard and reduce repetitive clicking with our new flyout submenus. As you hover over each main menu item in your dashboard navigation, the submenus will magically appear, providing single-click access to any dashboard screen."
-msgstr "新しいフライアウトサブメニューでダッシュボードのナビゲーションが素早くなり、何度もクリックしなくてもよくなります。ダッシュボードナビゲーションの各メインメニュー項目にホバーすると、サブメニューが魔法のようにあらわれ、どのダッシュボードスクリーンへも一度のクリックでたどり着けます。"
-
-#: wp-admin/about.php:65
-msgid "Header + Admin Bar = Toolbar"
-msgstr "ヘッダー + 管理バー = ツールバー"
-
-#: wp-admin/about.php:66
-msgid "To save space and increase efficiency, we&#8217;ve combined the admin bar and the old Dashboard header into one persistent toolbar. Hovering over the toolbar items will reveal submenus when available for quick access. "
-msgstr "スペースを節約し、より効率的にするため、管理バーと旧ダッシュボードヘッダーを常駐ツールバーひとつにまとめました。ツールバー項目をマウスオーバーすれば、すばやくアクセスできるサブメニューが表示されます。"
-
-#: wp-admin/about.php:73
-msgid "Responsive Design"
-msgstr "レスポンシブデザイン"
-
-#: wp-admin/about.php:74
-msgid "Certain dashboard screens have been updated to look better at various sizes, including improved iPad/tablet support."
-msgstr "ダッシュボード画面の一部は、さまざまなサイズでより最適に表示されるよう更新されました。これには、iPad やタブレッドへの対応改善も含まれます。"
-
-#: wp-admin/about.php:78
-msgid "Help Tabs"
-msgstr "ヘルプタブ"
-
-#: wp-admin/about.php:79
-msgid "The Help tabs located in the upper corner of the dashboard screens below your name have gotten a facelift. Help content is broken into smaller sections for easier access, with links to relevant documentation and the support forums always visible."
-msgstr "ダッシュボード画面右上、あなたのお名前の下にあるヘルプタブは模様替えしました。ヘルプコンテンツはよりアクセスしやすくするために小さなセクションに分けられ、関連のドキュメントとフォーラムへのリンクは常に表示されるようになりました。"
-
-#: wp-admin/about.php:85
-msgid "Feels Like the First Time"
-msgstr "初めてのような感覚"
-
-#: wp-admin/about.php:93
-msgid "New Feature Pointers"
-msgstr "新しい機能のポインター"
-
-#: wp-admin/about.php:94
-msgid "When we add new features, move navigation, or do anything else with the dashboard that might throw you for a loop when you update your WordPress site, we&#8217;ll let you know about it with new feature pointers explaining the change."
-msgstr "新しい機能を追加したとき、ナビゲーションを移動したとき、もしくは WordPress をアップデートしたときにびっくりさせてしまうようななにかをダッシュボードにしたとき、この新機能ポインターがその変更をお知らせします。"
-
-#: wp-admin/about.php:96
-msgid "Post-update Changelog"
-msgstr "更新後の変更履歴"
-
-#: wp-admin/about.php:97
-msgid "This screen! From now on when you update WordPress, you&#8217;ll be brought to this screen &mdash; also accessible any time from the W logo in the corner of the toolbar &mdash; to get an overview of what&#8217;s changed."
-msgstr "この画面のことです ! 今後 WordPress を更新すると、変更点の概要を知ることができる画面が表示されます。またこれは、ツールバー端の「W」ロゴからも常にアクセス可能です。"
-
-#: wp-admin/about.php:99
-msgid "Dashboard Welcome"
-msgstr "ダッシュボードウェルカムエリア"
-
-#: wp-admin/about.php:100
-msgid "The dashboard home screen will have a Welcome area that displays when a new WordPress installation is accessed for the first time, prompting the site owner to complete various setup tasks. Once dismissed, this welcome can be accessed via the dashboard home screen options tab."
-msgstr "ダッシュボードのホーム画面に、WordPress をインストールして最初にアクセスしたときに表示される「ようこそ」エリアができました。ここではサイトオーナーに様々なセットアップのタスクを完了させるように促します。この「ようこそ」画面は、いったん非表示にしたあとはダッシュボードホームの表示オプションからアクセスすることができます。"
-
-#: wp-admin/about.php:107
-msgid "Content Tools"
-msgstr "コンテンツツール"
-
-#: wp-admin/about.php:111
-msgid "Better Co-Editing"
-msgstr "グループ編集の改善"
-
-#: wp-admin/about.php:113
-msgid "Have you ever gone to edit a post after someone else has finished with it, only to get an alert that tells you the other person is still editing the post? From now on, you&#8217;ll only get that alert if another person is still on the editing screen &mdash; no more time lag."
-msgstr "誰かが投稿を書き終わったあとに編集を始めた際、他の人がまだ編集中だという警告が出たことがありませんか ? これからは、他の人が編集画面を開いている場合のみ警告が表示されます。タイムラグはもうありません。"
-
-#: wp-admin/about.php:116
-msgid "Tumblr Importer"
-msgstr "Tumblr インポートツール"
-
-#: wp-admin/about.php:117
-msgid "Want to import content from Tumblr to WordPress? No problem! Go to <span class=\"no-break\">Tools &rarr; Import</span> to get the new Tumblr Importer, which maps your Tumblog posts to the matching WordPress post formats. Tip: Choose a theme designed to display post formats to get the greatest benefit from the importer."
-msgstr "Tumblr から WordPress へコンテンツをインポートしたいですか ? お任せください ! <span class=\"no-break\">ツール &rarr; インポート</span>から新しい Tumblr インポートツールを追加してください。Tumblog 投稿を、対応する WordPress の投稿フォーマットに割り当てることができます。投稿フォーマットの表示に対応したテーマを選ぶことで、インポートツールを最大限に活用できます。"
-
-#: wp-admin/about.php:120
-msgid "Widget Improvements"
-msgstr "ウィジェットの改善"
-
-#: wp-admin/about.php:121
-msgid "Changing themes often requires widget re-configuration based on the number and position of sidebars. Now if you change back to a previous theme, the widgets will automatically go back to how you had them arranged in that theme. <em>Note: if you&#8217;ve added new widgets since the switch, you&#8217;ll need to rescue them from the Inactive Widgets area.</em>"
-msgstr "テーマを変更するとたいてい、サイドバーの数や位置によってウィジェットを再編成する必要がでてきます。これからは過去に使っていたテーマに戻すと、ウィジェットの配置が自動的に以前の通りに戻ります。<strong>注:</strong> もしテーマの切り替え後に新しいウィジェットを追加した場合は、「使用停止中のウィジェット」エリアから再度追加してください。"
-
-#: wp-admin/about.php:128
-msgid "Under the Hood"
-msgstr "裏側"
-
-#: wp-admin/about.php:132
-msgid "Flexible Permalinks"
-msgstr "柔軟なパーマリンク"
-
-#: wp-admin/about.php:133
-msgid "You have more freedom when choosing a post permalink structure. Skip the date information or add a category slug without a performance penalty."
-msgstr "パーマリンク構造をより自由に設定できるようになりました。日付情報をなくしたりカテゴリースラッグ追加したりしてもパフォーマンスが低下しなくなりました。"
-
-#: wp-admin/about.php:136
-msgid "Post Slugs: Less Funky"
-msgstr "投稿スラッグ: すっきりとした表示"
-
-#: wp-admin/about.php:137
-msgid "Funky characters in post titles (e.g. curly quotes from a word processor) will no longer result in garbled post slugs."
-msgstr "投稿タイトルの変わった文字 (例えばワープロからコピーした変わった引用符) が投稿スラッグでも文字化けしなくなりました。"
-
-#: wp-admin/about.php:140
-msgid "jQuery and jQuery UI"
-msgstr "jQuery と jQuery UI"
-
-#: wp-admin/about.php:141
-msgid "WordPress now includes the entire jQuery UI stack and the latest version of jQuery: %s."
-msgstr "WordPress には jQuery UI スタックがすべて含まれています。jQuery の最新バージョンは %s です。"
-
-#: wp-admin/about.php:148
-msgid "This handy method will tell you if a <code>WP_Query</code> object is the main WordPress query or a secondary query."
-msgstr "この便利なメソッドは <code>WP_Query</code> オブジェクトがメインの WordPress クエリーなのか2番目のクエリーなのかを教えてくれます。"
-
-#: wp-admin/about.php:151
-msgid "WP_Screen API"
-msgstr "WP_Screen API"
-
-#: wp-admin/about.php:152
-msgid "WordPress has a nice new API for working with admin screens. Create rich screens, add help documentation, adapt to screen contexts, and more."
-msgstr "WordPress には管理画面を操作する新しい API があります。リッチな画面の作成、ヘルプドキュメンテーションの追加、画面コンテクストへの対応などを行えます。"
-
-#: wp-admin/about.php:155
-msgid "Editor API Overhaul"
-msgstr "エディタ API の改良"
-
-#: wp-admin/about.php:156
-msgid "The new editor API automatically pulls in all the JS and CSS goodness for the editor. It even supports multiple editors on the same page."
-msgstr "新しいエディタ API は、自動的に便利な JavaScript や CSS をすべて自動的に取り込みます。一つのページ上での複数のエディタにも対応しています。"
-
-#: wp-admin/about.php:165
-msgid "Return to Updates"
-msgstr "更新ページへ戻る"
-
-#: wp-admin/about.php:165
-msgid "Return to Dashboard &rarr; Updates"
-msgstr "ダッシュボード &rarr; 更新へ戻る"
-
-#: wp-admin/about.php:168
-msgid "Go to Dashboard &rarr; Home"
-msgstr "ダッシュボード &rarr; ホームへ移動"
-
-#: wp-admin/about.php:179
-msgid "Maintenance Release"
-msgid_plural "Maintenance Releases"
-msgstr[0] "メンテナンスリリース"
-
-#: wp-admin/about.php:180
-msgid "Security Release"
-msgid_plural "Security Releases"
-msgstr[0] "セキュリティリリース"
-
-#: wp-admin/about.php:181
+#: wp-admin/about.php:189
 msgid "Maintenance and Security Release"
 msgid_plural "Maintenance and Security Releases"
 msgstr[0] "メンテナンス & セキュリティリリース"
 
+#. translators: 1: WordPress version number, 2: plural number of bugs. Singular
+#. security issue.
+#: wp-admin/about.php:38
+#: wp-admin/about.php:200
+msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
+msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
+msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
+
+#: wp-admin/about.php:40
+#: wp-admin/about.php:207
+msgid "For more information, see <a href=\"%s\">the release notes</a>."
+msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
+
+#: wp-admin/about.php:45
+msgid "Easier Uploading"
+msgstr "さらに簡単なアップロード"
+
+#: wp-admin/about.php:53
+msgid "File Type Detection"
+msgstr "ファイルタイプ検出"
+
+#: wp-admin/about.php:54
+msgid "We&#8217;ve streamlined things! Instead of needing to click on a specific upload icon based on your file type, now there&#8217;s just one. Once your file is uploaded, the appropriate fields will be displayed for entering information based on the file type."
+msgstr "いろんなことをもっとシンプルにしました。ファイルタイプによって違うアップロードアイコンをクリックしなくてもすむように、ひとつにまとめました。ファイルがアップロードされたら、ファイルタイプに適した情報記入欄が表示されます。"
+
+#: wp-admin/about.php:56
+msgid "Drag-and-Drop Media Uploader"
+msgstr "ドラッグ＆ドロップメディアアップローダー"
+
+#: wp-admin/about.php:57
+msgid "Adding photos or other files to posts and pages just got easier. Drag files from your desktop and drop them into the uploader. Add one file at a time, or many at once."
+msgstr "写真やその他のファイルを投稿に追加しやすくなりました。デスクトップ上のファイルをアップローダーにドラッグしてください。ファイルを一個ずつ追加することも、複数追加することもできます。"
+
+#: wp-admin/about.php:59
+msgid "More File Formats"
+msgstr "さらに多くのファイル形式"
+
+#: wp-admin/about.php:60
+msgid "We&#8217;ve added the rar and 7z file formats to the list of allowed file types in the uploader."
+msgstr "アップローダーで rar および 7z 形式のファイルを扱えるよう対応しました。"
+
+#: wp-admin/about.php:66
+msgid "Dashboard Design"
+msgstr "ダッシュボードのデザイン"
+
+#: wp-admin/about.php:69
+msgid "Flyout Menus"
+msgstr "フライアウトメニュー"
+
+#: wp-admin/about.php:70
+msgid "Speed up navigating the dashboard and reduce repetitive clicking with our new flyout submenus. As you hover over each main menu item in your dashboard navigation, the submenus will magically appear, providing single-click access to any dashboard screen."
+msgstr "新しいフライアウトサブメニューでダッシュボードのナビゲーションが素早くなり、何度もクリックしなくてもよくなります。ダッシュボードナビゲーションの各メインメニュー項目にホバーすると、サブメニューが魔法のようにあらわれ、どのダッシュボードスクリーンへも一度のクリックでたどり着けます。"
+
+#: wp-admin/about.php:73
+msgid "Header + Admin Bar = Toolbar"
+msgstr "ヘッダー + 管理バー = ツールバー"
+
+#: wp-admin/about.php:74
+msgid "To save space and increase efficiency, we&#8217;ve combined the admin bar and the old Dashboard header into one persistent toolbar. Hovering over the toolbar items will reveal submenus when available for quick access. "
+msgstr "スペースを節約し、より効率的にするため、管理バーと旧ダッシュボードヘッダーを常駐ツールバーひとつにまとめました。ツールバー項目をマウスオーバーすれば、すばやくアクセスできるサブメニューが表示されます。"
+
+#: wp-admin/about.php:81
+msgid "Responsive Design"
+msgstr "レスポンシブデザイン"
+
+#: wp-admin/about.php:82
+msgid "Certain dashboard screens have been updated to look better at various sizes, including improved iPad/tablet support."
+msgstr "ダッシュボード画面の一部は、さまざまなサイズでより最適に表示されるよう更新されました。これには、iPad やタブレッドへの対応改善も含まれます。"
+
+#: wp-admin/about.php:86
+msgid "Help Tabs"
+msgstr "ヘルプタブ"
+
+#: wp-admin/about.php:87
+msgid "The Help tabs located in the upper corner of the dashboard screens below your name have gotten a facelift. Help content is broken into smaller sections for easier access, with links to relevant documentation and the support forums always visible."
+msgstr "ダッシュボード画面右上、あなたのお名前の下にあるヘルプタブは模様替えしました。ヘルプコンテンツはよりアクセスしやすくするために小さなセクションに分けられ、関連のドキュメントとフォーラムへのリンクは常に表示されるようになりました。"
+
+#: wp-admin/about.php:93
+msgid "Feels Like the First Time"
+msgstr "初めてのような感覚"
+
+#: wp-admin/about.php:101
+msgid "New Feature Pointers"
+msgstr "新しい機能のポインター"
+
+#: wp-admin/about.php:102
+msgid "When we add new features, move navigation, or do anything else with the dashboard that might throw you for a loop when you update your WordPress site, we&#8217;ll let you know about it with new feature pointers explaining the change."
+msgstr "新しい機能を追加したとき、ナビゲーションを移動したとき、もしくは WordPress をアップデートしたときにびっくりさせてしまうようななにかをダッシュボードにしたとき、この新機能ポインターがその変更をお知らせします。"
+
+#: wp-admin/about.php:104
+msgid "Post-update Changelog"
+msgstr "更新後の変更履歴"
+
+#: wp-admin/about.php:105
+msgid "This screen! From now on when you update WordPress, you&#8217;ll be brought to this screen &mdash; also accessible any time from the W logo in the corner of the toolbar &mdash; to get an overview of what&#8217;s changed."
+msgstr "この画面のことです ! 今後 WordPress を更新すると、変更点の概要を知ることができる画面が表示されます。またこれは、ツールバー端の「W」ロゴからも常にアクセス可能です。"
+
+#: wp-admin/about.php:107
+msgid "Dashboard Welcome"
+msgstr "ダッシュボードウェルカムエリア"
+
+#: wp-admin/about.php:108
+msgid "The dashboard home screen will have a Welcome area that displays when a new WordPress installation is accessed for the first time, prompting the site owner to complete various setup tasks. Once dismissed, this welcome can be accessed via the dashboard home screen options tab."
+msgstr "ダッシュボードのホーム画面に、WordPress をインストールして最初にアクセスしたときに表示される「ようこそ」エリアができました。ここではサイトオーナーに様々なセットアップのタスクを完了させるように促します。この「ようこそ」画面は、いったん非表示にしたあとはダッシュボードホームの表示オプションからアクセスすることができます。"
+
+#: wp-admin/about.php:115
+msgid "Content Tools"
+msgstr "コンテンツツール"
+
+#: wp-admin/about.php:119
+msgid "Better Co-Editing"
+msgstr "グループ編集の改善"
+
+#: wp-admin/about.php:121
+msgid "Have you ever gone to edit a post after someone else has finished with it, only to get an alert that tells you the other person is still editing the post? From now on, you&#8217;ll only get that alert if another person is still on the editing screen &mdash; no more time lag."
+msgstr "誰かが投稿を書き終わったあとに編集を始めた際、他の人がまだ編集中だという警告が出たことがありませんか ? これからは、他の人が編集画面を開いている場合のみ警告が表示されます。タイムラグはもうありません。"
+
+#: wp-admin/about.php:124
+msgid "Tumblr Importer"
+msgstr "Tumblr インポートツール"
+
+#: wp-admin/about.php:125
+msgid "Want to import content from Tumblr to WordPress? No problem! Go to <span class=\"no-break\">Tools &rarr; Import</span> to get the new Tumblr Importer, which maps your Tumblog posts to the matching WordPress post formats. Tip: Choose a theme designed to display post formats to get the greatest benefit from the importer."
+msgstr "Tumblr から WordPress へコンテンツをインポートしたいですか ? お任せください ! <span class=\"no-break\">ツール &rarr; インポート</span>から新しい Tumblr インポートツールを追加してください。Tumblog 投稿を、対応する WordPress の投稿フォーマットに割り当てることができます。投稿フォーマットの表示に対応したテーマを選ぶことで、インポートツールを最大限に活用できます。"
+
+#: wp-admin/about.php:128
+msgid "Widget Improvements"
+msgstr "ウィジェットの改善"
+
+#: wp-admin/about.php:129
+msgid "Changing themes often requires widget re-configuration based on the number and position of sidebars. Now if you change back to a previous theme, the widgets will automatically go back to how you had them arranged in that theme. <em>Note: if you&#8217;ve added new widgets since the switch, you&#8217;ll need to rescue them from the Inactive Widgets area.</em>"
+msgstr "テーマを変更するとたいてい、サイドバーの数や位置によってウィジェットを再編成する必要がでてきます。これからは過去に使っていたテーマに戻すと、ウィジェットの配置が自動的に以前の通りに戻ります。<strong>注:</strong> もしテーマの切り替え後に新しいウィジェットを追加した場合は、「使用停止中のウィジェット」エリアから再度追加してください。"
+
+#: wp-admin/about.php:136
+msgid "Under the Hood"
+msgstr "裏側"
+
+#: wp-admin/about.php:140
+msgid "Flexible Permalinks"
+msgstr "柔軟なパーマリンク"
+
+#: wp-admin/about.php:141
+msgid "You have more freedom when choosing a post permalink structure. Skip the date information or add a category slug without a performance penalty."
+msgstr "パーマリンク構造をより自由に設定できるようになりました。日付情報をなくしたりカテゴリースラッグ追加したりしてもパフォーマンスが低下しなくなりました。"
+
+#: wp-admin/about.php:144
+msgid "Post Slugs: Less Funky"
+msgstr "投稿スラッグ: すっきりとした表示"
+
+#: wp-admin/about.php:145
+msgid "Funky characters in post titles (e.g. curly quotes from a word processor) will no longer result in garbled post slugs."
+msgstr "投稿タイトルの変わった文字 (例えばワープロからコピーした変わった引用符) が投稿スラッグでも文字化けしなくなりました。"
+
+#: wp-admin/about.php:148
+msgid "jQuery and jQuery UI"
+msgstr "jQuery と jQuery UI"
+
+#: wp-admin/about.php:149
+msgid "WordPress now includes the entire jQuery UI stack and the latest version of jQuery: %s."
+msgstr "WordPress には jQuery UI スタックがすべて含まれています。jQuery の最新バージョンは %s です。"
+
+#: wp-admin/about.php:156
+msgid "This handy method will tell you if a <code>WP_Query</code> object is the main WordPress query or a secondary query."
+msgstr "この便利なメソッドは <code>WP_Query</code> オブジェクトがメインの WordPress クエリーなのか2番目のクエリーなのかを教えてくれます。"
+
+#: wp-admin/about.php:159
+msgid "WP_Screen API"
+msgstr "WP_Screen API"
+
+#: wp-admin/about.php:160
+msgid "WordPress has a nice new API for working with admin screens. Create rich screens, add help documentation, adapt to screen contexts, and more."
+msgstr "WordPress には管理画面を操作する新しい API があります。リッチな画面の作成、ヘルプドキュメンテーションの追加、画面コンテクストへの対応などを行えます。"
+
+#: wp-admin/about.php:163
+msgid "Editor API Overhaul"
+msgstr "エディタ API の改良"
+
+#: wp-admin/about.php:164
+msgid "The new editor API automatically pulls in all the JS and CSS goodness for the editor. It even supports multiple editors on the same page."
+msgstr "新しいエディタ API は、自動的に便利な JavaScript や CSS をすべて自動的に取り込みます。一つのページ上での複数のエディタにも対応しています。"
+
+#: wp-admin/about.php:173
+msgid "Return to Updates"
+msgstr "更新ページへ戻る"
+
+#: wp-admin/about.php:173
+msgid "Return to Dashboard &rarr; Updates"
+msgstr "ダッシュボード &rarr; 更新へ戻る"
+
+#: wp-admin/about.php:176
+msgid "Go to Dashboard &rarr; Home"
+msgstr "ダッシュボード &rarr; ホームへ移動"
+
+#: wp-admin/about.php:187
+msgid "Maintenance Release"
+msgid_plural "Maintenance Releases"
+msgstr[0] "メンテナンスリリース"
+
+#: wp-admin/about.php:188
+msgid "Security Release"
+msgid_plural "Security Releases"
+msgstr[0] "セキュリティリリース"
+
 #. translators: 1: WordPress version number.
-#: wp-admin/about.php:184
+#: wp-admin/about.php:192
 msgid "<strong>Version %1$s</strong> addressed a security issue."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応しました。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:188
+#: wp-admin/about.php:196
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
 
-#. translators: 1: WordPress version number, 2: plural number of bugs. Singular
-#. security issue.
-#: wp-admin/about.php:192
-msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
-msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
-msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
-
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:196
+#: wp-admin/about.php:204
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
-
-#: wp-admin/about.php:199
-msgid "For more information, see <a href=\"%s\">the release notes</a>."
-msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
 #: wp-admin/link.php:109
 msgid "Link not found."
@@ -10477,7 +10480,7 @@ msgstr "リセット"
 #: wp-admin/includes/dashboard.php:563
 #: wp-admin/includes/meta-boxes.php:219
 #: wp-admin/includes/meta-boxes.php:220
-#: wp-admin/press-this.php:473
+#: wp-admin/press-this.php:487
 msgid "Submit for Review"
 msgstr "レビュー待ちとして送信"
 
@@ -12432,9 +12435,9 @@ msgid "Upload file and import"
 msgstr "ファイルをアップロードしてインポート"
 
 #: wp-admin/includes/template.php:955
-#: wp-admin/press-this.php:463
-#: wp-admin/press-this.php:497
-#: wp-admin/press-this.php:547
+#: wp-admin/press-this.php:477
+#: wp-admin/press-this.php:511
+#: wp-admin/press-this.php:561
 msgid "Click to toggle"
 msgstr "クリックで切替"
 
@@ -13315,7 +13318,7 @@ msgstr "ホーム"
 #: wp-admin/includes/nav-menu.php:878
 #: wp-admin/includes/meta-boxes.php:327
 #: wp-admin/includes/meta-boxes.php:672
-#: wp-admin/press-this.php:504
+#: wp-admin/press-this.php:518
 msgid "Most Used"
 msgstr "よく使うもの"
 
@@ -13943,7 +13946,7 @@ msgstr "公開日時: <b>%1$s</b>"
 
 #. translators: %s: add new taxonomy label
 #: wp-admin/includes/meta-boxes.php:351
-#: wp-admin/press-this.php:526
+#: wp-admin/press-this.php:540
 msgid "+ %s"
 msgstr "+ %s"
 
@@ -14335,44 +14338,44 @@ msgstr "URL から追加"
 msgid "Refresh"
 msgstr "リフレッシュ"
 
-#: wp-admin/press-this.php:483
+#: wp-admin/press-this.php:497
 msgid "Post Format:"
 msgstr "投稿フォーマット:"
 
-#: wp-admin/press-this.php:520
+#: wp-admin/press-this.php:534
 msgid "You cannot modify this Taxonomy."
 msgstr "この分類は編集できません。"
 
-#: wp-admin/press-this.php:581
+#: wp-admin/press-this.php:595
 msgid "Your post has been saved."
 msgstr "投稿を保存しました。"
 
-#: wp-admin/press-this.php:582
+#: wp-admin/press-this.php:596
 msgid "View post"
 msgstr "投稿を表示"
 
-#: wp-admin/press-this.php:584
+#: wp-admin/press-this.php:598
 msgid "Close Window"
 msgstr "ウインドウを閉じる"
 
-#: wp-admin/press-this.php:594
+#: wp-admin/press-this.php:608
 msgid "Loading..."
 msgstr "読み込み中..."
 
-#: wp-admin/press-this.php:614
+#: wp-admin/press-this.php:628
 msgid "via "
 msgstr "引用元: "
 
-#: wp-admin/press-this.php:622
+#: wp-admin/press-this.php:636
 msgid "Add:"
 msgstr "追加:"
 
-#: wp-admin/press-this.php:626
-#: wp-admin/press-this.php:627
+#: wp-admin/press-this.php:640
+#: wp-admin/press-this.php:641
 msgid "Insert an Image"
 msgstr "画像の挿入"
 
-#: wp-admin/press-this.php:631
+#: wp-admin/press-this.php:645
 msgid "Embed a Video"
 msgstr "動画のコードを埋め込む"
 
@@ -16089,12 +16092,12 @@ msgid "One or more database tables are unavailable.  The database may need to be
 msgstr "利用できないデータベーステーブルがあります。データベースの<a href=\"%s\">復元</a>が必要かもしれません。"
 
 #. Not gettexted string WP_I18N_DB_ERROR
-#: wp-includes/functions.php:3368
+#: wp-includes/functions.php:3377
 msgid "Database Error"
 msgstr "データベースエラー"
 
 #. Not gettexted string WP_I18N_DB_CONNECTION_ERROR
-#: wp-includes/functions.php:3372
+#: wp-includes/functions.php:3381
 msgid "Error establishing a database connection"
 msgstr "データベース接続確立エラー"
 

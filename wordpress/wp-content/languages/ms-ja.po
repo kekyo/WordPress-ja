@@ -10,10 +10,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 3.3\n"
+"Project-Id-Version: WordPress 3.3.1\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-12-12 23:19:03+00:00\n"
-"PO-Revision-Date: 2011-12-13 10:59+0900\n"
+"POT-Creation-Date: 2012-01-03 21:20:55+00:00\n"
+"PO-Revision-Date: 2012-01-04 10:46+0900\n"
 "Last-Translator: Naoko McCracken <info@nao-net.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -984,78 +984,78 @@ msgid "Your email address has not been updated yet. Please check your inbox at %
 msgstr "メールアドレスの変更はまだ完了していません。%s へ届いた確認メールをチェックしてください。"
 
 #. translators: Gigabytes
-#: wp-admin/includes/ms.php:405
+#: wp-admin/includes/ms.php:407
 msgid "GB"
 msgstr "GB"
 
 #. translators: Megabytes
-#: wp-admin/includes/ms.php:408
+#: wp-admin/includes/ms.php:410
 msgid "MB"
 msgstr "MB"
 
-#: wp-admin/includes/ms.php:411
+#: wp-admin/includes/ms.php:413
 msgid "Used: %1s%% of %2s"
 msgstr "使用済み: %1s%% / %2s"
 
-#: wp-admin/includes/ms.php:423
+#: wp-admin/includes/ms.php:425
 msgid "Site Upload Space Quota "
 msgstr "サイトのアップロード容量割当 "
 
-#: wp-admin/includes/ms.php:424
+#: wp-admin/includes/ms.php:426
 msgid "MB (Leave blank for network default)"
 msgstr "MB (空にするとネットワークの初期値が適用されます)"
 
-#: wp-admin/includes/ms.php:503
 #: wp-admin/includes/ms.php:505
+#: wp-admin/includes/ms.php:507
 msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
 msgstr "\"%1$s\" ダッシュボードへアクセスを試みていますが、現在このサイトを表示する権限がありません。もし \"%1$s\" ダッシュボードにアクセスできるはずだと確信しているなら、ネットワーク管理者に連絡してください。"
 
-#: wp-admin/includes/ms.php:506
+#: wp-admin/includes/ms.php:508
 msgid "If you reached this screen by accident and meant to visit one of your own sites, here are some shortcuts to help you find your way."
 msgstr "自分のサイトを訪問しようとしてこの画面に来てしまった場合は、以下のショートカットを使って目的地を探してください。"
 
-#: wp-admin/includes/ms.php:508
+#: wp-admin/includes/ms.php:510
 msgid "Your Sites"
 msgstr "すべてのサイト"
 
-#: wp-admin/includes/ms.php:517
+#: wp-admin/includes/ms.php:519
 msgid "Visit Dashboard"
 msgstr "ダッシュボードを表示"
 
-#: wp-admin/includes/ms.php:517
+#: wp-admin/includes/ms.php:519
 msgid "View Site"
 msgstr "サイトを表示"
 
-#: wp-admin/includes/ms.php:544
+#: wp-admin/includes/ms.php:546
 msgid "American English"
 msgstr "アメリカ英語"
 
-#: wp-admin/includes/ms.php:548
+#: wp-admin/includes/ms.php:550
 msgid "British English"
 msgstr "イギリス英語"
 
-#: wp-admin/includes/ms.php:558
+#: wp-admin/includes/ms.php:560
 msgid "English"
 msgstr "英語"
 
-#: wp-admin/includes/ms.php:578
+#: wp-admin/includes/ms.php:580
 msgid "Warning! WordPress encrypts user cookies, but you must add the following lines to <strong>wp-config.php</strong> for it to be more secure."
 msgstr "注意: WordPress ではユーザー cookie を暗号化していますが、より安全性を高めるためには <strong>wp-config.php</strong> 内に以下のコードを追加する必要があります。"
 
-#: wp-admin/includes/ms.php:579
+#: wp-admin/includes/ms.php:581
 msgid "Before the line <code>/* That's all, stop editing! Happy blogging. */</code> please add this code:"
 msgstr "<code>/* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */</code> という行の上に以下のコードを追加してください。"
 
-#: wp-admin/includes/ms.php:592
+#: wp-admin/includes/ms.php:594
 msgid "Thank you for Updating! Please visit the <a href=\"%s\">Update Network</a> page to update all your sites."
 msgstr "更新していただきありがとうございます ! <a href=\"%s\">ネットワークの更新</a>ページへ移動して、すべてのサイトをアップグレードしてください。"
 
 #. translators: My sites label
-#: wp-admin/includes/ms.php:625
+#: wp-admin/includes/ms.php:627
 msgid "Primary Site"
 msgstr "基本のサイト"
 
-#: wp-admin/includes/ms.php:672
+#: wp-admin/includes/ms.php:674
 msgid "The <code>%1$s</code> file is deprecated. Please remove it and update your server rewrite rules to use <code>%2$s</code> instead."
 msgstr "<code>%1$s</code> ファイルが古くなっています。削除して、代わりに <code>%2$s</code> を使用するようサーバーの rewrite ルールを変更してください。"
 
