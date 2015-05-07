@@ -3,6 +3,7 @@ define('WP_INSTALLING', true);
 
 require_once('../wp-includes/compat.php');
 require_once('../wp-includes/functions.php');
+require_once('../wp-includes/classes.php');
 
 if (!file_exists('../wp-config-sample.php'))
 	wp_die('wp-config-sample.php が見つかりません。WordPress インストールファイルから再アップロードしてください。');
@@ -161,6 +162,9 @@ switch($step) {
 
 	// We'll fail here if the values are no good.
 	require_once('../wp-includes/wp-db.php');
+	if ( !empty($wpdb->error) )
+		wp_die($wpdb->error->get_error_message());
+
 	$handle = fopen('../wp-config.php', 'w');
 
 	foreach ($configFile as $line_num => $line) {
@@ -186,7 +190,7 @@ switch($step) {
 	}
 	fclose($handle);
 	chmod('../wp-config.php', 0666);
-
+	
 	display_header();
 ?>
 <p>インストールの一部が完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているならば、<a href="install.php">インストールを実行しましょう !</a></p>

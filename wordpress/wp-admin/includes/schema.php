@@ -195,7 +195,7 @@ function populate_options() {
 	add_option('ping_sites', 'http://rpc.pingomatic.com/');
 	add_option('advanced_edit', 0);
 	add_option('comment_max_links', 2);
-	add_option('gmt_offset', date('Z') / 3600);
+	add_option('gmt_offset', 9);
 	// 1.5
 	add_option('default_email_category', 1);
 	add_option('recently_edited');
@@ -206,7 +206,7 @@ function populate_options() {
 	add_option('page_uris');
 	add_option('blacklist_keys');
 	add_option('comment_registration', 0);
-	add_option('rss_language', 'en');
+	add_option('rss_language', 'ja');
 	add_option('html_type', 'text/html');
 	// 1.5.1
 	add_option('use_trackback', 0);

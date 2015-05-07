@@ -5,29 +5,23 @@
 # このファイルは WordPress 本体と同じライセンスのもと配布されています。
 # This file is distributed under the same license as the WordPress package.
 #
-# WP ja 翻訳チーム / WP ja translation team
+# WordPress 日本語版作成チーム / WP ja translation team
+# <http://groups.google.com/group/wp-ja-pkg/web/members>
 #
-#   kazuhisa <http://www.naviwave.com/blog_w/>
-#   Mako <http://D.halfmoon.jp/>
-#   Masayan <http://wp.mmrt-jp.net/>
-#   Odyssey <http://www.odysseygate.com/>
-#   tai <http://tekapo.com/st/>
-#             (アルファベット順 / in alphabetic order)
-#
-#  誤字脱字誤訳、あるいはよりよい訳などありましたら以下までぜひお知らせください。
-#  また、翻訳、校正、コミットをお手伝いしていただける方も随時募集中です。
-#  連絡先 / Contact: wpja.team@gmail.com (件名か内容に「日本語リソース」と入れてください)
+# 誤字脱字誤訳、あるいはよりよい訳などありましたら以下までぜひお知らせください。
+# また、日本語版の作成をお手伝いしていただける方も随時募集中です。
+# 連絡先 / Contact: wpja.team@gmail.com (件名か内容に「日本語リソース」と入れてください)
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 2.3 ja 1.1\n"
-"Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2007-08-31 17:49+0300\n"
-"PO-Revision-Date: 2007-10-31 13:20+0900\n"
+"Project-Id-Version: WordPress 2.3.2 ja 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-29 01:32+0900\n"
+"PO-Revision-Date: 2007-12-29 01:55+0900\n"
 "Last-Translator: tai <tekapo@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
@@ -37,52 +31,66 @@ msgstr ""
 "X-Poedit-Basepath: /Applications/MAMP/htdocs\n"
 "X-Poedit-SearchPath-0: wp23\n"
 
-#: wp23/wp-app.php:244
+#: wp23/wp-app.php:164
+#: wp23/wp-app.php:198
+msgid "Sorry, you do not have the right to access this blog."
+msgstr "すみませんが、このブログにアクセスする権限がありません。"
+
+#: wp23/wp-app.php:251
 msgid "Sorry, you do not have the right to edit/publish new posts."
 msgstr "すみませんが、あなたには新規投稿の編集/公開をする権限がありません。"
 
-#: wp23/wp-app.php:269
-#: wp23/wp-app.php:435
-#: wp23/wp-app.php:583
-#: wp23/xmlrpc.php:807
-#: wp23/xmlrpc.php:1097
+#: wp23/wp-app.php:276
+#: wp23/wp-app.php:446
+#: wp23/wp-app.php:598
+#: wp23/xmlrpc.php:860
+#: wp23/xmlrpc.php:1150
 msgid "Sorry, your entry could not be posted. Something wrong happened."
 msgstr "記事を投稿できませんでした。何か問題が起こりました。"
 
-#: wp23/wp-app.php:316
-#: wp23/wp-app.php:463
-#: wp23/wp-app.php:520
-#: wp23/wp-app.php:557
-#: wp23/xmlrpc.php:844
+#: wp23/wp-app.php:295
+msgid "Sorry, you do not have the right to access this post."
+msgstr "すみませんが、この投稿にアクセスする権限がありません。"
+
+#: wp23/wp-app.php:326
+#: wp23/wp-app.php:474
+#: wp23/wp-app.php:535
+#: wp23/wp-app.php:572
+#: wp23/xmlrpc.php:897
 msgid "Sorry, you do not have the right to edit this post."
 msgstr "あなたにはこの投稿を編集する権限はありません。"
 
-#: wp23/wp-app.php:342
-#: wp23/wp-app.php:478
-#: wp23/xmlrpc.php:860
+#: wp23/wp-app.php:352
+#: wp23/wp-app.php:489
+#: wp23/xmlrpc.php:913
 msgid "For some strange yet very annoying reason, this post could not be edited."
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は編集できませんでした。"
 
-#: wp23/wp-app.php:356
-#: wp23/wp-app.php:493
-#: wp23/xmlrpc.php:892
+#: wp23/wp-app.php:366
+#: wp23/wp-app.php:504
+#: wp23/xmlrpc.php:945
 msgid "Sorry, you do not have the right to delete this post."
 msgstr "あなたにはこの投稿を削除する権限はありません。"
 
-#: wp23/wp-app.php:365
-#: wp23/wp-app.php:505
-#: wp23/xmlrpc.php:897
+#: wp23/wp-app.php:375
+#: wp23/wp-app.php:520
+#: wp23/xmlrpc.php:950
 msgid "For some strange yet very annoying reason, this post could not be deleted."
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は削除できませんでした。"
 
-#: wp23/wp-app.php:393
-#: wp23/wp-app.php:549
+#: wp23/wp-app.php:386
+msgid "Sorry, you do not have the right to file uploads on this blog."
+msgstr "すみませんが、このブログにファイルをアップロードする権限がありません。"
+
+#: wp23/wp-app.php:404
+#: wp23/wp-app.php:564
 #: wp23/wp-admin/upload.php:7
 msgid "You do not have permission to upload files."
 msgstr "あなたにはファイルをアップロードをする権限がありません。"
 
-#: wp23/wp-app.php:527
-#: wp23/wp-app.php:564
+#: wp23/wp-app.php:511
+#: wp23/wp-app.php:542
+#: wp23/wp-app.php:579
 msgid "Error ocurred while accessing post metadata for file location."
 msgstr "ファイルの場所を参照するため投稿メタデータにアクセス中、エラーが発生しました。"
 
@@ -349,153 +357,182 @@ msgstr "新しいメールはありません。"
 msgid "Bad login/pass combination."
 msgstr "誤ったログイン/パスワードの組み合わせ。"
 
-#: wp23/xmlrpc.php:252
-#: wp23/xmlrpc.php:346
-#: wp23/xmlrpc.php:387
+#: wp23/xmlrpc.php:192
+msgid "Sorry, you can not edit this page."
+msgstr "すみませんが、このページは編集できません。"
+
+#: wp23/xmlrpc.php:258
+#: wp23/xmlrpc.php:358
+#: wp23/xmlrpc.php:399
 msgid "Sorry, no such page."
 msgstr "そのようなページはありません。"
 
-#: wp23/xmlrpc.php:313
+#: wp23/xmlrpc.php:279
+#: wp23/xmlrpc.php:443
+msgid "Sorry, you can not edit pages."
+msgstr "すみませんが、ページの編集はできません。"
+
+#: wp23/xmlrpc.php:325
 msgid "Sorry, you can not add new pages."
 msgstr "新しいページの追加はできません。"
 
-#: wp23/xmlrpc.php:352
+#: wp23/xmlrpc.php:364
 msgid "Sorry, you do not have the right to delete this page."
 msgstr "あなたにはこのページを削除する権限はありません。"
 
-#: wp23/xmlrpc.php:358
+#: wp23/xmlrpc.php:370
 msgid "Failed to delete the page."
 msgstr "このページの削除に失敗しました。"
 
-#: wp23/xmlrpc.php:393
+#: wp23/xmlrpc.php:405
 msgid "Sorry, you do not have the right to edit this page."
 msgstr "あなたにはこのページを編集する権限はありません。"
 
-#: wp23/xmlrpc.php:497
+#: wp23/xmlrpc.php:493
+msgid "Sorry, you can not edit posts on this blog."
+msgstr "すみませんが、このブログの投稿は編集できません。"
+
+#: wp23/xmlrpc.php:530
 msgid "Sorry, you do not have the right to add a category."
 msgstr "あなたにはカテゴリー追加の権限がありません。"
 
-#: wp23/xmlrpc.php:525
+#: wp23/xmlrpc.php:558
 msgid "Sorry, the new category failed."
 msgstr "新しいカテゴリーの追加に失敗しました。"
 
-#: wp23/xmlrpc.php:667
-#: wp23/xmlrpc.php:1423
-#: wp23/xmlrpc.php:1622
-msgid "Either there are no posts, or something went wrong."
-msgstr "投稿がないか、何かがうまくいきませんでした。"
+#: wp23/xmlrpc.php:585
+msgid "Sorry, you must be able to publish to this blog in order to view categories."
+msgstr "すみませんが、カテゴリーを参照するにはこのブログで公開する権限が必要です。"
 
-#: wp23/xmlrpc.php:714
-#: wp23/xmlrpc.php:749
-msgid "Sorry, this user can not edit the template."
-msgstr "このユーザーではテンプレートの編集はできません。"
+#: wp23/xmlrpc.php:641
+msgid "Sorry, you do not have access to user data on this blog."
+msgstr "すみませんが、このブログのユーザーデータにアクセスできません。"
 
-#: wp23/xmlrpc.php:760
-msgid "Either the file is not writable, or something wrong happened. The file has not been updated."
-msgstr "ファイルが書き込み不可になっているか、何か問題が起こったようです。このファイルは更新されませんでした。。"
-
-#: wp23/xmlrpc.php:787
-#: wp23/xmlrpc.php:929
-msgid "Sorry, you are not allowed to post on this blog."
-msgstr "あなたには当ブログへの投稿は許可されていません。"
-
-#: wp23/xmlrpc.php:837
-#: wp23/xmlrpc.php:887
-#: wp23/xmlrpc.php:1401
-#: wp23/xmlrpc.php:1768
-msgid "Sorry, no such post."
-msgstr "そのような投稿はありません。"
-
-#: wp23/xmlrpc.php:849
-#: wp23/xmlrpc.php:1291
-msgid "Sorry, you do not have the right to publish this post."
-msgstr "あなたにはこの投稿を公開する権限はありません。"
-
-#: wp23/xmlrpc.php:972
-msgid "You are not allowed to post as this user"
-msgstr "あなたのユーザー権限では記事の投稿はできません。"
-
-#: wp23/xmlrpc.php:977
-msgid "You are not allowed to create pages as this user"
-msgstr "あなたのユーザー権限ではページの作成はできません。"
-
-#: wp23/xmlrpc.php:981
-#: wp23/xmlrpc.php:1205
-msgid "Invalid post type."
-msgstr "無効な投稿形式。"
-
-#: wp23/xmlrpc.php:1151
-#: wp23/xmlrpc.php:1727
-#: wp23/xmlrpc.php:1809
+#: wp23/xmlrpc.php:674
+#: wp23/xmlrpc.php:1204
+#: wp23/xmlrpc.php:1398
+#: wp23/xmlrpc.php:1773
+#: wp23/xmlrpc.php:1810
+#: wp23/xmlrpc.php:1892
 msgid "Sorry, you can not edit this post."
 msgstr "あなたにはこの投稿の編集はできません。"
 
-#: wp23/xmlrpc.php:1159
+#: wp23/xmlrpc.php:718
+#: wp23/xmlrpc.php:1481
+#: wp23/xmlrpc.php:1690
+msgid "Either there are no posts, or something went wrong."
+msgstr "投稿がないか、何かがうまくいきませんでした。"
+
+#: wp23/xmlrpc.php:767
+#: wp23/xmlrpc.php:802
+msgid "Sorry, this user can not edit the template."
+msgstr "このユーザーではテンプレートの編集はできません。"
+
+#: wp23/xmlrpc.php:813
+msgid "Either the file is not writable, or something wrong happened. The file has not been updated."
+msgstr "ファイルが書き込み不可になっているか、何か問題が起こったようです。このファイルは更新されませんでした。。"
+
+#: wp23/xmlrpc.php:840
+#: wp23/xmlrpc.php:982
+msgid "Sorry, you are not allowed to post on this blog."
+msgstr "あなたには当ブログへの投稿は許可されていません。"
+
+#: wp23/xmlrpc.php:890
+#: wp23/xmlrpc.php:940
+#: wp23/xmlrpc.php:1459
+#: wp23/xmlrpc.php:1851
+msgid "Sorry, no such post."
+msgstr "そのような投稿はありません。"
+
+#: wp23/xmlrpc.php:902
+#: wp23/xmlrpc.php:1344
+msgid "Sorry, you do not have the right to publish this post."
+msgstr "あなたにはこの投稿を公開する権限はありません。"
+
+#: wp23/xmlrpc.php:1025
+msgid "You are not allowed to post as this user"
+msgstr "あなたのユーザー権限では記事の投稿はできません。"
+
+#: wp23/xmlrpc.php:1030
+msgid "You are not allowed to create pages as this user"
+msgstr "あなたのユーザー権限ではページの作成はできません。"
+
+#: wp23/xmlrpc.php:1034
+#: wp23/xmlrpc.php:1258
+msgid "Invalid post type."
+msgstr "無効な投稿形式。"
+
+#: wp23/xmlrpc.php:1212
 msgid "Invalid post id."
 msgstr "無効な投稿記事 ID。"
 
-#: wp23/xmlrpc.php:1196
+#: wp23/xmlrpc.php:1249
 msgid "You are not allowed to change the post author as this user."
 msgstr "あなたのユーザー権限では投稿作成者の変更はできません。"
 
-#: wp23/xmlrpc.php:1201
+#: wp23/xmlrpc.php:1254
 msgid "You are not allowed to change the page author as this user."
 msgstr "あなたのユーザー権限ではページ作成者の変更はできません。"
 
-#: wp23/xmlrpc.php:1289
+#: wp23/xmlrpc.php:1342
 msgid "Sorry, you do not have the right to publish this page."
 msgstr "あなたにはこのページを公開する権限はありません。"
 
-#: wp23/xmlrpc.php:1318
+#: wp23/xmlrpc.php:1371
 msgid "Sorry, your entry could not be edited. Something wrong happened."
 msgstr "すみませんが、投稿を編集できませんでした。何か問題が起こりました。"
 
-#: wp23/xmlrpc.php:1550
+#: wp23/xmlrpc.php:1571
+#: wp23/xmlrpc.php:1739
+msgid "Sorry, you must be able to edit posts on this blog in order to view categories."
+msgstr "すみませんが、カテゴリーを参照するにはこのブログの投稿を編集する権限が必要です。"
+
+#: wp23/xmlrpc.php:1618
 msgid "You are not allowed to upload files to this site."
 msgstr "あなたにはこのサイトにファイルをアップロードする権限はありません。"
 
-#: wp23/xmlrpc.php:1577
+#: wp23/xmlrpc.php:1645
 #, php-format
 msgid "Could not write file %1$s (%2$s)"
 msgstr "ファイル %1$s (%2$s) に書き込めません"
 
-#: wp23/xmlrpc.php:1851
+#: wp23/xmlrpc.php:1934
 msgid "Is there no link to us?"
 msgstr "私たちへのリンクはないのですか ?"
 
-#: wp23/xmlrpc.php:1891
-#: wp23/xmlrpc.php:1901
-#: wp23/xmlrpc.php:1908
-#: wp23/xmlrpc.php:2008
+#: wp23/xmlrpc.php:1974
+#: wp23/xmlrpc.php:1984
+#: wp23/xmlrpc.php:1991
+#: wp23/xmlrpc.php:2091
 msgid "The specified target URL cannot be used as a target. It either doesn't exist, or it is not a pingback-enabled resource."
 msgstr "指定されたターゲット URL はターゲットとして使用できません。この URL は存在しないかピンバックが有効になっていません。"
 
-#: wp23/xmlrpc.php:1904
+#: wp23/xmlrpc.php:1987
 msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "ソース URL とターゲット URL は同じリソースを指すことはできません。"
 
-#: wp23/xmlrpc.php:1914
+#: wp23/xmlrpc.php:1997
 msgid "The pingback has already been registered."
 msgstr "このピンバックはすでに登録済みです。"
 
-#: wp23/xmlrpc.php:1922
+#: wp23/xmlrpc.php:2005
 msgid "The source URL does not exist."
 msgstr "ソース URL が存在しません。"
 
-#: wp23/xmlrpc.php:1932
+#: wp23/xmlrpc.php:2015
 msgid "We cannot find a title on that page."
 msgstr "このページのタイトルが見つかりませんでした。"
 
-#: wp23/xmlrpc.php:1968
+#: wp23/xmlrpc.php:2051
 msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "ソース URL にターゲット URL へのリンクが含まれていないので、ソースとして使用することができません。"
 
-#: wp23/xmlrpc.php:1990
+#: wp23/xmlrpc.php:2073
 #, php-format
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "%1$s より %2$s へのピンバックが登録されました。ウェブでの会話を続けてください ! :-)"
 
-#: wp23/xmlrpc.php:2015
+#: wp23/xmlrpc.php:2098
 msgid "The specified target URL does not exist."
 msgstr "指定したターゲット URL が存在しません。"
 
@@ -586,28 +623,28 @@ msgstr "ログアウト"
 msgid "My Profile"
 msgstr "プロフィール"
 
-#: wp23/wp-admin/admin.php:52
+#: wp23/wp-admin/admin.php:54
 msgid "Invalid plugin page"
 msgstr "無効なプラグインのページ"
 
-#: wp23/wp-admin/admin.php:56
+#: wp23/wp-admin/admin.php:58
 #, php-format
 msgid "Cannot load %s."
 msgstr "%s を読み込めません。"
 
-#: wp23/wp-admin/admin.php:74
+#: wp23/wp-admin/admin.php:76
 msgid "You are not allowed to import."
 msgstr "あなたにはインポートの権限がありません。"
 
-#: wp23/wp-admin/admin.php:77
+#: wp23/wp-admin/admin.php:79
 msgid "Invalid importer."
 msgstr "無効なインポーターです。"
 
-#: wp23/wp-admin/admin.php:85
+#: wp23/wp-admin/admin.php:87
 msgid "Cannot load importer."
 msgstr "インポーターを読み込めません。"
 
-#: wp23/wp-admin/admin.php:92
+#: wp23/wp-admin/admin.php:94
 #: wp23/wp-admin/import.php:3
 #: wp23/wp-admin/import.php:9
 #: wp23/wp-admin/menu.php:43
@@ -630,7 +667,7 @@ msgstr "インポート"
 #: wp23/wp-admin/widgets.php:6
 #: wp23/wp-admin/import/wp-cat2tag.php:183
 #: wp23/wp-admin/includes/bookmark.php:9
-#: wp23/wp-content/plugins/akismet/akismet.php:45
+#: wp23/wp-content/plugins/akismet/akismet.php:46
 msgid "Cheatin&#8217; uh?"
 msgstr "間違えましたか ?"
 
@@ -993,8 +1030,7 @@ msgid "Show Comments That Contain..."
 msgstr "検索文字を含むコメントを表示"
 
 #: wp23/wp-admin/edit-comments.php:46
-#: wp23/wp-content/plugins/akismet/akismet.php:355
-#: wp23/wp-content/plugins/akismet/akismet.php:424
+#: wp23/wp-content/plugins/akismet/akismet.php:397
 #: wp23/wp-content/themes/classic/sidebar.php:16
 #: wp23/wp-includes/widgets.php:414
 #: wp23/wp-includes/widgets.php:1147
@@ -1121,7 +1157,7 @@ msgstr ""
 "'キャンセル' で中止、'OK' でスパムとしてマークします。"
 
 #: wp23/wp-admin/edit-comments.php:190
-#: wp23/wp-content/plugins/akismet/akismet.php:500
+#: wp23/wp-content/plugins/akismet/akismet.php:565
 msgid "No results found."
 msgstr "見つかりませんでした。"
 
@@ -1353,7 +1389,7 @@ msgstr "承認待ち"
 #: wp23/wp-admin/moderation.php:183
 #: wp23/wp-admin/moderation.php:221
 #: wp23/wp-admin/includes/template.php:290
-#: wp23/wp-content/plugins/akismet/akismet.php:523
+#: wp23/wp-content/plugins/akismet/akismet.php:588
 msgid "Spam"
 msgstr "スパム"
 
@@ -1903,6 +1939,7 @@ msgstr "カテゴリー&hellip;"
 #: wp23/wp-admin/edit.php:154
 #: wp23/wp-admin/export.php:26
 #: wp23/wp-admin/link-manager.php:81
+#: wp23/wp-content/plugins/akismet/akismet.php:438
 msgid "All"
 msgstr "すべて"
 
@@ -1917,7 +1954,7 @@ msgstr "次ページへ &raquo;"
 #: wp23/wp-admin/edit.php:196
 #: wp23/wp-admin/moderation.php:166
 #: wp23/wp-admin/includes/template.php:277
-#: wp23/wp-content/plugins/akismet/akismet.php:442
+#: wp23/wp-content/plugins/akismet/akismet.php:507
 msgid "IP:"
 msgstr "IP:"
 
@@ -2132,99 +2169,99 @@ msgstr "サイトの外観やテーマの変更"
 msgid "Need help with WordPress? Please see our <a href='http://codex.wordpress.org/'>documentation</a> or visit the <a href='http://wordpress.org/support/'>support forums</a>."
 msgstr "WordPress に関して助けが必要ですか ? <a href='http://codex.wordpress.org/'>オンライン資料</a>を参照するか<a href='http://wordpress.org/support/'>サポートフォーラム</a>を訪れてみてください。"
 
-#: wp23/wp-admin/install.php:22
+#: wp23/wp-admin/install.php:23
 msgid "WordPress &rsaquo; Installation"
 msgstr "WordPress &rsaquo; インストール"
 
-#: wp23/wp-admin/install.php:29
+#: wp23/wp-admin/install.php:33
 msgid "Already Installed"
 msgstr "インストール済み"
 
-#: wp23/wp-admin/install.php:29
+#: wp23/wp-admin/install.php:33
 msgid "You appear to have already installed WordPress. To reinstall please clear your old database tables first."
 msgstr "すでに WordPress をインストール済みのようです。再インストールするにはまず最初に古いデータベーステーブルを削除してください。"
 
-#: wp23/wp-admin/install.php:35
+#: wp23/wp-admin/install.php:40
 msgid "Welcome"
 msgstr "ようこそ"
 
-#: wp23/wp-admin/install.php:36
+#: wp23/wp-admin/install.php:41
 #, php-format
 msgid "Welcome to the famous five minute WordPress installation process! You may want to browse the <a href=\"%s\">ReadMe documentation</a> at your leisure.  Otherwise, just fill in the information below and you'll be on your way to using the most extendable and powerful personal publishing platform in the world."
 msgstr "5 分でできる WordPress の有名なインストールプロセスへようこそ ! <a href=\"%s\">ReadMe ドキュメント</a>はお暇なときにでもお読みください。下記にいくつか情報を入力して、世界で最も拡張的で強力なパーソナルパブリッシングプラットフォームを使用するための準備を始めましょう。"
 
-#: wp23/wp-admin/install.php:37
+#: wp23/wp-admin/install.php:42
 msgid "First Step &raquo;"
 msgstr "最初のステップ &raquo;"
 
-#: wp23/wp-admin/install.php:39
+#: wp23/wp-admin/install.php:44
 msgid "Information needed"
 msgstr "必要情報"
 
-#: wp23/wp-admin/install.php:40
+#: wp23/wp-admin/install.php:45
 msgid "Please provide the following information.  Don't worry, you can always change these settings later."
 msgstr "次の情報をいくつか入力してください。ご心配なく、これらの情報は後からいつでも変更することができます。"
 
-#: wp23/wp-admin/install.php:45
+#: wp23/wp-admin/install.php:50
 #: wp23/wp-admin/options-general.php:17
 msgid "Blog title:"
 msgstr "ブログタイトル:"
 
-#: wp23/wp-admin/install.php:49
+#: wp23/wp-admin/install.php:54
 msgid "Your e-mail:"
 msgstr "メールアドレス:"
 
-#: wp23/wp-admin/install.php:54
+#: wp23/wp-admin/install.php:59
 msgid "Allow my blog to appear in search engines like Google and Technorati."
-msgstr "このブログを Google や Technorat などの検索エンジンに表示されるようにする。"
+msgstr "このブログを Google や Technorati などの検索エンジンに表示されるようにする。"
 
-#: wp23/wp-admin/install.php:57
+#: wp23/wp-admin/install.php:62
 msgid "Double-check your email address before continuing."
 msgstr "次に進む前にメールアドレスをもう一度確認してください。"
 
-#: wp23/wp-admin/install.php:58
+#: wp23/wp-admin/install.php:63
 msgid "Install WordPress &raquo;"
 msgstr "WordPress をインストール &raquo;"
 
-#: wp23/wp-admin/install.php:71
+#: wp23/wp-admin/install.php:80
 msgid "<strong>ERROR</strong>: you must provide an e-mail address"
 msgstr "<strong>エラー</strong>: メールアドレスを入力してください。"
 
-#: wp23/wp-admin/install.php:74
+#: wp23/wp-admin/install.php:83
 msgid "<strong>ERROR</strong>: that isn't a valid e-mail address.  E-mail addresses look like: <code>username@example.com</code>"
 msgstr "<strong>エラー</strong>: 有効なメールアドレスではありません。メールアドレスは次のようなものです: <code>username@example.com</code>"
 
-#: wp23/wp-admin/install.php:81
+#: wp23/wp-admin/install.php:91
 msgid "Success!"
 msgstr "成功しました !"
 
-#: wp23/wp-admin/install.php:83
+#: wp23/wp-admin/install.php:93
 #, php-format
 msgid "WordPress has been installed.  Now you can <a href=\"%1$s\">log in</a> with the <strong>username</strong> \"<code>admin</code>\" and <strong>password</strong> \"<code>%2$s</code>\"."
 msgstr "WordPress がインストールされました。<strong>ログイン名</strong> \"<code>admin</code>\" と<strong>パスワード</strong> \"<code>%2$s</code>\" で<a href=\"%1$s\">ログイン</a>することができます。"
 
-#: wp23/wp-admin/install.php:84
+#: wp23/wp-admin/install.php:94
 msgid "<strong><em>Note that password</em></strong> carefully! It is a <em>random</em> password that was generated just for you."
 msgstr "<strong><em>パスワードを注意深くメモしてください ! </em></strong>このパスワードは今回のインストール用に<em>ランダム</em>に生成されたものです。"
 
-#: wp23/wp-admin/install.php:87
+#: wp23/wp-admin/install.php:97
 #: wp23/wp-admin/users.php:389
 msgid "Username"
 msgstr "ユーザー名"
 
-#: wp23/wp-admin/install.php:89
+#: wp23/wp-admin/install.php:99
 msgid "Password"
 msgstr "パスワード"
 
-#: wp23/wp-admin/install.php:91
+#: wp23/wp-admin/install.php:101
 msgid "Login address"
 msgstr "ログインアドレス"
 
-#: wp23/wp-admin/install.php:94
+#: wp23/wp-admin/install.php:104
 msgid "Were you expecting more steps? Sorry to disappoint. :)"
 msgstr "もっと何か作業をしたかったですか ? がっかりさせてゴメンナサイ。これだけです ! :)"
 
-#: wp23/wp-admin/install.php:101
+#: wp23/wp-admin/install.php:111
 msgid "<a href=\"http://wordpress.org/\">WordPress</a>, personal publishing platform."
 msgstr "<a href=\"http://wordpress.org/\">WordPress</a>, personal publishing platform."
 
@@ -2766,7 +2803,7 @@ msgid "Weeks in the calendar should start on:"
 msgstr "カレンダーの週の始まり:"
 
 #: wp23/wp-admin/options-head.php:4
-#: wp23/wp-content/plugins/akismet/akismet.php:107
+#: wp23/wp-content/plugins/akismet/akismet.php:108
 #: wp23/wp-content/themes/default/functions.php:357
 msgid "Options saved."
 msgstr "設定を保存しました。"
@@ -3723,10 +3760,14 @@ msgid "No matching users were found!"
 msgstr "該当のユーザーは見つかりませんでした !"
 
 #: wp23/wp-admin/users.php:88
+#: wp23/wp-content/plugins/akismet/akismet.php:464
+#: wp23/wp-content/plugins/akismet/akismet.php:531
 msgid "&laquo; Previous Page"
 msgstr "&laquo; 前ページへ"
 
 #: wp23/wp-admin/users.php:89
+#: wp23/wp-content/plugins/akismet/akismet.php:485
+#: wp23/wp-content/plugins/akismet/akismet.php:552
 msgid "Next Page &raquo;"
 msgstr "次ページへ &raquo;"
 
@@ -5565,187 +5606,177 @@ msgid "<strong>ERROR</strong>: the email address isn't correct"
 msgstr "<strong>エラー</strong>: メールアドレスが不正です。"
 
 #: wp23/wp-content/plugins/akismet/akismet.php:37
-#: wp23/wp-content/plugins/akismet/akismet.php:110
+#: wp23/wp-content/plugins/akismet/akismet.php:111
 msgid "Akismet Configuration"
 msgstr "Akismet 設定"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:97
+#: wp23/wp-content/plugins/akismet/akismet.php:98
 msgid "Your key has been cleared."
 msgstr "キーが削除されました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:98
+#: wp23/wp-content/plugins/akismet/akismet.php:99
 msgid "Your key has been verified. Happy blogging!"
 msgstr "あなたのキーは認証されました。ではブログを楽しんでください !"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:99
+#: wp23/wp-content/plugins/akismet/akismet.php:100
 msgid "The key you entered is invalid. Please double-check it."
 msgstr "入力されたキーは無効です。 キーを再確認してください。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:100
+#: wp23/wp-content/plugins/akismet/akismet.php:101
 msgid "The key you entered could not be verified because a connection to akismet.com could not be established. Please check your server configuration."
 msgstr "akismet.com との接続が確立できなかったため、入力したキーを認証できませんでした。サーバーの設定を確認してください。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:101
+#: wp23/wp-content/plugins/akismet/akismet.php:102
 msgid "There was a problem connecting to the Akismet server. Please check your server configuration."
 msgstr "Akismet サーバーとの接続に問題が発生しました。サーバーの設定を確認してください。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:102
+#: wp23/wp-content/plugins/akismet/akismet.php:103
 #, php-format
 msgid "Please enter an API key. (<a href=\"%s\" style=\"color:#fff\">Get your key.</a>)"
 msgstr "API キーを入力してださい。 (<a href=\"%s\" style=\"color:#fff\">キーを取得する</a>) "
 
-#: wp23/wp-content/plugins/akismet/akismet.php:103
+#: wp23/wp-content/plugins/akismet/akismet.php:104
 msgid "This key is valid."
 msgstr "このキーは有効です。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:104
+#: wp23/wp-content/plugins/akismet/akismet.php:105
 msgid "The key below was previously validated but a connection to akismet.com can not be established at this time. Please check your server configuration."
 msgstr "以下のキーは認証済みですが、akismet.com への接続が確立できませんでした。サーバーの設定を確認してください。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:114
+#: wp23/wp-content/plugins/akismet/akismet.php:115
 #, php-format
 msgid "For many people, <a href=\"%1$s\">Akismet</a> will greatly reduce or even completely eliminate the comment and trackback spam you get on your site. If one does happen to get through, simply mark it as \"spam\" on the moderation screen and Akismet will learn from the mistakes. If you don't have a WordPress.com account yet, you can get one at <a href=\"%2$s\">WordPress.com</a>."
 msgstr "<a href=\"%1$s\">Akismet</a> はあなたのサイトにやってくるコメントスパムやトラックバックスパムを大きく減らすか完全に排除します。もしスパムが通過してしまった場合、コメント承認画面でそのコメントの「スパム」にマークを付けると、Akismet はその間違いから学習します。WordPress.com のアカウントをまだ持っていなければ <a href=\"%2$s\">WordPress.com</a> で取得することができます。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:117
+#: wp23/wp-content/plugins/akismet/akismet.php:118
 msgid "WordPress.com API Key"
 msgstr "WordPress.com API キー"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:121
+#: wp23/wp-content/plugins/akismet/akismet.php:122
 msgid "<a href=\"http://faq.wordpress.com/2005/10/19/api-key/\">What is this?</a>"
 msgstr "<a href=\"http://faq.wordpress.com/2005/10/19/api-key/\">API キーとは何 ? </a>"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:123
+#: wp23/wp-content/plugins/akismet/akismet.php:124
 msgid "Why might my key be invalid?"
 msgstr "キーが認証されないのはなぜですか ?"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:124
+#: wp23/wp-content/plugins/akismet/akismet.php:125
 msgid "This can mean one of two things, either you copied the key wrong or that the plugin is unable to reach the Akismet servers, which is most often caused by an issue with your web host around firewalls or similar."
 msgstr "理由は二つ考えられます: キーを間違ってコピーしたか、もしくはプラグインが Akismet サーバーに接続できないためです。後者の場合、最もよくある原因としてウェブホストのファイアウォールもしくはその類似機能に問題があることが考えられます。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:127
+#: wp23/wp-content/plugins/akismet/akismet.php:128
 msgid "Automatically discard spam comments on posts older than a month."
 msgstr "ひと月以上前の投稿へのスパムコメントを自動的に削除する。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:128
+#: wp23/wp-content/plugins/akismet/akismet.php:129
 msgid "Update options &raquo;"
 msgstr "設定を更新 &raquo;"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:149
-msgid "Akismet is not active."
-msgstr "Akismet は作動していません。"
+#: wp23/wp-content/plugins/akismet/akismet.php:150
+msgid "Akismet is almost ready."
+msgstr "Akismet はもうすぐ利用できます。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:149
+#: wp23/wp-content/plugins/akismet/akismet.php:150
 #, php-format
 msgid "You must <a href=\"%1$s\">enter your WordPress.com API key</a> for it to work."
 msgstr "作動させるには <a href=\"%1$s\">WordPress.com API キーの入力</a>が必要です。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:273
+#: wp23/wp-content/plugins/akismet/akismet.php:272
 #, php-format
 msgid "Akismet Spam (%s)"
 msgstr "Akismet スパム (%s 件) "
 
-#: wp23/wp-content/plugins/akismet/akismet.php:275
-#: wp23/wp-content/plugins/akismet/akismet.php:277
+#: wp23/wp-content/plugins/akismet/akismet.php:274
+#: wp23/wp-content/plugins/akismet/akismet.php:276
 msgid "Akismet Spam"
 msgstr "Akismet スパム"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:286
-#: wp23/wp-content/plugins/akismet/akismet.php:305
+#: wp23/wp-content/plugins/akismet/akismet.php:285
+#: wp23/wp-content/plugins/akismet/akismet.php:304
 msgid "You do not have sufficient permission to moderate comments."
 msgstr "あなたにはコメントをモデレートするための十分な権限がありません。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:317
+#: wp23/wp-content/plugins/akismet/akismet.php:316
 #, php-format
 msgid "%1$s comments recovered."
 msgstr "%1$s 件のコメントを元に戻しました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:321
+#: wp23/wp-content/plugins/akismet/akismet.php:320
 msgid "All spam deleted."
 msgstr "すべてのスパムが削除されました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:329
+#: wp23/wp-content/plugins/akismet/akismet.php:368
 msgid "Caught Spam"
 msgstr "捕らえたスパム"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:334
+#: wp23/wp-content/plugins/akismet/akismet.php:373
 #, php-format
 msgid "Akismet has caught <strong>%1$s spam</strong> for you since you first installed it."
 msgstr "Akismet は有効化されてから<strong>%1$s 件のスパム</strong>を捕らえました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:339
+#: wp23/wp-content/plugins/akismet/akismet.php:381
 msgid "You have no spam currently in the queue. Must be your lucky day. :)"
 msgstr "今のところスパムはありません。きっと運のいい日だったのでしょう。 :)"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:342
+#: wp23/wp-content/plugins/akismet/akismet.php:384
 msgid "You can delete all of the spam from your database with a single click. This operation cannot be undone, so you may wish to check to ensure that no legitimate comments got through first. Spam is automatically deleted after 15 days, so don&#8217;t sweat it."
 msgstr "「すべてを削除」のボタンを押すとすべてのスパムを削除することができます。この操作は取り消すことができないので、削除する前に本物のコメントが誤ってスパムと判定されていないか確かめた方がいいでしょう。スパムは 15 日後に自動的に削除されるので、あまり悩む必要はありません。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:348
-#: wp23/wp-content/plugins/akismet/akismet.php:507
+#: wp23/wp-content/plugins/akismet/akismet.php:390
+#: wp23/wp-content/plugins/akismet/akismet.php:572
 #, php-format
 msgid "There are currently %1$s comments identified as spam."
 msgstr "今のところスパムと判定されたコメントが %1$s 件あります。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:348
-#: wp23/wp-content/plugins/akismet/akismet.php:507
+#: wp23/wp-content/plugins/akismet/akismet.php:390
+#: wp23/wp-content/plugins/akismet/akismet.php:572
 msgid "Delete all"
 msgstr "すべてを削除"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:357
-msgid "Latest Spam"
-msgstr "最近のスパム"
-
-#: wp23/wp-content/plugins/akismet/akismet.php:358
+#: wp23/wp-content/plugins/akismet/akismet.php:399
 msgid "These are the latest comments identified as spam by Akismet. If you see any mistakes, simply mark the comment as \"not spam\" and Akismet will learn from the submission. If you wish to recover a comment from spam, simply select the comment, and click Not Spam. After 15 days we clean out the junk for you."
 msgstr "これらは Akismet によってスパムと判定された最新のコメントです。もし間違いを見つけたらそのコメントの「スパムを解除」にマークを入れてください。Akismet はあなたの判定から学習していきます。スパムと判定されたコメントを元に戻すには、そのコメントを選択して一番下の「選択したコメントのスパムを解除 &raquo;」をクリックしてください。 スパムは 15 日後に自動的に削除されます。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:395
-#: wp23/wp-content/plugins/akismet/akismet.php:466
-msgid "Previous Page"
-msgstr "前ページへ"
+#: wp23/wp-content/plugins/akismet/akismet.php:457
+msgid "Search Spam &raquo;"
+msgstr "スパムを検索 &raquo;"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:416
-#: wp23/wp-content/plugins/akismet/akismet.php:487
-msgid "Next Page"
-msgstr "次ページへ"
-
-#: wp23/wp-content/plugins/akismet/akismet.php:448
+#: wp23/wp-content/plugins/akismet/akismet.php:513
 msgid "Not Spam"
 msgstr "スパムを解除"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:454
+#: wp23/wp-content/plugins/akismet/akismet.php:519
 msgid "View Post"
 msgstr "投稿を表示"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:493
+#: wp23/wp-content/plugins/akismet/akismet.php:558
 msgid "De-spam marked comments &raquo;"
 msgstr "選択したコメントのスパムを解除 &raquo;"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:495
+#: wp23/wp-content/plugins/akismet/akismet.php:560
 msgid "Comments you de-spam will be submitted to Akismet as mistakes so it can learn and get better."
 msgstr "スパムを解除されたコメントは Akismet へ送信されます。Akismet はその「間違い」を学習することによってさらに賢くなります"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:529
+#: wp23/wp-content/plugins/akismet/akismet.php:594
 #, php-format
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">%3$s spam comments</a>."
 msgstr "<a href=\"%1$s\">Akismet</a> は <a href=\"%2$s\">%3$s 件のコメントスパム</a>からあなたのサイトを保護しました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:542
+#: wp23/wp-content/plugins/akismet/akismet.php:607
 msgid "Recheck Queue for Spam"
 msgstr "承認待ちをスパムチェック"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:611
+#: wp23/wp-content/plugins/akismet/akismet.php:676
 #, php-format
 msgid "%d spam comments have been blocked by <a href=\"http://akismet.com\">Akismet</a>."
 msgstr "%d 件のコメントスパムが <a href=\"http://akismet.com\">Akismet</a> によってブロックされました。"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:615
+#: wp23/wp-content/plugins/akismet/akismet.php:680
 #, php-format
 msgid "%1$s %2$sspam comments%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 msgstr "%1$s %2$sスパムコメント%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:647
+#: wp23/wp-content/plugins/akismet/akismet.php:712
 #: wp23/wp-includes/widgets.php:385
 #: wp23/wp-includes/widgets.php:461
 #: wp23/wp-includes/widgets.php:497
@@ -5757,11 +5788,11 @@ msgstr "%1$s %2$sスパムコメント%3$s %4$sblocked by%5$s<br />%6$sAkismet%7
 msgid "Title:"
 msgstr "タイトル:"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:677
+#: wp23/wp-content/plugins/akismet/akismet.php:742
 msgid "spam comments"
 msgstr "コメントスパム"
 
-#: wp23/wp-content/plugins/akismet/akismet.php:677
+#: wp23/wp-content/plugins/akismet/akismet.php:742
 msgid "blocked by"
 msgstr "blocked by"
 
@@ -6280,19 +6311,19 @@ msgstr "%s より"
 msgid "Protected Comments: Please enter your password to view comments."
 msgstr "コメント保護中: 閲覧するにはパスワードを入力してください。"
 
-#: wp23/wp-includes/formatting.php:776
+#: wp23/wp-includes/formatting.php:793
 #, php-format
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s 分"
 
-#: wp23/wp-includes/formatting.php:782
+#: wp23/wp-includes/formatting.php:799
 #, php-format
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s 時間"
 
-#: wp23/wp-includes/formatting.php:788
+#: wp23/wp-includes/formatting.php:805
 #, php-format
 msgid "%s day"
 msgid_plural "%s days"
@@ -7103,21 +7134,21 @@ msgstr ""
 #: wp23/wp-includes/taxonomy.php:235
 #: wp23/wp-includes/taxonomy.php:356
 #: wp23/wp-includes/taxonomy.php:458
-#: wp23/wp-includes/taxonomy.php:853
-#: wp23/wp-includes/taxonomy.php:996
+#: wp23/wp-includes/taxonomy.php:857
+#: wp23/wp-includes/taxonomy.php:1000
 msgid "Invalid Taxonomy"
 msgstr "無効な分類"
 
-#: wp23/wp-includes/taxonomy.php:913
-#: wp23/wp-includes/taxonomy.php:1069
+#: wp23/wp-includes/taxonomy.php:917
+#: wp23/wp-includes/taxonomy.php:1073
 msgid "Invalid taxonomy"
 msgstr "無効な分類"
 
-#: wp23/wp-includes/taxonomy.php:916
+#: wp23/wp-includes/taxonomy.php:920
 msgid "Invalid term ID"
 msgstr "無効な単語 ID"
 
-#: wp23/wp-includes/taxonomy.php:1113
+#: wp23/wp-includes/taxonomy.php:1117
 #, php-format
 msgid "The slug \"%s\" is already in use by another term"
 msgstr "このスラッグ \"%s\" はすでに他のタグで使用されています。"
@@ -7492,4 +7523,11 @@ msgstr "Hosted By Sourceforge"
 #: wp23/wp-includes/js/tinymce/wp-mce-help.php:174
 msgid "Also on freshmeat"
 msgstr "Also on freshmeat"
+
+#~ msgid "Previous Page"
+#~ msgstr "前ページへ"
+#~ msgid "Next Page"
+#~ msgstr "次ページへ"
+#~ msgid "Latest Spam"
+#~ msgstr "最近のスパム"
 

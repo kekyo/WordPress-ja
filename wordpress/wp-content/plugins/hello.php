@@ -6,7 +6,7 @@ Description: これはただのプラグインではありません。Louis Arms
 Author: Matt Mullenweg
 Version: 1.5
 Author URI: http://photomatt.net/
-*/ 
+*/
 
 // These are the lyrics to Hello Dolly
 $lyrics = "Hello, Dolly
