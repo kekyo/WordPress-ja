@@ -3,7 +3,7 @@
 Plugin Name: Akismet
 Plugin URI: http://akismet.com/
 Description: Akismet はコメントがスパムかどうか Akismet ウェブサービスに確認します。このプラグインを使用するには <a href="http://wordpress.com/api-keys/">WordPress.com API キー</a>が必要です。"コメント"メニュー以下で捕らえたコメントを閲覧することができます。Akismet が捕らえたスパムコメントの数を表示するにはテンプレートに <code>&lt;?php akismet_counter(); ?></code> を挿入します。<a href="http://wordpress.org/extend/plugins/stats/">WP Stats plugin</a> もご覧ください。
-Version: 2.1.8
+Version: 2.2.1
 Author: Matt Mullenweg
 Author URI: http://ma.tt/
 */
@@ -21,6 +21,7 @@ function akismet_init() {
 
 	$akismet_api_port = 80;
 	add_action('admin_menu', 'akismet_config_page');
+	add_action('admin_menu', 'akismet_stats_page');
 }
 add_action('init', 'akismet_init');
 
@@ -135,6 +136,44 @@ function akismet_conf() {
 </div>
 </div>
 <?php
+}
+
+function akismet_stats_page() {
+	if ( function_exists('add_submenu_page') )
+		add_submenu_page('index.php', __('Akismet Stats'), __('Akismet Stats'), 'manage_options', 'akismet-stats-display', 'akismet_stats_display');
+
+}
+
+function akismet_stats_script() {
+	?>
+<script type="text/javascript">
+function resizeIframe() {
+    var height = document.documentElement.clientHeight;
+    height -= document.getElementById('akismet-stats-frame').offsetTop;
+    height += 100; // magic padding
+    
+    document.getElementById('akismet-stats-frame').style.height = height +"px";
+    
+};
+function resizeIframeInit() {
+	document.getElementById('akismet-stats-frame').onload = resizeIframe;
+	window.onresize = resizeIframe;
+}
+addLoadEvent(resizeIframeInit);
+</script><?php
+}
+
+add_action('admin_head-dashboard_page_akismet-stats-display', 'akismet_stats_script');
+
+function akismet_stats_display() {
+	global $akismet_api_host, $akismet_api_port, $wpcom_api_key;
+	$blog = urlencode( get_option('home') );
+	$url = "http://".get_option('wordpress_api_key').".web.akismet.com/1.0/user-stats.php?blog={$blog}";
+	?>
+	<div class="wrap">
+	<iframe src="<?php echo $url; ?>" width="100%" height="100%" frameborder="0" id="akismet-stats-frame"></iframe>
+	</div>
+	<?php
 }
 
 function akismet_verify_key( $key ) {
@@ -262,6 +301,9 @@ function akismet_submit_spam_comment ( $comment_id ) {
 add_action('wp_set_comment_status', 'akismet_submit_spam_comment');
 add_action('edit_comment', 'akismet_submit_spam_comment');
 add_action('preprocess_comment', 'akismet_auto_check_comment', 1);
+
+function akismet_spamtoham( $comment ) { akismet_submit_nonspam_comment( $comment->comment_ID ); }
+add_filter( 'comment_spam_to_approved', 'akismet_spamtoham' );
 
 // Total spam in queue
 // get_option( 'akismet_spam_count' ) is the total caught ever
