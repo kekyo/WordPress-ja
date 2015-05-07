@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Default 1.6\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/theme\n"
-"POT-Creation-Date: 2009-05-18 17:54+0300\n"
+"POT-Creation-Date: 2009-12-17 17:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -334,97 +334,97 @@ msgstr ""
 msgid "%d queries. %s seconds."
 msgstr ""
 
-#: functions.php:156
+#: functions.php:160
 msgid "Custom Header"
 msgstr ""
 
-#: functions.php:169
+#: functions.php:173
 msgid "Close Color Picker"
 msgstr ""
 
-#: functions.php:366
+#: functions.php:376
 msgid "Options saved."
 msgstr ""
 
-#: functions.php:369
+#: functions.php:379
 msgid "Customize Header"
 msgstr ""
 
-#: functions.php:383 functions.php:390
+#: functions.php:393 functions.php:400
 msgid "Save"
 msgstr ""
 
-#: functions.php:384
+#: functions.php:394
 msgid "Font Color:"
 msgstr ""
 
-#: functions.php:384
+#: functions.php:394
 #, php-format
 msgid "Any CSS color (%s or %s or %s)"
 msgstr ""
 
-#: functions.php:385
+#: functions.php:395
 msgid "Upper Color:"
 msgstr ""
 
-#: functions.php:385 functions.php:386
+#: functions.php:395 functions.php:396
 #, php-format
 msgid "HEX only (%s or %s)"
 msgstr ""
 
-#: functions.php:386
+#: functions.php:396
 msgid "Lower Color:"
 msgstr ""
 
-#: functions.php:388
+#: functions.php:398
 msgid "Toggle Text"
 msgstr ""
 
-#: functions.php:389
+#: functions.php:399
 msgid "Use Defaults"
 msgstr ""
 
-#: functions.php:398
+#: functions.php:408
 msgid "Font Color"
 msgstr ""
 
-#: functions.php:399
+#: functions.php:409
 msgid "Upper Color"
 msgstr ""
 
-#: functions.php:400
+#: functions.php:410
 msgid "Lower Color"
 msgstr ""
 
-#: functions.php:401
+#: functions.php:411
 msgid "Revert"
 msgstr ""
 
-#: functions.php:402
+#: functions.php:412
 msgid "Advanced"
 msgstr ""
 
-#: functions.php:409
+#: functions.php:419
 msgid "Update Header"
 msgstr ""
 
-#: functions.php:415
+#: functions.php:425
 msgid "Font Color (CSS):"
 msgstr ""
 
-#: functions.php:416
+#: functions.php:426
 msgid "Upper Color (HEX):"
 msgstr ""
 
-#: functions.php:417
+#: functions.php:427
 msgid "Lower Color (HEX):"
 msgstr ""
 
-#: functions.php:418
+#: functions.php:428
 msgid "Select Default Colors"
 msgstr ""
 
-#: functions.php:419
+#: functions.php:429
 msgid "Toggle Text Display"
 msgstr ""
 

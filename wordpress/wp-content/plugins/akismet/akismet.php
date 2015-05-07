@@ -3,12 +3,12 @@
 Plugin Name: Akismet
 Plugin URI: http://akismet.com/
 Description: Akismet はコメントがスパムかどうか Akismet ウェブサービスに確認します。このプラグインを使用するには <a href="http://wordpress.com/api-keys/">WordPress.com API キー</a>が必要です。"コメント" メニュー以下で、捕らえたコメントを閲覧することができます。Akismet が捕らえたスパムコメントの数を表示するにはテンプレートに <code>&lt;?php akismet_counter(); ?&gt;</code> を挿入します。<a href="http://wordpress.org/extend/plugins/stats/">WP Stats plugin</a> もご覧ください。
-Version: 2.2.6
+Version: 2.2.7
 Author: Matt Mullenweg
 Author URI: http://ma.tt/
 */
 
-define('AKISMET_VERSION', '2.2.6');
+define('AKISMET_VERSION', '2.2.7');
 
 // If you hardcode a WP.com API key here, all key config screens will be hidden
 if ( defined('WPCOM_API_KEY') )

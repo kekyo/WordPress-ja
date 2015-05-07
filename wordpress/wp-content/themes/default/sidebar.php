@@ -26,7 +26,7 @@
 			<?php /* If this is a category archive */ } elseif (is_category()) { ?>
 			<p><?php printf(__('You are currently browsing the archives for the %s category.', 'kubrick'), single_cat_title('', false)); ?></p>
 
-			<?php /* If this is a yearly archive */ } elseif (is_day()) { ?>
+			<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
 			<p><?php printf(__('You are currently browsing the <a href="%1$s/">%2$s</a> blog archives for the day %3$s.', 'kubrick'), get_bloginfo('url'), get_bloginfo('name'), get_the_time(__('l, F jS, Y', 'kubrick'))); ?></p>
 
 			<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
@@ -35,10 +35,10 @@
 			<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
 			<p><?php printf(__('You are currently browsing the <a href="%1$s/">%2$s</a> blog archives for the year %3$s.', 'kubrick'), get_bloginfo('url'), get_bloginfo('name'), get_the_time('Y')); ?></p>
 
-			<?php /* If this is a monthly archive */ } elseif (is_search()) { ?>
+			<?php /* If this is a search result */ } elseif (is_search()) { ?>
 			<p><?php printf(__('You have searched the <a href="%1$s/">%2$s</a> blog archives for <strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything in these search results, you can try one of these links.', 'kubrick'), get_bloginfo('url'), get_bloginfo('name'), wp_specialchars(get_search_query(), true)); ?></p>
 
-			<?php /* If this is a monthly archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+			<?php /* If this set is paginated */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 			<p><?php printf(__('You are currently browsing the <a href="%1$s/">%2$s</a> blog archives.', 'kubrick'), get_bloginfo('url'), get_bloginfo('name')); ?></p>
 
 			<?php } ?>

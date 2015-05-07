@@ -20,6 +20,9 @@ get_header(); ?>
 		</div>
 		<?php endwhile; endif; ?>
 	<?php edit_post_link(__('Edit this entry.', 'kubrick'), '<p>', '</p>'); ?>
+	
+	<?php comments_template(); ?> 
+	
 	</div>
 
 <?php get_sidebar(); ?>

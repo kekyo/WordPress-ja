@@ -3,7 +3,7 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.1.5
+Plugin Version: 1.1.6
 Description: Japanese Locale Extension.
 Author: tenpura
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/

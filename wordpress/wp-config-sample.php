@@ -74,7 +74,7 @@ define ('WPLANG', 'ja');
 
 // 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。
 
-/** WordPress absolute path to the Wordpress directory. */
+/** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 

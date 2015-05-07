@@ -4,7 +4,7 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: WP Multibyte Patch は本家版、日本語版 WordPress のマルチバイト文字の取り扱いに関する不具合の累積的修正と強化を行うプラグインです。 <a href="http://eastcoder.com/code/wp-multibyte-patch/">&raquo; 詳しい説明を読む</a>
 Author: tenpura
-Version: 1.1.5
+Version: 1.1.6
 Author URI: http://eastcoder.com/
 */
 
@@ -66,12 +66,12 @@ class multibyte_patch {
 		if(false === $this->conf['patch_incoming_trackback'])
 			return $commentdata;
 
-		$title = stripslashes($_POST['title']);
-		$excerpt = stripslashes($_POST['excerpt']);
-		$blog_name = stripslashes($_POST['blog_name']);
+		$title = isset($_POST['title']) ? stripslashes($_POST['title']) : '';
+		$excerpt = isset($_POST['excerpt']) ? stripslashes($_POST['excerpt']) : '';
+		$blog_name = isset($_POST['blog_name']) ? stripslashes($_POST['blog_name']) : '';
 		$blog_encoding = $this->blog_encoding;
 
-		$from_encoding = (!empty($_POST['charset'])) ? $_POST['charset'] : '';
+		$from_encoding = isset($_POST['charset']) ? $_POST['charset'] : '';
 
 		if(!$from_encoding)
 			$from_encoding = (preg_match("/^.*charset=([a-zA-Z0-9\-_]+).*$/i", $_SERVER['CONTENT_TYPE'], $matched)) ? $matched[1] : '';
@@ -198,18 +198,19 @@ class multibyte_patch {
 			$text = apply_filters('the_content', $text);
 			$text = str_replace(']]>', ']]&gt;', $text);
 			$text = strip_tags($text);
+			$excerpt_more = apply_filters('excerpt_more', ' [...]');
 
 			if($this->is_almost_ascii($text, $blog_encoding)) {
 				$words = explode(' ', $text, $this->conf['excerpt_length'] + 1);
 
 				if(count($words) > $this->conf['excerpt_length']) {
 					array_pop($words);
-					array_push($words, '[...]');
+					array_push($words, $excerpt_more);
 					$text = implode(' ', $words);
 				}
 			}
 			elseif(mb_strlen($text, $blog_encoding) > $this->conf['excerpt_mblength']) {
-				$text = mb_substr($text, 0, $this->conf['excerpt_mblength'], $blog_encoding) . ' [...]';
+				$text = mb_substr($text, 0, $this->conf['excerpt_mblength'], $blog_encoding) . $excerpt_more;
 			}
 		}
 

@@ -16,6 +16,14 @@
  */
 define('WP_INSTALLING', true);
 
+/**
+ * Disable error reporting
+ *
+ * Set this to error_reporting( E_ALL ) or error_reporting( E_ALL | E_STRICT ) f
+or debugging
+ */
+error_reporting(0);
+
 /**#@+
  * These three defines are required to allow us to use require_wp_db() to load
  * the database class while being wp-content/db.php aware.
@@ -35,9 +43,6 @@ if (!file_exists(ABSPATH . 'wp-config-sample.php'))
 
 $configFile = file(ABSPATH . 'wp-config-sample.php');
 
-if ( !is_writable(ABSPATH))
-	wp_die("インストールディレクトリに書き込めません。インストールするディレクトリの属性を変更するか、手動で wp-config.php を作成してください。");
-
 // Check if wp-config.php has been created
 if (file_exists(ABSPATH . 'wp-config.php'))
 	wp_die("<p>ファイル 'wp-config.php' は既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
@@ -45,6 +50,12 @@ if (file_exists(ABSPATH . 'wp-config.php'))
 // Check if wp-config.php exists above the root directory but is not part of another install
 if (file_exists(ABSPATH . '../wp-config.php') && ! file_exists(ABSPATH . '../wp-settings.php'))
 	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。 このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
+
+if ( version_compare( '4.3', phpversion(), '>' ) )
+	wp_die( sprintf( /*WP_I18N_OLD_PHP*/'サーバーの PHP のバージョンは %s です。WordPress は 4.3 以上でご利用になれます。'/*/WP_I18N_OLD_PHP*/, phpversion() ) );
+
+if ( !extension_loaded('mysql') && !file_exists(ABSPATH . 'wp-content/db.php') )
+	wp_die( /*WP_I18N_OLD_MYSQL*/'お使いのサーバーの PHP では MySQL 拡張を利用できないようです。'/*/WP_I18N_OLD_MYSQL*/ );
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];
@@ -155,38 +166,52 @@ switch($step) {
 	if ( !empty($wpdb->error) )
 		wp_die($wpdb->error->get_error_message());
 
-	$handle = fopen(ABSPATH . 'wp-config.php', 'w');
-
 	foreach ($configFile as $line_num => $line) {
 		switch (substr($line,0,16)) {
 			case "define('DB_NAME'":
-				fwrite($handle, str_replace("putyourdbnamehere", $dbname, $line));
+				$configFile[$line_num] = str_replace("putyourdbnamehere", $dbname, $line);
 				break;
 			case "define('DB_USER'":
-				fwrite($handle, str_replace("'usernamehere'", "'$uname'", $line));
+				$configFile[$line_num] = str_replace("'usernamehere'", "'$uname'", $line);
 				break;
 			case "define('DB_PASSW":
-				fwrite($handle, str_replace("'yourpasswordhere'", "'$passwrd'", $line));
+				$configFile[$line_num] = str_replace("'yourpasswordhere'", "'$passwrd'", $line);
 				break;
 			case "define('DB_HOST'":
-				fwrite($handle, str_replace("localhost", $dbhost, $line));
+				$configFile[$line_num] = str_replace("localhost", $dbhost, $line);
 				break;
 			case '$table_prefix  =':
-				fwrite($handle, str_replace('wp_', $prefix, $line));
+				$configFile[$line_num] = str_replace('wp_', $prefix, $line);
 				break;
-			default:
-				fwrite($handle, $line);
 		}
 	}
-	fclose($handle);
-	chmod(ABSPATH . 'wp-config.php', 0666);
-
-	display_header();
+	if ( ! is_writable(ABSPATH) ) :
+		display_header();
+?>
+<p>残念ですが、<code>wp-config.php</code> ファイルへの書き込みができません。</p>
+<p><code>wp-config.php</code> を手動で作成して、次のテキストをそこに貼り付けしてください。</p>
+<textarea cols="90" rows="15"><?php
+		foreach( $configFile as $line ) {
+			echo htmlentities($line);
+		}
+?></textarea>
+<p>それが済んだら、「インストール実行」をクリックしてください。</p>
+<p class="step"><a href="install.php" class="button">インストール実行</a></p>
+<?php
+	else :
+		$handle = fopen(ABSPATH . 'wp-config.php', 'w');
+		foreach( $configFile as $line ) {
+			fwrite($handle, $line);
+		}
+		fclose($handle);
+		chmod(ABSPATH . 'wp-config.php', 0666);
+		display_header();
 ?>
 <p>この部分のインストールは無事完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているなら&hellip;</p>
 
 <p class="step"><a href="install.php" class="button">インストールを実行しましょう !</a></p>
 <?php
+	endif;
 	break;
 }
 ?>
