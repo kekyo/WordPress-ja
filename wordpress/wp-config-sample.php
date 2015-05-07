@@ -44,6 +44,8 @@ define('DB_COLLATE', '');
  * それぞれを異なるユニーク (一意) な文字列に変更してください。
  * {@link https://api.wordpress.org/secret-key/1.1/ WordPress.org の秘密鍵サービス}
  * で自動生成することもできます。
+ * 後でいつでも変更して、既存のすべての cookie を無効にできます。これにより、
+ * すべてのユーザーを強制的に再ログインさせることができます。
  *
  * @since 2.6.0
  */
@@ -78,4 +80,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-?>

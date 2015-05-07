@@ -4,12 +4,12 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: WP Multibyte Patch は本家版、日本語版 WordPress のマルチバイト文字の取り扱いに関する不具合の累積的修正と強化を行うプラグインです。 <a href="http://eastcoder.com/code/wp-multibyte-patch/">&raquo; 詳しい説明を読む</a>
 Author: tenpura
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://eastcoder.com/
 */
 
 /*
-    Copyright (C) 2008 tenpura (Email: 210pura at gmail dot com)
+    Copyright (C) 2009 tenpura (Email: 210pura at gmail dot com)
            This program is licensed under the GNU GPL.
 */
 
@@ -81,8 +81,6 @@ class multibyte_patch {
 
 		$title = (strlen($title) > 250) ? mb_strcut($title, 0, 250, $blog_encoding) . '...' : $title;
 		$excerpt = (strlen($excerpt) > 255) ? mb_strcut($excerpt, 0, 252, $blog_encoding) . '...' : $excerpt;
-
-		$title = wp_specialchars($title);
 
 		$commentdata['comment_author'] = $wpdb->escape($blog_name);
 		$commentdata['comment_content'] = $wpdb->escape("<strong>$title</strong>\n\n$excerpt");
@@ -157,7 +155,7 @@ class multibyte_patch {
 			$excerpt = $context[1] . $context[3] . $context[5];
 		}
 
-		$commentdata['comment_content'] = '[...] ' . wp_specialchars($excerpt) . ' [...]';
+		$commentdata['comment_content'] = '[...] ' . wp_specialchars($excerpt, ENT_QUOTES, $blog_encoding) . ' [...]';
 		$commentdata['comment_content'] = addslashes($commentdata['comment_content']);
 		$commentdata['comment_author'] = stripslashes($commentdata['comment_author']);
 		$commentdata['comment_author'] = $this->convenc($commentdata['comment_author'], $blog_encoding, $from_encoding);
@@ -181,6 +179,8 @@ class multibyte_patch {
 
 	function wp_trim_excerpt($text) {
 		global $post;
+		$raw_excerpt = $text;
+
 		$blog_encoding = $this->blog_encoding;
 
 		if('' == $text) {
@@ -206,7 +206,7 @@ class multibyte_patch {
 			}
 		}
 
-		return $text;
+		return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 	}
 
 	function get_comment_excerpt() {
@@ -276,6 +276,9 @@ class multibyte_patch {
 
 		if(method_exists($this, 'word_count_js') && false !== $this->conf['patch_word_count_js'])
 			add_action('wp_default_scripts' , array(&$this, 'word_count_js'), 9);
+
+		if(method_exists($this, 'word_count_js_localize') && false !== $this->conf['patch_word_count_js'])
+			add_action('wp_default_scripts' , array(&$this, 'word_count_js_localize'), 11);
 	}
 
 	function mbfunctions_exist() {
