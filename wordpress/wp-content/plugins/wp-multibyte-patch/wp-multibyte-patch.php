@@ -4,7 +4,7 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: WP Multibyte Patch は本家版、日本語版 WordPress のマルチバイト文字の取り扱いに関する不具合の累積的修正と強化を行うプラグインです。 <a href="http://eastcoder.com/code/wp-multibyte-patch/">&raquo; 詳しい説明を読む</a>
 Author: tenpura
-Version: 1.1.3
+Version: 1.1.4
 Author URI: http://eastcoder.com/
 */
 
@@ -27,7 +27,8 @@ class multibyte_patch {
 	                'patch_get_comment_excerpt' => true,
 	                'patch_process_search_terms' => true,
 	                'patch_admin_custom_css' => true,
-	                'patch_word_count_js' => true
+	                'patch_word_count_js' => true,
+	                'patch_sanitize_file_name' => true
 	            );
 
 	var $blog_encoding;
@@ -69,7 +70,12 @@ class multibyte_patch {
 		$excerpt = stripslashes($_POST['excerpt']);
 		$blog_name = stripslashes($_POST['blog_name']);
 		$blog_encoding = $this->blog_encoding;
-		$from_encoding = (preg_match("/^.*charset=([a-zA-Z0-9\-_]+).*$/i", $_SERVER['CONTENT_TYPE'], $matched)) ? $matched[1] : '';
+
+		$from_encoding = (!empty($_POST['charset'])) ? $_POST['charset'] : '';
+
+		if(!$from_encoding)
+			$from_encoding = (preg_match("/^.*charset=([a-zA-Z0-9\-_]+).*$/i", $_SERVER['CONTENT_TYPE'], $matched)) ? $matched[1] : '';
+
 		$from_encoding = $this->guess_encoding($excerpt . $title . $blog_name, $from_encoding);
 
 		$title = $this->convenc($title, $blog_encoding, $from_encoding);
@@ -231,6 +237,15 @@ class multibyte_patch {
 		return $comment_text;
 	}
 
+	function sanitize_file_name($name) {
+		$info = pathinfo($name);
+		$ext = !empty($info['extension']) ? '.' . $info['extension'] : '';
+		$name = str_replace($ext, '', $name);
+		$name_enc = rawurlencode($name);
+		$name = ($name == $name_enc) ? $name . $ext : md5($name) . $ext;
+		return $name;
+	}
+
 	function deactivation_conditionals() {
 		global $wp_version;
 		return (version_compare($wp_version, '2.6', '<') || !$this->has_mbfunctions) ? true : false;
@@ -263,6 +278,9 @@ class multibyte_patch {
 
 		if(false !== $this->conf['patch_get_comment_excerpt'])
 			add_filter('get_comment_excerpt', array(&$this, 'get_comment_excerpt'));
+
+		if(false !== $this->conf['patch_sanitize_file_name'])
+			add_filter('sanitize_file_name', array(&$this, 'sanitize_file_name'));
 
 		// add action
 		if(method_exists($this, 'process_search_terms') && false !== $this->conf['patch_process_search_terms'])

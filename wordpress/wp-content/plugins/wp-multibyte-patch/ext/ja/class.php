@@ -3,7 +3,7 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.1.3
+Plugin Version: 1.1.4
 Description: Japanese Locale Extension.
 Author: tenpura
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
@@ -94,14 +94,14 @@ class multibyte_patch_ext extends multibyte_patch {
 	}
 
 	function guess_encoding($string, $encoding = '') {
-		$guess_list = 'eucJP-win, SJIS-win';
+		$guess_list = 'UTF-8, eucJP-win, SJIS-win';
 
-		if(preg_match("/^euc-jp$/i", $encoding))
+		if(preg_match("/^utf-8$/i", $encoding))
+			return 'UTF-8';
+		elseif(preg_match("/^euc-jp$/i", $encoding))
 			return 'eucJP-win';
 		elseif(preg_match("/^(sjis|shift_jis)$/i", $encoding))
 			return 'SJIS-win';
-		elseif(!$encoding && seems_utf8($string))
-			return 'UTF-8';
 		elseif(!$encoding)
 			return mb_detect_encoding($string, $guess_list);
 		else
