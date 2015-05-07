@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-08-03 12:07:53+0000\n"
+"PO-Revision-Date: 2013-09-12 00:35:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -176,7 +176,7 @@ msgstr "\"%s\""
 
 #: wp-admin/includes/meta-boxes.php:180
 msgid "Your site is configured to keep only the last %s revisions."
-msgstr "サイトは最新 %s のリビジョンを保存するように設定されています。"
+msgstr "このサイトでは最新%s件のリビジョンを保存するように設定されています。"
 
 #: wp-admin/includes/meta-boxes.php:182 wp-admin/includes/meta-boxes.php:185
 msgid "Revisions: %s"
