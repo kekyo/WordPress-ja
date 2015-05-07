@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Multisite\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-02-07 23:17:33+00:00\n"
-"PO-Revision-Date: 2011-02-09 16:53+0900\n"
+"POT-Creation-Date: 2011-04-04 16:18:05+00:00\n"
+"PO-Revision-Date: 2011-04-07 22:23+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "Language: ja\n"
@@ -459,253 +459,249 @@ msgid "Add a <code>blogs.dir</code> directory under <code>/wp-content</code> and
 msgstr "<code>/wp-content</code> の下に、<code>blogs.dir</code> ディレクトリを追加し、wp-config.php (<code>/*...編集が必要なのはここまでです...*/</code> の直前に) と <code>.htaccess</code> (既存の WordPress のルールを置き換えて) に指定された行を追加してください。"
 
 #: wp-admin/network.php:111
-msgid "Refreshing your browser will take you to a screen with an archive of those added lines of code. A set of six links under Super Admin will appear at the top of the main left navigation menu. The multisite network is now enabled."
-msgstr "ブラウザーを再読み込みすると、追加したコードのアーカイブを表示する画面に移動します。また、左側のナビゲーションメニューの上に特権管理者メニューと6つのリンクが表示されます。これでマルチサイトネットワークが有効化が完了です。"
-
-#: wp-admin/network.php:112
 msgid "The choice of subdirectory sites is disabled if this setup is more than a month old because of permalink problems with &#8220;/blog/&#8221; from the main site. This disabling will be addressed soon in a future version."
 msgstr "メインサイトから &#8220;/blog/&#8221; のパーマリンクの問題で、このセットアップが1カ月以上前であると、サブディレクトリサイトの選択は無効です。この問題は将来のバージョンですぐに取り組まれるでしょう。"
 
-#: wp-admin/network.php:114
+#: wp-admin/network.php:113
 msgid "<a href=\"http://codex.wordpress.org/Create_A_Network\" target=\"_blank\">Documentation on Creating a Network</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Create_A_Network\" target=\"_blank\">ネットワークの作成の解説</a>"
 
-#: wp-admin/network.php:115
+#: wp-admin/network.php:114
 msgid "<a href=\"http://codex.wordpress.org/Tools_Network_SubPanel\" target=\"_blank\">Documentation on the Network Screen</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Tools_Network_SubPanel\" target=\"_blank\">ネットワーク管理画面の解説</a>"
 
-#: wp-admin/network.php:138
-#: wp-admin/network.php:145
-#: wp-admin/network.php:162
+#: wp-admin/network.php:137
+#: wp-admin/network.php:144
+#: wp-admin/network.php:161
 msgid "Error:"
 msgstr "エラー:"
 
-#: wp-admin/network.php:138
+#: wp-admin/network.php:137
 msgid "Your <strong>WordPress address</strong> must match your <strong>Site address</strong> before creating a Network. See <a href=\"%s\">General Settings</a>."
 msgstr "ネットワークを作成する前に、<strong>WordPress のアドレス</strong>は <strong>サイトのアドレス</strong>に一致しなければなりません。<a href=\"%s\">一般設定</a>をご覧ください。"
 
-#: wp-admin/network.php:145
+#: wp-admin/network.php:144
 msgid "The constant DO_NOT_UPGRADE_GLOBAL_TABLES cannot be defined when creating a network."
 msgstr "ネットワークを作成する際に定数 DO_NOT_UPGRADE_GLOBAL_TABLES を定義できませんでした。"
 
-#: wp-admin/network.php:153
-#: wp-admin/network.php:331
-#: wp-admin/network.php:356
+#: wp-admin/network.php:152
+#: wp-admin/network.php:330
+#: wp-admin/network.php:355
 msgid "Warning:"
 msgstr "注意:"
 
-#: wp-admin/network.php:153
+#: wp-admin/network.php:152
 msgid "Please <a href=\"%s\">deactivate your plugins</a> before enabling the Network feature."
 msgstr "ネットワーク機能を有効化する前に、<a href=\"%s\">プラグインを停止</a>してください。"
 
-#: wp-admin/network.php:153
+#: wp-admin/network.php:152
 msgid "Once the network is created, you may reactivate your plugins."
 msgstr "ネットワーク作成後、プラグインを再び有効化できます。"
 
-#: wp-admin/network.php:162
+#: wp-admin/network.php:161
 msgid "You cannot install a network of sites with your server address."
 msgstr "このサーバーアドレスにはサイトのネットワークをインストールできません。"
 
-#: wp-admin/network.php:163
+#: wp-admin/network.php:162
 msgid "You cannot use port numbers such as <code>%s</code>."
 msgstr "<code>%s</code>のようなポート番号は使えません。"
 
-#: wp-admin/network.php:164
+#: wp-admin/network.php:163
 msgid "Return to Dashboard"
 msgstr "ダッシュボードに戻る"
 
-#: wp-admin/network.php:176
+#: wp-admin/network.php:175
 msgid "ERROR: The network could not be created."
 msgstr "エラー: ネットワークを作成できませんでした。"
 
-#: wp-admin/network.php:184
-#: wp-admin/network.php:204
-#: wp-admin/network.php:252
-#: wp-admin/network.php:262
+#: wp-admin/network.php:183
+#: wp-admin/network.php:203
+#: wp-admin/network.php:251
+#: wp-admin/network.php:261
 msgid "Warning!"
 msgstr "注意 !"
 
-#: wp-admin/network.php:184
-#: wp-admin/network.php:356
+#: wp-admin/network.php:183
+#: wp-admin/network.php:355
 msgid "Networks may not be fully compatible with custom wp-content directories."
 msgstr "ネットワークはカスタマイズされた wp-content ディレクトリと完全に両立できない場合があるかもしれません。"
 
-#: wp-admin/network.php:186
+#: wp-admin/network.php:185
 msgctxt "Default network name"
 msgid "%s Sites"
 msgstr "サイト %s"
 
-#: wp-admin/network.php:189
+#: wp-admin/network.php:188
 msgid "Welcome to the Network installation process!"
 msgstr "ネットワークインストールのプロセスへようこそ !"
 
-#: wp-admin/network.php:190
+#: wp-admin/network.php:189
 msgid "Fill in the information below and you&#8217;ll be on your way to creating a network of WordPress sites. We will create configuration files in the next step."
 msgstr "以下の情報を記入すれば、WordPress サイトネットワークの作成を開始できます。次のステップで設定ファイルを作成します。"
 
-#: wp-admin/network.php:202
+#: wp-admin/network.php:201
 msgid "Note:"
 msgstr "メモ:"
 
-#: wp-admin/network.php:202
+#: wp-admin/network.php:201
 msgid "Please make sure the Apache <code>mod_rewrite</code> module is installed as it will be used at the end of this installation."
 msgstr "Apache <code>mod_rewrite</code> モジュールがインストールされているか必ず確認してください。インストールの最後に必要になります。"
 
-#: wp-admin/network.php:204
+#: wp-admin/network.php:203
 msgid "It looks like the Apache <code>mod_rewrite</code> module is not installed."
 msgstr "Apache の <code>mod_rewrite</code> モジュールがインストールされていないようです。"
 
-#: wp-admin/network.php:206
+#: wp-admin/network.php:205
 msgid "If <code>mod_rewrite</code> is disabled, ask your administrator to enable that module, or look at the <a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html\">Apache documentation</a> or <a href=\"http://www.google.com/search?q=apache+mod_rewrite\">elsewhere</a> for help setting it up."
 msgstr "<code>mod_rewrite</code> が無効化されている場合は、システム管理者に有効化を依頼してください。または、<a href=\"http://httpd.apache.org/docs/mod/mod_rewrite.html.ja.jis\">Apache の解説</a>や<a href=\"http://www.google.com/search?q=apache+mod_rewrite\">その他</a>を読んで設定を行ってください。"
 
-#: wp-admin/network.php:210
+#: wp-admin/network.php:209
 msgid "Addresses of Sites in your Network"
 msgstr "ネットワーク内のサイトアドレス"
 
-#: wp-admin/network.php:211
+#: wp-admin/network.php:210
 msgid "Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>"
 msgstr "WordPress ネットワーク内のサイトで、サブドメインまたはサブディレクトリのどちらを使うか選択してください。<strong>あとで変更することはできません。</strong>"
 
-#: wp-admin/network.php:212
+#: wp-admin/network.php:211
 msgid "You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality."
 msgstr "バーチャルホスト (サブドメイン) 機能を使う場合は、ワイルドカード DNS レコードが必要です。"
 
-#: wp-admin/network.php:216
+#: wp-admin/network.php:215
 msgid "Sub-domains"
 msgstr "サブドメイン"
 
-#: wp-admin/network.php:217
+#: wp-admin/network.php:216
 msgctxt "subdomain examples"
 msgid "like <code>site1.%1$s</code> and <code>site2.%1$s</code>"
 msgstr "例: <code>site1.%1$s</code>, <code>site2.%1$s</code> など"
 
-#: wp-admin/network.php:220
+#: wp-admin/network.php:219
 msgid "Sub-directories"
 msgstr "サブディレクトリ"
 
-#: wp-admin/network.php:221
+#: wp-admin/network.php:220
 msgctxt "subdirectory examples"
 msgid "like <code>%1$s/site1</code> and <code>%1$s/site2</code>"
 msgstr "例: <code>%1$s/site1</code>, <code>%1$s/site2</code> など"
 
-#: wp-admin/network.php:231
-#: wp-admin/network.php:235
-#: wp-admin/network.php:275
+#: wp-admin/network.php:230
+#: wp-admin/network.php:234
+#: wp-admin/network.php:274
 msgid "Server Address"
 msgstr "サーバーのアドレス"
 
-#: wp-admin/network.php:232
+#: wp-admin/network.php:231
 msgid "We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix."
 msgstr "サイトネットワークの機能を有効にする前に、siteurl を <code>%1$s</code> に変更することをおすすめします。<code>%2$s</code> のようなアドレスの前に <code>www</code> を追加してもサイトに行くことはできますが、リンクには <code>www</code> プリフィックスがつきません。"
 
-#: wp-admin/network.php:237
-#: wp-admin/network.php:277
+#: wp-admin/network.php:236
+#: wp-admin/network.php:276
 msgid "The internet address of your network will be <code>%s</code>."
 msgstr "ウェブ上でのサイトネットワークのアドレスは <code>%s</code> となります。"
 
-#: wp-admin/network.php:243
+#: wp-admin/network.php:242
 msgid "Network Details"
 msgstr "ネットワークの詳細"
 
-#: wp-admin/network.php:247
-#: wp-admin/network.php:257
+#: wp-admin/network.php:246
+#: wp-admin/network.php:256
 msgid "Sub-directory Install"
 msgstr "サブディレクトリへのインストール"
 
-#: wp-admin/network.php:249
+#: wp-admin/network.php:248
 msgid "Because you are using <code>localhost</code>, the sites in your WordPress network must use sub-directories. Consider using <code>localhost.localdomain</code> if you wish to use sub-domains."
 msgstr "<code>localhost</code> をお使いのため、WordPress ネットワーク内のサイトはサブディレクトリを使う必要があります。サブドメインを使う場合は <code>localhost.localdomain</code> を使うことをお考えください。"
 
-#: wp-admin/network.php:252
-#: wp-admin/network.php:262
-#: wp-admin/network.php:269
+#: wp-admin/network.php:251
+#: wp-admin/network.php:261
+#: wp-admin/network.php:268
 msgid "The main site in a sub-directory install will need to use a modified permalink structure, potentially breaking existing links."
 msgstr "メインサイトをサブディレクトリにインストールしている場合、修正したパーマリンク構造を使う必要があり、現存リンクを壊してしまう可能性もあります。"
 
-#: wp-admin/network.php:259
+#: wp-admin/network.php:258
 msgid "Because your install is in a directory, the sites in your WordPress network must use sub-directories."
 msgstr "ディレクトリの中にインストールされているため、WordPress ネットワーク内のサイトはサブディレクトリを使う必要があります。"
 
-#: wp-admin/network.php:267
+#: wp-admin/network.php:266
 msgid "Sub-domain Install"
 msgstr "サブドメインのインストール"
 
-#: wp-admin/network.php:268
+#: wp-admin/network.php:267
 msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
 msgstr "新規インストールではないため、WordPress ネットワーク内のサイトはサブドメインを使う必要があります。"
 
-#: wp-admin/network.php:282
+#: wp-admin/network.php:281
 msgid "Network Title"
 msgstr "ネットワークのタイトル"
 
-#: wp-admin/network.php:285
+#: wp-admin/network.php:284
 msgid "What would you like to call your network?"
 msgstr "ネットワークを何と呼びますか ?"
 
-#: wp-admin/network.php:289
+#: wp-admin/network.php:288
 msgid "Admin E-mail Address"
 msgstr "管理者のメールアドレス"
 
-#: wp-admin/network.php:292
+#: wp-admin/network.php:291
 msgid "Your email address."
 msgstr "あなたのメールアドレスです。"
 
-#: wp-admin/network.php:326
+#: wp-admin/network.php:325
 msgid "The original configuration steps are shown here for reference."
 msgstr "参考のため、元の設定のステップをここに表示します。"
 
-#: wp-admin/network.php:331
+#: wp-admin/network.php:330
 msgid "An existing WordPress network was detected."
 msgstr "既存の WordPress ネットワークを検出しました。"
 
-#: wp-admin/network.php:332
+#: wp-admin/network.php:331
 msgid "Please complete the configuration steps. To create a new network, you will need to empty or remove the network database tables."
 msgstr "設定のステップを実行してください。新しいネットワークを作成するため、ネットワークのデータベーステーブルを空にするか削除する必要があります。"
 
-#: wp-admin/network.php:339
+#: wp-admin/network.php:338
 msgid "Enabling the Network"
 msgstr "ネットワークを有効化中"
 
-#: wp-admin/network.php:340
+#: wp-admin/network.php:339
 msgid "Complete the following steps to enable the features for creating a network of sites."
 msgstr "サイトのネットワークの作成の機能を有効にするため、次のステップを実行してください。"
 
-#: wp-admin/network.php:343
-#: wp-admin/network.php:345
+#: wp-admin/network.php:342
+#: wp-admin/network.php:344
 msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> and <code>%s</code> files."
 msgstr "<strong>注意:</strong> 現在ある <code>wp-config.php</code> および <code>%s</code> ファイルのバックアップを取っておくことをおすすめします。"
 
-#: wp-admin/network.php:347
+#: wp-admin/network.php:346
 msgid "<strong>Caution:</strong> We recommend you back up your existing <code>wp-config.php</code> file."
 msgstr "<strong>注意:</strong> 現在の <code>wp-config.php</code> のバックアップをとることをおすすめします。"
 
-#: wp-admin/network.php:354
+#: wp-admin/network.php:353
 msgid "Create a <code>blogs.dir</code> directory at <code>%s/blogs.dir</code>. This directory is used to store uploaded media for your additional sites and must be writeable by the web server."
 msgstr "<code>%s/blogs.dir</code> に <code>blogs.dir</code> ディレクトリを作成してください。このディレクトリは追加サイトにアップロードしたメディアファイルを保存するために使われるため、サーバーが書き込み可能である必要があります。"
 
-#: wp-admin/network.php:358
+#: wp-admin/network.php:357
 msgid "Add the following to your <code>wp-config.php</code> file in <code>%s</code> <strong>above</strong> the line reading <code>/* That&#8217;s all, stop editing! Happy blogging. */</code>:"
 msgstr "<code>%s</code> にある <code>wp-config.php</code> ファイルの、<code>/* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */</code> という行より<strong>上</strong>に以下のコードを追加してください。"
 
-#: wp-admin/network.php:389
+#: wp-admin/network.php:388
 msgid "This unique authentication key is also missing from your <code>wp-config.php</code> file."
 msgid_plural "These unique authentication keys are also missing from your <code>wp-config.php</code> file."
 msgstr[0] "認証用ユニークキーが <code>wp-config.php</code> にありません。"
 
-#: wp-admin/network.php:389
+#: wp-admin/network.php:388
 msgid "To make your installation more secure, you should also add:"
 msgstr "インストールをさらに安全にするため、次を追加するとよいでしょう。"
 
-#: wp-admin/network.php:474
+#: wp-admin/network.php:473
 msgid "Add the following to your <code>web.config</code> file in <code>%s</code>, replacing other WordPress rules:"
 msgstr "<code>%s</code> の <code>web.config</code> ファイルに次を追加し、ほかの WordPress のルールを置き換えてください:"
 
-#: wp-admin/network.php:503
+#: wp-admin/network.php:502
 msgid "Add the following to your <code>.htaccess</code> file in <code>%s</code>, replacing other WordPress rules:"
 msgstr "<code>%s</code> の <code>.htaccess</code> ファイルに次を追加し、ほかの WordPress のルールを置き換えてください。"
 
-#: wp-admin/network.php:511
+#: wp-admin/network.php:510
 msgid "Once you complete these steps, your network is enabled and configured. You will have to log in again."
 msgstr "以上のステップを完了すると、ネットワークの有効化と設定が行われます。ログインし直す必要があります。"
 
@@ -1797,212 +1793,208 @@ msgstr "メディアアップロードボタンのチェックボックスはビ
 msgid "Menu setting enables/disables the plugin menus from appearing for non super admins, so that only super admins, not site admins, have access to activate plugins."
 msgstr "メニュー設定で、特権管理者以外のユーザーに対してプラグインメニューを表示または非表示にできます。非表示にすると、特権管理者ではないサイト管理者はプラグインの有効化操作ができなくなります。"
 
-#: wp-admin/network/settings.php:31
-msgid "Super admins can no longer be added on the Options screen. You must now go to the list of existing users on Super Admin > Users and click on Username or the Edit action link below that name. This goes to an Edit User page where you can check a box to grant super admin privileges."
-msgstr "特権管理者はこの設定画面では追加できなくなりました。特権管理者 > ユーザーの既存のユーザーリストを開き、該当のユーザー名か編集アクションリンクをクリックしてください。するとユーザー編集画面が開きますので、そこで特権管理者権限を与えるためのチェックボックスにチェックを入れてください。"
-
-#: wp-admin/network/settings.php:33
+#: wp-admin/network/settings.php:32
 msgid "<a href=\"http://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Documentation on Network Settings</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Network_Admin_Settings_Screen\" target=\"_blank\">ネットワーク設定の解説</a>"
 
-#: wp-admin/network/settings.php:51
+#: wp-admin/network/settings.php:50
 msgid "Operational Settings"
 msgstr "運用設定"
 
-#: wp-admin/network/settings.php:54
+#: wp-admin/network/settings.php:53
 msgid "Network Name"
 msgstr "ネットワーク名"
 
-#: wp-admin/network/settings.php:58
+#: wp-admin/network/settings.php:57
 msgid "What you would like to call this website."
 msgstr "このウェブサイトの名前。"
 
-#: wp-admin/network/settings.php:63
+#: wp-admin/network/settings.php:62
 msgid "Network Admin Email"
 msgstr "サイト管理者のメールアドレス"
 
-#: wp-admin/network/settings.php:67
+#: wp-admin/network/settings.php:66
 msgid "Registration and support emails will come from this address. An address such as <code>support@%s</code> is recommended."
 msgstr "登録案内やサポート関連のメールはこのアドレスから送信されます。<code>support@%s</code> のようなアドレスをおすすめします。"
 
-#: wp-admin/network/settings.php:71
+#: wp-admin/network/settings.php:70
 msgid "Registration Settings"
 msgstr "登録の設定"
 
-#: wp-admin/network/settings.php:74
+#: wp-admin/network/settings.php:73
 msgid "Allow new registrations"
 msgstr "新規登録の許可"
 
-#: wp-admin/network/settings.php:81
+#: wp-admin/network/settings.php:80
 msgid "Registration is disabled."
 msgstr "新規登録を許可しない。"
 
-#: wp-admin/network/settings.php:82
+#: wp-admin/network/settings.php:81
 msgid "User accounts may be registered."
 msgstr "ユーザーアカウントの新規登録を許可する。"
 
-#: wp-admin/network/settings.php:83
+#: wp-admin/network/settings.php:82
 msgid "Logged in users may register new sites."
 msgstr "ログイン中のユーザーによる新規サイト登録を許可する。"
 
-#: wp-admin/network/settings.php:84
+#: wp-admin/network/settings.php:83
 msgid "Both sites and user accounts can be registered."
 msgstr "新規サイトおよびユーザーアカウントの登録をどちらも許可する。"
 
-#: wp-admin/network/settings.php:86
+#: wp-admin/network/settings.php:85
 msgid "If registration is disabled, please set <code>NOBLOGREDIRECT</code> in <code>wp-config.php</code> to a URL you will redirect visitors to if they visit a non-existent site."
 msgstr "ユーザー登録が無効になっている場合は、存在しないブログにアクセスした場合にリダイレクトする URL を <code>wp-config.php</code> ファイルの <code>NOBLOGREDIRECT</code> に記入してください。"
 
-#: wp-admin/network/settings.php:92
+#: wp-admin/network/settings.php:91
 msgid "Registration notification"
 msgstr "登録通知"
 
-#: wp-admin/network/settings.php:98
+#: wp-admin/network/settings.php:97
 msgid "Send the network admin an email notification every time someone registers a site or user account."
 msgstr "新しいサイトまたはユーザーが登録されたらネットワーク管理者にメールで通知する。"
 
-#: wp-admin/network/settings.php:103
+#: wp-admin/network/settings.php:102
 msgid "Add New Users"
 msgstr "新規ユーザーの追加"
 
-#: wp-admin/network/settings.php:105
+#: wp-admin/network/settings.php:104
 msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
 msgstr "サイト管理者が \"ユーザー &rarr; 新規追加\" ページからユーザーを追加できるようにする。"
 
-#: wp-admin/network/settings.php:110
+#: wp-admin/network/settings.php:109
 msgid "Banned Names"
 msgstr "禁止名"
 
-#: wp-admin/network/settings.php:114
+#: wp-admin/network/settings.php:113
 msgid "Users are not allowed to register these sites. Separate names by spaces."
 msgstr "登録できないサイト名。半角スペースで区切ってください。"
 
-#: wp-admin/network/settings.php:119
+#: wp-admin/network/settings.php:118
 msgid "Limited Email Registrations"
 msgstr "登録メールアドレスの制限"
 
-#: wp-admin/network/settings.php:126
+#: wp-admin/network/settings.php:125
 msgid "If you want to limit site registrations to certain domains. One domain per line."
 msgstr "特定のドメインからのみのサイト登録を許可したい場合、許可するドメインを改行で区切って入力してください。"
 
-#: wp-admin/network/settings.php:131
+#: wp-admin/network/settings.php:130
 msgid "Banned Email Domains"
 msgstr "登録を拒否するメールのドメイン"
 
-#: wp-admin/network/settings.php:136
+#: wp-admin/network/settings.php:135
 msgid "If you want to ban domains from site registrations. One domain per line."
 msgstr "特定のドメインからのサイト登録を禁止したい場合、禁止するドメインを改行で区切って入力してください。"
 
-#: wp-admin/network/settings.php:141
+#: wp-admin/network/settings.php:140
 msgid "New Site Settings"
 msgstr "新規サイト設定"
 
-#: wp-admin/network/settings.php:145
+#: wp-admin/network/settings.php:144
 msgid "Welcome Email"
 msgstr "案内メール"
 
-#: wp-admin/network/settings.php:150
+#: wp-admin/network/settings.php:149
 msgid "The welcome email sent to new site owners."
 msgstr "新規サイト所有者に送信される案内メール。"
 
-#: wp-admin/network/settings.php:154
+#: wp-admin/network/settings.php:153
 msgid "Welcome User Email"
 msgstr "新ユーザー案内メール"
 
-#: wp-admin/network/settings.php:159
+#: wp-admin/network/settings.php:158
 msgid "The welcome email sent to new users."
 msgstr "新規ユーザーに送信される案内メール。"
 
-#: wp-admin/network/settings.php:168
+#: wp-admin/network/settings.php:167
 msgid "The first post on a new site."
 msgstr "新規サイトの最初の投稿。"
 
-#: wp-admin/network/settings.php:172
+#: wp-admin/network/settings.php:171
 msgid "First Page"
 msgstr "最初の固定ページ"
 
-#: wp-admin/network/settings.php:177
+#: wp-admin/network/settings.php:176
 msgid "The first page on a new site."
 msgstr "新規サイトの最初の固定ページ。"
 
-#: wp-admin/network/settings.php:181
+#: wp-admin/network/settings.php:180
 msgid "First Comment"
 msgstr "最初のコメント"
 
-#: wp-admin/network/settings.php:186
+#: wp-admin/network/settings.php:185
 msgid "The first comment on a new site."
 msgstr "新規サイトの最初のコメント。"
 
-#: wp-admin/network/settings.php:190
+#: wp-admin/network/settings.php:189
 msgid "First Comment Author"
 msgstr "最初のコメントの投稿者"
 
-#: wp-admin/network/settings.php:194
+#: wp-admin/network/settings.php:193
 msgid "The author of the first comment on a new site."
 msgstr "新規サイトの最初のコメント投稿者名。"
 
-#: wp-admin/network/settings.php:198
+#: wp-admin/network/settings.php:197
 msgid "First Comment URL"
 msgstr "最初のコメントの URL"
 
-#: wp-admin/network/settings.php:202
+#: wp-admin/network/settings.php:201
 msgid "The URL for the first comment on a new site."
 msgstr "新規サイトの最初のコメント投稿者サイト URL。"
 
-#: wp-admin/network/settings.php:206
+#: wp-admin/network/settings.php:205
 msgid "Upload Settings"
 msgstr "アップロード設定"
 
-#: wp-admin/network/settings.php:209
+#: wp-admin/network/settings.php:208
 msgid "Media upload buttons"
 msgstr "メディアアップロードのボタン"
 
-#: wp-admin/network/settings.php:212
+#: wp-admin/network/settings.php:211
 msgid "Videos"
 msgstr "動画"
 
-#: wp-admin/network/settings.php:213
+#: wp-admin/network/settings.php:212
 msgid "Music"
 msgstr "音楽"
 
-#: wp-admin/network/settings.php:214
+#: wp-admin/network/settings.php:213
 msgid "The media upload buttons to display on the &#8220;Write Post&#8221; page. Make sure you update the allowed upload file types below as well."
 msgstr "&#8220;投稿&#8221; ページに表示するメディアアップロードボタン。以下のアップロード可能なファイル形式も必ず更新してください。"
 
-#: wp-admin/network/settings.php:218
+#: wp-admin/network/settings.php:217
 msgid "Site upload space"
 msgstr "サイトのアップロード容量"
 
-#: wp-admin/network/settings.php:220
+#: wp-admin/network/settings.php:219
 msgid "Limit total size of files uploaded to %s MB"
 msgstr "アップロードファイルの合計を %s MB に制限"
 
-#: wp-admin/network/settings.php:225
+#: wp-admin/network/settings.php:224
 msgid "Upload file types"
 msgstr "アップロード可能なファイル形式"
 
-#: wp-admin/network/settings.php:230
+#: wp-admin/network/settings.php:229
 msgid "Max upload file size"
 msgstr "アップロードファイルの最大サイズ"
 
-#: wp-admin/network/settings.php:231
+#: wp-admin/network/settings.php:230
 msgctxt "File size in kilobytes"
 msgid "%s KB"
 msgstr "%s KB"
 
-#: wp-admin/network/settings.php:240
+#: wp-admin/network/settings.php:239
 msgid "Language Settings"
 msgstr "言語設定"
 
-#: wp-admin/network/settings.php:243
+#: wp-admin/network/settings.php:242
 msgid "Default Language"
 msgstr "初期設定言語:"
 
-#: wp-admin/network/settings.php:255
+#: wp-admin/network/settings.php:254
 msgid "Menu Settings"
 msgstr "メニュー設定"
 
-#: wp-admin/network/settings.php:258
+#: wp-admin/network/settings.php:257
 msgid "Enable administration menus"
 msgstr "管理メニューを有効化"
 

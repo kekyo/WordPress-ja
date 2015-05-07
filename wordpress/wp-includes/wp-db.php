@@ -1050,12 +1050,7 @@ class wpdb {
 <p>上記の用語の意味が分からない場合は、サーバーの管理者にお問い合わせください。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
 '/*/WP_I18N_DB_CONN_ERROR*/, $this->dbhost ), 'db_connect_fail' );
 
-			// If show errors is disabled then we need to die anyway as we don't have a working DB connection
-			// unless we're trying to test the initial connection, in which case setup-config.php will handle.
-			if ( defined( 'WP_SETUP_CONFIG' ) )
-				return;
-
-			die();
+			return;
 		}
 
 		$this->set_charset( $this->dbh );
