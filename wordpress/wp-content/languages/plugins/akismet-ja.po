@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-02-19 05:15:40+0000\n"
+"PO-Revision-Date: 2015-04-14 04:30:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,11 +10,47 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Development\n"
 
-#: views/notice.php:96
+#: views/notice.php:90
+msgid "The key you entered could not be verified."
+msgstr "入力されたキーを認証できませんでした。"
+
+#: views/notice.php:91
+msgid "The connection to akismet.com cannot be established. Please refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a> and check your server configuration."
+msgstr "akismet.com への接続が確立できませんでした。<a href=\"%s\" target=\"_blank\">ファイアウォールについてのガイドs</a>を参照して、サーバの設定を確認してください。"
+
+#: views/config.php:76
+msgid "SSL Status"
+msgstr "SSL の状態"
+
+#: views/config.php:83 views/config.php:86
+msgid "Disabled."
+msgstr "無効化済み。"
+
+#: views/config.php:86
+msgid "Your Web server cannot make SSL requests; contact your Web host and ask them to add support for SSL requests."
+msgstr "お使いの Web サーバは SSL リクエストを発行することができません。ウェブホストに連絡し、 SSL リクエストのサポートを追加するように頼んでください。"
+
+#: views/config.php:92
+msgid "Temporarily disabled."
+msgstr "一時的に無効化済み。"
+
+#: views/config.php:92
+msgid "Akismet encountered a problem with a previous SSL request and disabled it temporarily. It will begin using SSL for requests again shortly."
+msgstr "Akismet は以前の SSL リクエストで問題に直面し、一時的に無効化しました。リクエストでの SSL の使用は直ちに再開されます。"
+
+#: views/config.php:95
+msgid "Enabled."
+msgstr "有効化済み。"
+
+#: views/config.php:95
+msgid "All systems functional."
+msgstr "全てのシステムは機能しています。"
+
+#: views/notice.php:97
 msgid "Your Pro subscription allows the use of Akismet on only one site. Please <a href=\"http://docs.akismet.com/billing/add-more-sites/\">purchase additional Pro subscriptions</a> or upgrade to an Enterprise subscription that allows the use of Akismet on unlimited sites.<br /><br />If you have any questions, please get in touch with our support team."
 msgstr "あなたのプロサブスクリプションは1つのサイトでのみ Akismet を使用することができます。<a href=\"http://docs.akismet.com/billing/add-more-sites/\">追加のプロサブスクリプションをご購入いただく</a>か無制限のサイトで Akismet を使用できるエンタープライズサブスクリプションにアップグレードしてください。<br /><br />ご質問があれば、サポートチームまでご連絡ください。"
 
-#: views/config.php:97
+#: views/config.php:127
 msgid "Spam in the <a href=\"%1$s\">spam folder</a> older than 1 day is deleted automatically."
 msgid_plural "Spam in the <a href=\"%1$s\">spam folder</a> older than %2$d days is deleted automatically."
 msgstr[0] "<a href=\"%1$s\">スパムフォルダー</a>内の%2$d日以上経過したスパムは自動的に削除されます。"
@@ -27,7 +63,7 @@ msgstr "http://akismet.com/"
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"http://akismet.com/get/\">Sign up for an Akismet API key</a>, and 3) Go to your Akismet configuration page, and save your API key."
 msgstr "何百万もの利用実績がある Akismet は<strong>あなたのブログをコメントスパムやトラックバックスパムから守る</strong>最良の方法です。あなたが布団の中にいるときでさえ Akismet はサイトをスパムから守ります。始めるには: 1) 今読んでいるこの説明の左側にある「有効化」リンクをクリック、2) <a href=\"http://akismet.com/get/\">サインアップして Akismet API キーを取得</a>、それから 3) Akismet の設定ページに移動して API キーを保存してください。"
 
-#: class.akismet-admin.php:700
+#: class.akismet-admin.php:692
 msgid "Please check your <a href=\"%s\">Akismet configuration</a> and contact your web host if problems persist."
 msgstr "<a href=\"%s\">Akismet の設定</a>を確認して、問題が継続するようであればウェブホストにご確認ください。"
 
@@ -63,23 +99,23 @@ msgstr "%s のサブスクリプションをキャンセルしました"
 msgid "Reactivate Akismet"
 msgstr "Akismet を再有効化"
 
-#: views/config.php:152
+#: views/config.php:182
 msgid "Cancelled"
 msgstr "キャンセル済み"
 
-#: views/config.php:154
+#: views/config.php:184
 msgid "Suspended"
 msgstr "一時停止中"
 
-#: views/config.php:156
+#: views/config.php:186
 msgid "Missing"
 msgstr "不明"
 
-#: views/config.php:158
+#: views/config.php:188
 msgid "No Subscription Found"
 msgstr "サブスクリプションが見つかりませんでした"
 
-#: views/config.php:160
+#: views/config.php:190
 msgid "Active"
 msgstr "有効"
 
@@ -91,7 +127,7 @@ msgstr "キーに問題があります。"
 msgid "Since 2012, Akismet began using subscriptions for all accounts (even free ones). It looks like a subscription has not been assigned to your account, and we’d appreciate it if you’d <a href=\"%s\" target=\"_blank\">sign into your account</a> and choose one. Please <a href=\"%s\" target=\"_blank\">contact our support team</a> with any questions."
 msgstr "2012年以来、Akismet はすべてのアカウント (無料版を含む) でサブスクリプション形式を採用しています。アカウントでサブスクリプションが指定されていないようですので、<a href=\"%s\" target=\"_blank\">ログインして</a>いずれかを選択してください。質問があれば<a href=\"%s\" target=\"_blank\">サポートチーム</a>にご連絡ください。"
 
-#: class.akismet-admin.php:196 views/config.php:84
+#: class.akismet-admin.php:196 views/config.php:114
 msgid "Strictness"
 msgstr "厳密度"
 
@@ -99,15 +135,15 @@ msgstr "厳密度"
 msgid "Choose to either discard the worst spam automatically or to always put all spam in spam folder."
 msgstr "最も悪質な種類のスパムを自動的に削除するか、すべてのスパムをスパムフォルダーに振り分けるか選択してください。"
 
-#: views/config.php:88
+#: views/config.php:118
 msgid "Silently discard the worst and most pervasive spam so I never see it."
 msgstr "最も悪質な種類の広範囲なスパムを自動的に削除し、目に触れないようにする。"
 
-#: views/config.php:89
+#: views/config.php:119
 msgid "Always put spam in the Spam folder for review."
 msgstr "スパムを常にスパムフォルダーに振り分けレビューする。"
 
-#: class.akismet-admin.php:195 views/config.php:75
+#: class.akismet-admin.php:195 views/config.php:105
 msgid "Comments"
 msgstr "コメント"
 
@@ -115,15 +151,15 @@ msgstr "コメント"
 msgid "Your subscription is missing."
 msgstr "サブスクリプションがありません。"
 
-#: views/notice.php:95
+#: views/notice.php:96
 msgid "You're using your Akismet key on more sites than your Pro subscription allows."
 msgstr "Pro サブスクリプションに含まれる数よりも多いサイトで Akismet キーを使用しています。"
 
-#: views/notice.php:98
+#: views/notice.php:99
 msgid "You're using Akismet on far too many sites for your Pro subscription."
 msgstr "Pro サブスクリプションに含まれる数をかなり超えたサイトで Akismet キーを使用しています。"
 
-#: views/notice.php:99
+#: views/notice.php:100
 msgid "To continue your service, <a href=\"%s\" target=\"_blank\">upgrade to an Enterprise subscription</a>, which covers an unlimited number of sites. Please <a href=\"%s\" target=\"_blank\">contact our support team</a> with any questions."
 msgstr "サービスを継続するには、サイト数無制限の<a href=\"%s\" target=\"_blank\">エンタープライズサブスクリプションにアップグレード</a>してください。質問があれば<a href=\"%s\" target=\"_blank\">サポートチーム</a>にご連絡ください。"
 
@@ -193,10 +229,6 @@ msgstr "Akismet アカウントの設定が完了しました。それではブ�
 msgid "The key you entered is invalid. Please double-check it."
 msgstr "入力されたキーは無効です。 キーを再確認してください。"
 
-#: views/notice.php:90
-msgid "The key you entered could not be verified because a connection to akismet.com could not be established. Please check your server configuration."
-msgstr "akismet.com との接続が確立できなかったため、入力したキーを認証できませんでした。サーバーの設定を確認してください。"
-
 #: views/start.php:40 views/start.php:74
 msgid "Akismet eliminates the comment and trackback spam you get on your site. To setup Akismet, select one of the options below."
 msgstr "Akismet はサイトに届くコメント・トラックバックスパムをなくします。Akismet を設定するには、以下のオプションのいずれかを選んでください。"
@@ -253,7 +285,7 @@ msgstr "ご心配なく。お問い合わせいただければ解決のお手伝
 msgid "Contact Akismet support"
 msgstr "Akismet サポートへ問い合わせる"
 
-#: views/config.php:87 views/strict.php:2 views/strict.php:3
+#: views/config.php:117 views/strict.php:2 views/strict.php:3
 msgid "Akismet anti-spam strictness"
 msgstr "Akismet アンチスパム強度"
 
@@ -277,10 +309,10 @@ msgstr "http://automattic.com/wordpress-plugins/"
 msgid "Comment History"
 msgstr "コメント履歴"
 
-#. #-#-#-#-#  akismet.pot (Akismet 3.0.5b1)  #-#-#-#-#
+#. #-#-#-#-#  akismet.pot (Akismet 3.1.2a1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:76 class.akismet-admin.php:78
-#: class.akismet-admin.php:757 views/config.php:3
+#: class.akismet-admin.php:749 views/config.php:3
 msgid "Akismet"
 msgstr "Akismet"
 
@@ -369,7 +401,7 @@ msgid "On this page, you are able to enter/remove an API key, view account infor
 msgstr "このページでは、API キーを入力/削除したり、アカウント情報を見たり、スパム統計を見ることができます。"
 
 #: class.akismet-admin.php:69 class.akismet-admin.php:191
-#: class.akismet-admin.php:508 views/config.php:60 views/stats.php:2
+#: class.akismet-admin.php:500 views/config.php:60 views/stats.php:2
 msgid "Settings"
 msgstr "設定"
 
@@ -381,7 +413,7 @@ msgstr "API キー"
 msgid "Enter/remove an API key."
 msgstr "API キーを入力または削除してください。"
 
-#: views/config.php:79
+#: views/config.php:109
 msgid "Show the number of approved comments beside each comment author"
 msgstr "コメントの投稿者の横に承認されたコメント数を表示する。"
 
@@ -389,11 +421,11 @@ msgstr "コメントの投稿者の横に承認されたコメント数を表示
 msgid "Show the number of approved comments beside each comment author in the comments list page."
 msgstr "コメントの投稿者の脇に承認したコメントの数を表示する"
 
-#: class.akismet-admin.php:203 views/config.php:135
+#: class.akismet-admin.php:203 views/config.php:165
 msgid "Account"
 msgstr "アカウント"
 
-#: class.akismet-admin.php:206 views/config.php:140
+#: class.akismet-admin.php:206 views/config.php:170
 msgid "Subscription Type"
 msgstr "サブスクリプションタイプ"
 
@@ -401,7 +433,7 @@ msgstr "サブスクリプションタイプ"
 msgid "The Akismet subscription plan"
 msgstr "Akismet サブスクリプションプラン"
 
-#: class.akismet-admin.php:207 views/config.php:147
+#: class.akismet-admin.php:207 views/config.php:177
 msgid "Status"
 msgstr "ステータス"
 
@@ -435,102 +467,102 @@ msgid "<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\
 msgid_plural "<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">%3$s spam comments</a>."
 msgstr[0] "<a href=\"%1$s\">Akismet</a> はこのサイトで今まで<a href=\"%2$s\">%3$s件のスパムコメント</a>をブロックしました。"
 
-#: class.akismet-admin.php:303
+#: class.akismet-admin.php:294
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comment already. "
 msgid_plural "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comments already. "
 msgstr[0] "<a href=\"%1$s\">Akismet</a> は、%2$s件のスパムコメントからあなたのサイトを保護しました。"
 
-#: class.akismet-admin.php:309
+#: class.akismet-admin.php:300
 msgid "<a href=\"%s\">Akismet</a> blocks spam from getting to your blog. "
 msgstr "<a href=\"%s\">Akismet</a> があなたのブログをスパムから保護しています。"
 
-#: class.akismet-admin.php:314
+#: class.akismet-admin.php:306
 msgid "There&#8217;s <a href=\"%2$s\">%1$s comment</a> in your spam queue right now."
 msgid_plural "There are <a href=\"%2$s\">%1$s comments</a> in your spam queue right now."
 msgstr[0] "現在<a href=\"%2$s\">%1$s件のコメント</a>をスパムとして捕らえています。"
 
-#: class.akismet-admin.php:320
+#: class.akismet-admin.php:312
 msgid "There&#8217;s nothing in your <a href='%s'>spam queue</a> at the moment."
 msgstr "現在<a href='%1$s'>保留中のスパム</a>はありません。"
 
-#: class.akismet-admin.php:340
+#: class.akismet-admin.php:332
 msgid "Check for Spam"
 msgstr "スパムチェック"
 
-#: class.akismet.php:442
+#: class.akismet.php:446
 msgid "%1$s changed the comment status to %2$s"
 msgstr "%1$s がコメントのステータスを%2$sに変更しました"
 
-#: class.akismet-admin.php:382
+#: class.akismet-admin.php:374
 msgid "Akismet re-checked and caught this comment as spam"
 msgstr "Akismet が再検証の際にこのコメントをスパムと判定"
 
-#: class.akismet-admin.php:388
+#: class.akismet-admin.php:380
 msgid "Akismet re-checked and cleared this comment"
 msgstr "このコメントは Akismet での再検証に合格しました。"
 
-#: class.akismet-admin.php:392
+#: class.akismet-admin.php:384
 msgid "Akismet was unable to re-check this comment (response: %s)"
 msgstr "Akismet はこのコメントの再検証に失敗しました (レスポンス: %s) 。"
 
-#: class.akismet-admin.php:446
+#: class.akismet-admin.php:438
 msgid "Awaiting spam check"
 msgstr "スパムチェック待ち"
 
-#: class.akismet-admin.php:450
+#: class.akismet-admin.php:442
 msgid "Flagged as spam by Akismet"
 msgstr "Akismet によりスパムと判定"
 
-#: class.akismet-admin.php:452
+#: class.akismet-admin.php:444
 msgid "Cleared by Akismet"
 msgstr "Akismet により消去"
 
-#: class.akismet-admin.php:456
+#: class.akismet-admin.php:448
 msgid "Flagged as spam by %s"
 msgstr "%s がスパムと判定"
 
-#: class.akismet-admin.php:458
+#: class.akismet-admin.php:450
 msgid "Un-spammed by %s"
 msgstr "%s がスパム判定を解除"
 
-#: class.akismet-admin.php:470 class.akismet-admin.php:478
+#: class.akismet-admin.php:462 class.akismet-admin.php:470
 msgid "View comment history"
 msgstr "コメント履歴を表示"
 
-#: class.akismet-admin.php:470
+#: class.akismet-admin.php:462
 msgid "History"
 msgstr "履歴"
 
-#: class.akismet-admin.php:486
+#: class.akismet-admin.php:478
 msgid "%s approved"
 msgid_plural "%s approved"
 msgstr[0] "%s が承認"
 
-#: class.akismet-admin.php:499
+#: class.akismet-admin.php:491
 msgid "%s ago"
 msgstr "%s前"
 
-#: class.akismet.php:487
+#: class.akismet.php:491
 msgid "%s reported this comment as spam"
 msgstr "%s がこのコメントをスパムと判断"
 
-#: class.akismet.php:533
+#: class.akismet.php:537
 msgid "%s reported this comment as not spam"
 msgstr "%s がこのコメントを非スパムと判断"
 
-#: class.akismet-admin.php:787
+#: class.akismet-admin.php:779
 msgid "Cleaning up spam takes time."
 msgstr "スパムの除去には時間がかかります。"
 
-#: class.akismet-admin.php:790
+#: class.akismet-admin.php:782
 msgid "Since you joined us, Akismet has saved you %s days!"
 msgstr "ご利用開始以来、Akismet は%s日におよぶ時間を節約しました。"
 
-#: class.akismet-admin.php:792
+#: class.akismet-admin.php:784
 msgid "Since you joined us, Akismet has saved you %d hours!"
 msgstr "ご利用開始以来、Akismet は%d時間を節約しました。"
 
-#: class.akismet-admin.php:794
+#: class.akismet-admin.php:786
 msgid "Since you joined us, Akismet has saved you %d minutes!"
 msgstr "ご利用開始以来、Akismet は%d分の時間を節約しました。"
 
@@ -555,39 +587,39 @@ msgid "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</st
 msgid_plural "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</strong>"
 msgstr[0] "<strong class=\"count\">%1$s件のスパム</strong>が <strong>Akismet</strong> によってブロックされました"
 
-#: class.akismet.php:227
+#: class.akismet.php:231
 msgid "Akismet caught this comment as spam"
 msgstr "Akismet がこのコメントをスパムと判断"
 
-#: class.akismet.php:229 class.akismet.php:238
+#: class.akismet.php:233 class.akismet.php:242
 msgid "Comment status was changed to %s"
 msgstr "コメントの状態を %s へと変更しました"
 
-#: class.akismet.php:233
+#: class.akismet.php:237
 msgid "Akismet cleared this comment"
 msgstr "Akismet はこのコメントを破棄しました"
 
-#: class.akismet.php:236
+#: class.akismet.php:240
 msgid "Comment was caught by wp_blacklist_check"
 msgstr "コメントは wp_blacklist_check に捕らえられました"
 
-#: class.akismet.php:243
+#: class.akismet.php:247
 msgid "Akismet was unable to check this comment (response: %s), will automatically retry again later."
 msgstr "Akismet によるこのコメントの再検証に失敗しました (レスポンス: %s)。後で自動的に再検証します。"
 
-#: class.akismet.php:573
+#: class.akismet.php:578
 msgid "Akismet caught this comment as spam during an automatic retry."
 msgstr "自動再試行の際に Akismet がこのコメントをスパムと判断しました。"
 
-#: class.akismet.php:575
+#: class.akismet.php:580
 msgid "Akismet cleared this comment during an automatic retry."
 msgstr "Akismet は自動再試行中にこのコメントを破棄しました。"
 
-#: class.akismet.php:923
+#: class.akismet.php:991
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s には WordPress %s 以降が必要です。"
 
-#: class.akismet.php:923 views/notice.php:27
+#: class.akismet.php:991 views/notice.php:27
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "<a href=\"%1$s\">WordPress を最新バージョンにアップグレード</a>するか、<a href=\"%2$s\">Akismet プラグインをバージョン 2.4にダウングレードしてください</a>。"
 
@@ -616,31 +648,31 @@ msgid "%s missed spam, %s false positive"
 msgid_plural "%s missed spam, %s false positives"
 msgstr[0] "スパム判定失敗%s件、誤判定%s件"
 
-#: views/config.php:79
+#: views/config.php:109
 msgid "Show approved comments"
 msgstr "承認済みのコメントを表示する"
 
-#: views/config.php:91
+#: views/config.php:121
 msgid "Note:"
 msgstr "注意:"
 
-#: views/config.php:116
+#: views/config.php:146
 msgid "Disconnect this account"
 msgstr "このアカウントの連携を解除"
 
-#: views/config.php:122
+#: views/config.php:152
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: views/config.php:166
+#: views/config.php:196
 msgid "Next Billing Date"
 msgstr "次回の課金日"
 
-#: views/config.php:178
+#: views/config.php:208
 msgid "Upgrade"
 msgstr "アップグレード"
 
-#: views/config.php:178
+#: views/config.php:208
 msgid "Change"
 msgstr "変更"
 
