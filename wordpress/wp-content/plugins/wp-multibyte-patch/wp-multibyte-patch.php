@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Multibyte Patch
 Description: Multibyte functionality enhancement for the WordPress Japanese package.
-Version: 2.3
+Version: 2.3.1
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Author: Seisuke Kuraishi
 Author URI: http://tinybit.co.jp/
@@ -15,7 +15,7 @@ Domain Path: /languages
  * Multibyte functionality enhancement for the WordPress Japanese package.
  *
  * @package WP_Multibyte_Patch
- * @version 2.3
+ * @version 2.3.1
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2015 Seisuke Kuraishi, Tinybit Inc.
  * @license http://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -278,7 +278,7 @@ class multibyte_patch {
 		if ( version_compare( substr( $wp_version, 0, strlen( $script_required_version ) ), $script_required_version, '<' ) )
 			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/20141213/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20141213', 1 );
 		else
-			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20150419', 1 );
+			$scripts->add( 'wplink', plugin_dir_url( __FILE__ ) . "js/wplink{$this->debug_suffix}.js", array( 'jquery' ), '20150424', 1 );
 	}
 
 	function word_count_js( &$scripts ) {
