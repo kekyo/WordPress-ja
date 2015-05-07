@@ -13,10 +13,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 3.0.2 ja\n"
+"Project-Id-Version: WordPress 3.0.3 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2010-12-01 11:01+0900\n"
-"PO-Revision-Date: 2010-12-01 11:14+0900\n"
+"POT-Creation-Date: 2010-12-09 08:46+0900\n"
+"PO-Revision-Date: 2010-12-09 08:55+0900\n"
 "Last-Translator: Mako N <mako@pasero.net>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "Language: ja\n"
@@ -10034,8 +10034,8 @@ msgstr "新規投稿の編集/公開をする権限がありません。"
 #: wp-app.php:445
 #: wp-app.php:640
 #: wp-app.php:826
-#: xmlrpc.php:1871
-#: xmlrpc.php:2185
+#: xmlrpc.php:1877
+#: xmlrpc.php:2203
 msgid "Sorry, your entry could not be posted. Something wrong happened."
 msgstr "記事を投稿できませんでした。何か問題が起こりました。"
 
@@ -10047,25 +10047,25 @@ msgstr "この投稿にアクセスする権限がありません。"
 #: wp-app.php:672
 #: wp-app.php:745
 #: wp-app.php:795
-#: xmlrpc.php:1911
+#: xmlrpc.php:1917
 msgid "Sorry, you do not have the right to edit this post."
 msgstr "この投稿を編集する権限がありません。"
 
 #: wp-app.php:529
 #: wp-app.php:688
-#: xmlrpc.php:1927
+#: xmlrpc.php:1933
 msgid "For some strange yet very annoying reason, this post could not be edited."
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は編集できませんでした。"
 
 #: wp-app.php:551
 #: wp-app.php:709
-#: xmlrpc.php:1961
+#: xmlrpc.php:1967
 msgid "Sorry, you do not have the right to delete this post."
 msgstr "この投稿を削除する権限がありません。"
 
 #: wp-app.php:559
 #: wp-app.php:724
-#: xmlrpc.php:1966
+#: xmlrpc.php:1972
 msgid "For some strange yet very annoying reason, this post could not be deleted."
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は削除できませんでした。"
 
@@ -14770,13 +14770,15 @@ msgstr "カテゴリーを表示するにはこのサイトの投稿を編集す
 
 #: xmlrpc.php:1033
 #: xmlrpc.php:1155
-#: xmlrpc.php:1186
+#: xmlrpc.php:1163
+#: xmlrpc.php:1189
+#: xmlrpc.php:1195
 msgid "You are not allowed to moderate comments on this site."
 msgstr "このサイトのコメントを承認する権限がありません。"
 
 #: xmlrpc.php:1038
 #: xmlrpc.php:1160
-#: xmlrpc.php:1191
+#: xmlrpc.php:1192
 msgid "Invalid comment ID."
 msgstr "無効なコメント ID です。"
 
@@ -14784,187 +14786,190 @@ msgstr "無効なコメント ID です。"
 msgid "Sorry, you cannot edit comments."
 msgstr "コメントの編集はできません。"
 
-#: xmlrpc.php:1198
+#: xmlrpc.php:1204
 msgid "Invalid comment status."
 msgstr "無効なコメントステータスです。"
 
-#: xmlrpc.php:1229
+#: xmlrpc.php:1235
 msgid "Sorry, the comment could not be edited. Something wrong happened."
 msgstr "コメントを編集できませんでした。何か問題が起こりました。"
 
-#: xmlrpc.php:1260
+#: xmlrpc.php:1266
 msgid "You must be registered to comment"
 msgstr "コメントするにはユーザー登録する必要があります"
 
-#: xmlrpc.php:1273
-#: xmlrpc.php:1276
-#: xmlrpc.php:2300
+#: xmlrpc.php:1279
+#: xmlrpc.php:1282
+#: xmlrpc.php:2333
 msgid "Invalid post ID."
 msgstr "無効な投稿 ID です。"
 
-#: xmlrpc.php:1302
+#: xmlrpc.php:1308
 msgid "Comment author name and email are required"
 msgstr "名前とメールアドレスの入力を必須にする"
 
-#: xmlrpc.php:1304
+#: xmlrpc.php:1310
 msgid "A valid email address is required"
 msgstr "有効なメールアドレスを入力してください"
 
-#: xmlrpc.php:1336
-#: xmlrpc.php:1395
-#: xmlrpc.php:1421
-#: xmlrpc.php:1447
+#: xmlrpc.php:1342
+#: xmlrpc.php:1401
+#: xmlrpc.php:1427
+#: xmlrpc.php:1453
 msgid "You are not allowed access to details about this site."
 msgstr "このサイトの詳細へアクセスする権限がありません。"
 
-#: xmlrpc.php:1363
+#: xmlrpc.php:1369
 msgid "You are not allowed access to details about comments."
 msgstr "コメントの詳細へアクセスする権限がありません。"
 
-#: xmlrpc.php:1525
+#: xmlrpc.php:1531
 msgid "You are not allowed to update options."
 msgstr "設定を更新する権限がありません。"
 
-#: xmlrpc.php:1633
+#: xmlrpc.php:1639
 msgid "Sorry, you do not have access to user data on this site."
 msgstr "このサイトのユーザーデータにアクセスできません。"
 
-#: xmlrpc.php:1668
-#: xmlrpc.php:2514
-#: xmlrpc.php:2998
-#: xmlrpc.php:3105
+#: xmlrpc.php:1674
+#: xmlrpc.php:2547
+#: xmlrpc.php:3031
+#: xmlrpc.php:3138
 msgid "Sorry, you cannot edit this post."
 msgstr "この投稿の編集はできません。"
 
-#: xmlrpc.php:1715
-#: xmlrpc.php:2864
+#: xmlrpc.php:1721
+#: xmlrpc.php:2897
 msgid "Either there are no posts, or something went wrong."
 msgstr "投稿がないか、何かうまくいかなかったようです。"
 
-#: xmlrpc.php:1770
+#: xmlrpc.php:1776
 msgid "Sorry, this user can not edit the template."
 msgstr "このユーザーはテンプレートを編集することができません。"
 
-#: xmlrpc.php:1810
+#: xmlrpc.php:1816
 msgid "Sorry, this user cannot edit the template."
 msgstr "このユーザーはテンプレートを編集することができません。"
 
-#: xmlrpc.php:1820
+#: xmlrpc.php:1826
 msgid "Either the file is not writable, or something wrong happened. The file has not been updated."
 msgstr "ファイルが書き込み不可になっているか、何か問題が起こったようです。ファイルを更新できませんでした。"
 
-#: xmlrpc.php:1851
+#: xmlrpc.php:1857
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "このサイトに投稿する権限がありません。"
 
-#: xmlrpc.php:1906
-#: xmlrpc.php:1958
-#: xmlrpc.php:2603
-#: xmlrpc.php:3060
+#: xmlrpc.php:1912
+#: xmlrpc.php:1964
+#: xmlrpc.php:2636
+#: xmlrpc.php:3093
 msgid "Sorry, no such post."
 msgstr "そのような投稿はありません。"
 
-#: xmlrpc.php:1916
-#: xmlrpc.php:2439
+#: xmlrpc.php:1922
+#: xmlrpc.php:2472
 msgid "Sorry, you do not have the right to publish this post."
 msgstr "この投稿を公開する権限がありません。"
 
-#: xmlrpc.php:1998
-#: xmlrpc.php:2273
-msgid "Sorry, you are not allowed to publish posts on this site."
-msgstr "このサイトで投稿を公開する権限がありません。"
-
-#: xmlrpc.php:2004
-#: xmlrpc.php:2279
+#: xmlrpc.php:2010
+#: xmlrpc.php:2300
 msgid "Sorry, you are not allowed to publish pages on this site."
 msgstr "このサイトでページを公開する権限がありません。"
 
-#: xmlrpc.php:2012
-#: xmlrpc.php:2051
-#: xmlrpc.php:2287
-#: xmlrpc.php:2336
+#: xmlrpc.php:2019
+#: xmlrpc.php:2030
+#: xmlrpc.php:2291
+#: xmlrpc.php:2309
+#: xmlrpc.php:2320
+msgid "Sorry, you are not allowed to publish posts on this site."
+msgstr "このサイトで投稿を公開する権限がありません。"
+
+#: xmlrpc.php:2023
+#: xmlrpc.php:2069
+#: xmlrpc.php:2313
+#: xmlrpc.php:2369
 msgid "Invalid post type."
 msgstr "無効な投稿形式。"
 
-#: xmlrpc.php:2044
+#: xmlrpc.php:2062
 msgid "You are not allowed to post as this user"
 msgstr "投稿を作成する権限がありません。"
 
-#: xmlrpc.php:2048
+#: xmlrpc.php:2066
 msgid "You are not allowed to create pages as this user"
 msgstr "ページを作成する権限がありません。"
 
-#: xmlrpc.php:2329
+#: xmlrpc.php:2362
 msgid "You are not allowed to change the post author as this user."
 msgstr "投稿作成者を変更する権限がありません。"
 
-#: xmlrpc.php:2333
+#: xmlrpc.php:2366
 msgid "You are not allowed to change the page author as this user."
 msgstr "ページ作成者を変更する権限がありません。"
 
-#: xmlrpc.php:2437
+#: xmlrpc.php:2470
 msgid "Sorry, you do not have the right to publish this page."
 msgstr "このページを公開する権限がありません。"
 
-#: xmlrpc.php:2471
+#: xmlrpc.php:2504
 msgid "Sorry, your entry could not be edited. Something wrong happened."
 msgstr "投稿を編集できませんでした。何か問題が起こりました。"
 
-#: xmlrpc.php:2729
-#: xmlrpc.php:2917
+#: xmlrpc.php:2762
+#: xmlrpc.php:2950
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
 msgstr "カテゴリーを表示するにはこのサイトの投稿を編集する権限が必要です。"
 
-#: xmlrpc.php:2785
+#: xmlrpc.php:2818
 msgid "You are not allowed to upload files to this site."
 msgstr "このサイトにファイルをアップロードする権限がありません。"
 
-#: xmlrpc.php:2812
+#: xmlrpc.php:2845
 #, php-format
 msgid "Could not write file %1$s (%2$s)"
 msgstr "ファイル %1$s (%2$s) に書き込めません"
 
-#: xmlrpc.php:2955
+#: xmlrpc.php:2988
 msgid "Sorry, you can not edit this post."
 msgstr "この投稿の編集はできません。"
 
-#: xmlrpc.php:3152
+#: xmlrpc.php:3185
 msgid "Is there no link to us?"
 msgstr "私たちへのリンクはないのですか ?"
 
-#: xmlrpc.php:3192
-#: xmlrpc.php:3202
-#: xmlrpc.php:3209
-#: xmlrpc.php:3315
+#: xmlrpc.php:3225
+#: xmlrpc.php:3235
+#: xmlrpc.php:3242
+#: xmlrpc.php:3348
 msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 msgstr "指定されたターゲット URL はターゲットとして使用できません。この URL は存在しないかピンバックが有効になっていません。"
 
-#: xmlrpc.php:3205
+#: xmlrpc.php:3238
 msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "ソース URL とターゲット URL は同じリソースを指すことはできません。"
 
-#: xmlrpc.php:3213
+#: xmlrpc.php:3246
 msgid "The pingback has already been registered."
 msgstr "このピンバックはすでに登録済みです。"
 
-#: xmlrpc.php:3221
+#: xmlrpc.php:3254
 msgid "The source URL does not exist."
 msgstr "ソース URL が存在しません。"
 
-#: xmlrpc.php:3233
+#: xmlrpc.php:3266
 msgid "We cannot find a title on that page."
 msgstr "このページのタイトルが見つかりませんでした。"
 
-#: xmlrpc.php:3269
+#: xmlrpc.php:3302
 msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "ソース URL にターゲット URL へのリンクが含まれていないので、ソースとして使用できません。"
 
-#: xmlrpc.php:3289
+#: xmlrpc.php:3322
 #, php-format
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "%1$s より %2$s へのピンバックが登録されました。ウェブでの会話を続けてください ! :-)"
 
-#: xmlrpc.php:3322
+#: xmlrpc.php:3355
 msgid "The specified target URL does not exist."
 msgstr "指定したターゲット URL が存在しません。"
 
@@ -15088,7 +15093,4 @@ msgstr "ltr"
 #: wp-load.php:50
 msgid "There doesn't seem to be a <code>wp-config.php</code> file. I need this before we can get started. Need more help? <a href='http://codex.wordpress.org/Editing_wp-config.php'>We got it</a>. You can create a <code>wp-config.php</code> file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file.</p><p><a href='%ssetup-config.php' class='button'>Create a Configuration File</a>"
 msgstr "ファイルが見つかりません。インストールを開始するには <code>wp-config.php</code> ファイルが必要です。お困りでしたら<a href='http://wpdocs.sourceforge.jp/wp-config.php_%%E3%%81%%AE%%E7%%B7%%A8%%E9%%9B%%86'>「wp-config.php の編集」</a> を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href='%ssetup-config.php' class='button'>設定ファイルを作成する</a>"
-
-#~ msgid "http://wordpress.org/development/feed/"
-#~ msgstr "http://ja.wordpress.org/feed/"
 
