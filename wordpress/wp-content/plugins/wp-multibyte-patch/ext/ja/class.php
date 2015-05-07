@@ -3,7 +3,7 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.2
+Plugin Version: 1.3
 Description: Japanese Locale Extension.
 Author: tenpura
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
@@ -16,11 +16,6 @@ Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
 
 if(class_exists('multibyte_patch')) :
 class multibyte_patch_ext extends multibyte_patch {
-
-	function deactivation_conditionals() {
-		global $wp_version;
-		return (version_compare($wp_version, '2.6', '<') || preg_match("/^ME/i", $wp_version) || !$this->has_mbfunctions) ? true : false;
-	}
 
 	function get_jis_name() {
 		if(function_exists('mb_list_encodings')) {
@@ -85,7 +80,7 @@ class multibyte_patch_ext extends multibyte_patch {
 		global $wpdb;
 		$blog_encoding = $this->blog_encoding;
 
-		if('' != $_GET['s']) {
+		if(isset($_GET['s'])) {
 			$_GET['s'] = stripslashes($_GET['s']);
 			$_GET['s'] = mb_convert_kana($_GET['s'], 's', $blog_encoding);
 			$_GET['s'] = preg_replace("/ +/", " ", $_GET['s']);
@@ -124,7 +119,10 @@ class multibyte_patch_ext extends multibyte_patch {
 	}
 
 	function multibyte_patch_ext() {
-		$this->conf['mail_mode'] = 'jis'; // auto, jis, UTF-8
+		// auto, jis, UTF-8
+		$this->conf['mail_mode'] = 'jis';
+		// Treats any post as a multibyte text.
+		$this->conf['ascii_threshold'] = 100;
 
 		$this->multibyte_patch();
 	}

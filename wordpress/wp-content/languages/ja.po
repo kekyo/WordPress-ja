@@ -13,10 +13,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress 3.0.1-RC1 ja\n"
+"Project-Id-Version: WordPress 3.0.2 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2010-07-30 09:47+0900\n"
-"PO-Revision-Date: 2010-07-30 09:48+0900\n"
+"POT-Creation-Date: 2010-12-01 11:01+0900\n"
+"PO-Revision-Date: 2010-12-01 11:14+0900\n"
 "Last-Translator: Mako N <mako@pasero.net>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "Language: ja\n"
@@ -195,7 +195,8 @@ msgstr "自動保存は無効化されています。現在 %s さんがこの�
 #: wp-admin/users.php:16
 #: wp-admin/users.php:81
 #: wp-admin/widgets.php:16
-#: wp-content/plugins/akismet/akismet.php:66
+#: wp-content/plugins/akismet/admin.php:45
+#: wp-content/plugins/akismet/akismet.php:94
 msgid "Cheatin&#8217; uh?"
 msgstr "間違えましたか ?"
 
@@ -1068,6 +1069,8 @@ msgstr "%s後"
 #: wp-admin/includes/template.php:2021
 #: wp-admin/includes/theme-install.php:325
 #: wp-admin/upload.php:449
+#: wp-content/plugins/akismet/admin.php:317
+#: wp-content/plugins/akismet/admin.php:345
 #, php-format
 msgid "%s ago"
 msgstr "%s前"
@@ -1136,7 +1139,7 @@ msgstr "&#8220;%s&#8221; のコメントを編集"
 #: wp-admin/includes/template.php:1058
 #: wp-admin/includes/template.php:3243
 #: wp-admin/includes/template.php:3372
-#: wp-content/plugins/akismet/akismet.php:817
+#: wp-content/plugins/akismet/legacy.php:214
 #: wp-includes/theme-compat/comments-popup.php:33
 msgid "Comments"
 msgstr "コメント"
@@ -1672,7 +1675,7 @@ msgstr "コメントを表示"
 #. translators: comment type radio button
 #. translators: comment status
 #: wp-admin/edit-form-comment.php:50
-#: wp-includes/comment.php:319
+#: wp-includes/comment.php:309
 msgctxt "adjective"
 msgid "Approved"
 msgstr "承認済み"
@@ -1686,7 +1689,7 @@ msgstr "承認待ち"
 #. translators: comment type radio button
 #. translators: comment status
 #: wp-admin/edit-form-comment.php:52
-#: wp-includes/comment.php:321
+#: wp-includes/comment.php:311
 msgctxt "adjective"
 msgid "Spam"
 msgstr "スパム"
@@ -2257,7 +2260,7 @@ msgid "This has been saved."
 msgstr "保存済みです。"
 
 #: wp-admin/edit.php:208
-#: wp-content/plugins/akismet/akismet.php:897
+#: wp-content/plugins/akismet/legacy.php:294
 #: wp-includes/post.php:953
 msgid "View Post"
 msgstr "投稿を表示"
@@ -4824,7 +4827,7 @@ msgstr "すべて表示"
 #: wp-admin/includes/theme-install.php:162
 #: wp-admin/plugin-install.php:24
 #: wp-admin/theme-install.php:30
-#: wp-content/plugins/akismet/akismet.php:779
+#: wp-content/plugins/akismet/legacy.php:176
 #: wp-includes/default-widgets.php:176
 #: wp-includes/general-template.php:163
 msgid "Search"
@@ -4832,7 +4835,7 @@ msgstr "検索"
 
 #: wp-admin/includes/nav-menu.php:690
 #: wp-admin/includes/nav-menu.php:917
-#: wp-content/plugins/akismet/akismet.php:943
+#: wp-content/plugins/akismet/legacy.php:340
 msgid "No results found."
 msgstr "コメントはありません。"
 
@@ -8681,7 +8684,7 @@ msgid "Post published."
 msgstr "投稿を公開しました。"
 
 #: wp-admin/sidebar.php:103
-#: wp-content/plugins/akismet/akismet.php:1152
+#: wp-content/plugins/akismet/akismet.php:846
 #: wp-includes/default-widgets.php:67
 #: wp-includes/default-widgets.php:197
 #: wp-includes/default-widgets.php:263
@@ -9610,7 +9613,7 @@ msgstr ""
 "こんにちは。\n"
 "\n"
 "これは '%s' (%s) への招待メールです。\n"
-"ユーザー名 %s としての参加が求められています。\n"
+"権限グループ %s としての参加が求められています。\n"
 "\n"
 "もしこのサイトに参加したくない場合は、メールを無視してください。\n"
 "招待コードは数日後に期限切れになります。\n"
@@ -9630,7 +9633,7 @@ msgid ""
 msgstr ""
 "こんにちは。\n"
 "\n"
-"これは、'%s' (%s) への招待メールです。ユーザー名 %s としての参加がリクエストされています。\n"
+"これは、'%s' (%s) への招待メールです。権限グループ %s としての参加がリクエストされています。\n"
 "\n"
 "以下のリンクをクリックして承認してください。\n"
 "%s\n"
@@ -10092,324 +10095,445 @@ msgstr "エラー: 必須項目 (お名前、メールアドレス) を入力し
 msgid "Error: please enter a valid email address."
 msgstr "エラー: 有効なメールアドレスを入力してください。"
 
-#: wp-content/plugins/akismet/akismet.php:57
-#: wp-content/plugins/akismet/akismet.php:133
+#: wp-content/plugins/akismet/admin.php:14
+#, php-format
+msgid "Akismet %s required WordPress 3.0 or higher."
+msgstr "Akismet %s にはバージョン3.0以降の WordPress が必要です。"
+
+#: wp-content/plugins/akismet/admin.php:14
+#, php-format
+msgid "Please <a href=\"%s\">upgrade WordPress</a> to a current version, or <a href=\"%s\">downgrade to version 2.4 of the Akismet plugin</a>."
+msgstr "<a href=\"%s\">WordPress を最新版にアップグレード</a>するか、<a href=\"%s\">Akismet プラグインをバージョン2.4にダウングレード</a>してください。"
+
+#: wp-content/plugins/akismet/admin.php:27
+msgid "Akismet Status"
+msgstr "Akismet の状況"
+
+#: wp-content/plugins/akismet/admin.php:36
+#: wp-content/plugins/akismet/admin.php:112
+#: wp-content/plugins/akismet/akismet.php:85
+#: wp-content/plugins/akismet/akismet.php:161
 msgid "Akismet Configuration"
 msgstr "Akismet 設定"
 
-#: wp-content/plugins/akismet/akismet.php:120
+#: wp-content/plugins/akismet/admin.php:99
+#: wp-content/plugins/akismet/akismet.php:148
 msgid "Your key has been cleared."
 msgstr "キーを削除しました。"
 
-#: wp-content/plugins/akismet/akismet.php:121
+#: wp-content/plugins/akismet/admin.php:100
+#: wp-content/plugins/akismet/akismet.php:149
 msgid "Your key has been verified. Happy blogging!"
 msgstr "キーを認証しました。それではブログをお楽しみください !"
 
-#: wp-content/plugins/akismet/akismet.php:122
+#: wp-content/plugins/akismet/admin.php:101
+#: wp-content/plugins/akismet/akismet.php:150
 msgid "The key you entered is invalid. Please double-check it."
 msgstr "入力されたキーは無効です。 キーを再確認してください。"
 
-#: wp-content/plugins/akismet/akismet.php:123
+#: wp-content/plugins/akismet/admin.php:102
+#: wp-content/plugins/akismet/akismet.php:151
 msgid "The key you entered could not be verified because a connection to akismet.com could not be established. Please check your server configuration."
 msgstr "akismet.com との接続が確立できなかったため、入力したキーを認証できませんでした。サーバーの設定を確認してください。"
 
-#: wp-content/plugins/akismet/akismet.php:124
+#: wp-content/plugins/akismet/admin.php:103
+#: wp-content/plugins/akismet/akismet.php:152
 msgid "There was a problem connecting to the Akismet server. Please check your server configuration."
 msgstr "Akismet サーバーとの接続に問題が発生しました。サーバーの設定を確認してください。"
 
-#: wp-content/plugins/akismet/akismet.php:125
+#: wp-content/plugins/akismet/admin.php:104
+#: wp-content/plugins/akismet/akismet.php:153
 #, php-format
 msgid "Please enter an API key. (<a href=\"%s\" style=\"color:#fff\">Get your key.</a>)"
 msgstr "API キーを入力してださい。 (<a href=\"%s\" style=\"color:#fff\">キーを取得する</a>) "
 
-#: wp-content/plugins/akismet/akismet.php:126
+#: wp-content/plugins/akismet/admin.php:105
+#: wp-content/plugins/akismet/akismet.php:154
 msgid "This key is valid."
 msgstr "このキーは有効です。"
 
-#: wp-content/plugins/akismet/akismet.php:127
+#: wp-content/plugins/akismet/admin.php:106
+#: wp-content/plugins/akismet/akismet.php:155
 msgid "The key below was previously validated but a connection to akismet.com can not be established at this time. Please check your server configuration."
 msgstr "以下のキーは認証済みですが、akismet.com への接続が確立できませんでした。サーバーの設定を確認してください。"
 
-#: wp-content/plugins/akismet/akismet.php:130
+#: wp-content/plugins/akismet/admin.php:109
+#: wp-content/plugins/akismet/akismet.php:158
 msgid "Options saved."
 msgstr "設定を保存しました。"
 
-#: wp-content/plugins/akismet/akismet.php:137
+#: wp-content/plugins/akismet/admin.php:116
+#: wp-content/plugins/akismet/akismet.php:165
 #, php-format
 msgid "For many people, <a href=\"%1$s\">Akismet</a> will greatly reduce or even completely eliminate the comment and trackback spam you get on your site. If one does happen to get through, simply mark it as \"spam\" on the moderation screen and Akismet will learn from the mistakes. If you don't have an API key yet, you can get one at <a href=\"%2$s\">Akismet.com</a>."
-msgstr "<a href=\"%1$s\">Akismet</a> は、コメントスパムやトラックバックスパムを劇的に、あるいはほぼ完璧に排除します。もしスパムがすり抜けても、承認の画面で単に \"スパム\" としてチェックすれば、Akismet はその失敗を学習します。まだ API キーをお持ちでなければ、<a href=\"%2$s\">Akismet.com</a> で取得できます。"
+msgstr "多くの方にとって、<a href=\"%1$s\">Akismet</a> を使うことでサイト上のコメント・トラックバックスパムを削減するか、完全に排除できます。もし間違ってスパムがコメントとして入ってきてしまったときは、承認画面で「スパム」とマークすれば Akismet はその間違いから学んでくれるでしょう。まだ API をお持ちでない場合は、<a href=\"%2$s\">Akismet.com</a> から取得できます。"
 
-#: wp-content/plugins/akismet/akismet.php:139
+#: wp-content/plugins/akismet/admin.php:118
+#: wp-content/plugins/akismet/akismet.php:167
 msgid "Akismet API Key"
 msgstr "Akismet API キー"
 
-#: wp-content/plugins/akismet/akismet.php:143
+#: wp-content/plugins/akismet/admin.php:122
+#: wp-content/plugins/akismet/akismet.php:171
 msgid "<a href=\"http://akismet.com/get/\">What is this?</a>"
 msgstr "<a href=\"http://akismet.com/get/\">これは何 ?</a>"
 
-#: wp-content/plugins/akismet/akismet.php:145
+#: wp-content/plugins/akismet/admin.php:124
+#: wp-content/plugins/akismet/akismet.php:173
 msgid "Why might my key be invalid?"
 msgstr "キーが認証されないのはなぜですか ?"
 
-#: wp-content/plugins/akismet/akismet.php:146
+#: wp-content/plugins/akismet/admin.php:125
+#: wp-content/plugins/akismet/akismet.php:174
 msgid "This can mean one of two things, either you copied the key wrong or that the plugin is unable to reach the Akismet servers, which is most often caused by an issue with your web host around firewalls or similar."
 msgstr "理由は二つ考えられます: キーを間違ってコピーしたか、もしくはプラグインが Akismet サーバーに接続できないためです。後者の場合、最もよくある原因としてウェブホストのファイアウォールもしくはその類似機能に問題があることが考えられます。"
 
-#: wp-content/plugins/akismet/akismet.php:150
+#: wp-content/plugins/akismet/admin.php:129
+#: wp-content/plugins/akismet/akismet.php:178
 msgid "Automatically discard spam comments on posts older than a month."
 msgstr "ひと月以上前の投稿へのスパムコメントを自動的に削除する。"
 
-#: wp-content/plugins/akismet/akismet.php:151
+#: wp-content/plugins/akismet/admin.php:130
+#: wp-content/plugins/akismet/akismet.php:179
 msgid "Update options &raquo;"
 msgstr "設定を更新 &raquo;"
 
-#: wp-content/plugins/akismet/akismet.php:156
+#: wp-content/plugins/akismet/admin.php:135
+#: wp-content/plugins/akismet/akismet.php:184
 msgid "Server Connectivity"
 msgstr "サーバー接続状況"
 
-#: wp-content/plugins/akismet/akismet.php:160
+#: wp-content/plugins/akismet/admin.php:139
+#: wp-content/plugins/akismet/akismet.php:188
 msgid "Network functions are disabled."
 msgstr "ネットワーク関数が無効化されています。"
 
-#: wp-content/plugins/akismet/akismet.php:161
+#: wp-content/plugins/akismet/admin.php:140
+#: wp-content/plugins/akismet/akismet.php:189
 #, php-format
 msgid "Your web host or server administrator has disabled PHP's <code>fsockopen</code> or <code>gethostbynamel</code> functions.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet's system requirements</a>."
 msgstr "お使いのホスティングサービスもしくはサーバー管理者が PHP の <code>fsockopen</code> 関数を無効にしています。<strong>Akismet はこの問題が解決しない限り正常に動作しません。</strong>ホスティングサービスもしくはファイアウォール管理者に連絡し、<a href=\"%s\" target=\"_blank\">Akismet とファイアウォールの動作要件</a>をお伝えください。"
 
-#: wp-content/plugins/akismet/akismet.php:169
+#: wp-content/plugins/akismet/admin.php:148
+#: wp-content/plugins/akismet/akismet.php:197
 msgid "Unable to reach some Akismet servers."
 msgstr "一部の Akismet サーバーに接続できません。"
 
-#: wp-content/plugins/akismet/akismet.php:170
+#: wp-content/plugins/akismet/admin.php:149
+#: wp-content/plugins/akismet/akismet.php:198
 #, php-format
 msgid "A network problem or firewall is blocking some connections from your web server to Akismet.com.  Akismet is working but this may cause problems during times of network congestion.  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet and firewalls</a>."
 msgstr "ネットワーク障害もしくはファイアウォールにより、ご使用のウェブサーバーから Akismet.com への一部の接続がブロックされています。Akismet は作動中ですが、ネットワークが混雑している際には問題が発生することがあります。ホスティング管理者もしくはファイアウォール管理者に連絡し、<a href=\"%s\" target=\"_blank\">Akismet とファイアウォールに関する情報</a>をお伝えください。"
 
-#: wp-content/plugins/akismet/akismet.php:174
+#: wp-content/plugins/akismet/admin.php:153
+#: wp-content/plugins/akismet/akismet.php:202
 msgid "Unable to reach any Akismet servers."
 msgstr "Akismet サーバーに接続できません。"
 
-#: wp-content/plugins/akismet/akismet.php:175
+#: wp-content/plugins/akismet/admin.php:154
+#: wp-content/plugins/akismet/akismet.php:203
 #, php-format
 msgid "A network problem or firewall is blocking all connections from your web server to Akismet.com.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet and firewalls</a>."
 msgstr "ネットワーク障害もしくはファイアウォールにより、ご使用のウェブサーバーから Akismet.com へのすべての接続がブロックされています。 <strong>Akismet はこの問題が解決しない限り正常に動作できません。</strong>ホスティング管理者もしくはファイアウォール管理者に連絡し、<a href=\"%s\" target=\"_blank\">Akismet とファイアウォールに関する情報</a>をお伝えください。"
 
-#: wp-content/plugins/akismet/akismet.php:179
+#: wp-content/plugins/akismet/admin.php:158
+#: wp-content/plugins/akismet/akismet.php:207
 msgid "All Akismet servers are available."
 msgstr "Akismet サーバーはすべて利用可能です。"
 
-#: wp-content/plugins/akismet/akismet.php:180
+#: wp-content/plugins/akismet/admin.php:159
+#: wp-content/plugins/akismet/akismet.php:208
 msgid "Akismet is working correctly.  All servers are accessible."
 msgstr "Akismet は正常に動作しています。すべてのサーバーにアクセスできています。"
 
-#: wp-content/plugins/akismet/akismet.php:185
+#: wp-content/plugins/akismet/admin.php:164
+#: wp-content/plugins/akismet/akismet.php:213
 msgid "Unable to find Akismet servers."
 msgstr "Akismet が見つかりません。"
 
-#: wp-content/plugins/akismet/akismet.php:186
+#: wp-content/plugins/akismet/admin.php:165
+#: wp-content/plugins/akismet/akismet.php:214
 #, php-format
 msgid "A DNS problem or firewall is preventing all access from your web server to Akismet.com.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet and firewalls</a>."
 msgstr "DNS の障害もしくはファイアウォールにより、お使いのウェブサーバーから Akismet.com へ接続できません。<strong>Akismet はこの問題が解決しない限り正常に動作できません。</strong>ホスティング管理者もしくはファイアウォール管理者に連絡し、<a href=\"%s\" target=\"_blank\">Akismet とファイアウォールに関する情報</a>をお伝えください。"
 
-#: wp-content/plugins/akismet/akismet.php:194
+#: wp-content/plugins/akismet/admin.php:173
+#: wp-content/plugins/akismet/akismet.php:222
 msgid "Akismet server"
 msgstr "Akismet サーバー"
 
-#: wp-content/plugins/akismet/akismet.php:194
+#: wp-content/plugins/akismet/admin.php:173
+#: wp-content/plugins/akismet/akismet.php:222
 msgid "Network Status"
-msgstr "ネットワークステータス"
+msgstr "ネットワーク状況"
 
-#: wp-content/plugins/akismet/akismet.php:203
+#: wp-content/plugins/akismet/admin.php:182
+#: wp-content/plugins/akismet/akismet.php:231
 msgid "No problems"
 msgstr "問題なし"
 
-#: wp-content/plugins/akismet/akismet.php:203
+#: wp-content/plugins/akismet/admin.php:182
+#: wp-content/plugins/akismet/akismet.php:231
 msgid "Obstructed"
 msgstr "切断されています。"
 
-#: wp-content/plugins/akismet/akismet.php:211
+#: wp-content/plugins/akismet/admin.php:190
+#: wp-content/plugins/akismet/akismet.php:239
 #, php-format
 msgid "Last checked %s ago."
 msgstr "最後の確認は %s 前です。"
 
-#: wp-content/plugins/akismet/akismet.php:212
+#: wp-content/plugins/akismet/admin.php:191
+#: wp-content/plugins/akismet/akismet.php:240
 msgid "Check network status &raquo;"
 msgstr "ネットワーク状況を確認 &raquo;"
 
-#: wp-content/plugins/akismet/akismet.php:222
+#: wp-content/plugins/akismet/admin.php:201
+#: wp-content/plugins/akismet/akismet.php:250
 msgid "Akismet Stats"
 msgstr "Akismet 統計"
 
-#: wp-content/plugins/akismet/akismet.php:333
-msgid "Akismet is almost ready."
-msgstr "Akismet はもうすぐ利用できます。"
-
-#: wp-content/plugins/akismet/akismet.php:333
-#, php-format
-msgid "You must <a href=\"%1$s\">enter your Akismet API key</a> for it to work."
-msgstr "利用するには、<a href=\"%1$s\">Akismet API キーを入力</a> する必要があります。"
-
-#: wp-content/plugins/akismet/akismet.php:341
-msgid "Akismet has detected a problem."
-msgstr "Akismet が障害を検知しました。"
-
-#: wp-content/plugins/akismet/akismet.php:341
-#, php-format
-msgid "A server or network problem is preventing Akismet from working correctly.  <a href=\"%1$s\">Click here for more information</a> about how to fix the problem."
-msgstr "サーバーもしくはネットワークの障害のため、Akismet が正常に動作していません。この問題を解決するには<a href=\"%1$s\">こちらの詳細情報を参照してください</a>。"
-
-#: wp-content/plugins/akismet/akismet.php:654
-#, php-format
-msgid "Akismet Spam (%s)"
-msgstr "Akismet スパム (%s) "
-
-#: wp-content/plugins/akismet/akismet.php:656
-#: wp-content/plugins/akismet/akismet.php:658
-msgid "Akismet Spam"
-msgstr "Akismet スパム"
-
-#: wp-content/plugins/akismet/akismet.php:668
-#: wp-content/plugins/akismet/akismet.php:687
-msgid "You do not have sufficient permission to moderate comments."
-msgstr "コメントをモデレートするための十分な権限がありません。"
-
-#: wp-content/plugins/akismet/akismet.php:699
-#, php-format
-msgid "%1$s comments recovered."
-msgstr "%1$s件のコメントを元に戻しました。"
-
-#: wp-content/plugins/akismet/akismet.php:703
-msgid "All spam deleted."
-msgstr "すべてのスパムを削除しました。"
-
-#: wp-content/plugins/akismet/akismet.php:751
-msgid "Caught Spam"
-msgstr "捕らえたスパム"
-
-#: wp-content/plugins/akismet/akismet.php:756
-#, php-format
-msgid "Akismet has caught <strong>%1$s spam</strong> for you since you first installed it."
-msgstr "Akismet は有効化されてから<strong>%1$s件のスパム</strong>を捕らえました。"
-
-#: wp-content/plugins/akismet/akismet.php:763
-msgid "You have no spam currently in the queue. Must be your lucky day. :)"
-msgstr "今のところスパムはありません。きっと運のいい日だったのでしょう。 :)"
-
-#: wp-content/plugins/akismet/akismet.php:766
-msgid "You can delete all of the spam from your database with a single click. This operation cannot be undone, so you may wish to check to ensure that no legitimate comments got through first. Spam is automatically deleted after 15 days, so don&#8217;t sweat it."
-msgstr "「すべてを削除」ボタンを押すとスパムをすべて削除できます。この操作は取り消すことができないので、削除する前に本物のコメントが誤ってスパムと判定されていないか確かめた方がいいでしょう。スパムは15日後に自動的に削除されるので、あまり悩む必要はありません。"
-
-#: wp-content/plugins/akismet/akismet.php:772
-#: wp-content/plugins/akismet/akismet.php:950
-#, php-format
-msgid "There are currently %1$s comments identified as spam."
-msgstr "スパムと判定されたコメントが現在%1$s件あります。"
-
-#: wp-content/plugins/akismet/akismet.php:772
-#: wp-content/plugins/akismet/akismet.php:950
-msgid "Delete all"
-msgstr "すべてを削除"
-
-#: wp-content/plugins/akismet/akismet.php:781
-msgid "These are the latest comments identified as spam by Akismet. If you see any mistakes, simply mark the comment as \"not spam\" and Akismet will learn from the submission. If you wish to recover a comment from spam, simply select the comment, and click Not Spam. After 15 days we clean out the junk for you."
-msgstr "これらは Akismet によってスパムと判定された最新のコメントです。もし間違いを見つけたらそのコメントの「スパムを解除」にマークを入れてください。Akismet はあなたの判定から学習していきます。スパムと判定されたコメントを元に戻すには、そのコメントを選択して一番下の「選択したコメントのスパムを解除 &raquo;」をクリックしてください。 スパムは 15日後に自動的に削除されます。"
-
-#: wp-content/plugins/akismet/akismet.php:812
-msgid "All"
-msgstr "すべて"
-
-#: wp-content/plugins/akismet/akismet.php:835
-msgid "Search Spam &raquo;"
-msgstr "スパムを検索 &raquo;"
-
-#: wp-content/plugins/akismet/akismet.php:842
-#: wp-content/plugins/akismet/akismet.php:909
-#: wp-includes/link-template.php:1596
-msgid "&laquo; Previous Page"
-msgstr "&laquo; 前ページへ"
-
-#: wp-content/plugins/akismet/akismet.php:863
-#: wp-content/plugins/akismet/akismet.php:930
-#: wp-includes/link-template.php:1597
-msgid "Next Page &raquo;"
-msgstr "次ページへ &raquo;"
-
-#: wp-content/plugins/akismet/akismet.php:885
-msgid "IP:"
-msgstr "IP:"
-
-#: wp-content/plugins/akismet/akismet.php:891
-msgid "Not Spam"
-msgstr "スパムを解除"
-
-#: wp-content/plugins/akismet/akismet.php:936
-msgid "De-spam marked comments &raquo;"
-msgstr "選択したコメントのスパムを解除 &raquo;"
-
-#: wp-content/plugins/akismet/akismet.php:938
-msgid "Comments you de-spam will be submitted to Akismet as mistakes so it can learn and get better."
-msgstr "スパムを解除されたコメントは Akismet へ送信されます。Akismet はその「間違い」を学習することによってさらに賢くなります"
-
-#: wp-content/plugins/akismet/akismet.php:968
+#: wp-content/plugins/akismet/admin.php:248
+#: wp-content/plugins/akismet/akismet.php:291
 msgid "Spam"
 msgstr "スパム"
 
-#: wp-content/plugins/akismet/akismet.php:974
+#: wp-content/plugins/akismet/admin.php:254
+#: wp-content/plugins/akismet/akismet.php:297
 #, php-format
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">%3$s spam comments</a>."
 msgstr "<a href=\"%1$s\">Akismet</a> は<a href=\"%2$s\">%3$s件のコメントスパム</a>からあなたのサイトを保護しました。"
 
-#: wp-content/plugins/akismet/akismet.php:992
+#: wp-content/plugins/akismet/admin.php:263
+#: wp-content/plugins/akismet/akismet.php:377
+msgid "Akismet is almost ready."
+msgstr "Akismet はもうすぐ利用できます。"
+
+#: wp-content/plugins/akismet/admin.php:263
+#: wp-content/plugins/akismet/akismet.php:377
+#, php-format
+msgid "You must <a href=\"%1$s\">enter your Akismet API key</a> for it to work."
+msgstr "利用するには、<a href=\"%1$s\">Akismet API キーを入力</a> する必要があります。"
+
+#: wp-content/plugins/akismet/admin.php:271
+#: wp-content/plugins/akismet/akismet.php:385
+msgid "Akismet has detected a problem."
+msgstr "Akismet が障害を検知しました。"
+
+#: wp-content/plugins/akismet/admin.php:271
+#: wp-content/plugins/akismet/akismet.php:385
+#, php-format
+msgid "A server or network problem is preventing Akismet from working correctly.  <a href=\"%1$s\">Click here for more information</a> about how to fix the problem."
+msgstr "サーバーもしくはネットワークの障害のため、Akismet が正常に動作していません。この問題を解決するには<a href=\"%1$s\">こちらの詳細情報を参照してください</a>。"
+
+#: wp-content/plugins/akismet/admin.php:296
+#, php-format
+msgid "Flagged as spam by %s"
+msgstr "%s によってスパムと判定されました"
+
+#: wp-content/plugins/akismet/admin.php:298
+#, php-format
+msgid "Un-spammed by %s"
+msgstr "%s がスパム判定を解除"
+
+#: wp-content/plugins/akismet/admin.php:302
+msgid "View comment history"
+msgstr "コメント履歴を表示"
+
+#: wp-content/plugins/akismet/admin.php:329
+msgid "Akismet"
+msgstr "Akismet"
+
+#: wp-content/plugins/akismet/admin.php:384
+#: wp-content/plugins/akismet/akismet.php:697
+#, php-format
+msgid "<a href=\"%1$s\">Akismet</a> blocks spam from getting to your blog,"
+msgstr "<a href=\"%1$s\">Akismet</a> があなたのブログをスパムから保護しています。"
+
+#: wp-content/plugins/akismet/admin.php:394
+#, php-format
+msgid " but there's nothing in your <a href='%1$s'>spam queue</a> at the moment."
+msgstr "現在保管されている<a href='%1$s'>スパム</a>はありません。"
+
+#: wp-content/plugins/akismet/admin.php:399
+#, php-format
+msgctxt "akismet_rightnow"
+msgid "%1$s%2$s"
+msgstr "%1$s%2$s"
+
+#: wp-content/plugins/akismet/admin.php:401
+#, php-format
+msgid "%1$s%2$s|akismet_rightnow"
+msgstr "%1$s%2$s|akismet_rightnow"
+
+#: wp-content/plugins/akismet/admin.php:417
+#: wp-content/plugins/akismet/akismet.php:730
+msgid "Check for Spam"
+msgstr "スパムチェック"
+
+#: wp-content/plugins/akismet/admin.php:449
+#, php-format
+msgid "%s un-spammed this comment"
+msgstr "%s がこのコメントを非スパムと判定"
+
+#: wp-content/plugins/akismet/admin.php:489
+#, php-format
+msgid "%s spammed this comment"
+msgstr "%s はこのコメントをスパムとしました"
+
+#: wp-content/plugins/akismet/admin.php:568
+msgid "Akismet re-checked and caught this comment as spam"
+msgstr "Akismet が再検証の際にこのコメントをスパムと判定"
+
+#: wp-content/plugins/akismet/admin.php:572
+msgid "Akismet re-checked and cleared this comment"
+msgstr "このコメントは Akismet での再検証に合格しました"
+
+#: wp-content/plugins/akismet/admin.php:576
+#, php-format
+msgid "Akismet was unable to re-check this comment (response: %s)"
+msgstr "Akismet によるこのコメントの再検証に失敗しました (レスポンス: %s)"
+
+#: wp-content/plugins/akismet/akismet.php:692
 #, php-format
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comment already,"
 msgid_plural "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comments already,"
 msgstr[0] "<a href=\"%1$s\">Akismet</a> は%2$s件のコメントスパムからあなたのサイトを保護しました。"
 
-#: wp-content/plugins/akismet/akismet.php:997
-#, php-format
-msgid "<a href=\"%1$s\">Akismet</a> blocks spam from getting to your blog,"
-msgstr "<a href=\"%1$s\">Akismet</a> があなたのブログをスパムから保護しています。"
-
-#: wp-content/plugins/akismet/akismet.php:1002
+#: wp-content/plugins/akismet/akismet.php:702
 #, php-format
 msgid "and there's <a href=\"%2$s\">%1$s comment</a> in your spam queue right now."
 msgid_plural "and there are <a href=\"%2$s\">%1$s comments</a> in your spam queue right now."
 msgstr[0] "現在<a href=\"%2$s\">%1$s件のコメント</a>をスパムとして捕らえています。"
 
-#: wp-content/plugins/akismet/akismet.php:1007
+#: wp-content/plugins/akismet/akismet.php:707
 #, php-format
 msgid "but there's nothing in your <a href='%1$s'>spam queue</a> at the moment."
-msgstr "でも今のところ <a href='%1$s'>スパム</a> はありません。"
+msgstr "現在保管されている<a href='%1$s'>スパム</a>はありません。"
 
-#: wp-content/plugins/akismet/akismet.php:1010
+#: wp-content/plugins/akismet/akismet.php:712
+#, php-format
+msgctxt "akismet_rightnow"
+msgid "%1$s %2$s"
+msgstr "%2$s %1$s"
+
+#: wp-content/plugins/akismet/akismet.php:714
 #, php-format
 msgid "%1$s %2$s|akismet_rightnow"
 msgstr "%1$s%2$s|akismet_rightnow"
 
-#: wp-content/plugins/akismet/akismet.php:1027
-msgid "Recheck Queue for Spam"
-msgstr "承認待ちをスパムチェック"
-
-#: wp-content/plugins/akismet/akismet.php:1044
-msgid "Check for Spam"
-msgstr "スパムチェック"
-
-#: wp-content/plugins/akismet/akismet.php:1120
+#: wp-content/plugins/akismet/akismet.php:810
 #, php-format
 msgid "%1$s %2$sspam comments%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 msgstr "%1$s %2$sスパムコメント%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 
-#: wp-content/plugins/akismet/akismet.php:1144
+#: wp-content/plugins/akismet/akismet.php:838
 msgid "Spam Blocked"
 msgstr "ブロックしたスパム"
 
-#: wp-content/plugins/akismet/akismet.php:1182
+#: wp-content/plugins/akismet/akismet.php:885
 msgid "spam comments"
 msgstr "コメントスパム"
 
-#: wp-content/plugins/akismet/akismet.php:1182
+#: wp-content/plugins/akismet/akismet.php:885
 msgid "blocked by"
 msgstr "blocked by"
+
+#: wp-content/plugins/akismet/legacy.php:47
+#, php-format
+msgid "Akismet Spam (%s)"
+msgstr "Akismet スパム (%s) "
+
+#: wp-content/plugins/akismet/legacy.php:49
+#: wp-content/plugins/akismet/legacy.php:51
+msgid "Akismet Spam"
+msgstr "Akismet スパム"
+
+#: wp-content/plugins/akismet/legacy.php:61
+#: wp-content/plugins/akismet/legacy.php:80
+msgid "You do not have sufficient permission to moderate comments."
+msgstr "コメントをモデレートするための十分な権限がありません。"
+
+#: wp-content/plugins/akismet/legacy.php:96
+#, php-format
+msgid "%1$s comments recovered."
+msgstr "%1$s件のコメントを元に戻しました。"
+
+#: wp-content/plugins/akismet/legacy.php:100
+msgid "All spam deleted."
+msgstr "すべてのスパムを削除しました。"
+
+#: wp-content/plugins/akismet/legacy.php:148
+msgid "Caught Spam"
+msgstr "捕らえたスパム"
+
+#: wp-content/plugins/akismet/legacy.php:153
+#, php-format
+msgid "Akismet has caught <strong>%1$s spam</strong> for you since you first installed it."
+msgstr "Akismet は有効化されてから<strong>%1$s件のスパム</strong>を捕らえました。"
+
+#: wp-content/plugins/akismet/legacy.php:160
+msgid "You have no spam currently in the queue. Must be your lucky day. :)"
+msgstr "今のところスパムはありません。きっと運のいい日だったのでしょう。 :)"
+
+#: wp-content/plugins/akismet/legacy.php:163
+msgid "You can delete all of the spam from your database with a single click. This operation cannot be undone, so you may wish to check to ensure that no legitimate comments got through first. Spam is automatically deleted after 15 days, so don&#8217;t sweat it."
+msgstr "「すべてを削除」ボタンを押すとスパムをすべて削除できます。この操作は取り消すことができないので、削除する前に本物のコメントが誤ってスパムと判定されていないか確かめた方がいいでしょう。スパムは15日後に自動的に削除されるので、あまり悩む必要はありません。"
+
+#: wp-content/plugins/akismet/legacy.php:169
+#: wp-content/plugins/akismet/legacy.php:347
+#, php-format
+msgid "There are currently %1$s comments identified as spam."
+msgstr "スパムと判定されたコメントが現在%1$s件あります。"
+
+#: wp-content/plugins/akismet/legacy.php:169
+#: wp-content/plugins/akismet/legacy.php:347
+msgid "Delete all"
+msgstr "すべてを削除"
+
+#: wp-content/plugins/akismet/legacy.php:178
+msgid "These are the latest comments identified as spam by Akismet. If you see any mistakes, simply mark the comment as \"not spam\" and Akismet will learn from the submission. If you wish to recover a comment from spam, simply select the comment, and click Not Spam. After 15 days we clean out the junk for you."
+msgstr "これらは Akismet によってスパムと判定された最新のコメントです。もし間違いを見つけたらそのコメントの「スパムを解除」にマークを入れてください。Akismet はあなたの判定から学習していきます。スパムと判定されたコメントを元に戻すには、そのコメントを選択して一番下の「選択したコメントのスパムを解除 &raquo;」をクリックしてください。 スパムは 15日後に自動的に削除されます。"
+
+#: wp-content/plugins/akismet/legacy.php:209
+msgid "All"
+msgstr "すべて"
+
+#: wp-content/plugins/akismet/legacy.php:232
+msgid "Search Spam &raquo;"
+msgstr "スパムを検索 &raquo;"
+
+#: wp-content/plugins/akismet/legacy.php:239
+#: wp-content/plugins/akismet/legacy.php:306
+#: wp-includes/link-template.php:1596
+msgid "&laquo; Previous Page"
+msgstr "&laquo; 前ページへ"
+
+#: wp-content/plugins/akismet/legacy.php:260
+#: wp-content/plugins/akismet/legacy.php:327
+#: wp-includes/link-template.php:1597
+msgid "Next Page &raquo;"
+msgstr "次ページへ &raquo;"
+
+#: wp-content/plugins/akismet/legacy.php:282
+msgid "IP:"
+msgstr "IP:"
+
+#: wp-content/plugins/akismet/legacy.php:288
+msgid "Not Spam"
+msgstr "スパムを解除"
+
+#: wp-content/plugins/akismet/legacy.php:333
+msgid "De-spam marked comments &raquo;"
+msgstr "選択したコメントのスパムを解除 &raquo;"
+
+#: wp-content/plugins/akismet/legacy.php:335
+msgid "Comments you de-spam will be submitted to Akismet as mistakes so it can learn and get better."
+msgstr "スパムを解除されたコメントは Akismet へ送信されます。Akismet はその「間違い」を学習することによってさらに賢くなります"
+
+#: wp-content/plugins/akismet/legacy.php:385
+msgid "Recheck Queue for Spam"
+msgstr "承認待ちをスパムチェック"
 
 #: wp-includes/atomlib.php:133
 #, php-format
@@ -10694,7 +10818,7 @@ msgstr "コメントを投稿するには<a href=\"%s\">ログイン</a>して�
 #: wp-includes/comment-template.php:1537
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "<a href=\"%1$s\">%2$s</a> としてログインしています。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウトしますか ?</a></p>"
+msgstr "<a href=\"%1$s\">%2$s</a> としてログインしています。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウトしますか ?</a>"
 
 #: wp-includes/comment-template.php:1538
 msgid "Your email address will not be published."
@@ -10713,21 +10837,21 @@ msgstr "コメントをキャンセル"
 msgid "Post Comment"
 msgstr "コメントを送信"
 
-#: wp-includes/comment.php:317
+#: wp-includes/comment.php:307
 msgid "Unapproved"
 msgstr "非承認"
 
-#: wp-includes/comment.php:558
-#: wp-includes/comment.php:560
+#: wp-includes/comment.php:548
+#: wp-includes/comment.php:550
 msgid "Duplicate comment detected; it looks as though you&#8217;ve already said that!"
 msgstr "重複しているコメントが見つかりました。同じコメントをすでに投稿しているようです。"
 
-#: wp-includes/comment.php:618
-#: wp-includes/comment.php:620
+#: wp-includes/comment.php:608
+#: wp-includes/comment.php:610
 msgid "You are posting comments too quickly.  Slow down."
 msgstr "コメントの投稿が早すぎます。ゆっくりどうぞ。"
 
-#: wp-includes/comment.php:1339
+#: wp-includes/comment.php:1329
 msgid "Could not update comment status"
 msgstr "コメントステータスを更新できませんでした"
 
