@@ -1,19 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Michael Heilemann
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translation of the WordPress theme WordPress Default 1.6 by Michael Heilemann.
+# Copyright (C) 2009 Michael Heilemann
+# This file is distributed under the same license as the WordPress Default package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Default 1.6\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/theme\n"
-"POT-Creation-Date: 2009-12-17 17:34+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2009-12-23 23:38+0200\n"
+"PO-Revision-Date: 2009-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: 404.php:12
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Permanent Link to %s"
 msgstr ""
 
-#: archive.php:40 sidebar.php:30 single.php:34
+#: archive.php:40 image.php:32 sidebar.php:30 single.php:34
 msgid "l, F jS, Y"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Close this window."
 msgstr ""
 
-#: comments-popup.php:109 single.php:65
+#: comments-popup.php:109 image.php:65 single.php:65
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -428,8 +428,48 @@ msgstr ""
 msgid "Toggle Text Display"
 msgstr ""
 
-#: index.php:20 single.php:23
+#: image.php:20 index.php:20 single.php:23
 msgid "Read the rest of this entry &raquo;"
+msgstr ""
+
+#: image.php:22 page.php:17 single.php:25
+msgid "Pages:"
+msgstr ""
+
+#: image.php:32
+#, php-format
+msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
+msgstr ""
+
+#: image.php:34 single.php:35
+#, php-format
+msgid ""
+"You can follow any responses to this entry through the <a href='%s'>RSS 2.0</"
+"a> feed."
+msgstr ""
+
+#: image.php:38 single.php:39
+#, php-format
+msgid ""
+"You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel="
+"\"trackback\">trackback</a> from your own site."
+msgstr ""
+
+#: image.php:42 single.php:43
+#, php-format
+msgid ""
+"Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback"
+"\">trackback</a> from your own site."
+msgstr ""
+
+#: image.php:46 single.php:47
+msgid ""
+"You can skip to the end and leave a response. Pinging is currently not "
+"allowed."
+msgstr ""
+
+#: image.php:50 single.php:51
+msgid "Both comments and pings are currently closed."
 msgstr ""
 
 #: index.php:35
@@ -446,10 +486,6 @@ msgstr ""
 
 #: page.php:15
 msgid "Read the rest of this page &raquo;"
-msgstr ""
-
-#: page.php:17 single.php:25
-msgid "Pages:"
 msgstr ""
 
 #: page.php:22
@@ -548,37 +584,6 @@ msgstr ""
 #: single.php:34
 #, php-format
 msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
-msgstr ""
-
-#: single.php:35
-#, php-format
-msgid ""
-"You can follow any responses to this entry through the <a href='%s'>RSS 2.0</"
-"a> feed."
-msgstr ""
-
-#: single.php:39
-#, php-format
-msgid ""
-"You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel="
-"\"trackback\">trackback</a> from your own site."
-msgstr ""
-
-#: single.php:43
-#, php-format
-msgid ""
-"Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback"
-"\">trackback</a> from your own site."
-msgstr ""
-
-#: single.php:47
-msgid ""
-"You can skip to the end and leave a response. Pinging is currently not "
-"allowed."
-msgstr ""
-
-#: single.php:51
-msgid "Both comments and pings are currently closed."
 msgstr ""
 
 #: single.php:53
