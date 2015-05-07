@@ -77,7 +77,7 @@ class wpdb {
 	<li>ホスト名に間違いはありませんか ?</li>
 	<li>データベースサーバーは動いていますか ?</li>
 </ul>
-<p>上記の用語がよく分からなければサーバーの管理者に連絡したほうが良いかもしれません。助言が必要であれば <a href='http://ja.forums.wordpress.org/'>WordPress サポートフォーラム</a>を訪れるといいでしょう。</p>
+<p>上記の用語がよく分からなければサーバーの管理者に連絡したほうがいいかもしれません。助言が必要であれば<a href='http://ja.forums.wordpress.org/'>WordPress 日本語フォーラム</a>を訪れるといいでしょう。(訳注: オリジナルのリンク先は<a href='http://wordpress.org/support/'>WordPress サポートフォーラム (英語)</a>)</p>
 ");
 			return;
 		}
@@ -129,7 +129,7 @@ class wpdb {
 <li>ユーザー <code>".DB_USER."</code> に <code>$db</code> データベースを使用する権限はありますか ?</li>
 <li>システムによっては、例えば username_wordpress のように、データベース名の前にユーザー名が付加される場合があります。その可能性はありませんか ?</li>
 </ul>
-<p>データベースのセットアップ方法が分からなければ<strong>お使いのサーバー管理者</strong>に聞いてください。もし何をしてもうまくいかなければ、<a href='http://wordpress.org/support/'>WordPress サポートフォーラム（英語）</a>で助言がもらえるかもしれません。</p>");
+<p>データベースのセットアップ方法が分からなければ<strong>お使いのサーバー管理者</strong>に聞いてください。もし何をしてもうまくいかなければ、<a href='http://ja.forums.wordpress.org/'>WordPress 日本語フォーラム</a>で助言がもらえるかもしれません。(訳注: オリジナルのリンク先は<a href='http://wordpress.org/support/'>WordPress サポートフォーラム (英語)</a>)</p>");
 			return;
 		}
 	}

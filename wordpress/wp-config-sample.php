@@ -8,7 +8,7 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 // SECRET_KEY を独自のフレーズに変更してください。あとで思い出す必要はないので長くて複雑なものにしてください。
-// https://www.grc.com/passwords.htm を訪れればフレーズを生成してくれます。
+// http://api.wordpress.org/secret-key/1.0/ を訪れれば秘密鍵を生成してくれます。
 // もしくは適当なフレーズをご自分でお作りください。
 define('SECRET_KEY', 'put your unique phrase here'); // 固有のフレーズに変更してください
 
