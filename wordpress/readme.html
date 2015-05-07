@@ -8,7 +8,7 @@
 <body>
 <h1 id="logo" style="text-align: center">
 	<img alt="WordPress" src="wp-admin/images/wordpress-logo.png" />
-	<br /> バージョン 2.6
+	<br /> バージョン 2.6.1
 </h1>
 <p style="text-align: center">セマンティックな個人情報発信プラットフォーム</p>
 
@@ -19,7 +19,7 @@
 <h1>インストール: 5 分でインストール</h1>
 <ol>
 	<li>zip ファイルを空のディレクトリに展開します。</li>
-	<li>WordPad などのテキストエディタで <code>wp-config-sample.php</code> を開き、データベースの接続情報 (データベース名、ユーザー名、パスワード、およびホスト名) を記入します。</li>
+	<li>テキストエディタ (訳注: 日本語版の場合、UTF-8 BOMなし (または UTF-8N) で保存できるエディタを用いてください。Windows の『メモ帳』は用いないでください) で <code>wp-config-sample.php</code> を開き、データベースの接続情報 (データベース名、ユーザー名、パスワード、およびホスト名) を記入します。</li>
 	<li>このファイルの名前を <code>wp-config.php</code> として保存します。</li>
 	<li>すべてのファイルをアップロードします。</li>
 	<li><span class="file"><a href="wp-admin/install.php">/wp-admin/install.php</a></span> をブラウザで開きます。これによりあなたのブログに必要なデータベースのテーブルが設定されるはずです。もしエラーが発生するようなら <span class="file">wp-config.php</span> ファイルをもう一度確認し、再度このインストーラを試してください。それでも失敗する場合は、できるだけ多くのデータを集めて<a href="http://wordpress.org/support/">サポートフォーラム (英語)</a> (<a href="http://ja.forums.wordpress.org/">WP 日本語フォーラム</a>) に行ってください。</li>
@@ -29,7 +29,7 @@
 
 <h1>アップグレード</h1>
 <p>アップグレードの前に、<code>index.php</code> など変更した可能性のあるすべてのファイルのバックアップコピーを必ずとってください。</p>
-<h2>これまでのバージョンから 2.6 へのアップグレード：</h2>
+<h2>これまでのバージョンから 2.6.1 へのアップグレード：</h2>
 <ol>
 	<li>変更したファイルを保存し、古い WP ファイルを削除します。</li>
 	<li>新しいファイルをアップロードします。</li>
@@ -69,6 +69,8 @@
 <p>次のようなツールを使って WordPress へ投稿することができます。たとえば <a href="http://windowslivewriter.spaces.live.com/">Windows Live Writer</a>、<a href="http://ecto.kung-foo.tv/">Ecto</a>、<a href="http://bloggar.com/">Bloggar</a>、<a href="http://radio.userland.com">Radio Userland</a> (これはつまり Radio のメール投稿機能が使用できるということ)、<a href="http://www.newzcrawler.com/">NewzCrawler</a>、そのほか Blogging API をサポートしているツール :) 詳細は <a href="http://codex.wordpress.org/XML-RPC_Support">Codex 上の XML-RPC サポート (英語) </a>を参照してください。</p>
 
 <h1>メールでの投稿</h1>
+
+<p>(訳注: この節で紹介される<code>wp-mail.php</code>は日本語に対応していません。)</p>
 <p>メールクライアントから記事を投稿できます ! これを設定するには管理画面の「設定」-「投稿設定」を開き、秘密の POP3 アカウントの接続に関する詳細を入力します。次に、新規投稿がないかメールボックスを確認するために <code>wp-mail.php</code> を定期的に実行するように設定する必要があります。これは Cron のジョブとして実行できます。もしあなたのホストが Cron をサポートしていなければ、様々なウェブサイトのモニタリングサービスを調べて、あなたの <code>wp-mail.php</code> をチェックさせることもできます。</p>
 <p>投稿は簡単です。設定したメールアドレスに送られるすべてのメールが投稿され、件名がその投稿のタイトルになります。このアドレスはほかに使わないことをお勧めします。投稿に成功すると <code>wp-mail.php</code> はそのメールを<em>削除</em>します。</p>
 
@@ -81,7 +83,7 @@
 	<li>WordPress はコードを簡単に拡張するための堅牢なプラグイン API を備えています。この利用に興味のある開発者は <a href="http://codex.wordpress.org/Plugin_API">Codex のプラグインドキュメント (英語) </a>を参照してください。 ほとんどの場合、コアコードを変更するべきではありません。</li>
 </ul>
 
-<h1>分かち合い</h1>
+<h1>わかちあい</h1>
 <p>WordPress には数百万ドルのマーケティングキャンペーンもなければ有名なスポンサーもいませんが、それよりもっとすばらしいみなさんがいます。もしあなたが WordPress を楽しんでくれているのなら、友達にそれを伝えてください。自分よりまだ WordPress の知識がない人のためにセットアップの手助けをしてください。あるいは、WordPress を見落としているメディアのライターにメールを送ってください。</p>
 
 <h1>著作権</h1>
