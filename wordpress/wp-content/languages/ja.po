@@ -1,5 +1,5 @@
-# Translation of 3.1.2 in Japanese
-# This file is distributed under the same license as the 3.1.2 ja package.
+# Translation of 3.1.3 in Japanese
+# This file is distributed under the same license as the 3.1.3 ja package.
 #
 # WordPress 日本語版作成チーム / WP ja translation team
 # <http://groups.google.com/group/wp-ja-pkg/web/members>
@@ -10,10 +10,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.1.2 ja\n"
+"Project-Id-Version: 3.1.3 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-04-26 19:14:07+00:00\n"
-"PO-Revision-Date: 2011-04-27 22:39+0900\n"
+"POT-Creation-Date: 2011-05-25 19:13:59+00:00\n"
+"PO-Revision-Date: 2011-05-30 07:10+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -33,8 +33,8 @@ msgstr "プラグインやテーマでのユーザーレベルの使用は推奨
 #: wp-admin/includes/plugin-install.php:86
 #: wp-admin/includes/class-wp-theme-install-list-table.php:29
 #: wp-admin/includes/internal-linking.php:93
-#: wp-admin/includes/template.php:1351
-#: wp-admin/includes/template.php:1353
+#: wp-admin/includes/template.php:1355
+#: wp-admin/includes/template.php:1357
 #: wp-admin/includes/theme-install.php:66
 #: wp-admin/includes/nav-menu.php:642
 #: wp-admin/includes/nav-menu.php:671
@@ -410,7 +410,7 @@ msgstr "ログアウト &raquo;"
 #: wp-admin/includes/template.php:351
 #: wp-admin/includes/template.php:428
 #: wp-admin/includes/template.php:443
-#: wp-admin/includes/template.php:534
+#: wp-admin/includes/template.php:538
 #: wp-admin/includes/class-wp-terms-list-table.php:100
 #: wp-admin/includes/class-wp-terms-list-table.php:338
 #: wp-admin/includes/class-wp-links-list-table.php:80
@@ -459,8 +459,8 @@ msgstr "%1$s - %2$s へのコメント"
 #: wp-admin/includes/class-wp-posts-list-table.php:899
 #: wp-admin/includes/class-wp-comments-list-table.php:216
 #: wp-admin/includes/file.php:16
-#: wp-admin/includes/template.php:1461
-#: wp-admin/includes/template.php:1742
+#: wp-admin/includes/template.php:1465
+#: wp-admin/includes/template.php:1746
 #: wp-content/plugins/akismet/legacy.php:214
 msgid "Comments"
 msgstr "コメント"
@@ -496,7 +496,7 @@ msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out 
 msgstr "<a href=\"%1$s\">%2$s</a> としてログイン中。<a href=\"%3$s\" title=\"このアカウントからログアウトする\">ログアウト &raquo;</a>"
 
 #: wp-includes/theme-compat/comments-popup.php:80
-#: wp-login.php:520
+#: wp-login.php:521
 #: wp-admin/user-new.php:229
 #: wp-admin/user-new.php:291
 #: wp-admin/comment.php:160
@@ -781,8 +781,8 @@ msgstr "/"
 #: wp-includes/script-loader.php:194
 #: wp-includes/js/tinymce/langs/wp-langs.php:31
 #: wp-includes/js/tinymce/wp-mce-help.php:258
-#: wp-login.php:582
-#: wp-admin/includes/template.php:1369
+#: wp-login.php:583
+#: wp-admin/includes/template.php:1373
 #: wp-admin/includes/widgets.php:207
 msgid "Close"
 msgstr "閉じる"
@@ -866,7 +866,7 @@ msgid "&#8220;%s&#8221; has failed to upload due to an error"
 msgstr "&#8220;%s&#8221; は、エラーのためアップロードに失敗しました"
 
 #: wp-includes/script-loader.php:252
-#: wp-login.php:467
+#: wp-login.php:468
 #: wp-admin/user-new.php:314
 #: wp-admin/install.php:122
 #: wp-admin/install.php:253
@@ -907,8 +907,8 @@ msgstr "不一致"
 #: wp-admin/includes/class-wp-posts-list-table.php:999
 #: wp-admin/includes/class-wp-posts-list-table.php:1002
 #: wp-admin/includes/internal-linking.php:118
-#: wp-admin/includes/template.php:503
-#: wp-admin/includes/class-wp-plugins-list-table.php:269
+#: wp-admin/includes/template.php:507
+#: wp-admin/includes/class-wp-plugins-list-table.php:262
 #: wp-admin/includes/meta-boxes.php:224
 #: wp-admin/includes/meta-boxes.php:225
 #: wp-admin/edit-tag-form.php:90
@@ -923,7 +923,7 @@ msgstr "リンク追加"
 
 #: wp-includes/script-loader.php:272
 #: wp-includes/script-loader.php:382
-#: wp-admin/includes/template.php:1515
+#: wp-admin/includes/template.php:1519
 msgid "(no title)"
 msgstr "(タイトルなし)"
 
@@ -958,7 +958,7 @@ msgid "Separate tags with commas"
 msgstr "タグが複数ある場合はコンマで区切ってください"
 
 #: wp-includes/script-loader.php:322
-#: wp-admin/includes/template.php:641
+#: wp-admin/includes/template.php:645
 #: wp-admin/includes/meta-boxes.php:103
 #: wp-admin/includes/meta-boxes.php:149
 msgid "OK"
@@ -974,8 +974,8 @@ msgstr "OK"
 #: wp-admin/includes/media.php:1560
 #: wp-admin/includes/internal-linking.php:115
 #: wp-admin/includes/template.php:370
-#: wp-admin/includes/template.php:555
-#: wp-admin/includes/template.php:642
+#: wp-admin/includes/template.php:559
+#: wp-admin/includes/template.php:646
 #: wp-admin/includes/theme-install.php:285
 #: wp-admin/includes/nav-menu.php:186
 #: wp-admin/includes/class-wp-terms-list-table.php:364
@@ -996,11 +996,11 @@ msgstr "キャンセル"
 #: wp-admin/includes/class-wp-posts-list-table.php:542
 #: wp-admin/includes/class-wp-comments-list-table.php:412
 #: wp-admin/includes/class-wp-users-list-table.php:245
-#: wp-admin/includes/class-wp-plugins-list-table.php:382
+#: wp-admin/includes/class-wp-plugins-list-table.php:383
 #: wp-admin/includes/class-wp-terms-list-table.php:259
 #: wp-admin/includes/class-wp-media-list-table.php:337
 #: wp-admin/includes/class-wp-media-list-table.php:351
-#: wp-admin/includes/post.php:1167
+#: wp-admin/includes/post.php:1175
 #: wp-admin/includes/class-wp-links-list-table.php:139
 #: wp-admin/includes/widgets.php:182
 #: wp-admin/includes/meta-boxes.php:84
@@ -1058,11 +1058,11 @@ msgid "Save Draft"
 msgstr "下書きとして保存"
 
 #: wp-includes/script-loader.php:335
-#: wp-includes/post.php:584
-#: wp-includes/post.php:604
+#: wp-includes/post.php:590
+#: wp-includes/post.php:610
 #: wp-admin/includes/class-wp-posts-list-table.php:806
 #: wp-admin/includes/class-wp-posts-list-table.php:948
-#: wp-admin/includes/template.php:1628
+#: wp-admin/includes/template.php:1632
 #: wp-admin/includes/meta-boxes.php:116
 #: wp-admin/includes/meta-boxes.php:146
 msgid "Private"
@@ -1090,9 +1090,9 @@ msgid "Privately Published"
 msgstr "非公開"
 
 #: wp-includes/script-loader.php:340
-#: wp-includes/post.php:585
-#: wp-includes/post.php:605
-#: wp-admin/admin-ajax.php:1290
+#: wp-includes/post.php:591
+#: wp-includes/post.php:611
+#: wp-admin/admin-ajax.php:1292
 #: wp-admin/includes/class-wp-posts-list-table.php:591
 #: wp-admin/includes/class-wp-posts-list-table.php:945
 #: wp-admin/includes/meta-boxes.php:68
@@ -1928,50 +1928,50 @@ msgstr "よく使われているタグから選択"
 #: wp-includes/taxonomy.php:813
 #: wp-includes/taxonomy.php:941
 #: wp-includes/taxonomy.php:1126
-#: wp-includes/taxonomy.php:1791
-#: wp-includes/taxonomy.php:2060
+#: wp-includes/taxonomy.php:1793
+#: wp-includes/taxonomy.php:2062
 msgid "Invalid Taxonomy"
 msgstr "無効な分類"
 
 #: wp-includes/taxonomy.php:808
-#: wp-includes/taxonomy.php:2837
+#: wp-includes/taxonomy.php:2839
 msgid "Empty Term"
 msgstr "キーワードなし"
 
-#: wp-includes/taxonomy.php:1929
-#: wp-includes/taxonomy.php:2231
+#: wp-includes/taxonomy.php:1931
+#: wp-includes/taxonomy.php:2233
 #: wp-admin/includes/class-wp-terms-list-table.php:23
 msgid "Invalid taxonomy"
 msgstr "無効な分類"
 
-#: wp-includes/taxonomy.php:1936
+#: wp-includes/taxonomy.php:1938
 msgid "Invalid term ID"
 msgstr "無効な単語 ID"
 
-#: wp-includes/taxonomy.php:1939
-#: wp-includes/taxonomy.php:2257
+#: wp-includes/taxonomy.php:1941
+#: wp-includes/taxonomy.php:2259
 msgid "A name is required for this term"
 msgstr "この項目に名前は必須です"
 
-#: wp-includes/taxonomy.php:1977
+#: wp-includes/taxonomy.php:1979
 msgid "A term with the name provided already exists with this parent."
 msgstr "この項目の親項目の下に同じ名前のものが既に存在しています。"
 
-#: wp-includes/taxonomy.php:1981
-#: wp-includes/taxonomy.php:1988
-#: wp-includes/taxonomy.php:1998
+#: wp-includes/taxonomy.php:1983
+#: wp-includes/taxonomy.php:1990
+#: wp-includes/taxonomy.php:2000
 msgid "Could not insert term into the database"
 msgstr "語句をデータベースに追加できませんでした"
 
-#: wp-includes/taxonomy.php:1992
+#: wp-includes/taxonomy.php:1994
 msgid "A term with the name provided already exists."
 msgstr "同じ名前の項目が既に存在しています。"
 
-#: wp-includes/taxonomy.php:2290
+#: wp-includes/taxonomy.php:2292
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "このスラッグ &#8220;%s&#8221; はすでに他のタグで使用されています"
 
-#: wp-includes/taxonomy.php:3001
+#: wp-includes/taxonomy.php:3003
 msgid "Invalid object ID"
 msgstr "無効なオブジェクト ID です。"
 
@@ -2395,10 +2395,10 @@ msgid "Search for:"
 msgstr "検索:"
 
 #: wp-includes/general-template.php:187
-#: wp-login.php:419
-#: wp-login.php:444
-#: wp-login.php:475
-#: wp-login.php:531
+#: wp-login.php:420
+#: wp-login.php:445
+#: wp-login.php:476
+#: wp-login.php:532
 msgid "Log in"
 msgstr "ログイン"
 
@@ -2407,8 +2407,8 @@ msgid "Log out"
 msgstr "ログアウト"
 
 #: wp-includes/general-template.php:258
-#: wp-login.php:516
-#: wp-login.php:636
+#: wp-login.php:517
+#: wp-login.php:637
 #: wp-admin/user-new.php:287
 #: wp-admin/install.php:101
 #: wp-admin/install.php:225
@@ -2419,7 +2419,7 @@ msgid "Username"
 msgstr "ユーザー名"
 
 #: wp-includes/general-template.php:259
-#: wp-login.php:640
+#: wp-login.php:641
 #: wp-admin/user-new.php:309
 #: wp-admin/install.php:229
 #: wp-admin/options-writing.php:111
@@ -2429,23 +2429,23 @@ msgid "Password"
 msgstr "パスワード"
 
 #: wp-includes/general-template.php:260
-#: wp-login.php:644
+#: wp-login.php:645
 msgid "Remember Me"
 msgstr "ログイン情報を記憶"
 
 #: wp-includes/general-template.php:261
-#: wp-login.php:627
-#: wp-login.php:646
+#: wp-login.php:628
+#: wp-login.php:647
 #: wp-admin/install.php:144
 #: wp-admin/install.php:238
 msgid "Log In"
 msgstr "ログイン"
 
 #: wp-includes/general-template.php:336
-#: wp-login.php:421
-#: wp-login.php:477
-#: wp-login.php:527
-#: wp-login.php:660
+#: wp-login.php:422
+#: wp-login.php:478
+#: wp-login.php:528
+#: wp-login.php:661
 msgid "Register"
 msgstr "登録"
 
@@ -2645,153 +2645,153 @@ msgstr[0] "ゴミ箱 <span class=\"count\">(%s)</span>"
 msgid "Invalid post"
 msgstr "無効な投稿"
 
-#: wp-includes/post.php:582
-#: wp-includes/post.php:603
-#: wp-admin/admin-ajax.php:1299
+#: wp-includes/post.php:588
+#: wp-includes/post.php:609
+#: wp-admin/admin-ajax.php:1301
 #: wp-admin/includes/class-wp-posts-list-table.php:952
-#: wp-admin/includes/template.php:1630
+#: wp-admin/includes/template.php:1634
 #: wp-admin/includes/meta-boxes.php:78
 #: wp-admin/includes/meta-boxes.php:98
 #: wp-admin/includes/meta-boxes.php:100
 msgid "Draft"
 msgstr "下書き"
 
-#: wp-includes/post.php:583
-#: wp-admin/admin-ajax.php:1296
+#: wp-includes/post.php:589
+#: wp-admin/admin-ajax.php:1298
 #: wp-admin/includes/class-wp-posts-list-table.php:951
 #: wp-admin/includes/meta-boxes.php:74
 #: wp-admin/includes/meta-boxes.php:96
 msgid "Pending Review"
 msgstr "レビュー待ち"
 
-#: wp-includes/post.php:919
+#: wp-includes/post.php:925
 msgid "Post types cannot exceed 20 characters in length"
 msgstr "投稿タイプ名は20文字以内にしてください"
 
-#: wp-includes/post.php:1158
+#: wp-includes/post.php:1164
 msgctxt "post type general name"
 msgid "Posts"
 msgstr "投稿"
 
-#: wp-includes/post.php:1158
+#: wp-includes/post.php:1164
 msgctxt "post type general name"
 msgid "Pages"
 msgstr "ページ"
 
-#: wp-includes/post.php:1159
+#: wp-includes/post.php:1165
 msgctxt "post type singular name"
 msgid "Post"
 msgstr "投稿"
 
-#: wp-includes/post.php:1159
+#: wp-includes/post.php:1165
 msgctxt "post type singular name"
 msgid "Page"
 msgstr "ページ"
 
-#: wp-includes/post.php:1160
+#: wp-includes/post.php:1166
 #: wp-admin/menu.php:68
 msgctxt "post"
 msgid "Add New"
 msgstr "新規追加"
 
-#: wp-includes/post.php:1160
+#: wp-includes/post.php:1166
 #: wp-admin/menu.php:93
 msgctxt "page"
 msgid "Add New"
 msgstr "新規追加"
 
-#: wp-includes/post.php:1161
+#: wp-includes/post.php:1167
 msgid "Add New Post"
 msgstr "新規投稿を追加"
 
-#: wp-includes/post.php:1161
+#: wp-includes/post.php:1167
 msgid "Add New Page"
 msgstr "新規ページを追加"
 
-#: wp-includes/post.php:1162
+#: wp-includes/post.php:1168
 #: wp-admin/edit.php:200
 #: wp-admin/press-this.php:594
 msgid "Edit Post"
 msgstr "投稿編集"
 
-#: wp-includes/post.php:1162
+#: wp-includes/post.php:1168
 msgid "Edit Page"
 msgstr "ページを編集"
 
-#: wp-includes/post.php:1163
+#: wp-includes/post.php:1169
 #: wp-includes/admin-bar.php:127
-#: wp-admin/includes/template.php:1449
-#: wp-admin/includes/template.php:1457
+#: wp-admin/includes/template.php:1453
+#: wp-admin/includes/template.php:1461
 msgid "New Post"
 msgstr "新規投稿"
 
-#: wp-includes/post.php:1163
-#: wp-admin/includes/template.php:1459
+#: wp-includes/post.php:1169
+#: wp-admin/includes/template.php:1463
 msgid "New Page"
 msgstr "新規ページ"
 
-#: wp-includes/post.php:1164
+#: wp-includes/post.php:1170
 #: wp-admin/edit.php:200
 #: wp-content/plugins/akismet/legacy.php:294
 msgid "View Post"
 msgstr "投稿を表示"
 
-#: wp-includes/post.php:1164
+#: wp-includes/post.php:1170
 msgid "View Page"
 msgstr "ページを表示"
 
-#: wp-includes/post.php:1165
+#: wp-includes/post.php:1171
 msgid "Search Posts"
 msgstr "投稿を検索"
 
-#: wp-includes/post.php:1165
+#: wp-includes/post.php:1171
 msgid "Search Pages"
 msgstr "ページを検索"
 
-#: wp-includes/post.php:1166
+#: wp-includes/post.php:1172
 msgid "No posts found."
 msgstr "投稿は見つかりませんでした。"
 
-#: wp-includes/post.php:1166
+#: wp-includes/post.php:1172
 msgid "No pages found."
 msgstr "ページが見つかりませんでした。"
 
-#: wp-includes/post.php:1167
+#: wp-includes/post.php:1173
 msgid "No posts found in Trash."
 msgstr "ゴミ箱内に投稿が見つかりませんでした。"
 
-#: wp-includes/post.php:1167
+#: wp-includes/post.php:1173
 msgid "No pages found in Trash."
 msgstr "ゴミ箱内にページが見つかりませんでした。"
 
-#: wp-includes/post.php:1168
+#: wp-includes/post.php:1174
 msgid "Parent Page:"
 msgstr "親ページ: "
 
-#: wp-includes/post.php:2286
+#: wp-includes/post.php:2292
 msgid "Passing an integer number of posts is deprecated. Pass an array of arguments instead."
 msgstr "投稿の整数値を渡す方法は非推奨になっています。代わりに引数の配列を渡してください。"
 
-#: wp-includes/post.php:2423
+#: wp-includes/post.php:2429
 msgid "Content, title, and excerpt are empty."
 msgstr "本文、タイトル、抜粋が空欄です。"
 
-#: wp-includes/post.php:2547
+#: wp-includes/post.php:2553
 msgid "Could not update post in the database"
 msgstr "データベース内の投稿を更新できませんでした"
 
-#: wp-includes/post.php:2563
+#: wp-includes/post.php:2569
 msgid "Could not insert post into the database"
 msgstr "データベースに投稿を追加できませんでした"
 
-#: wp-includes/post.php:2613
+#: wp-includes/post.php:2619
 msgid "The page template is invalid."
 msgstr "ページテンプレートが不正です。"
 
-#: wp-includes/post.php:4621
+#: wp-includes/post.php:4632
 #: wp-includes/js/tinymce/langs/wp-langs.php:295
 #: wp-includes/js/tinymce/langs/wp-langs.php:451
-#: wp-admin/admin-ajax.php:1284
+#: wp-admin/admin-ajax.php:1286
 #: wp-admin/includes/dashboard.php:509
 #: wp-admin/includes/class-wp-posts-list-table.php:742
 #: wp-admin/includes/media.php:1067
@@ -2803,72 +2803,72 @@ msgstr "ページテンプレートが不正です。"
 msgid "Title"
 msgstr "タイトル"
 
-#: wp-includes/post.php:4622
+#: wp-includes/post.php:4633
 #: wp-admin/includes/dashboard.php:246
 #: wp-admin/includes/dashboard.php:520
 msgid "Content"
 msgstr "内容"
 
-#: wp-includes/post.php:4623
+#: wp-includes/post.php:4634
 #: wp-admin/edit-form-advanced.php:136
 #: wp-admin/includes/meta-boxes.php:383
 msgid "Excerpt"
 msgstr "抜粋"
 
-#: wp-includes/post.php:4813
+#: wp-includes/post.php:4824
 msgid "Cannot create a revision of a revision"
 msgstr "リビジョンのリビジョンは作成できません"
 
-#: wp-includes/post.php:4988
+#: wp-includes/post.php:4999
 msgid "You do not have permission to preview drafts."
 msgstr "下書きをプレビューする権限がありません。"
 
-#: wp-includes/post.php:5062
+#: wp-includes/post.php:5073
 msgctxt "Post format"
 msgid "Standard"
 msgstr "標準"
 
-#: wp-includes/post.php:5063
+#: wp-includes/post.php:5074
 msgctxt "Post format"
 msgid "Aside"
 msgstr "アサイド"
 
-#: wp-includes/post.php:5064
+#: wp-includes/post.php:5075
 msgctxt "Post format"
 msgid "Chat"
 msgstr "チャット"
 
-#: wp-includes/post.php:5065
+#: wp-includes/post.php:5076
 msgctxt "Post format"
 msgid "Gallery"
 msgstr "ギャラリー"
 
-#: wp-includes/post.php:5066
+#: wp-includes/post.php:5077
 msgctxt "Post format"
 msgid "Link"
 msgstr "リンク"
 
-#: wp-includes/post.php:5067
+#: wp-includes/post.php:5078
 msgctxt "Post format"
 msgid "Image"
 msgstr "画像"
 
-#: wp-includes/post.php:5068
+#: wp-includes/post.php:5079
 msgctxt "Post format"
 msgid "Quote"
 msgstr "引用"
 
-#: wp-includes/post.php:5069
+#: wp-includes/post.php:5080
 msgctxt "Post format"
 msgid "Status"
 msgstr "ステータス"
 
-#: wp-includes/post.php:5070
+#: wp-includes/post.php:5081
 msgctxt "Post format"
 msgid "Video"
 msgstr "動画"
 
-#: wp-includes/post.php:5071
+#: wp-includes/post.php:5082
 msgctxt "Post format"
 msgid "Audio"
 msgstr "音声"
@@ -2891,7 +2891,7 @@ msgid "Sidebar"
 msgstr "サイドバー"
 
 #: wp-includes/theme.php:242
-#: wp-admin/includes/class-wp-plugins-list-table.php:428
+#: wp-admin/includes/class-wp-plugins-list-table.php:429
 #: wp-admin/includes/plugin.php:141
 msgid "Visit author homepage"
 msgstr "作者のホームページを表示"
@@ -3384,7 +3384,7 @@ msgid "Do you want to use the WYSIWYG mode for this textarea?"
 msgstr "WYSIWYGモードに切り替えますか ?"
 
 #: wp-includes/js/tinymce/langs/wp-langs.php:27
-#: wp-admin/includes/template.php:1915
+#: wp-admin/includes/template.php:1919
 #: wp-admin/includes/class-wp-list-table.php:289
 msgid "Apply"
 msgstr "適用"
@@ -4057,7 +4057,7 @@ msgstr "新規作成"
 #: wp-includes/js/tinymce/langs/wp-langs.php:252
 #: wp-includes/js/tinymce/langs/wp-langs.php:409
 #: wp-includes/js/tinymce/wp-mce-help.php:234
-#: wp-admin/includes/template.php:1790
+#: wp-admin/includes/template.php:1794
 msgid "Help"
 msgstr "ヘルプ"
 
@@ -5379,12 +5379,12 @@ msgid "Powered by WordPress"
 msgstr "Powered by WordPress"
 
 #: wp-login.php:137
-#: wp-login.php:667
+#: wp-login.php:668
 msgid "Are you lost?"
 msgstr "迷子になってしまいましたか ?"
 
 #: wp-login.php:137
-#: wp-login.php:667
+#: wp-login.php:668
 msgid "&larr; Back to %s"
 msgstr "&larr; %s へ戻る"
 
@@ -5465,115 +5465,115 @@ msgstr "<strong>エラー</strong>: このメールアドレスはすでに登�
 msgid "<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a href=\"mailto:%s\">webmaster</a> !"
 msgstr "<strong>エラー</strong>: 登録できませんでした… <a href=\"mailto:%s\">管理者</a>に連絡してください !"
 
-#: wp-login.php:398
+#: wp-login.php:399
 msgid "Sorry, that key does not appear to be valid."
 msgstr "そのキーは無効なもののようです。"
 
-#: wp-login.php:402
+#: wp-login.php:403
 msgid "Lost Password"
 msgstr "パスワード紛失"
 
-#: wp-login.php:402
+#: wp-login.php:403
 msgid "Please enter your username or email address. You will receive a link to create a new password via email."
 msgstr "ユーザー名またはメールアドレスを入力してください。新しいパスワードを作成するためのリンクをメールでお送りします。"
 
-#: wp-login.php:410
+#: wp-login.php:411
 msgid "Username or E-mail:"
 msgstr "ユーザー名またはメールアドレス:"
 
-#: wp-login.php:415
+#: wp-login.php:416
 msgid "Get New Password"
 msgstr "新しいパスワードを取得"
 
-#: wp-login.php:441
+#: wp-login.php:442
 msgid "The passwords do not match."
 msgstr "パスワードが一致しません。"
 
-#: wp-login.php:444
+#: wp-login.php:445
 msgid "Password Reset"
 msgstr "パスワードのリセット"
 
-#: wp-login.php:444
+#: wp-login.php:445
 msgid "Your password has been reset."
 msgstr "パスワードをリセットしました。"
 
-#: wp-login.php:452
-#: wp-login.php:471
+#: wp-login.php:453
+#: wp-login.php:472
 msgid "Reset Password"
 msgstr "パスワードをリセット"
 
-#: wp-login.php:452
+#: wp-login.php:453
 msgid "Enter your new password below."
 msgstr "新しいパスワードを以下に入力してください。"
 
-#: wp-login.php:459
+#: wp-login.php:460
 msgid "New password"
 msgstr "新しいパスワード"
 
-#: wp-login.php:463
+#: wp-login.php:464
 msgid "Confirm new password"
 msgstr "新しいパスワードの確認"
 
-#: wp-login.php:468
+#: wp-login.php:469
 #: wp-admin/user-new.php:315
 #: wp-admin/install.php:123
 #: wp-admin/user-edit.php:363
 msgid "Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! \" ? $ % ^ &amp; )."
 msgstr "ヒント: パスワードは 7 文字以上にしてください。より強化するために大文字と小文字のアルファベット、数字や ! \" ? $ % ^ &amp; ) などの記号を組み合わせて使ってください。"
 
-#: wp-login.php:511
+#: wp-login.php:512
 msgid "Registration Form"
 msgstr "登録フォーム"
 
-#: wp-login.php:511
+#: wp-login.php:512
 msgid "Register For This Site"
 msgstr "このブログに登録"
 
-#: wp-login.php:524
+#: wp-login.php:525
 msgid "A password will be e-mailed to you."
 msgstr "パスワードをメールで送信します。"
 
-#: wp-login.php:532
-#: wp-login.php:661
-#: wp-login.php:663
+#: wp-login.php:533
+#: wp-login.php:662
+#: wp-login.php:664
 msgid "Password Lost and Found"
 msgstr "パスワード紛失取り扱い"
 
-#: wp-login.php:532
-#: wp-login.php:661
-#: wp-login.php:663
+#: wp-login.php:533
+#: wp-login.php:662
+#: wp-login.php:664
 msgid "Lost your password?"
 msgstr "パスワードをお忘れですか ?"
 
-#: wp-login.php:578
+#: wp-login.php:579
 msgid "You have logged in successfully."
 msgstr "ログインに成功しました。"
 
-#: wp-login.php:607
+#: wp-login.php:608
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href='http://www.google.com/cookies.html'>enable cookies</a> to use WordPress."
 msgstr "<strong>エラー</strong>: お使いのブラウザは Cookie をブロックしているか、Cookie に対応していません。WordPress を使うには <a href='http://www.google.co.jp/cookies.html'>Cookie を有効にする</a>必要があります。"
 
-#: wp-login.php:611
+#: wp-login.php:612
 msgid "You are now logged out."
 msgstr "ログアウトしました。"
 
-#: wp-login.php:613
+#: wp-login.php:614
 msgid "User registration is currently not allowed."
 msgstr "現在、ユーザー登録はできません"
 
-#: wp-login.php:615
+#: wp-login.php:616
 msgid "Check your e-mail for the confirmation link."
 msgstr "確認用のリンクをメールで送信しましたので、ご確認ください。"
 
-#: wp-login.php:617
+#: wp-login.php:618
 msgid "Check your e-mail for your new password."
 msgstr "新しいパスワードをメールで送信しましたので、ご確認ください。"
 
-#: wp-login.php:619
+#: wp-login.php:620
 msgid "Registration complete. Please check your e-mail."
 msgstr "登録を完了しました。メールを確認してください。"
 
-#: wp-login.php:621
+#: wp-login.php:622
 msgid "Your session has expired. Please log-in again."
 msgstr "セッションの期限が切れました。もう一度ログインしてください。"
 
@@ -5692,7 +5692,7 @@ msgstr "<a href=\"http://wpdocs.sourceforge.jp/Links_Links_SubPanel\" target=\"_
 #: wp-admin/options-writing.php:23
 #: wp-admin/update-core.php:407
 #: wp-admin/options-reading.php:51
-#: wp-admin/includes/template.php:1779
+#: wp-admin/includes/template.php:1783
 #: wp-admin/options-permalink.php:28
 #: wp-admin/user-edit.php:48
 #: wp-admin/widgets.php:46
@@ -5872,12 +5872,12 @@ msgstr "ユーザーを追加しました。"
 #: wp-admin/user-new.php:191
 msgctxt "user"
 msgid "Add New User"
-msgstr "新規ユーザを追加"
+msgstr "新規ユーザーを追加"
 
 #: wp-admin/user-new.php:193
 msgctxt "user"
 msgid "Add Existing User"
-msgstr "既存のユーザを追加"
+msgstr "既存のユーザーを追加"
 
 #: wp-admin/user-new.php:226
 msgid "Add Existing User"
@@ -5913,7 +5913,7 @@ msgstr "確認メールを送信せずにユーザーを追加します。"
 
 #: wp-admin/user-new.php:258
 msgid "Add Existing User "
-msgstr "既存のユーザを追加"
+msgstr "既存のユーザーを追加"
 
 #: wp-admin/user-new.php:267
 msgid "Create a brand new user and add it to this site."
@@ -5944,7 +5944,7 @@ msgstr "新規ユーザーにこのパスワードをメールで送信する。
 
 #: wp-admin/user-new.php:343
 msgid "Add New User "
-msgstr "新規ユーザを追加"
+msgstr "新規ユーザーを追加"
 
 #: wp-admin/index.php:34
 msgid "Welcome to your WordPress Dashboard! You will find helpful tips in the Help tab of each screen to assist you as you get to know the application."
@@ -6285,7 +6285,7 @@ msgid "Site language:"
 msgstr "サイトの言語:"
 
 #: wp-admin/themes.php:35
-#: wp-admin/includes/template.php:1446
+#: wp-admin/includes/template.php:1450
 msgid "Manage Themes"
 msgstr "テーマの管理"
 
@@ -6390,7 +6390,7 @@ msgstr "この添付ファイルを編集する権限がありません。"
 
 #: wp-admin/media.php:45
 #: wp-admin/media.php:100
-#: wp-admin/includes/template.php:1421
+#: wp-admin/includes/template.php:1425
 msgid "Edit Media"
 msgstr "メディアを編集"
 
@@ -6490,7 +6490,7 @@ msgstr "自分のコンピューターから画像を選択:"
 #: wp-admin/includes/media.php:1557
 #: wp-admin/includes/media.php:1559
 #: wp-admin/includes/class-wp-theme-install-list-table.php:32
-#: wp-admin/includes/template.php:1460
+#: wp-admin/includes/template.php:1464
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:32
 msgid "Upload"
 msgstr "アップロード"
@@ -6580,33 +6580,33 @@ msgstr "元のヘッダーのテキストに戻す"
 msgid "Image Upload Error"
 msgstr "画像アップロードのエラー"
 
-#: wp-admin/custom-header.php:616
-#: wp-admin/custom-header.php:676
+#: wp-admin/custom-header.php:617
+#: wp-admin/custom-header.php:677
 msgid "Image could not be processed.  Please go back and try again."
 msgstr "画像を処理できませんでした。前に戻ってもう一度お試しください。"
 
-#: wp-admin/custom-header.php:616
-#: wp-admin/custom-header.php:676
+#: wp-admin/custom-header.php:617
+#: wp-admin/custom-header.php:677
 msgid "Image Processing Error"
 msgstr "画像処理エラー"
 
-#: wp-admin/custom-header.php:630
+#: wp-admin/custom-header.php:631
 msgid "Crop Header Image"
 msgstr "ヘッダー画像のトリミング"
 
-#: wp-admin/custom-header.php:633
+#: wp-admin/custom-header.php:634
 msgid "Choose the part of the image you want to use as your header."
 msgstr "ヘッダーとして使用したい部分を画像から選択してください。"
 
-#: wp-admin/custom-header.php:634
+#: wp-admin/custom-header.php:635
 msgid "You need Javascript to choose a part of the image."
 msgstr "画像の一部を選択するには Javascript が必要です。"
 
-#: wp-admin/custom-header.php:648
+#: wp-admin/custom-header.php:649
 msgid "Crop and Publish"
 msgstr "切り取って公開する"
 
-#: wp-admin/custom-header.php:724
+#: wp-admin/custom-header.php:726
 msgid "You do not have permission to customize headers."
 msgstr "ヘッダーを変更する権限がありません。"
 
@@ -6912,8 +6912,8 @@ msgstr "編集するプラグインを選択:"
 
 #: wp-admin/plugin-editor.php:195
 #: wp-admin/theme-editor.php:164
-#: wp-admin/includes/template.php:1370
-#: wp-admin/includes/class-wp-plugins-list-table.php:391
+#: wp-admin/includes/template.php:1374
+#: wp-admin/includes/class-wp-plugins-list-table.php:392
 #: wp-admin/nav-menus.php:497
 msgid "Select"
 msgstr "選択"
@@ -6955,7 +6955,7 @@ msgid "You do not have sufficient permissions to install plugins on this site."
 msgstr "このサイトにプラグインをインストールする権限がありません。"
 
 #: wp-admin/plugin-install.php:32
-#: wp-admin/includes/template.php:1437
+#: wp-admin/includes/template.php:1441
 msgid "Install Plugins"
 msgstr "プラグインのインストール"
 
@@ -7579,7 +7579,7 @@ msgstr "このコメントをゴミ箱に移します。"
 #: wp-admin/includes/media.php:2207
 #: wp-admin/includes/internal-linking.php:79
 #: wp-admin/includes/template.php:361
-#: wp-admin/includes/template.php:726
+#: wp-admin/includes/template.php:730
 #: wp-admin/includes/nav-menu.php:123
 #: wp-admin/includes/nav-menu.php:531
 #: wp-admin/includes/class-wp-links-list-table.php:81
@@ -8128,10 +8128,10 @@ msgid "You are not allowed to scan for lost attachments."
 msgstr "投稿に使われていないメディアファイルをスキャンする権限がありません。"
 
 #: wp-admin/upload.php:62
-#: wp-admin/admin-ajax.php:955
-#: wp-admin/admin-ajax.php:1166
-#: wp-admin/includes/post.php:147
-#: wp-admin/includes/post.php:1353
+#: wp-admin/admin-ajax.php:957
+#: wp-admin/admin-ajax.php:1168
+#: wp-admin/includes/post.php:148
+#: wp-admin/includes/post.php:1361
 msgid "You are not allowed to edit this post."
 msgstr "この投稿を編集する権限がありません。"
 
@@ -8266,7 +8266,7 @@ msgid "Comment %d does not exist"
 msgstr "コメント %d は存在しません"
 
 #: wp-admin/admin-ajax.php:524
-#: wp-admin/admin-ajax.php:1370
+#: wp-admin/admin-ajax.php:1372
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "エラーが発生しました。ページを再読み込みして、もう一度お試しください。"
 
@@ -8298,65 +8298,65 @@ msgstr "カスタムフィールドの値を入力してください。"
 msgid "Please provide a custom field name."
 msgstr "カスタムフィールドの名前を入力してください。"
 
-#: wp-admin/admin-ajax.php:901
+#: wp-admin/admin-ajax.php:903
 msgid "User <a href=\"#%s\">%s</a> added"
 msgstr "ユーザー <a href=\"#%s\">%s</a> を追加しました。"
 
-#: wp-admin/admin-ajax.php:921
+#: wp-admin/admin-ajax.php:923
 msgid "g:i:s a"
 msgstr "g:i:s a"
 
-#: wp-admin/admin-ajax.php:923
+#: wp-admin/admin-ajax.php:925
 msgid "Draft saved at %s."
 msgstr "%s に下書きを保存しました。"
 
-#: wp-admin/admin-ajax.php:941
-#: wp-admin/admin-ajax.php:1173
+#: wp-admin/admin-ajax.php:943
+#: wp-admin/admin-ajax.php:1175
 msgid "Someone"
 msgstr "だれか"
 
-#: wp-admin/admin-ajax.php:943
+#: wp-admin/admin-ajax.php:945
 msgid "Autosave disabled: %s is currently editing this page."
 msgstr "自動保存 無効: 現在 %s さんがこのページを編集中です。"
 
-#: wp-admin/admin-ajax.php:943
+#: wp-admin/admin-ajax.php:945
 msgid "Autosave disabled: %s is currently editing this post."
 msgstr "自動保存 無効: 現在 %s さんがこの投稿を編集中です。"
 
-#: wp-admin/admin-ajax.php:952
-#: wp-admin/admin-ajax.php:1163
-#: wp-admin/includes/post.php:145
-#: wp-admin/includes/post.php:1350
+#: wp-admin/admin-ajax.php:954
+#: wp-admin/admin-ajax.php:1165
+#: wp-admin/includes/post.php:146
+#: wp-admin/includes/post.php:1358
 msgid "You are not allowed to edit this page."
 msgstr "この固定ページを編集する権限がありません。"
 
-#: wp-admin/admin-ajax.php:1174
+#: wp-admin/admin-ajax.php:1176
 msgid "Saving is disabled: %s is currently editing this page."
 msgstr "自動保存は無効化されています。現在 %s さんがこのページを編集中です。"
 
-#: wp-admin/admin-ajax.php:1174
+#: wp-admin/admin-ajax.php:1176
 msgid "Saving is disabled: %s is currently editing this post."
 msgstr "自動保存は無効化されています。現在 %s さんがこの投稿を編集中です。"
 
-#: wp-admin/admin-ajax.php:1240
-#: wp-admin/admin-ajax.php:1247
+#: wp-admin/admin-ajax.php:1242
+#: wp-admin/admin-ajax.php:1249
 #: wp-admin/edit-tags.php:233
 msgid "Item not updated."
 msgstr "項目を更新できませんでした。"
 
-#: wp-admin/admin-ajax.php:1284
+#: wp-admin/admin-ajax.php:1286
 #: wp-admin/includes/class-wp-posts-list-table.php:286
 #: wp-admin/includes/class-wp-posts-list-table.php:755
 msgid "Date"
 msgstr "日付"
 
-#: wp-admin/admin-ajax.php:1284
+#: wp-admin/admin-ajax.php:1286
 #: wp-admin/includes/class-wp-posts-list-table.php:939
 #: wp-admin/edit-form-comment.php:35
 msgid "Status"
 msgstr "ステータス"
 
-#: wp-admin/admin-ajax.php:1293
+#: wp-admin/admin-ajax.php:1295
 #: wp-admin/includes/class-wp-posts-list-table.php:596
 #: wp-admin/includes/class-wp-posts-list-table.php:946
 #: wp-admin/includes/meta-boxes.php:71
@@ -8364,7 +8364,7 @@ msgstr "ステータス"
 msgid "Scheduled"
 msgstr "予約済み"
 
-#: wp-admin/admin-ajax.php:1307
+#: wp-admin/admin-ajax.php:1309
 #: wp-admin/includes/class-wp-posts-list-table.php:581
 #: wp-admin/includes/class-wp-comments-list-table.php:353
 #: wp-admin/includes/internal-linking.php:51
@@ -8474,7 +8474,7 @@ msgid "You do not have sufficient permissions to install themes on this site."
 msgstr "このサイトにテーマをインストールする権限がありません。"
 
 #: wp-admin/theme-install.php:32
-#: wp-admin/includes/template.php:1443
+#: wp-admin/includes/template.php:1447
 #: wp-admin/update.php:210
 msgid "Install Themes"
 msgstr "テーマのインストール"
@@ -8501,7 +8501,7 @@ msgid "Manage Themes"
 msgstr "テーマの管理"
 
 #: wp-admin/users.php:17
-#: wp-admin/includes/template.php:1466
+#: wp-admin/includes/template.php:1470
 #: wp-admin/menu.php:187
 #: wp-admin/menu.php:193
 msgid "Users"
@@ -8676,7 +8676,7 @@ msgstr "新規追加"
 #: wp-admin/users.php:365
 msgctxt "user"
 msgid "Add Existing"
-msgstr "既存のユーザを追加"
+msgstr "既存のユーザーを追加"
 
 #: wp-admin/users.php:376
 #: wp-admin/includes/dashboard.php:445
@@ -9094,7 +9094,7 @@ msgstr "フロントページ: %s"
 
 #: wp-admin/options-reading.php:91
 #: wp-admin/options-reading.php:92
-#: wp-admin/includes/template.php:544
+#: wp-admin/includes/template.php:548
 #: wp-admin/widgets.php:295
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; 選択 &mdash;"
@@ -9444,7 +9444,7 @@ msgstr "このダッシュボードウィジェットは <a href=\"http://blogse
 
 #: wp-admin/includes/dashboard.php:817
 #: wp-admin/includes/dashboard.php:819
-#: wp-admin/includes/post.php:1266
+#: wp-admin/includes/post.php:1274
 msgid "Somebody"
 msgstr "だれか"
 
@@ -9720,7 +9720,7 @@ msgstr "トラックバック/ピンバックを許可"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:961
 #: wp-admin/includes/class-wp-posts-list-table.php:964
-#: wp-admin/includes/template.php:1635
+#: wp-admin/includes/template.php:1639
 msgid "Sticky"
 msgstr "先頭に固定表示"
 
@@ -9950,8 +9950,8 @@ msgstr "&#8220;%s&#8221; を有効化"
 #: wp-admin/includes/class-wp-themes-list-table.php:169
 #: wp-admin/includes/class-wp-upgrader.php:1357
 #: wp-admin/includes/class-wp-upgrader.php:1414
-#: wp-admin/includes/class-wp-plugins-list-table.php:261
-#: wp-admin/includes/class-wp-plugins-list-table.php:374
+#: wp-admin/includes/class-wp-plugins-list-table.php:254
+#: wp-admin/includes/class-wp-plugins-list-table.php:375
 msgid "Activate"
 msgstr "有効化"
 
@@ -9967,10 +9967,10 @@ msgstr ""
 #: wp-admin/includes/media.php:1295
 #: wp-admin/includes/class-wp-users-list-table.php:129
 #: wp-admin/includes/class-wp-users-list-table.php:251
-#: wp-admin/includes/template.php:501
-#: wp-admin/includes/class-wp-plugins-list-table.php:271
-#: wp-admin/includes/class-wp-plugins-list-table.php:368
-#: wp-admin/includes/class-wp-plugins-list-table.php:377
+#: wp-admin/includes/template.php:505
+#: wp-admin/includes/class-wp-plugins-list-table.php:264
+#: wp-admin/includes/class-wp-plugins-list-table.php:369
+#: wp-admin/includes/class-wp-plugins-list-table.php:378
 #: wp-admin/includes/class-wp-terms-list-table.php:83
 #: wp-admin/includes/class-wp-terms-list-table.php:263
 #: wp-admin/includes/class-wp-links-list-table.php:47
@@ -10010,7 +10010,7 @@ msgid "Uploads"
 msgstr "アップロード"
 
 #: wp-admin/includes/media.php:308
-#: wp-admin/includes/template.php:1551
+#: wp-admin/includes/template.php:1555
 msgid "WordPress"
 msgstr "WordPress"
 
@@ -11058,172 +11058,172 @@ msgstr "%sからのコメントをスパムとしてマークしました。"
 
 #: wp-admin/includes/template.php:429
 #: wp-admin/includes/template.php:444
-#: wp-admin/includes/template.php:508
-#: wp-admin/includes/template.php:535
+#: wp-admin/includes/template.php:512
+#: wp-admin/includes/template.php:539
 msgid "Value"
 msgstr "値"
 
-#: wp-admin/includes/template.php:498
+#: wp-admin/includes/template.php:502
 msgid "Key"
 msgstr "キー"
 
-#: wp-admin/includes/template.php:530
+#: wp-admin/includes/template.php:534
 msgid "Add New Custom Field:"
 msgstr "カスタムフィールドを追加:"
 
-#: wp-admin/includes/template.php:554
+#: wp-admin/includes/template.php:558
 msgid "Enter new"
 msgstr "新規追加"
 
-#: wp-admin/includes/template.php:564
+#: wp-admin/includes/template.php:568
 msgid "Add Custom Field"
 msgstr "カスタムフィールドを追加"
 
-#: wp-admin/includes/template.php:626
+#: wp-admin/includes/template.php:630
 msgid "%1$s%2$s, %3$s @ %4$s : %5$s"
 msgstr "%3$s年%1$s%2$s日 @ %4$s : %5$s"
 
-#: wp-admin/includes/template.php:731
+#: wp-admin/includes/template.php:735
 msgid "Thumbnail linked to file"
 msgstr "ファイルにサムネイルをリンク"
 
-#: wp-admin/includes/template.php:731
+#: wp-admin/includes/template.php:735
 msgid "Image linked to file"
 msgstr "画像をファイルにリンク"
 
-#: wp-admin/includes/template.php:735
+#: wp-admin/includes/template.php:739
 msgid "Thumbnail linked to page"
 msgstr "サムネイルをページにリンク"
 
-#: wp-admin/includes/template.php:735
+#: wp-admin/includes/template.php:739
 msgid "Image linked to page"
 msgstr "画像をページにリンク"
 
-#: wp-admin/includes/template.php:740
+#: wp-admin/includes/template.php:744
 msgid "Link to file"
 msgstr "ファイルにリンクする"
 
-#: wp-admin/includes/template.php:744
+#: wp-admin/includes/template.php:748
 msgid "Link to page"
 msgstr "ページにリンクする"
 
-#: wp-admin/includes/template.php:839
+#: wp-admin/includes/template.php:843
 msgid "Before you can upload your import file, you will need to fix the following error:"
 msgstr "インポートファイルをアップロードする前に次のエラーを修復する必要があります:"
 
-#: wp-admin/includes/template.php:845
+#: wp-admin/includes/template.php:849
 msgid "Choose a file from your computer:"
 msgstr "自分のコンピューターからファイルを選択する:"
 
-#: wp-admin/includes/template.php:845
+#: wp-admin/includes/template.php:849
 msgid "Maximum size: %s"
 msgstr "最大サイズ: %s"
 
-#: wp-admin/includes/template.php:850
+#: wp-admin/includes/template.php:854
 msgid "Upload file and import"
 msgstr "ファイルをアップロードしてインポート"
 
-#: wp-admin/includes/template.php:960
+#: wp-admin/includes/template.php:964
 #: wp-admin/press-this.php:521
 #: wp-admin/press-this.php:571
 msgid "Click to toggle"
 msgstr "クリックで切替"
 
-#: wp-admin/includes/template.php:1085
-#: wp-admin/includes/template.php:1125
+#: wp-admin/includes/template.php:1089
+#: wp-admin/includes/template.php:1129
 #: wp-admin/includes/plugin.php:1605
 #: wp-admin/includes/plugin.php:1628
 msgid "The miscellaneous options group has been removed. Use another settings group."
 msgstr "混合オプショングループを削除しました。他の設定グループを使ってください。"
 
-#: wp-admin/includes/template.php:1342
+#: wp-admin/includes/template.php:1346
 msgid "Find Posts or Pages"
 msgstr "投稿またはページを検索"
 
-#: wp-admin/includes/template.php:1414
-#: wp-admin/includes/template.php:1465
+#: wp-admin/includes/template.php:1418
+#: wp-admin/includes/template.php:1469
 msgid "Sites"
 msgstr "サイト"
 
-#: wp-admin/includes/template.php:1418
+#: wp-admin/includes/template.php:1422
 msgid "New Media"
 msgstr "新しいメディア"
 
-#: wp-admin/includes/template.php:1426
+#: wp-admin/includes/template.php:1430
 msgid "New Link"
 msgstr "新しいリンク"
 
-#: wp-admin/includes/template.php:1428
+#: wp-admin/includes/template.php:1432
 msgid "Edit Links"
 msgstr "リンクの編集"
 
-#: wp-admin/includes/template.php:1431
+#: wp-admin/includes/template.php:1435
 msgid "New User"
 msgstr "新しいユーザー"
 
-#: wp-admin/includes/template.php:1434
+#: wp-admin/includes/template.php:1438
 msgid "Edit Users"
 msgstr "ユーザーの編集"
 
-#: wp-admin/includes/template.php:1440
+#: wp-admin/includes/template.php:1444
 msgid "Manage Plugins"
 msgstr "プラグインの管理"
 
-#: wp-admin/includes/template.php:1458
+#: wp-admin/includes/template.php:1462
 msgid "Drafts"
 msgstr "下書き"
 
-#: wp-admin/includes/template.php:1626
+#: wp-admin/includes/template.php:1630
 #: wp-admin/includes/meta-boxes.php:119
 #: wp-admin/includes/meta-boxes.php:144
 msgid "Password protected"
 msgstr "パスワード保護"
 
-#: wp-admin/includes/template.php:1633
+#: wp-admin/includes/template.php:1637
 msgctxt "post state"
 msgid "Pending"
 msgstr "レビュー待ち"
 
-#: wp-admin/includes/template.php:1706
+#: wp-admin/includes/template.php:1710
 msgid "Enable accessibility mode"
 msgstr "アクセシビリティモードを有効にする"
 
-#: wp-admin/includes/template.php:1706
+#: wp-admin/includes/template.php:1710
 msgid "Disable accessibility mode"
 msgstr "アクセシビリティモードを無効にする"
 
-#: wp-admin/includes/template.php:1722
+#: wp-admin/includes/template.php:1726
 msgctxt "Metaboxes"
 msgid "Show on screen"
 msgstr "画面に表示"
 
-#: wp-admin/includes/template.php:1729
+#: wp-admin/includes/template.php:1733
 msgctxt "Columns"
 msgid "Show on screen"
 msgstr "画面に表示"
 
-#: wp-admin/includes/template.php:1756
+#: wp-admin/includes/template.php:1760
 msgctxt "Screen Options"
 msgid "Show on screen"
 msgstr "画面に表示"
 
-#: wp-admin/includes/template.php:1777
+#: wp-admin/includes/template.php:1781
 msgid "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">Documentation</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/\" target=\"_blank\">ドキュメンテーション</a>"
 
-#: wp-admin/includes/template.php:1794
+#: wp-admin/includes/template.php:1798
 msgid "Screen Options"
 msgstr "表示オプション"
 
-#: wp-admin/includes/template.php:1849
+#: wp-admin/includes/template.php:1853
 msgid "Screen Layout"
 msgstr "スクリーンレイアウト"
 
-#: wp-admin/includes/template.php:1849
+#: wp-admin/includes/template.php:1853
 msgid "Number of Columns:"
 msgstr "列の数:"
 
-#: wp-admin/includes/template.php:2161
+#: wp-admin/includes/template.php:2165
 #: wp-admin/options.php:215
 msgid "Save Changes"
 msgstr "変更を保存"
@@ -11405,7 +11405,7 @@ msgstr "プラグインを再有効化しています…"
 #: wp-admin/includes/class-wp-upgrader.php:1039
 #: wp-admin/includes/class-wp-upgrader.php:1280
 #: wp-admin/includes/class-wp-upgrader.php:1282
-#: wp-admin/includes/class-wp-plugins-list-table.php:374
+#: wp-admin/includes/class-wp-plugins-list-table.php:375
 msgid "Activate this plugin"
 msgstr "このプラグインを有効化する"
 
@@ -11490,12 +11490,12 @@ msgid "Activate Plugin &amp; Run Importer"
 msgstr "プラグインを有効化してインポートツールを実行"
 
 #: wp-admin/includes/class-wp-upgrader.php:1285
-#: wp-admin/includes/class-wp-plugins-list-table.php:366
+#: wp-admin/includes/class-wp-plugins-list-table.php:367
 msgid "Activate this plugin for all sites in this network"
 msgstr "このネットワークのすべてのサイトで、このプラグインを有効化する"
 
 #: wp-admin/includes/class-wp-upgrader.php:1285
-#: wp-admin/includes/class-wp-plugins-list-table.php:366
+#: wp-admin/includes/class-wp-plugins-list-table.php:367
 msgid "Network Activate"
 msgstr "ネットワークで有効化"
 
@@ -11664,96 +11664,104 @@ msgstr "プラグインは見つかりませんでした。"
 msgid "You do not appear to have any plugins available at this time."
 msgstr "現在利用可能なプラグインはないようです。"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:215
+#: wp-admin/includes/class-wp-plugins-list-table.php:208
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] "すべて <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:218
+#: wp-admin/includes/class-wp-plugins-list-table.php:211
 msgid "Active <span class=\"count\">(%s)</span>"
 msgid_plural "Active <span class=\"count\">(%s)</span>"
 msgstr[0] "使用中 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:221
+#: wp-admin/includes/class-wp-plugins-list-table.php:214
 msgid "Recently Active <span class=\"count\">(%s)</span>"
 msgid_plural "Recently Active <span class=\"count\">(%s)</span>"
 msgstr[0] "最近まで使用 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:224
+#: wp-admin/includes/class-wp-plugins-list-table.php:217
 msgid "Inactive <span class=\"count\">(%s)</span>"
 msgid_plural "Inactive <span class=\"count\">(%s)</span>"
 msgstr[0] "停止中 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:227
+#: wp-admin/includes/class-wp-plugins-list-table.php:220
 msgid "Network <span class=\"count\">(%s)</span>"
 msgid_plural "Network <span class=\"count\">(%s)</span>"
 msgstr[0] "ネットワーク <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:230
+#: wp-admin/includes/class-wp-plugins-list-table.php:223
 msgid "Must-Use <span class=\"count\">(%s)</span>"
 msgid_plural "Must-Use <span class=\"count\">(%s)</span>"
 msgstr[0] "必須 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:233
+#: wp-admin/includes/class-wp-plugins-list-table.php:226
 msgid "Drop-ins <span class=\"count\">(%s)</span>"
 msgid_plural "Drop-ins <span class=\"count\">(%s)</span>"
 msgstr[0] "ドロップイン <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:236
+#: wp-admin/includes/class-wp-plugins-list-table.php:229
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] "利用可能な更新 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:265
-#: wp-admin/includes/class-wp-plugins-list-table.php:372
+#: wp-admin/includes/class-wp-plugins-list-table.php:258
+#: wp-admin/includes/class-wp-plugins-list-table.php:373
 #: wp-admin/widgets.php:360
 msgid "Deactivate"
 msgstr "停止"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:291
+#: wp-admin/includes/class-wp-plugins-list-table.php:288
 msgid "Clear List"
 msgstr "リストをクリア"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:346
+#: wp-admin/includes/class-wp-plugins-list-table.php:290
+msgid "Files in the <code>/wp-content/mu-plugins</code> directory are executed automatically."
+msgstr "<code>/wp-content/mu-plugins</code> ディレクトリにあるファイルは自動的に実行されます。"
+
+#: wp-admin/includes/class-wp-plugins-list-table.php:292
+msgid "Drop-ins are advanced plugins in the <code>/wp-content</code> directory that replace WordPress functionality when present."
+msgstr "ドロップインは、<code>/wp-content</code> ディレクトリにある上級プラグインで、もしこれがあった場合、WordPress の機能が置き換えられます。"
+
+#: wp-admin/includes/class-wp-plugins-list-table.php:347
 msgid "Inactive:"
 msgstr "一時停止中:"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:346
+#: wp-admin/includes/class-wp-plugins-list-table.php:347
 msgid "Requires <code>%s</code> in <code>wp-config.php</code>."
 msgstr "<code>wp-config.php</code> 内に <code>%s</code> が必要です。"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:363
-#: wp-admin/includes/class-wp-plugins-list-table.php:372
+#: wp-admin/includes/class-wp-plugins-list-table.php:364
+#: wp-admin/includes/class-wp-plugins-list-table.php:373
 msgid "Deactivate this plugin"
 msgstr "このプラグインを停止する"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:363
+#: wp-admin/includes/class-wp-plugins-list-table.php:364
 msgid "Network Deactivate"
 msgstr "ネットワークで停止"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:368
-#: wp-admin/includes/class-wp-plugins-list-table.php:377
+#: wp-admin/includes/class-wp-plugins-list-table.php:369
+#: wp-admin/includes/class-wp-plugins-list-table.php:378
 msgid "Delete this plugin"
 msgstr "このプラグインを削除"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:382
+#: wp-admin/includes/class-wp-plugins-list-table.php:383
 msgid "Open this file in the Plugin Editor"
 msgstr "プラグインエディターでこのファイルを表示"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:424
+#: wp-admin/includes/class-wp-plugins-list-table.php:425
 #: wp-admin/includes/update.php:89
 #: wp-admin/includes/update.php:112
 msgid "Version %s"
 msgstr "バージョン %s"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:429
+#: wp-admin/includes/class-wp-plugins-list-table.php:430
 #: wp-admin/includes/plugin.php:145
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:185
 msgid "By %s"
 msgstr "作者: %s"
 
-#: wp-admin/includes/class-wp-plugins-list-table.php:432
+#: wp-admin/includes/class-wp-plugins-list-table.php:433
 msgid "Visit plugin site"
 msgstr "プラグインのサイトを表示"
 
@@ -12186,104 +12194,104 @@ msgstr "投稿を編集する権限がありません。"
 msgid "You are not allowed to post as this user."
 msgstr "記事を投稿する権限がありません。"
 
-#: wp-admin/includes/post.php:267
+#: wp-admin/includes/post.php:272
 msgid "You are not allowed to edit pages."
 msgstr "固定ページを編集する権限がありません。"
 
-#: wp-admin/includes/post.php:269
+#: wp-admin/includes/post.php:274
 msgid "You are not allowed to edit posts."
 msgstr "投稿を編集する権限がありません。"
 
-#: wp-admin/includes/post.php:404
+#: wp-admin/includes/post.php:409
 msgid "Auto Draft"
 msgstr "自動下書き"
 
-#: wp-admin/includes/post.php:525
+#: wp-admin/includes/post.php:530
 msgid "You are not allowed to create pages on this site."
 msgstr "このサイトにページを作成する権限がありません。"
 
-#: wp-admin/includes/post.php:527
+#: wp-admin/includes/post.php:532
 msgid "You are not allowed to create posts or drafts on this site."
 msgstr "このサイトに投稿または下書きを作成する権限がありません。"
 
-#: wp-admin/includes/post.php:958
+#: wp-admin/includes/post.php:961
 msgid "Images"
 msgstr "画像"
 
-#: wp-admin/includes/post.php:958
+#: wp-admin/includes/post.php:961
 msgid "Manage Images"
 msgstr "画像の管理"
 
-#: wp-admin/includes/post.php:958
+#: wp-admin/includes/post.php:961
 msgid "Image <span class=\"count\">(%s)</span>"
 msgid_plural "Images <span class=\"count\">(%s)</span>"
 msgstr[0] "画像 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:959
+#: wp-admin/includes/post.php:962
 msgid "Audio"
 msgstr "音声"
 
-#: wp-admin/includes/post.php:959
+#: wp-admin/includes/post.php:962
 msgid "Manage Audio"
 msgstr "音声の管理"
 
-#: wp-admin/includes/post.php:959
+#: wp-admin/includes/post.php:962
 msgid "Audio <span class=\"count\">(%s)</span>"
 msgid_plural "Audio <span class=\"count\">(%s)</span>"
 msgstr[0] "音声 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:960
+#: wp-admin/includes/post.php:963
 msgid "Video"
 msgstr "動画"
 
-#: wp-admin/includes/post.php:960
+#: wp-admin/includes/post.php:963
 msgid "Manage Video"
 msgstr "動画の管理"
 
-#: wp-admin/includes/post.php:960
+#: wp-admin/includes/post.php:963
 msgid "Video <span class=\"count\">(%s)</span>"
 msgid_plural "Video <span class=\"count\">(%s)</span>"
 msgstr[0] "動画 <span class=\"count\">(%s)</span>"
 
-#: wp-admin/includes/post.php:1130
+#: wp-admin/includes/post.php:1138
 msgid "Click to edit this part of the permalink"
 msgstr "クリックしてパーマリンクのこの部分を編集"
 
-#: wp-admin/includes/post.php:1132
+#: wp-admin/includes/post.php:1140
 msgid "Temporary permalink. Click to edit this part."
 msgstr "これは一時的なパーマリンクです。この部分を編集するにはクリックしてください。"
 
-#: wp-admin/includes/post.php:1136
-#: wp-admin/includes/post.php:1164
+#: wp-admin/includes/post.php:1144
+#: wp-admin/includes/post.php:1172
 msgid "Permalink:"
 msgstr "パーマリンク:"
 
-#: wp-admin/includes/post.php:1138
+#: wp-admin/includes/post.php:1146
 msgid "Change Permalinks"
 msgstr "パーマリンクの変更"
 
-#: wp-admin/includes/post.php:1187
-#: wp-admin/includes/post.php:1188
+#: wp-admin/includes/post.php:1195
+#: wp-admin/includes/post.php:1196
 msgid "Set featured image"
 msgstr "アイキャッチ画像を設定"
 
-#: wp-admin/includes/post.php:1200
+#: wp-admin/includes/post.php:1208
 msgid "Remove featured image"
 msgstr "アイキャッチ画像を削除"
 
-#: wp-admin/includes/post.php:1270
+#: wp-admin/includes/post.php:1278
 msgid "Warning: %s is currently editing this post"
 msgstr "注意: %s さんが現在この投稿を編集中"
 
-#: wp-admin/includes/post.php:1273
+#: wp-admin/includes/post.php:1281
 msgid "Warning: %s is currently editing this page"
 msgstr "注意: %s さんが現在このページを編集中"
 
-#: wp-admin/includes/post.php:1276
+#: wp-admin/includes/post.php:1284
 msgid "Warning: %s is currently editing this."
 msgstr "注意: 現在 %s さんがこのページを編集中です。"
 
-#: wp-admin/includes/post.php:1334
+#: wp-admin/includes/post.php:1342
 msgid "Preview not available. Please save as a draft first."
 msgstr "プレビューできません。まず下書きとして保存してください。"
 
@@ -13674,14 +13682,6 @@ msgstr "バージョンの古いプラグインが選択されていません。
 msgctxt "plugin"
 msgid "Add New"
 msgstr "新規追加"
-
-#: wp-admin/plugins.php:412
-msgid "Files in the <code>/wp-content/mu-plugins</code> directory are executed automatically."
-msgstr "<code>/wp-content/mu-plugins</code> ディレクトリにあるファイルは自動的に実行されます。"
-
-#: wp-admin/plugins.php:414
-msgid "Drop-ins are advanced plugins in the <code>/wp-content</code> directory that replace WordPress functionality when present."
-msgstr "ドロップインは、<code>/wp-content</code> ディレクトリにある上級プラグインで、もしこれがあった場合、WordPress の機能が置き換えられます。"
 
 #: wp-admin/edit-tags.php:177
 msgid "You can use categories to define sections of your site and group related posts. The default category is &#8220;Uncategorized&#8221; until you change it in your <a href=\"%s\">writing settings</a>."
