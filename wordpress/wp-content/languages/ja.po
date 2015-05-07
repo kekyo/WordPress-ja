@@ -442,7 +442,7 @@ msgstr "<code>wp-config.php</code> ファイルが見つかりません。開始
 msgid "Links for %s"
 msgstr "%s へのリンク"
 
-#: wp-includes/wp-db.php:2809
+#: wp-includes/wp-db.php:2810
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が必要です。"
 
