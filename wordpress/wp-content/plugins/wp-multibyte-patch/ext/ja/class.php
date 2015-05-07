@@ -1,19 +1,20 @@
 <?php
-/* WP Multibyte Patch Extension File */
+/**
+ * WP Multibyte Patch Japanese Locale Extension
+ *
+ * @package WP_Multibyte_Patch
+ * @version 1.6
+ * @author Seisuke Kuraishi <210pura@gmail.com>
+ * @copyright Copyright (c) 2012 Seisuke Kuraishi, Tinybit Inc.
+ * @license http://opensource.org/licenses/gpl-2.0.php GPLv2
+ * @link http://eastcoder.com/code/wp-multibyte-patch/
+ */
 
-/*
-WPLANG: ja
-Plugin Version: 1.5.1
-Description: Japanese Locale Extension.
-Author: Kuraishi (tenpura)
-Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
-*/
-
-/*
-    Copyright (C) 2011 Kuraishi (Email: 210pura at gmail dot com), Tinybit Inc.
-           This program is licensed under the GNU GPL Version 2.
-*/
-
+/**
+ * This class extends multibyte_patch.
+ *
+ * @package WP_Multibyte_Patch
+ */
 if(class_exists('multibyte_patch')) :
 class multibyte_patch_ext extends multibyte_patch {
 
@@ -144,21 +145,18 @@ class multibyte_patch_ext extends multibyte_patch {
 	    echo "\n" . '<link rel="stylesheet" type="text/css" href="' . plugin_dir_url(__FILE__) . 'admin.css' . '" />' . "\n";
 	}
 
-	function wplink_js(&$scripts) {
-		$scripts->add('wplink', plugin_dir_url(__FILE__) . "wplink{$this->debug_suffix}.js", array('jquery', 'wpdialogs'), '20111128', 1);
-	}
-
-	function word_count_js(&$scripts) {
-		$scripts->add('word-count', plugin_dir_url(__FILE__) . "word-count{$this->debug_suffix}.js", array('jquery'), '20110515', 1);
-		$this->import_l10n_entry('Word count: %s', 'wp-multibyte-patch');
-	}
-
 	function __construct() {
+		// mbstring functions are always required for ja.
+		$this->mbfunctions_required = true;
+
+		$this->conf['patch_wp_mail'] = true;
+		$this->conf['patch_incoming_trackback'] = true;
+		$this->conf['patch_incoming_pingback'] = true;
+		$this->conf['patch_process_search_terms'] = true;
+		$this->conf['patch_admin_custom_css'] = true;
 		// auto, JIS, UTF-8
 		$this->conf['mail_mode'] = 'JIS';
-		// Treats any post as a multibyte text.
-		$this->conf['ascii_threshold'] = 100;
-		$this->debug_suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '.dev' : '';
+
 		parent::__construct();
 	}
 }
