@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Multibyte Patch
 Description: Multibyte functionality enhancement for the WordPress Japanese package.
-Version: 1.6
+Version: 1.6.2
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Author: Seisuke Kuraishi
 Author URI: http://tinybit.co.jp/
@@ -15,7 +15,7 @@ Domain Path: /languages
  * Multibyte functionality enhancement for the WordPress Japanese package.
  *
  * @package WP_Multibyte_Patch
- * @version 1.6
+ * @version 1.6.2
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2012 Seisuke Kuraishi, Tinybit Inc.
  * @license http://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -37,6 +37,7 @@ class multibyte_patch {
 		'patch_incoming_trackback' => false,
 		'patch_incoming_pingback' => false,
 		'patch_wp_trim_excerpt' => true,
+		'patch_wp_trim_words' => false,
 		'patch_get_comment_excerpt' => true,
 		'patch_dashboard_recent_drafts' => true,
 		'patch_process_search_terms' => false,
@@ -338,6 +339,12 @@ class multibyte_patch {
 			return preg_match_all("/./us", $str, $match);
 	}
 
+	function filters_after_setup_theme() {
+		// add filter
+		if(false !== $this->conf['patch_force_character_count'] && 'characters' != _x('words', 'word count: words or characters?'))
+			add_filter('gettext_with_context', array(&$this, 'force_character_count'), 10, 3);
+	}
+
 	function filters() {
 		// add filter
 		add_filter('preprocess_comment', array(&$this, 'preprocess_comment'), 99);
@@ -361,8 +368,8 @@ class multibyte_patch {
 			add_filter('bp_get_activity_content_body', array(&$this, 'bp_get_activity_content_body'), 99);
 		}
 
-		if(false !== $this->conf['patch_force_character_count'])
-			add_filter('gettext_with_context', array(&$this, 'force_character_count'), 10, 3);
+		if(method_exists($this, 'wp_trim_words') && false !== $this->conf['patch_wp_trim_words'])
+			add_filter('wp_trim_words', array(&$this, 'wp_trim_words'), 99, 4);
 
 		// add action
 		add_action('wp', array(&$this, 'query_based_settings'));
@@ -373,17 +380,21 @@ class multibyte_patch {
 		if(method_exists($this, 'wp_mail') && false !== $this->conf['patch_wp_mail'])
 			add_action('phpmailer_init', array(&$this, 'wp_mail'));
 
-		if(method_exists($this, 'admin_custom_css') && false !== $this->conf['patch_admin_custom_css'])
-			add_action('admin_head' , array(&$this, 'admin_custom_css'), 99);
+		if(method_exists($this, 'admin_custom_css') && false !== $this->conf['patch_admin_custom_css']) {
+			add_action('admin_enqueue_scripts', array(&$this, 'admin_custom_css'), 99);
+			add_action('customize_controls_enqueue_scripts', array(&$this, 'admin_custom_css'), 99);
+		}
 
 		if(false !== $this->conf['patch_wplink_js'])
-			add_action('wp_default_scripts' , array(&$this, 'wplink_js'), 9);
+			add_action('wp_default_scripts', array(&$this, 'wplink_js'), 9);
 
 		if(false !== $this->conf['patch_word_count_js'])
-			add_action('wp_default_scripts' , array(&$this, 'word_count_js'), 9);
+			add_action('wp_default_scripts', array(&$this, 'word_count_js'), 9);
 
 		if(false !== $this->conf['patch_dashboard_recent_drafts'])
-			add_action('wp_dashboard_setup' , array(&$this, 'dashboard_recent_drafts'));
+			add_action('wp_dashboard_setup', array(&$this, 'dashboard_recent_drafts'));
+
+		add_action('after_setup_theme', array(&$this, 'filters_after_setup_theme'));
 	}
 
 	function mbfunctions_exist() {

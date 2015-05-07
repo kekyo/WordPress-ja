@@ -79,13 +79,14 @@ $wpmp_conf['patch_wp_mail'] = true;
 $wpmp_conf['patch_incoming_trackback'] = true;
 $wpmp_conf['patch_incoming_pingback'] = true;
 $wpmp_conf['patch_wp_trim_excerpt'] = true;
+$wpmp_conf['patch_wp_trim_words'] = true;
 $wpmp_conf['patch_get_comment_excerpt'] = true;
 $wpmp_conf['patch_dashboard_recent_drafts'] = true;
 $wpmp_conf['patch_process_search_terms'] = true;
 $wpmp_conf['patch_admin_custom_css'] = true;
 $wpmp_conf['patch_wplink_js'] = true;
 $wpmp_conf['patch_word_count_js'] = true;
-$wpmp_conf['patch_force_character_count'] = false;
+$wpmp_conf['patch_force_character_count'] = true;
 $wpmp_conf['patch_sanitize_file_name'] = true;
 $wpmp_conf['patch_bp_create_excerpt'] = false;
 

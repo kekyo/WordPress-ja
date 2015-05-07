@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-06-14 04:42:54+0000\n"
+"PO-Revision-Date: 2012-06-28 06:48:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,7 +10,7 @@ msgstr ""
 "X-Generator: GlotPress/0.1\n"
 "Project-Id-Version: Administration\n"
 
-#: wp-admin/themes.php:109
+#: wp-admin/themes.php:111
 msgid "Settings saved and theme activated. <a href=\"%s\">Visit site</a>."
 msgstr "設定が保存され、テーマが有効化されました。<a href=\"%s\">サイトを表示</a>。"
 
@@ -58,11 +58,11 @@ msgstr "インストールして実際のコンテンツでプレビューした
 msgid "You can see your active theme at the top of the screen. Below are the other themes you have installed that are not currently in use. You can see what your site would look like with one of these themes by clicking the Live Preview link (see \"Previewing and Customizing\" help tab). To change themes, click the Activate link."
 msgstr "使用中のテーマは画面上部に表示されます。その下には使用していないインストール済みの他のテーマが表示されます。それぞれのテーマの「ライブプレビュー」リンクをクリックすると、実際にどのように表示されるのかを確認することができます (ヘルプタブの「プレビューとカスタマイズ」を参照してください) 。テーマを変更するには「有効化」リンクをクリックしてください。"
 
-#: wp-admin/themes.php:71
+#: wp-admin/themes.php:73
 msgid "Click on the \"Live Preview\" link under any theme to preview that theme and change theme options in a separate, full-screen view. Any installed theme can be previewed and customized in this way."
 msgstr "各テーマの下の「ライブプレビュー」リンクをクリックすると、別のフルスクリーン表示でテーマのプレビューとテーマ設定の変更ができます。インストール済みのすべてのテーマでプレビューとカスタマイズが可能です。"
 
-#: wp-admin/themes.php:73
+#: wp-admin/themes.php:75
 msgid "In the left-hand pane you can edit the theme settings. The settings will differ, depending on what theme features the theme being previewed supports. To accept the new settings and activate the theme all in one step, click the \"Save &amp; Activate\" button at the top of the left-hand pane."
 msgstr "左側ペインでテーマの設定を編集することができます。設定はそのテーマがどのプレビュー機能をサポートするかにより違いがあります。新しい設定を保存してそのテーマを有効化するには、左ペイン上の「保存して有効化」ボタンをクリックしてください。"
 
@@ -237,15 +237,15 @@ msgstr "テーマのリストが生成されると、プレビューとインス
 msgid "Previewing and Installing"
 msgstr "プレビューとインストール"
 
-#: wp-admin/themes.php:72
+#: wp-admin/themes.php:74
 msgid "The theme being previewed is fully interactive &mdash; navigate to different pages to see how the theme handles posts, archives, and other page templates."
 msgstr "テーマのプレビューは完全にインタラクティブです。投稿、アーカイブ、その他のページテンプレートがどのように表示されるかそれぞれのページで確認できます。"
 
-#: wp-admin/themes.php:74
+#: wp-admin/themes.php:76
 msgid "When previewing on smaller monitors, you can use the \"Collapse\" icon at the bottom of the left-hand pane. This will hide the pane, giving you more room to preview your site in the new theme. To bring the pane back, click on the Collapse icon again."
 msgstr "小さなモニターで表示させている場合、左ペイン下の「折りたたむ」アイコンを利用することもできます。これにより、左ペインが隠され、新しいテーマをプレビューするためにより広いスペースが利用できるようになります。左ペインを元に戻すには再度アイコンをクリックしてください。"
 
-#: wp-admin/themes.php:78
+#: wp-admin/themes.php:80
 msgid "Previewing and Customizing"
 msgstr "プレビューとカスタマイズ"
 
@@ -266,8 +266,8 @@ msgid "The Categories and Tags Converter link on this screen will take you to th
 msgstr "この画面の「カテゴリーとタグの変換ツール」のリンクをクリックすると「インポート」の画面になります。変換ツールはインストール可能なプラグインのひとつです。いったんそのプラグインをインストールしてこの画面に戻ってくると、このリンクは、今度はカテゴリーに変換するタグ(あるいはその逆)を選択する画面へのリンクになっています。"
 
 #: wp-admin/includes/class-wp-themes-list-table.php:143
-#: wp-admin/includes/class-wp-upgrader.php:1523
-#: wp-admin/includes/class-wp-upgrader.php:1589
+#: wp-admin/includes/class-wp-upgrader.php:1512
+#: wp-admin/includes/class-wp-upgrader.php:1578
 msgid "Live Preview"
 msgstr "ライブプレビュー"
 
@@ -336,7 +336,7 @@ msgstr[0] "ユーザー%s人を削除しました。"
 msgid "New user created. <a href=\"%s\">Edit user</a>"
 msgstr "新規ユーザーを作成しました。<a href=\"%s\">ユーザーを編集</a>"
 
-#: wp-admin/includes/class-wp-upgrader.php:1025
+#: wp-admin/includes/class-wp-upgrader.php:1014
 msgid "Could not copy files. You may have run out of disk space."
 msgstr "ファイルをコピーできませんでした。ディスク容量不足の可能性があります。"
 
@@ -372,7 +372,7 @@ msgstr "背景として設定"
 msgid "Set as header"
 msgstr "ヘッダーとして設定"
 
-#: wp-admin/includes/class-wp-upgrader.php:1586 wp-admin/themes.php:124
+#: wp-admin/includes/class-wp-upgrader.php:1575 wp-admin/themes.php:126
 msgid "Customize &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; をカスタマイズ"
 
@@ -1124,7 +1124,7 @@ msgstr "未保存の変更があります。続行するには「OK」を、画�
 msgid "In previous versions of WordPress, all importers were built-in. They have been turned into plugins since most people only use them once or infrequently."
 msgstr "以前のバージョンの WordPress にはインポートツールが含まれていました。ほとんどの人はこの機能を一度またはたまにしか使わないため、プラグインに変換されました。"
 
-#: wp-admin/themes.php:106
+#: wp-admin/themes.php:108
 msgid "The active theme is broken. Reverting to the default theme."
 msgstr "使用中のテーマが壊れているため、デフォルトのテーマに戻します。"
 
@@ -1792,15 +1792,15 @@ msgstr "プラグインにファイルが含まれていません。"
 msgid "No valid plugins were found."
 msgstr "有効なプラグインが見つかりませんでした。"
 
-#: wp-admin/includes/class-wp-upgrader.php:926
+#: wp-admin/includes/class-wp-upgrader.php:917
 msgid "The theme is missing the <code>style.css</code> stylesheet."
 msgstr "テーマに <code>style.css</code> ファイルが含まれていません。"
 
-#: wp-admin/includes/class-wp-upgrader.php:935
+#: wp-admin/includes/class-wp-upgrader.php:926
 msgid "The theme is missing the <code>index.php</code> file."
 msgstr "テーマに <code>index.php</code> ファイルが含まれていません。"
 
-#: wp-admin/includes/class-wp-upgrader.php:931
+#: wp-admin/includes/class-wp-upgrader.php:922
 msgid "The <code>style.css</code> stylesheet doesn't contain a valid theme header."
 msgstr "<code>style.css</code> スタイルシートに有効なテーマヘッダー情報が含まれていません。"
 
@@ -2051,7 +2051,7 @@ msgstr "選択"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:343
 #: wp-admin/includes/class-wp-plugins-list-table.php:416
 #: wp-admin/includes/dashboard.php:1255 wp-admin/includes/update.php:86
-#: wp-admin/includes/update.php:109 wp-admin/themes.php:145
+#: wp-admin/includes/update.php:109 wp-admin/themes.php:147
 msgid "Version %s"
 msgstr "バージョン %s"
 
@@ -2060,7 +2060,7 @@ msgstr "バージョン %s"
 #: wp-admin/includes/class-wp-plugins-list-table.php:421
 #: wp-admin/includes/class-wp-theme-install-list-table.php:233
 #: wp-admin/includes/class-wp-theme-install-list-table.php:336
-#: wp-admin/includes/class-wp-themes-list-table.php:168 wp-admin/themes.php:144
+#: wp-admin/includes/class-wp-themes-list-table.php:168 wp-admin/themes.php:146
 msgid "By %s"
 msgstr "作成者: %s"
 
@@ -2088,7 +2088,7 @@ msgstr "特権管理者"
 #: wp-admin/includes/class-wp-terms-list-table.php:101
 #: wp-admin/includes/media.php:943 wp-admin/includes/nav-menu.php:166
 #: wp-admin/includes/nav-menu.php:1140 wp-admin/press-this.php:146
-#: wp-admin/press-this.php:642 wp-admin/themes.php:282
+#: wp-admin/press-this.php:642 wp-admin/themes.php:284
 msgid "Description"
 msgstr "説明"
 
@@ -2110,7 +2110,7 @@ msgstr "ユーザーを除外する権限がありません。"
 #: wp-admin/options-reading.php:56 wp-admin/options-writing.php:58
 #: wp-admin/plugin-editor.php:129 wp-admin/plugin-install.php:56
 #: wp-admin/plugins.php:351 wp-admin/theme-editor.php:42
-#: wp-admin/theme-install.php:63 wp-admin/themes.php:86 wp-admin/tools.php:29
+#: wp-admin/theme-install.php:63 wp-admin/themes.php:88 wp-admin/tools.php:29
 #: wp-admin/update-core.php:450 wp-admin/upload.php:171
 #: wp-admin/user-edit.php:54 wp-admin/user-new.php:174 wp-admin/users.php:63
 #: wp-admin/widgets.php:68
@@ -2163,7 +2163,7 @@ msgstr[0] "すべて <span class=\"count\">(%s)</span>"
 #: wp-admin/options-reading.php:54 wp-admin/options-writing.php:56
 #: wp-admin/plugin-editor.php:126 wp-admin/plugin-install.php:54
 #: wp-admin/plugins.php:349 wp-admin/theme-editor.php:37
-#: wp-admin/theme-install.php:61 wp-admin/themes.php:84 wp-admin/tools.php:27
+#: wp-admin/theme-install.php:61 wp-admin/themes.php:86 wp-admin/tools.php:27
 #: wp-admin/update-core.php:448 wp-admin/upload.php:169
 #: wp-admin/user-edit.php:52 wp-admin/user-new.php:172 wp-admin/users.php:60
 #: wp-admin/widgets.php:66
@@ -2375,7 +2375,7 @@ msgstr "名前"
 msgid "[%s] Your site invite"
 msgstr "[%s] サイトへの招待状"
 
-#: wp-admin/themes.php:281
+#: wp-admin/themes.php:283
 msgctxt "theme name"
 msgid "Name"
 msgstr "名前"
@@ -2931,11 +2931,11 @@ msgstr "これは現在の親テーマ内のファイルです。"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:239
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:290
-#: wp-admin/includes/class-wp-upgrader.php:1527
+#: wp-admin/includes/class-wp-upgrader.php:1516
 msgid "Network Enable"
 msgstr "ネットワーク有効化"
 
-#: wp-admin/includes/class-wp-upgrader.php:1247
+#: wp-admin/includes/class-wp-upgrader.php:1236
 msgid "An error occurred while updating %1$s: <strong>%2$s</strong>."
 msgstr "%1$s の更新中にエラーが起こりました: <strong>%2$s</strong>"
 
@@ -2988,7 +2988,7 @@ msgstr "更新の必要はありません"
 msgid "Plugin updated successfully."
 msgstr "プラグインの更新に成功しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1556 wp-admin/update.php:157
+#: wp-admin/includes/class-wp-upgrader.php:1545 wp-admin/update.php:157
 msgid "Update Theme"
 msgstr "テーマを更新"
 
@@ -3008,7 +3008,7 @@ msgstr "テーマの更新に失敗しました。"
 msgid "Theme updated successfully."
 msgstr "テーマの更新に成功しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1188 wp-admin/update.php:54
+#: wp-admin/includes/class-wp-upgrader.php:1177 wp-admin/update.php:54
 msgid "Update Plugin"
 msgstr "プラグインを更新"
 
@@ -3018,7 +3018,7 @@ msgstr "新バージョンの %1$s が利用できます。<a href=\"%2$s\" clas
 
 #: wp-admin/includes/class-wp-upgrader.php:374
 #: wp-admin/includes/class-wp-upgrader.php:650
-#: wp-admin/includes/class-wp-upgrader.php:1021
+#: wp-admin/includes/class-wp-upgrader.php:1010
 msgid "Update package not available."
 msgstr "更新パッケージは利用できません。"
 
@@ -3129,11 +3129,11 @@ msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
 msgid "Add the user without sending them a confirmation email."
 msgstr "確認メールを送信せずにユーザーを追加します。"
 
-#: wp-admin/themes.php:218 wp-admin/themes.php:220
+#: wp-admin/themes.php:220 wp-admin/themes.php:222
 msgid "Search Installed Themes"
 msgstr "インストールされているテーマを検索"
 
-#: wp-admin/includes/class-wp-upgrader.php:1527
+#: wp-admin/includes/class-wp-upgrader.php:1516
 msgid "Enable this theme for all sites in this network"
 msgstr "ネットワーク内のすべてのサイトでこのテーマを有効化する"
 
@@ -3163,7 +3163,7 @@ msgstr "最終チェック日時: %1$s %2$s"
 msgid "Check Again"
 msgstr "もう一度確認する"
 
-#: wp-admin/includes/class-wp-upgrader.php:1246
+#: wp-admin/includes/class-wp-upgrader.php:1235
 msgid "The update process is starting. This process may take a while on some hosts, so please be patient."
 msgstr "更新プロセスを開始しています。サーバーによっては少し時間がかかるかもしれません。しばらくお待ちください。"
 
@@ -3179,15 +3179,15 @@ msgstr "<a href=\"http://wpdocs.sourceforge.jp/Formatting_Date_and_Time\">日付
 msgid "You&rsquo;re using the auto-generated password for your account. Would you like to change it to something easier to remember?"
 msgstr "現在、このアカウント用に自動生成されたパスワードを使っています。もっと覚えやすいものに変更しますか ?"
 
-#: wp-admin/themes.php:227
+#: wp-admin/themes.php:229
 msgid "Theme filters"
 msgstr "テーマフィルタ"
 
-#: wp-admin/themes.php:253
+#: wp-admin/themes.php:255
 msgid "Apply Filters"
 msgstr "フィルタを適用"
 
-#: wp-admin/themes.php:255
+#: wp-admin/themes.php:257
 msgid "Close filters"
 msgstr "フィルタを閉じる"
 
@@ -3211,7 +3211,7 @@ msgstr "フロントページからの投稿"
 msgid "Translation Ready"
 msgstr "翻訳対応"
 
-#: wp-admin/themes.php:188
+#: wp-admin/themes.php:190
 msgid "Options:"
 msgstr "設定:"
 
@@ -3317,7 +3317,7 @@ msgstr "新バージョンの %1$s が利用できます。<a href=\"%2$s\" clas
 msgid "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">View version %4$s details</a>."
 msgstr "新バージョンの %1$s が利用できます。<a href=\"%2$s\" class=\"thickbox\" title=\"%3$s\">バージョン %4$s の詳細を表示</a>"
 
-#: wp-admin/includes/class-wp-upgrader.php:1395
+#: wp-admin/includes/class-wp-upgrader.php:1384
 msgid "Go to themes page"
 msgstr "テーマのページへ"
 
@@ -3326,13 +3326,13 @@ msgid "Item moved to the Trash."
 msgid_plural "%s items moved to the Trash."
 msgstr[0] "%s個の項目をゴミ箱に移動しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1207
-#: wp-admin/includes/class-wp-upgrader.php:1362
+#: wp-admin/includes/class-wp-upgrader.php:1196
+#: wp-admin/includes/class-wp-upgrader.php:1351
 msgid "Go to plugins page"
 msgstr "プラグインのページへ"
 
-#: wp-admin/includes/class-wp-upgrader.php:1363
-#: wp-admin/includes/class-wp-upgrader.php:1396
+#: wp-admin/includes/class-wp-upgrader.php:1352
+#: wp-admin/includes/class-wp-upgrader.php:1385
 msgid "Go to WordPress Updates page"
 msgstr "WordPress 更新ページへ"
 
@@ -3419,7 +3419,7 @@ msgstr "<a href=\"http://wpdocs.sourceforge.jp/Template_Tags\" target=\"_blank\"
 msgid "<a href=\"http://codex.wordpress.org/Editing_Files\" target=\"_blank\">Documentation on Editing Files</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Editing_Files\" target=\"_blank\">ファイル編集の解説</a>"
 
-#: wp-admin/theme-editor.php:39 wp-admin/themes.php:85
+#: wp-admin/theme-editor.php:39 wp-admin/themes.php:87
 msgid "<a href=\"http://codex.wordpress.org/Using_Themes\" target=\"_blank\">Documentation on Using Themes</a>"
 msgstr "<a href=\"http://wpdocs.sourceforge.jp/Using_Themes\" target=\"_blank\">テーマ利用の解説</a>"
 
@@ -3451,7 +3451,7 @@ msgstr "サイトのフロントページに表示する内容を選択できま
 msgid "The Optional fields let you customize the &#8220;category&#8221; and &#8220;tag&#8221; base names that will appear in archive URLs. For example, the page listing all posts in the &#8220;Uncategorized&#8221; category could be <code>/topics/uncategorized</code> instead of <code>/category/uncategorized</code>."
 msgstr "このオプションフィールドを使えば、アーカイブ URL に表示される &#8220;カテゴリー&#8221; と &#8220;タグ&#8221; のベース名を変更できます。たとえば、すべての &#8220;未分類&#8221; カテゴリーに属する投稿を表示するページを、 <code>/category/uncategorized</code> ではなく <code>/topics/uncategorized</code> にするなどです。"
 
-#: wp-admin/themes.php:277
+#: wp-admin/themes.php:279
 msgid "The following themes are installed but incomplete. Themes must have a stylesheet and a template."
 msgstr "以下のテーマはインストールされていますが不完全です。テーマにはスタイルシートとテンプレートが一つずつ必要です。"
 
@@ -3678,11 +3678,11 @@ msgstr "インポートツールを有効化"
 msgid "You can add or edit links on this screen by entering information in each of the boxes. Only the link&#8217;s web address and name (the text you want to display on your site as the link) are required fields."
 msgstr "各ボックスに情報を入力することでリンクを追加、編集できます。リンクのウェブアドレスおよび名前 (リンクとして自分のサイトに表示させたいテキスト) のみが必須記入欄です。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1452
+#: wp-admin/includes/class-wp-upgrader.php:1441
 msgid "Return to Importers"
 msgstr "インポートツールへ戻る"
 
-#: wp-admin/includes/class-wp-upgrader.php:1442
+#: wp-admin/includes/class-wp-upgrader.php:1431
 msgid "Activate Plugin &amp; Run Importer"
 msgstr "プラグインを有効化してインポートツールを実行"
 
@@ -3787,7 +3787,7 @@ msgstr "<strong>テンプレート</strong> - 一部のテーマには、特定�
 msgid "<strong>Parent</strong> - You can arrange your pages in hierarchies. For example, you could have an &#8220;About&#8221; page that has &#8220;Life Story&#8221; and &#8220;My Dog&#8221; pages under it. There are no limits to how many levels you can nest pages."
 msgstr "<strong>親</strong> - ページ間に階層構造を持たせることができます。たとえば、&#8220;自己紹介&#8221; ページの下に &#8220;身の上話&#8221; や &#8220;愛犬のこと&#8221; といったページを置くことができます。ページ階層の深さに制限はありません。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1250
+#: wp-admin/includes/class-wp-upgrader.php:1239
 msgid "All updates have been completed."
 msgstr "すべての更新が完了しました。"
 
@@ -3927,8 +3927,8 @@ msgstr "保存スペースの上限 (%s MB) に達しました。"
 msgid "The current theme does not natively support menus, but you can use the &#8220;Custom Menu&#8221; widget to add any menus you create here to the theme&#8217;s sidebar."
 msgstr "現在のテーマはメニューに対応していませんが、&#8220;カスタムメニュー&#8221; ウィジェットを使い、ここで作成したメニューをテーマのサイドバーに追加できます。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1363
-#: wp-admin/includes/class-wp-upgrader.php:1396
+#: wp-admin/includes/class-wp-upgrader.php:1352
+#: wp-admin/includes/class-wp-upgrader.php:1385
 msgid "Return to WordPress Updates"
 msgstr "WordPress 更新ページへ戻る"
 
@@ -4153,7 +4153,7 @@ msgctxt "nav menu home label"
 msgid "Home"
 msgstr "ホーム"
 
-#: wp-admin/themes.php:111
+#: wp-admin/themes.php:113
 msgid "New theme activated. This theme supports widgets, please visit the <a href=\"%s\">widgets settings</a> screen to configure them."
 msgstr "新しいテーマを有効化しました。このテーマはウィジェットに対応しています。設定するには<a href=\"%s\">ウィジェット設定</a>画面を開いてください。 "
 
@@ -4486,15 +4486,15 @@ msgstr "現在のユーザーは削除できません。"
 msgid "Other users have been removed."
 msgstr "他のユーザーを除外しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1249
+#: wp-admin/includes/class-wp-upgrader.php:1238
 msgid "%1$s updated successfully."
 msgstr "%1$s の更新に成功しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1249
+#: wp-admin/includes/class-wp-upgrader.php:1238
 msgid "Show Details"
 msgstr "詳細を表示"
 
-#: wp-admin/includes/class-wp-upgrader.php:1249
+#: wp-admin/includes/class-wp-upgrader.php:1238
 msgid "Hide Details"
 msgstr "詳細を非表示"
 
@@ -4725,7 +4725,7 @@ msgstr "このサイトの<a href=\"%s\">プライバシー設定</a>により�
 msgid "The <a href=\"http://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended, if you are adventurous there are some <a href=\"http://en.wikipedia.org/wiki/Character_set\">other encodings</a>)"
 msgstr "サイトの<a href=\"http://wpdocs.sourceforge.jp/%E7%94%A8%E8%AA%9E%E9%9B%86#.E6.96.87.E5.AD.97.E3.82.B3.E3.83.BC.E3.83.89\">文字コード</a>  (UTF-8 をおすすめしますが、冒険好きなら<a href=\"http://ja.wikipedia.org/wiki/文字コード\">他の文字コード</a>も一応あります)"
 
-#: wp-admin/includes/plugin.php:1626 wp-admin/includes/plugin.php:1649
+#: wp-admin/includes/plugin.php:1627 wp-admin/includes/plugin.php:1650
 #: wp-admin/includes/template.php:1043 wp-admin/includes/template.php:1083
 msgid "The miscellaneous options group has been removed. Use another settings group."
 msgstr "混合オプショングループを削除しました。他の設定グループを使ってください。"
@@ -4770,7 +4770,7 @@ msgstr "ここを空欄にすると自動的にパスワードを生成します
 msgid "Password, twice"
 msgstr "パスワード。2 回入力してください"
 
-#: wp-admin/includes/class-wp-upgrader.php:1381
+#: wp-admin/includes/class-wp-upgrader.php:1370
 msgid "Updating Theme %1$s (%2$d/%3$d)"
 msgstr "%1$s テーマを更新中 (%2$d/%3$d)"
 
@@ -4806,11 +4806,11 @@ msgstr "注:"
 msgid "Get Shortlink"
 msgstr "短縮 URL を取得"
 
-#: wp-admin/includes/class-wp-upgrader.php:1349
+#: wp-admin/includes/class-wp-upgrader.php:1338
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr "プラグインの更新: %1$s (%2$d/%3$d)"
 
-#: wp-admin/includes/class-wp-upgrader.php:1248
+#: wp-admin/includes/class-wp-upgrader.php:1237
 msgid "The update of %1$s failed."
 msgstr "%1$s のアップグレードに失敗しました。"
 
@@ -4916,7 +4916,7 @@ msgctxt "theme"
 msgid "Manage Themes"
 msgstr "テーマの管理"
 
-#: wp-admin/themes.php:99
+#: wp-admin/themes.php:101
 msgctxt "theme"
 msgid "Install Themes"
 msgstr "テーマのインストール"
@@ -5076,7 +5076,7 @@ msgstr "スクリーンレイアウト"
 msgid "Number of Columns:"
 msgstr "列の数:"
 
-#: wp-admin/includes/theme-install.php:81 wp-admin/themes.php:221
+#: wp-admin/includes/theme-install.php:81 wp-admin/themes.php:223
 msgid "Feature Filter"
 msgstr "特徴フィルター"
 
@@ -6230,13 +6230,13 @@ msgid "Network Deactivate"
 msgstr "ネットワークで停止"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:356
-#: wp-admin/includes/class-wp-upgrader.php:1447
+#: wp-admin/includes/class-wp-upgrader.php:1436
 msgid "Activate this plugin for all sites in this network"
 msgstr "このネットワークのすべてのサイトで、このプラグインを有効化する"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:247
 #: wp-admin/includes/class-wp-plugins-list-table.php:356
-#: wp-admin/includes/class-wp-upgrader.php:1447
+#: wp-admin/includes/class-wp-upgrader.php:1436
 msgid "Network Activate"
 msgstr "ネットワークで有効化"
 
@@ -6414,19 +6414,19 @@ msgctxt "Theme Installer"
 msgid "Recently Updated"
 msgstr "最近の更新"
 
-#: wp-admin/themes.php:113
+#: wp-admin/themes.php:115
 msgid "New theme activated. <a href=\"%s\">Visit site</a>"
 msgstr "新しいテーマを有効化しました。<a href=\"%s\">サイトを表示する</a>"
 
-#: wp-admin/themes.php:116
+#: wp-admin/themes.php:118
 msgid "Theme deleted."
 msgstr "テーマを削除しました。"
 
-#: wp-admin/themes.php:137
+#: wp-admin/themes.php:139
 msgid "Current Theme"
 msgstr "現在のテーマ"
 
-#: wp-admin/themes.php:131 wp-admin/themes.php:134
+#: wp-admin/themes.php:133 wp-admin/themes.php:136
 msgid "Current theme preview"
 msgstr "現在のテーマのプレビュー"
 
@@ -6434,7 +6434,7 @@ msgstr "現在のテーマのプレビュー"
 msgid "All of this theme&#8217;s files are located in <code>%2$s</code>."
 msgstr "このテーマのすべてのファイルは <code>%2$s</code> にあります。"
 
-#: wp-admin/themes.php:213
+#: wp-admin/themes.php:215
 msgid "Available Themes"
 msgstr "利用可能なテーマ"
 
@@ -6446,7 +6446,7 @@ msgstr ""
 "このテーマ '%s' を削除しようとしています。\n"
 " 'キャンセル' で中止、'OK' で削除します。"
 
-#: wp-admin/themes.php:276
+#: wp-admin/themes.php:278
 msgid "Broken Themes"
 msgstr "壊れているテーマ"
 
@@ -7526,11 +7526,11 @@ msgid "Invalid Data provided."
 msgstr "無効なデータです。"
 
 #: wp-admin/includes/class-wp-upgrader.php:42 wp-admin/includes/file.php:518
-#: wp-admin/includes/plugin.php:709 wp-admin/includes/theme.php:53
+#: wp-admin/includes/plugin.php:710 wp-admin/includes/theme.php:53
 msgid "Could not access filesystem."
 msgstr "ファイルシステムにアクセスできませんでした。"
 
-#: wp-admin/includes/class-wp-upgrader.php:43 wp-admin/includes/plugin.php:712
+#: wp-admin/includes/class-wp-upgrader.php:43 wp-admin/includes/plugin.php:713
 #: wp-admin/includes/theme.php:56
 msgid "Filesystem error."
 msgstr "ファイルシステムのエラー。"
@@ -7543,7 +7543,7 @@ msgstr "WordPress のルートディレクトリが見つかりません。"
 msgid "Unable to locate WordPress Content directory (wp-content)."
 msgstr "wp-content ディレクトリが見つかりません。"
 
-#: wp-admin/includes/class-wp-upgrader.php:46 wp-admin/includes/plugin.php:717
+#: wp-admin/includes/class-wp-upgrader.php:46 wp-admin/includes/plugin.php:718
 msgid "Unable to locate WordPress Plugin directory."
 msgstr "WordPress プラグインディレクトリが見つかりません。"
 
@@ -7592,13 +7592,13 @@ msgstr "プラグインは最新のバージョンです。"
 
 #: wp-admin/includes/class-wp-upgrader.php:375
 #: wp-admin/includes/class-wp-upgrader.php:651
-#: wp-admin/includes/class-wp-upgrader.php:1022
+#: wp-admin/includes/class-wp-upgrader.php:1011
 msgid "Downloading update from <span class=\"code\">%s</span>&#8230;"
 msgstr "<span class=\"code\">%s</span> から更新をダウンロードしています&#8230;"
 
 #: wp-admin/includes/class-wp-upgrader.php:376
 #: wp-admin/includes/class-wp-upgrader.php:652
-#: wp-admin/includes/class-wp-upgrader.php:1023
+#: wp-admin/includes/class-wp-upgrader.php:1012
 msgid "Unpacking the update&#8230;"
 msgstr "更新を展開しています…"
 
@@ -7661,37 +7661,37 @@ msgstr "テーマのインストールに失敗しました。"
 msgid "Theme installed successfully."
 msgstr "テーマのインストールが完了しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1020
+#: wp-admin/includes/class-wp-upgrader.php:1009
 msgid "WordPress is at the latest version."
 msgstr "WordPress は最新のバージョンです。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1024
+#: wp-admin/includes/class-wp-upgrader.php:1013
 msgid "Could not copy files."
 msgstr "ファイルをコピーできませんでした。"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:364
-#: wp-admin/includes/class-wp-upgrader.php:1206
-#: wp-admin/includes/class-wp-upgrader.php:1442
-#: wp-admin/includes/class-wp-upgrader.php:1444
+#: wp-admin/includes/class-wp-upgrader.php:1195
+#: wp-admin/includes/class-wp-upgrader.php:1431
+#: wp-admin/includes/class-wp-upgrader.php:1433
 msgid "Activate this plugin"
 msgstr "このプラグインを有効化する"
 
-#: wp-admin/includes/class-wp-upgrader.php:1206
-#: wp-admin/includes/class-wp-upgrader.php:1444
+#: wp-admin/includes/class-wp-upgrader.php:1195
+#: wp-admin/includes/class-wp-upgrader.php:1433
 msgid "Activate Plugin"
 msgstr "プラグインを有効化"
 
-#: wp-admin/includes/class-wp-upgrader.php:1207
-#: wp-admin/includes/class-wp-upgrader.php:1362
-#: wp-admin/includes/class-wp-upgrader.php:1456
+#: wp-admin/includes/class-wp-upgrader.php:1196
+#: wp-admin/includes/class-wp-upgrader.php:1351
+#: wp-admin/includes/class-wp-upgrader.php:1445
 msgid "Return to Plugins page"
 msgstr "プラグインページへ戻る"
 
-#: wp-admin/includes/class-wp-upgrader.php:1430
+#: wp-admin/includes/class-wp-upgrader.php:1419
 msgid "Successfully installed the plugin <strong>%s %s</strong>."
 msgstr "プラグイン <strong>%s %s</strong> のインストールが完了しました。"
 
-#: wp-admin/includes/class-wp-upgrader.php:1454
+#: wp-admin/includes/class-wp-upgrader.php:1443
 msgid "Return to Plugin Installer"
 msgstr "プラグインインストーラに戻る"
 
@@ -7702,35 +7702,35 @@ msgstr "テーマ <strong>%1$s %2$s</strong> のインストールが完了し�
 #: wp-admin/includes/class-wp-posts-list-table.php:550
 #: wp-admin/includes/class-wp-theme-install-list-table.php:189
 #: wp-admin/includes/class-wp-themes-list-table.php:139
-#: wp-admin/includes/class-wp-upgrader.php:1522
-#: wp-admin/includes/class-wp-upgrader.php:1523
-#: wp-admin/includes/class-wp-upgrader.php:1588
-#: wp-admin/includes/class-wp-upgrader.php:1589
+#: wp-admin/includes/class-wp-upgrader.php:1511
+#: wp-admin/includes/class-wp-upgrader.php:1512
+#: wp-admin/includes/class-wp-upgrader.php:1577
+#: wp-admin/includes/class-wp-upgrader.php:1578
 msgid "Preview &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; をプレビュー"
 
 #: wp-admin/includes/class-wp-themes-list-table.php:136
-#: wp-admin/includes/class-wp-upgrader.php:1524
-#: wp-admin/includes/class-wp-upgrader.php:1590
+#: wp-admin/includes/class-wp-upgrader.php:1513
+#: wp-admin/includes/class-wp-upgrader.php:1579
 msgid "Activate &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; を有効化"
 
-#: wp-admin/includes/class-wp-upgrader.php:1530
+#: wp-admin/includes/class-wp-upgrader.php:1519
 msgid "Return to Theme Installer"
 msgstr "テーマインストーラーへ戻る"
 
-#: wp-admin/includes/class-wp-upgrader.php:1532
+#: wp-admin/includes/class-wp-upgrader.php:1521
 msgid "Themes page"
 msgstr "テーマのページ"
 
-#: wp-admin/includes/class-wp-upgrader.php:1395
-#: wp-admin/includes/class-wp-upgrader.php:1532
-#: wp-admin/includes/class-wp-upgrader.php:1597
+#: wp-admin/includes/class-wp-upgrader.php:1384
+#: wp-admin/includes/class-wp-upgrader.php:1521
+#: wp-admin/includes/class-wp-upgrader.php:1586
 msgid "Return to Themes page"
 msgstr "テーマのページに戻る"
 
-#: wp-admin/includes/class-wp-upgrader.php:1622
-#: wp-admin/includes/class-wp-upgrader.php:1656
+#: wp-admin/includes/class-wp-upgrader.php:1611
+#: wp-admin/includes/class-wp-upgrader.php:1645
 msgid "Please select a file"
 msgstr "ファイルを選択してください"
 
@@ -8611,7 +8611,7 @@ msgstr "このページで <a href=\"%s\" target=\"_blank\">トラックバッ�
 msgid "http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgstr "http://wpdocs.sourceforge.jp/%E3%83%96%E3%83%AD%E3%82%B0%E5%85%A5%E9%96%80#.E3.82.B3.E3.83.A1.E3.83.B3.E3.83.88.E7.AE.A1.E7.90.86"
 
-#: wp-admin/includes/meta-boxes.php:495
+#: wp-admin/includes/meta-boxes.php:494
 msgid "Show comments"
 msgstr "コメントを表示"
 
@@ -8918,27 +8918,27 @@ msgstr "<code>%1$s</code> プラグインのヘッダーは廃止予定です。
 msgid "Visit plugin homepage"
 msgstr "プラグインのホームページを表示"
 
-#: wp-admin/includes/plugin.php:558
+#: wp-admin/includes/plugin.php:559
 msgid "The plugin generated unexpected output."
 msgstr "プラグインが予期しない出力をしました。"
 
-#: wp-admin/includes/plugin.php:654
+#: wp-admin/includes/plugin.php:655
 msgid "One of the plugins is invalid."
 msgstr "プラグインのひとつが不正です。"
 
-#: wp-admin/includes/plugin.php:740
+#: wp-admin/includes/plugin.php:741
 msgid "Could not fully remove the plugin(s) %s."
 msgstr "プラグイン %s を完全に削除できませんでした。"
 
-#: wp-admin/includes/plugin.php:801
+#: wp-admin/includes/plugin.php:802
 msgid "Invalid plugin path."
 msgstr "無効なプラグインのパスです。"
 
-#: wp-admin/includes/plugin.php:803
+#: wp-admin/includes/plugin.php:804
 msgid "Plugin file does not exist."
 msgstr "プラグインファイルが存在しません。"
 
-#: wp-admin/includes/plugin.php:807
+#: wp-admin/includes/plugin.php:808
 msgid "The plugin does not have a valid header."
 msgstr "このプラグインには有効なヘッダーがありません。"
 

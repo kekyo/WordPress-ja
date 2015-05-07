@@ -1,14 +1,14 @@
-# Translation of Development (future 3.4) in Japanese
-# This file is distributed under the same license as the Development (future 3.4) package.
+# Translation of 3.4.x in Japanese
+# This file is distributed under the same license as the 3.4.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2012-06-14 04:42:52+0000\n"
+"PO-Revision-Date: 2012-06-28 06:48:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Development (future 3.4)\n"
+"Project-Id-Version: 3.4.x\n"
 
 #: wp-includes/locale.php:184
 msgctxt "text direction"
@@ -672,7 +672,7 @@ msgstr "More タグ挿入 (Alt + Shift + T)"
 msgid "Show/Hide Kitchen Sink (Alt + Shift + Z)"
 msgstr "全ツール表示切り替え (Alt + Shift + Z)"
 
-#: wp-includes/class-wp-editor.php:643
+#: wp-includes/class-wp-editor.php:641
 #: wp-includes/js/tinymce/langs/wp-langs.php:320
 msgid "Blockquote (Alt + Shift + Q)"
 msgstr "Blockquote (Alt + Shift + Q)"
@@ -720,7 +720,7 @@ msgstr "http://ja.forums.wordpress.org/forum/2"
 msgid "%s exceeds the maximum upload size for this site."
 msgstr "%s は、このサイトのアップロードサイズ上限を超えています。"
 
-#: wp-includes/functions.php:2824
+#: wp-includes/functions.php:2729
 msgid "Please see <a href=\"http://codex.wordpress.org/Debugging_in_WordPress\">Debugging in WordPress</a> for more information."
 msgstr "詳細は <a href=\"http://wpdocs.sourceforge.jp/Debugging_in_WordPress\">WordPress のデバッグ</a>をご覧ください。"
 
@@ -950,11 +950,11 @@ msgstr "サポートフォーラム"
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:2615
+#: wp-includes/functions.php:2520
 msgid "Database Error"
 msgstr "データベースエラー"
 
-#: wp-includes/functions.php:2619
+#: wp-includes/functions.php:2524
 msgid "Error establishing a database connection"
 msgstr "データベース接続確立エラー"
 
@@ -1103,7 +1103,7 @@ msgstr "幅を狭める"
 msgid "Default width"
 msgstr "デフォルトの幅"
 
-#: wp-includes/class-wp-editor.php:691
+#: wp-includes/class-wp-editor.php:689
 msgid "Word count: %s"
 msgstr "文字数: %s"
 
@@ -1115,7 +1115,7 @@ msgstr "アカウントを有効化しました。<a href=\"%1$s\">ログイン<
 msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
 msgstr "アカウントを有効化しました。<a href=\"%1$s\">サイトを表示する</a>か<a href=\"%2$s\">ログイン</a>してください。"
 
-#: wp-includes/class-wp-editor.php:649
+#: wp-includes/class-wp-editor.php:647
 #: wp-includes/js/tinymce/langs/wp-langs.php:501
 msgid "Help (Alt + Shift + H)"
 msgstr "ヘルプ (Alt + Shift + H)"
@@ -1124,11 +1124,11 @@ msgstr "ヘルプ (Alt + Shift + H)"
 msgid "Howdy, %1$s"
 msgstr "こんにちは、%1$s さん !"
 
-#: wp-includes/class-wp-editor.php:624
+#: wp-includes/class-wp-editor.php:622
 msgid "Exit fullscreen"
 msgstr "フルスクリーンモードを終了"
 
-#: wp-includes/class-wp-editor.php:692
+#: wp-includes/class-wp-editor.php:690
 msgid "Just write."
 msgstr "Just write."
 
@@ -1144,7 +1144,7 @@ msgstr "投稿一覧"
 msgid "All Pages"
 msgstr "固定ページ一覧"
 
-#: wp-includes/class-wp-editor.php:671
+#: wp-includes/class-wp-editor.php:669
 msgid "Updated."
 msgstr "更新しました。"
 
@@ -1152,37 +1152,37 @@ msgstr "更新しました。"
 msgid "fullscreen"
 msgstr "フルスクリーン"
 
-#: wp-includes/class-wp-editor.php:637
+#: wp-includes/class-wp-editor.php:635
 #: wp-includes/js/tinymce/langs/wp-langs.php:286
 msgid "Bold (Ctrl + B)"
 msgstr "太字 (Ctrl + B)"
 
-#: wp-includes/class-wp-editor.php:638
+#: wp-includes/class-wp-editor.php:636
 #: wp-includes/js/tinymce/langs/wp-langs.php:287
 msgid "Italic (Ctrl + I)"
 msgstr "斜体 (Ctrl + I)"
 
-#: wp-includes/class-wp-editor.php:641
+#: wp-includes/class-wp-editor.php:639
 #: wp-includes/js/tinymce/langs/wp-langs.php:295
 msgid "Ordered list (Alt + Shift + O)"
 msgstr "番号付きリスト (Alt + Shift + O)"
 
-#: wp-includes/class-wp-editor.php:640
+#: wp-includes/class-wp-editor.php:638
 #: wp-includes/js/tinymce/langs/wp-langs.php:294
 msgid "Unordered list (Alt + Shift + U)"
 msgstr "番号なしリスト (Alt + Shift + U)"
 
-#: wp-includes/class-wp-editor.php:644
+#: wp-includes/class-wp-editor.php:642
 #: wp-includes/js/tinymce/langs/wp-langs.php:302
 msgid "Insert/edit image (Alt + Shift + M)"
 msgstr "画像の挿入／編集 (Alt + Shift + M)"
 
-#: wp-includes/class-wp-editor.php:646
+#: wp-includes/class-wp-editor.php:644
 #: wp-includes/js/tinymce/langs/wp-langs.php:300
 msgid "Insert/edit link (Alt + Shift + A)"
 msgstr "リンクの挿入／編集 (Alt + Shift + A)"
 
-#: wp-includes/class-wp-editor.php:647
+#: wp-includes/class-wp-editor.php:645
 #: wp-includes/js/tinymce/langs/wp-langs.php:301
 msgid "Unlink (Alt + Shift + S)"
 msgstr "リンクを外す (Alt + Shift + S)"
@@ -1465,11 +1465,11 @@ msgstr "現在<a href='%1$s'>スパムと判断されたコメント</a>はあ�
 msgid "Cleared by Akismet"
 msgstr "Akismet により消去"
 
-#: wp-includes/class-wp-editor.php:770
+#: wp-includes/class-wp-editor.php:768
 msgid "Enter the destination URL"
 msgstr "リンク先 URL を入力してください"
 
-#: wp-includes/class-wp-editor.php:782
+#: wp-includes/class-wp-editor.php:780
 msgid "Or link to existing content"
 msgstr "または既存のコンテンツにリンク"
 
@@ -1493,11 +1493,11 @@ msgstr "条件付きクエリータグはクエリーが走る前には動作し
 msgid "The user is already active."
 msgstr "このユーザーはすでに認証済みです。"
 
-#: wp-includes/functions.php:2825
+#: wp-includes/functions.php:2730
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s が<strong>誤って</strong>呼び出されました。%2$s %3$s"
 
-#: wp-includes/functions.php:2823
+#: wp-includes/functions.php:2728
 msgid "(This message was added in version %s.)"
 msgstr "(このメッセージはバージョン %s で追加されました)"
 
@@ -1597,10 +1597,6 @@ msgstr "パーマリンク: %s"
 msgid "Error occurred while accessing post metadata for file location."
 msgstr "ファイルの位置に関する投稿メタデータへアクセス中にエラーが発生しました。"
 
-#: wp-includes/functions.php:1889
-msgid "Your attempt to update this plugin: &#8220;%s&#8221; has failed."
-msgstr "プラグイン: &#8220;%s&#8221; を更新できませんでした。"
-
 #: wp-includes/post.php:5114
 msgctxt "Post format"
 msgid "Standard"
@@ -1637,11 +1633,11 @@ msgstr "無効な投稿フォーマットです"
 msgid "Whois  : http://whois.arin.net/rest/ip/%s"
 msgstr "Whois : http://whois.arin.net/rest/ip/%s"
 
-#: wp-includes/class-wp-editor.php:778
+#: wp-includes/class-wp-editor.php:776
 msgid "Open link in a new window/tab"
 msgstr "リンクを新ウィンドウまたはタブで開く"
 
-#: wp-includes/class-wp-editor.php:798
+#: wp-includes/class-wp-editor.php:796
 msgid "No search term specified. Showing recent items."
 msgstr "検索キーワードが指定されていません。最近の項目を表示しています。"
 
@@ -2664,7 +2660,7 @@ msgstr "値を表示したくない場合は代わりに <code>get_the_author()<
 msgid "If you&#8217;re still stuck with this message, then check that your database contains the following tables:"
 msgstr "このメッセージが表示され続ける場合は、データベースに以下のテーブルが含まれているか確認してください。"
 
-#: wp-includes/class-wp-editor.php:682
+#: wp-includes/class-wp-editor.php:680
 msgid "Enter title here"
 msgstr "タイトルを入力してください"
 
@@ -2728,16 +2724,16 @@ msgstr ""
 msgid "This is the short link."
 msgstr "これは短縮 URL です。"
 
-#: wp-includes/update.php:358
+#: wp-includes/update.php:357
 msgid "%d WordPress Update"
 msgstr "%d件の WordPress 更新"
 
-#: wp-includes/update.php:362
+#: wp-includes/update.php:361
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "%d件のテーマ更新"
 
-#: wp-includes/update.php:360
+#: wp-includes/update.php:359
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "%d件のプラグイン更新"
@@ -3368,187 +3364,55 @@ msgstr "ファイル名が空です"
 msgid "Could not write file %s"
 msgstr "ファイル %s に書き込めませんでした"
 
-#: wp-includes/functions.php:1864
-msgid "Your attempt to edit this attachment: &#8220;%s&#8221; has failed."
-msgstr "この添付ファイル: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1866
-msgid "Your attempt to add this category has failed."
-msgstr "このカテゴリーを追加できませんでした。"
-
-#: wp-includes/functions.php:1867
-msgid "Your attempt to delete this category: &#8220;%s&#8221; has failed."
-msgstr "このカテゴリー: &#8220;%s&#8221; を削除できませんでした。"
-
-#: wp-includes/functions.php:1868
-msgid "Your attempt to edit this category: &#8220;%s&#8221; has failed."
-msgstr "このカテゴリー: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1870
-msgid "Your attempt to delete this comment: &#8220;%s&#8221; has failed."
-msgstr "このコメント: &#8220;%s&#8221; を削除できませんでした。"
-
-#: wp-includes/functions.php:1871
-msgid "Your attempt to unapprove this comment: &#8220;%s&#8221; has failed."
-msgstr "このコメント: &#8220;%s&#8221; を非承認にできませんでした。"
-
-#: wp-includes/functions.php:1872
-msgid "Your attempt to approve this comment: &#8220;%s&#8221; has failed."
-msgstr "このコメント: &#8220;%s&#8221; を承認できませんでした。"
-
-#: wp-includes/functions.php:1873
-msgid "Your attempt to edit this comment: &#8220;%s&#8221; has failed."
-msgstr "このコメント: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1874
-msgid "Your attempt to bulk modify comments has failed."
-msgstr "コメントを一括修正できませんでした。"
-
-#: wp-includes/functions.php:1875
-msgid "Your attempt to moderate comments has failed."
-msgstr "コメントをモデレートできませんでした。"
-
-#: wp-includes/functions.php:1877
-msgid "Your attempt to add this link has failed."
-msgstr "このリンクを追加できませんでした。"
-
-#: wp-includes/functions.php:1878
-msgid "Your attempt to delete this link: &#8220;%s&#8221; has failed."
-msgstr "このリンク: &#8220;%s&#8221; を削除できませんでした。"
-
-#: wp-includes/functions.php:1879
-msgid "Your attempt to edit this link: &#8220;%s&#8221; has failed."
-msgstr "このリンク: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1880
-msgid "Your attempt to bulk modify links has failed."
-msgstr "リンクを一括修正できませんでした。"
-
-#: wp-includes/functions.php:1882
-msgid "Your attempt to add this page has failed."
-msgstr "このページを追加できませんでした。"
-
-#: wp-includes/functions.php:1883
-msgid "Your attempt to delete this page: &#8220;%s&#8221; has failed."
-msgstr "このページ: &#8220;%s&#8221; を削除できませんでした。"
-
-#: wp-includes/functions.php:1884
-msgid "Your attempt to edit this page: &#8220;%s&#8221; has failed."
-msgstr "このページ: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1886
-msgid "Your attempt to edit this plugin file: &#8220;%s&#8221; has failed."
-msgstr "このプラグインファイル: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1887
-msgid "Your attempt to activate this plugin: &#8220;%s&#8221; has failed."
-msgstr "このプラグイン:  &#8220;%s&#8221; を有効化できませんでした。"
-
-#: wp-includes/functions.php:1888
-msgid "Your attempt to deactivate this plugin: &#8220;%s&#8221; has failed."
-msgstr "このプラグイン: &#8220;%s&#8221; を停止できませんでした。"
-
-#: wp-includes/functions.php:1891
-msgid "Your attempt to add this post has failed."
-msgstr "この投稿を追加できませんでした。"
-
-#: wp-includes/functions.php:1892
-msgid "Your attempt to delete this post: &#8220;%s&#8221; has failed."
-msgstr "この投稿: &#8220;%s&#8221; を削除できませんでした。"
-
-#: wp-includes/functions.php:1893
-msgid "Your attempt to edit this post: &#8220;%s&#8221; has failed."
-msgstr "この投稿: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1895
-msgid "Your attempt to add this user has failed."
-msgstr "このユーザーを追加できませんでした。"
-
-#: wp-includes/functions.php:1896
-msgid "Your attempt to delete users has failed."
-msgstr "ユーザーを削除できませんでした。"
-
-#: wp-includes/functions.php:1897
-msgid "Your attempt to bulk modify users has failed."
-msgstr "ユーザーを一括修正できませんでした。"
-
-#: wp-includes/functions.php:1898
-msgid "Your attempt to edit this user: &#8220;%s&#8221; has failed."
-msgstr "このユーザー: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1899
-msgid "Your attempt to modify the profile for: &#8220;%s&#8221; has failed."
-msgstr "ユーザー: &#8220;%s&#8221; のプロフィールを修正できませんでした。"
-
-#: wp-includes/functions.php:1901
-msgid "Your attempt to edit your settings has failed."
-msgstr "自身の設定を編集できませんでした。"
-
-#: wp-includes/functions.php:1902
-msgid "Your attempt to change your permalink structure to: %s has failed."
-msgstr "パーマリンク構造を %s に変更できませんでした。"
-
-#: wp-includes/functions.php:1903
-msgid "Your attempt to edit this file: &#8220;%s&#8221; has failed."
-msgstr "このファイル: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1904
-msgid "Your attempt to edit this theme file: &#8220;%s&#8221; has failed."
-msgstr "このテーマファイル: &#8220;%s&#8221; を編集できませんでした。"
-
-#: wp-includes/functions.php:1905
-msgid "Your attempt to switch to this theme: &#8220;%s&#8221; has failed."
-msgstr "テーマを &#8220;%s&#8221; に変更できませんでした。"
-
-#: wp-includes/functions.php:1907
+#: wp-includes/functions.php:1850
 msgid "You are attempting to log out of %s"
 msgstr "%s からログアウトしようとしています"
 
-#: wp-includes/functions.php:1946
+#: wp-includes/functions.php:1848
 msgid "WordPress Failure Notice"
 msgstr "WordPress エラー通知"
 
-#: wp-includes/functions.php:1949
+#: wp-includes/functions.php:1851
 msgid "Do you really want to <a href='%s'>log out</a>?"
 msgstr "本当に<a href='%s'>ログアウト</a>しますか ?"
 
-#: wp-includes/functions.php:1951
+#: wp-includes/functions.php:1855
 msgid "Please try again."
 msgstr "もう一度お試しください。"
 
-#: wp-includes/functions.php:2026
+#: wp-includes/functions.php:1931
 msgid "&laquo; Back"
 msgstr "&laquo; 戻る"
 
-#: wp-includes/functions.php:2038 wp-load.php:60
+#: wp-includes/functions.php:1943 wp-load.php:60
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; エラー"
 
-#: wp-includes/functions.php:2705 wp-includes/functions.php:2745
+#: wp-includes/functions.php:2610 wp-includes/functions.php:2650
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になっています! 代わりに %3$s を使ってください。"
 
-#: wp-includes/functions.php:2707 wp-includes/functions.php:2747
+#: wp-includes/functions.php:2612 wp-includes/functions.php:2652
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されておりません。"
 
-#: wp-includes/functions.php:2789
+#: wp-includes/functions.php:2694
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました ! 代わりに %3$s を使ってください。"
 
-#: wp-includes/functions.php:2791
+#: wp-includes/functions.php:2696
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されていません。"
 
-#: wp-includes/functions.php:3219
+#: wp-includes/functions.php:3124
 msgid "Select a city"
 msgstr "町を選択してください"
 
-#: wp-includes/functions.php:3264 wp-includes/functions.php:3268
+#: wp-includes/functions.php:3169 wp-includes/functions.php:3173
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:3272
+#: wp-includes/functions.php:3177
 msgid "Manual Offsets"
 msgstr "マニュアルオフセット"
 
@@ -6163,11 +6027,11 @@ msgstr "プラグイン"
 msgid "Insert Image"
 msgstr "画像の挿入"
 
-#: wp-includes/class-wp-editor.php:86 wp-includes/class-wp-editor.php:629
+#: wp-includes/class-wp-editor.php:86 wp-includes/class-wp-editor.php:627
 msgid "HTML"
 msgstr "HTML"
 
-#: wp-includes/class-wp-editor.php:87 wp-includes/class-wp-editor.php:628
+#: wp-includes/class-wp-editor.php:87 wp-includes/class-wp-editor.php:626
 msgid "Visual"
 msgstr "ビジュアル"
 
@@ -6198,7 +6062,7 @@ msgstr "(必須)"
 msgid "Website"
 msgstr "ウェブサイト"
 
-#: wp-includes/admin-bar.php:592 wp-includes/functions.php:2557
+#: wp-includes/admin-bar.php:592 wp-includes/functions.php:2462
 msgid "Widgets"
 msgstr "ウィジェット"
 
@@ -6709,7 +6573,7 @@ msgstr "%s にコメントする"
 msgid "Author"
 msgstr "作成者"
 
-#: wp-includes/class-wp-editor.php:772
+#: wp-includes/class-wp-editor.php:770
 msgid "URL"
 msgstr "URL"
 
@@ -6718,7 +6582,7 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "コメント"
 
-#: wp-includes/functions.php:1927 wp-includes/functions.php:1929
+#: wp-includes/deprecated.php:3173 wp-includes/functions.php:1853
 msgid "Are you sure you want to do this?"
 msgstr "本当に実行していいですか ?"
 
@@ -6786,11 +6650,11 @@ msgstr "リンクカテゴリーの編集"
 msgid "Update Category"
 msgstr "カテゴリーを更新"
 
-#: wp-includes/class-wp-editor.php:811 wp-includes/script-loader.php:278
+#: wp-includes/class-wp-editor.php:809 wp-includes/script-loader.php:278
 msgid "Add Link"
 msgstr "リンク追加"
 
-#: wp-includes/class-wp-editor.php:619
+#: wp-includes/class-wp-editor.php:617
 #: wp-includes/js/tinymce/langs/wp-langs.php:118
 msgid "Save"
 msgstr "保存"
@@ -6873,7 +6737,7 @@ msgstr "プレビュー"
 msgid "Recent Comments"
 msgstr "最近のコメント"
 
-#: wp-includes/class-wp-editor.php:808
+#: wp-includes/class-wp-editor.php:806
 #: wp-includes/js/tinymce/langs/wp-langs.php:19
 #: wp-includes/script-loader.php:306 wp-includes/script-loader.php:344
 msgid "Cancel"
@@ -6980,7 +6844,7 @@ msgstr "動画を追加"
 msgid "Add Audio"
 msgstr "音声を追加"
 
-#: wp-includes/class-wp-editor.php:671
+#: wp-includes/class-wp-editor.php:669
 msgid "Saved."
 msgstr "保存しました。"
 
@@ -7092,7 +6956,7 @@ msgid "Dismiss"
 msgstr "非表示にする"
 
 #: wp-content/plugins/akismet/legacy.php:176 wp-includes/admin-bar.php:639
-#: wp-includes/class-wp-editor.php:786 wp-includes/default-widgets.php:194
+#: wp-includes/class-wp-editor.php:784 wp-includes/default-widgets.php:194
 #: wp-includes/general-template.php:163
 msgid "Search"
 msgstr "検索"
@@ -7189,7 +7053,7 @@ msgstr "レビュー待ち"
 msgid "Draft"
 msgstr "下書き"
 
-#: wp-includes/class-wp-editor.php:743
+#: wp-includes/class-wp-editor.php:741
 msgid "Y/m/d"
 msgstr "Y年n月j日"
 
