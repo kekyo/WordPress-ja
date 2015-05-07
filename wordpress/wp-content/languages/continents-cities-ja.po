@@ -1,7 +1,4 @@
-# Japanese (UTF-8) translation for WordPress
-#
-# Copyright (c) 2005-2009
-# このファイルは WordPress 本体と同じライセンスのもと配布されています。
+# Translation of Continent and city in Japanese
 # This file is distributed under the same license as the WordPress package.
 #
 # WordPress 日本語版作成チーム / WP ja translation team
@@ -13,22 +10,21 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress ja\n"
+"Project-Id-Version: Continent and city\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2009-06-28 11:07+0000\n"
-"PO-Revision-Date: 2009-11-18 23:04+0900\n"
-"Last-Translator: Takayuki Miyoshi <takayukister@gmail.com>\n"
-"Language-Team: wp-ja <wpja.team@gmail.com>\n"
+"POT-Creation-Date: 2011-02-07 23:37:11+00:00\n"
+"PO-Revision-Date: 2011-02-09 17:17+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Language: Japanese\n"
-"X-Poedit-Country: JAPAN\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: GlotPress/0.1\n"
+"Language-Team: wp-ja <wpja.team@gmail.com>\n"
+"Language: ja\n"
+"Last-Translator: tenpura <210pura@gmail.com>\n"
 
+#. Continent and city translations for timezone selection.
+#. * This file is not included anywhere. It exists solely for use by xgettext.
 #: wp-admin/includes/continents-cities.php:7
 msgid "Africa"
 msgstr "アフリカ"

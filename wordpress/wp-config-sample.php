@@ -13,7 +13,7 @@
  * @package WordPress
  */
 
-// 注意:
+// 注意: 
 // Windows の "メモ帳" でこのファイルを編集しないでください !
 // 問題なく使えるテキストエディタ
 // (http://wpdocs.sourceforge.jp/Codex:%E8%AB%87%E8%A9%B1%E5%AE%A4 参照)
@@ -70,10 +70,10 @@ $table_prefix  = 'wp_';
  * ローカル言語 - このパッケージでは初期値として 'ja' (日本語 UTF-8) が設定されています。
  *
  * WordPress のローカル言語を設定します。設定した言語に対応する MO ファイルが
- * wp-content/languages にインストールされている必要があります。例えば de.mo を
- * wp-content/languages にインストールし WPLANG を 'de' に設定することでドイツ語がサポートされます。
+ * wp-content/languages にインストールされている必要があります。例えば de_DE.mo を
+ * wp-content/languages にインストールし WPLANG を 'de_DE' に設定することでドイツ語がサポートされます。
  */
-define ('WPLANG', 'ja');
+define('WPLANG', 'ja');
 
 /**
  * 開発者へ: WordPress デバッグモード

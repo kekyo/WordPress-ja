@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Hello_Dolly
- * @version 1.5.1
+ * @version 1.6
  */
 /*
 Plugin Name: Hello Dolly
-Plugin URI: http://wordpress.org/#
+Plugin URI: http://wordpress.org/extend/plugins/hello-dolly/
 Description: これはただのプラグインではありません。Louis Armstrong によって歌われた最も有名な二つの単語、Hello, Dolly に要約された同一世代のすべての人々の希望と情熱を象徴するものです。このプラグインが有効にされると、すべての管理画面の右上に <cite>Hello, Dolly</cite> からの歌詞がランダムに表示されます。
 Author: Matt Mullenweg
-Version: 1.5.1
+Version: 1.6
 Author URI: http://ma.tt/
 */
 
@@ -44,10 +44,10 @@ Dolly'll never go away
 Dolly'll never go away again";
 
 	// Here we split it into lines
-	$lyrics = explode("\n", $lyrics);
+	$lyrics = explode( "\n", $lyrics );
 
 	// And then randomly choose a line
-	return wptexturize( $lyrics[ mt_rand(0, count($lyrics) - 1) ] );
+	return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 }
 
 // This just echoes the chosen line, we'll position it later
@@ -56,28 +56,27 @@ function hello_dolly() {
 	echo "<p id='dolly'>$chosen</p>";
 }
 
-// Now we set that function up to execute when the admin_footer action is called
-add_action('admin_footer', 'hello_dolly');
+// Now we set that function up to execute when the admin_notices action is called
+add_action( 'admin_notices', 'hello_dolly' );
 
 // We need some CSS to position the paragraph
 function dolly_css() {
-	// This makes sure that the posinioning is also good for right-to-left languages
-	$x = ( is_rtl() ) ? 'left' : 'right';
+	// This makes sure that the positioning is also good for right-to-left languages
+	$x = is_rtl() ? 'left' : 'right';
 
 	echo "
 	<style type='text/css'>
 	#dolly {
-		position: absolute;
-		top: 4.5em;
+		float: $x;
+		padding-$x: 15px;
+		padding-top: 5px;		
 		margin: 0;
-		padding: 0;
-		$x: 215px;
 		font-size: 11px;
 	}
 	</style>
 	";
 }
 
-add_action('admin_head', 'dolly_css');
+add_action( 'admin_head', 'dolly_css' );
 
 ?>
