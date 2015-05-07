@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Twenty Thirteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-08-27 07:15:31+0000\n"
+"PO-Revision-Date: 2013-11-22 16:18:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,6 +13,40 @@ msgstr ""
 #: 404.php:16
 msgid "Not Found"
 msgstr "見つかりません"
+
+msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
+msgstr "2013年版の WordPress テーマはブログ向けデザインに回帰しました。幅広い投稿フォーマットに対応し、それぞれを美しくユニークに表現します。鮮やかな色合いとそれに合わせたヘッダー画像、美しいタイポグラフィーとアイコン、大小どんなデバイスでも適切に表示できる柔軟なレイアウトなど、デザインのディテールにあふれています。"
+
+#: functions.php:233
+msgid "Appears in the footer section of the site."
+msgstr "サイトのフッター領域に表示されます。"
+
+msgid "http://wordpress.org/themes/twentythirteen"
+msgstr "http://wordpress.org/themes/twentythirteen"
+
+#: image.php:38
+msgid "Link to full-size image"
+msgstr "フルサイズの画像にリンク"
+
+#: functions.php:231
+msgid "Main Widget Area"
+msgstr "メインウィジェットエリア"
+
+#: functions.php:241
+msgid "Secondary Widget Area"
+msgstr "副ウィジェットエリア"
+
+#: functions.php:243
+msgid "Appears on posts and pages in the sidebar."
+msgstr "投稿とページのサイドバーに表示します。"
+
+#: image.php:39
+msgid "Full resolution"
+msgstr "フル解像度"
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Thirteen には WordPress バージョン 3.6 以上が必要です。使用中のバージョンは %s です。更新して、もう一度試してください。"
 
 #: 404.php:21
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
@@ -106,6 +140,10 @@ msgstr "ページ:"
 msgid "Edit"
 msgstr "編集"
 
+#: functions.php:369
+msgid "Permalink to %s"
+msgstr "%s へのパーマリンク"
+
 #: content-gallery.php:36 content-image.php:32 content-quote.php:22
 #: content-video.php:32 content.php:49
 msgid "Leave a comment"
@@ -167,22 +205,6 @@ msgstr "on"
 msgid "Page %s"
 msgstr "ページ %s"
 
-#: functions.php:231
-msgid "Main Widget Area"
-msgstr "メインウィジェットエリア"
-
-#: functions.php:233
-msgid "Appears in the footer section of the site."
-msgstr "サイトのフッター領域に表示されます。"
-
-#: functions.php:241
-msgid "Secondary Widget Area"
-msgstr "副ウィジェットエリア"
-
-#: functions.php:243
-msgid "Appears on posts and pages in the sidebar."
-msgstr "投稿とページのサイドバーに表示します。"
-
 #: functions.php:266
 msgid "Posts navigation"
 msgstr "投稿ナビゲーション"
@@ -226,10 +248,6 @@ msgctxt "1: post format name. 2: date"
 msgid "%1$s on %2$s"
 msgstr "フォーマット: %1$s | 投稿日: %2$s"
 
-#: functions.php:369
-msgid "Permalink to %s"
-msgstr "%s へのパーマリンク"
-
 #: header.php:43
 msgid "Menu"
 msgstr "メニュー"
@@ -242,14 +260,6 @@ msgstr "コンテンツへ移動"
 msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
 msgstr "<span class=\"attachment-meta\">公開日: <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> <a href=\"%3$s\" title=\"%4$s へ戻る\" rel=\"gallery\">%5$s</a></span>"
 
-#: image.php:38
-msgid "Link to full-size image"
-msgstr "フルサイズの画像にリンク"
-
-#: image.php:39
-msgid "Full resolution"
-msgstr "フル解像度"
-
 #: image.php:51
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr "<span class=\"meta-nav\">&larr;</span> 前へ"
@@ -257,10 +267,6 @@ msgstr "<span class=\"meta-nav\">&larr;</span> 前へ"
 #: image.php:52
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr "次へ <span class=\"meta-nav\">&rarr;</span>"
-
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Thirteen には WordPress バージョン 3.6 以上が必要です。使用中のバージョンは %s です。更新して、もう一度試してください。"
 
 #: inc/custom-header.php:49
 msgctxt "header image description"
@@ -291,12 +297,6 @@ msgstr "%s アーカイブ"
 
 msgid "Twenty Thirteen"
 msgstr "Twenty Thirteen"
-
-msgid "http://wordpress.org/themes/twentythirteen"
-msgstr "http://wordpress.org/themes/twentythirteen"
-
-msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
-msgstr "2013年版の WordPress テーマはブログ向けデザインに回帰しました。幅広い投稿フォーマットに対応し、それぞれを美しくユニークに表現します。鮮やかな色合いとそれに合わせたヘッダー画像、美しいタイポグラフィーとアイコン、大小どんなデバイスでも適切に表示できる柔軟なレイアウトなど、デザインのディテールにあふれています。"
 
 msgid "the WordPress team"
 msgstr "WordPress チーム"

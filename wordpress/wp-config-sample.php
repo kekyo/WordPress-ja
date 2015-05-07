@@ -67,15 +67,6 @@ define('NONCE_SALT',       'put your unique phrase here');
 $table_prefix  = 'wp_';
 
 /**
- * ローカル言語 - このパッケージでは初期値として 'ja' (日本語 UTF-8) が設定されています。
- *
- * WordPress のローカル言語を設定します。設定した言語に対応する MO ファイルが
- * wp-content/languages にインストールされている必要があります。たとえば de_DE.mo を
- * wp-content/languages にインストールし WPLANG を 'de_DE' に設定すると、ドイツ語がサポートされます。
- */
-define('WPLANG', 'ja');
-
-/**
  * 開発者へ: WordPress デバッグモード
  *
  * この値を true にすると、開発中に注意 (notice) を表示します。
