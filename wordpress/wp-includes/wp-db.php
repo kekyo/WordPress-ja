@@ -752,7 +752,7 @@ class wpdb {
 <li>ユーザー <code>%2$s</code> にはデータベース <code>%1$s</code> を利用する権限がありますか ?</li>
 <li>一部のシステムでは <code>username_%1$s</code> のように、データベース名の前にユーザー名が接頭辞として付けられています。これが問題ではありませんか ?</li>
 </ul>
-<p>もしデータベースの設置方法が分からない場合は<strong>ホスティングサービスに連絡</strong>してください。それでもうまく行かなければ、<a href="http://ja.forums.wordpress.org/">WordPress サポートフォーラム</a>でヘルプを得られるかもしれません。</p>'/*/WP_I18N_DB_SELECT_DB*/, $db, $this->dbuser ), 'db_select_fail' );
+<p>もしデータベースの設置方法が分からない場合は<strong>ホスティングサービスに連絡</strong>してください。それでもうまく行かなければ、<a href="http://ja.forums.wordpress.org/">WordPress サポートフォーラム</a>でヘルプを得られるかもしれません。</p>'/*/WP_I18N_DB_SELECT_DB*/, htmlspecialchars( $db, ENT_QUOTES ), htmlspecialchars( $this->dbuser, ENT_QUOTES ) ), 'db_select_fail' );
 			return;
 		}
 	}
@@ -1046,7 +1046,7 @@ class wpdb {
 	<li>データベースサーバーは動いていますか ?</li>
 </ul>
 <p>上記の用語の意味が分からない場合は、サーバーの管理者にお問い合わせください。ヘルプが必要であれば <a href=\'http://ja.forums.wordpress.org/\'>WordPress 日本語フォーラム</a> または <a href=\'http://wordpress.org/support/\'>WordPress サポートフォーラム (英語)</a> へどうぞ。</p>
-'/*/WP_I18N_DB_CONN_ERROR*/, $this->dbhost ), 'db_connect_fail' );
+'/*/WP_I18N_DB_CONN_ERROR*/, htmlspecialchars( $this->dbhost, ENT_QUOTES ) ), 'db_connect_fail' );
 
 			return;
 		}

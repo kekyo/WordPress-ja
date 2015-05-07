@@ -44,10 +44,13 @@ define('WP_DEBUG', false);
 require_once(ABSPATH . WPINC . '/load.php');
 require_once(ABSPATH . WPINC . '/version.php');
 wp_check_php_mysql_versions();
+wp_unregister_GLOBALS();
 
 require_once(ABSPATH . WPINC . '/compat.php');
 require_once(ABSPATH . WPINC . '/functions.php');
 require_once(ABSPATH . WPINC . '/class-wp-error.php');
+require_once(ABSPATH . WPINC . '/formatting.php');
+wp_magic_quotes();
 
 if (!file_exists(ABSPATH . 'wp-config-sample.php'))
 	wp_die('wp-config-sample.php が見つかりません。WordPress インストールファイルから再アップロードしてください。');
