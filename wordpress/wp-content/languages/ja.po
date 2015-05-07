@@ -16,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress 2.6.3 ja 1.0\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2008-10-24 16:51+0900\n"
-"PO-Revision-Date: 2008-10-24 17:00+0900\n"
-"Last-Translator: Mako <hangetsu@D.halfmoon.jp>\n"
+"POT-Creation-Date: 2008-11-25 20:56+0000\n"
+"PO-Revision-Date: 2008-11-27 00:58+0900\n"
+"Last-Translator: tai <tekapo@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -379,7 +379,7 @@ msgstr "カテゴリーを検索"
 #: wp-admin/plugins.php:323
 #: wp-admin/plugins.php:342
 #: wp-admin/upload.php:150
-#: wp-admin/users.php:302
+#: wp-admin/users.php:303
 msgid "Delete"
 msgstr "削除 "
 
@@ -391,7 +391,7 @@ msgstr "削除 "
 #: wp-admin/link-manager.php:122
 #: wp-admin/themes.php:169
 #: wp-admin/user-edit.php:207
-#: wp-admin/users.php:336
+#: wp-admin/users.php:337
 #: wp-content/themes/classic/comments-popup.php:64
 #: wp-content/themes/classic/comments.php:51
 #: wp-includes/js/tinymce/langs/wp-langs.php:299
@@ -418,7 +418,7 @@ msgstr "説明"
 #: wp-admin/edit.php:34
 #: wp-admin/import/blogger.php:162
 #: wp-admin/menu.php:44
-#: wp-admin/users.php:339
+#: wp-admin/users.php:340
 msgid "Posts"
 msgstr "投稿"
 
@@ -516,7 +516,7 @@ msgstr "作成者"
 #: wp-admin/comment.php:103
 #: wp-admin/edit-form-comment.php:74
 #: wp-admin/user-edit.php:283
-#: wp-admin/users.php:337
+#: wp-admin/users.php:338
 #: wp-content/themes/classic/comments-popup.php:71
 #: wp-login.php:388
 msgid "E-mail"
@@ -1142,7 +1142,7 @@ msgstr "WordPress に投稿"
 #: wp-admin/includes/template.php:387
 #: wp-admin/press-this.php:496
 #: wp-includes/js/tinymce/langs/wp-langs.php:282
-#: wp-includes/post.php:3112
+#: wp-includes/post.php:3118
 #: wp-includes/script-loader.php:171
 msgid "Title"
 msgstr "タイトル"
@@ -1214,7 +1214,7 @@ msgstr "詳細オプション"
 
 #: wp-admin/edit-form-advanced.php:276
 #: wp-admin/edit-form-advanced.php:280
-#: wp-includes/post.php:3114
+#: wp-includes/post.php:3120
 msgid "Excerpt"
 msgstr "抜粋"
 
@@ -4638,7 +4638,7 @@ msgid "There are no options for this widget."
 msgstr "このウィジェットのオプションはありません。"
 
 #: wp-admin/includes/widgets.php:265
-#: wp-admin/users.php:304
+#: wp-admin/users.php:305
 msgid "Change"
 msgstr "変更"
 
@@ -4829,7 +4829,7 @@ msgstr "WordPress がインストールされました。もっと何か作業�
 
 #: wp-admin/install.php:91
 #: wp-admin/user-edit.php:211
-#: wp-admin/users.php:335
+#: wp-admin/users.php:336
 #: wp-login.php:384
 #: wp-login.php:459
 msgid "Username"
@@ -6059,7 +6059,7 @@ msgid "WordPress &#8250; Sidebar"
 msgstr "WordPress &#8250; サイドバー"
 
 #: wp-admin/sidebar.php:65
-#: wp-content/plugins/akismet/akismet.php:864
+#: wp-content/plugins/akismet/akismet.php:867
 #: wp-includes/widgets.php:432
 #: wp-includes/widgets.php:522
 #: wp-includes/widgets.php:561
@@ -6414,7 +6414,7 @@ msgid "Required"
 msgstr "必須"
 
 #: wp-admin/user-edit.php:288
-#: wp-admin/users.php:423
+#: wp-admin/users.php:424
 #: wp-content/themes/classic/comments.php:57
 msgid "Website"
 msgstr "ウェブサイト"
@@ -6509,141 +6509,141 @@ msgstr "ユーザーの削除"
 msgid "You have specified these users for deletion:"
 msgstr "次のユーザーを削除します:"
 
-#: wp-admin/users.php:133
+#: wp-admin/users.php:134
 #, php-format
 msgid "ID #%1s: %2s <strong>The current user will not be deleted.</strong>"
 msgstr "ID #%1s: %2s <strong>今現在あなたが使用しているユーザーアカウントなので削除できません。</strong>"
 
-#: wp-admin/users.php:135
+#: wp-admin/users.php:136
 #, php-format
 msgid "ID #%1s: %2s"
 msgstr "ID #%1s: %2s"
 
-#: wp-admin/users.php:148
+#: wp-admin/users.php:149
 msgid "What should be done with posts and links owned by this user?"
 msgstr "このユーザーの投稿とリンクはどのように処理しますか ?"
 
-#: wp-admin/users.php:151
+#: wp-admin/users.php:152
 msgid "Delete all posts and links."
 msgstr "すべての投稿とリンクを削除。"
 
-#: wp-admin/users.php:153
+#: wp-admin/users.php:154
 msgid "Attribute all posts and links to:"
 msgstr "すべての投稿とリンクを次のユーザーに割り当てる:"
 
-#: wp-admin/users.php:156
+#: wp-admin/users.php:157
 msgid "Confirm Deletion"
 msgstr "削除を実行"
 
-#: wp-admin/users.php:158
+#: wp-admin/users.php:159
 msgid "There are no valid users selected for deletion."
 msgstr "削除できるユーザーが選択されていません。"
 
-#: wp-admin/users.php:170
+#: wp-admin/users.php:171
 msgid "You can&#8217;t create users."
 msgstr "ユーザーを登録する権限がありません。"
 
-#: wp-admin/users.php:204
+#: wp-admin/users.php:205
 #, php-format
 msgid "%s user deleted"
 msgid_plural "%s users deleted"
 msgstr[0] "%s 人のユーザーを削除しました"
 
-#: wp-admin/users.php:209
+#: wp-admin/users.php:210
 msgid "New user created."
 msgstr "新規ユーザーが作成されました。"
 
-#: wp-admin/users.php:214
+#: wp-admin/users.php:215
 msgid "Changed roles."
 msgstr "権限を変更しました。"
 
-#: wp-admin/users.php:219
+#: wp-admin/users.php:220
 msgid "The current user's role must have user editing capabilities."
 msgstr "現行のユーザーにはユーザーを編集する権限がありません。"
 
-#: wp-admin/users.php:220
+#: wp-admin/users.php:221
 msgid "Other user roles have been changed."
 msgstr "他のユーザーの権限を変更しました。"
 
-#: wp-admin/users.php:225
+#: wp-admin/users.php:226
 msgid "You can't delete the current user."
 msgstr "ログイン中のユーザーの削除はできません。"
 
-#: wp-admin/users.php:226
+#: wp-admin/users.php:227
 msgid "Other users have been deleted."
 msgstr "他のユーザーを削除しました。"
 
-#: wp-admin/users.php:246
+#: wp-admin/users.php:247
 #, php-format
 msgid "Users Matching \"%s\""
 msgstr "\"%s\" にマッチしたユーザー"
 
-#: wp-admin/users.php:248
+#: wp-admin/users.php:249
 msgid "Manage Users"
 msgstr "ユーザーの管理"
 
-#: wp-admin/users.php:269
+#: wp-admin/users.php:270
 msgid "All Users"
 msgstr "すべてのユーザー"
 
-#: wp-admin/users.php:282
+#: wp-admin/users.php:283
 #, php-format
 msgid "%1$s (%2$s)|user role with count"
 msgstr "%1$s (%2$s)|ユーザー権限とそのユーザー数"
 
-#: wp-admin/users.php:290
-#: wp-admin/users.php:292
+#: wp-admin/users.php:291
+#: wp-admin/users.php:293
 msgid "Search Users"
 msgstr "ユーザーを検索"
 
-#: wp-admin/users.php:303
+#: wp-admin/users.php:304
 msgid "Change role to&hellip;"
 msgstr "権限を変更&hellip;"
 
-#: wp-admin/users.php:328
+#: wp-admin/users.php:329
 msgid "&laquo; Back to All Users"
 msgstr "&laquo; ユーザー一覧に戻る"
 
-#: wp-admin/users.php:338
-#: wp-admin/users.php:437
+#: wp-admin/users.php:339
+#: wp-admin/users.php:438
 msgid "Role"
 msgstr "権限"
 
-#: wp-admin/users.php:385
+#: wp-admin/users.php:386
 msgid "Add New User"
 msgstr "新規ユーザーの追加"
 
-#: wp-admin/users.php:399
+#: wp-admin/users.php:400
 #, php-format
 msgid "Users can <a href=\"%1$s\">register themselves</a> or you can manually create users here."
 msgstr "ユーザーは<a href=\"%1$s\">自分で登録</a>することができます。もしくは、あなたがこのページでユーザーを作成することもできます。"
 
-#: wp-admin/users.php:401
+#: wp-admin/users.php:402
 #, php-format
 msgid "Users cannot currently <a href=\"%1$s\">register themselves</a>, but you can manually create users here."
 msgstr "現在の設定では<a href=\"%1$s\">自分でユーザー登録</a>することはできませんが、あなたがこのページでユーザーを作成することはできます。"
 
-#: wp-admin/users.php:407
+#: wp-admin/users.php:408
 msgid "Username (required)"
 msgstr "ユーザー名 (必須) "
 
-#: wp-admin/users.php:411
+#: wp-admin/users.php:412
 msgid "First Name"
 msgstr "名"
 
-#: wp-admin/users.php:415
+#: wp-admin/users.php:416
 msgid "Last Name"
 msgstr "姓"
 
-#: wp-admin/users.php:419
+#: wp-admin/users.php:420
 msgid "E-mail (required)"
 msgstr "メールアドレス (必須) "
 
-#: wp-admin/users.php:429
+#: wp-admin/users.php:430
 msgid "Password (twice)"
 msgstr "パスワード (2 回) "
 
-#: wp-admin/users.php:450
+#: wp-admin/users.php:451
 msgid "Add User"
 msgstr "ユーザーを追加"
 
@@ -6988,51 +6988,51 @@ msgstr "スパムを解除されたコメントは Akismet へ送信されます
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">%3$s spam comments</a>."
 msgstr "<a href=\"%1$s\">Akismet</a> は <a href=\"%2$s\">%3$s 件のコメントスパム</a>からあなたのサイトを保護しました。"
 
-#: wp-content/plugins/akismet/akismet.php:713
+#: wp-content/plugins/akismet/akismet.php:716
 #, php-format
 msgid "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comment already,"
 msgid_plural "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comments already,"
 msgstr[0] "<a href=\"%1$s\">Akismet</a> は %2$s 件のコメントスパムからあなたのサイトを保護しました。"
 
-#: wp-content/plugins/akismet/akismet.php:718
+#: wp-content/plugins/akismet/akismet.php:721
 #, php-format
 msgid "<a href=\"%1$s\">Akismet</a> blocks spam from getting to your blog,"
 msgstr "<a href=\"%1$s\">Akismet</a> があなたのブログをスパムから保護しています。"
 
-#: wp-content/plugins/akismet/akismet.php:723
+#: wp-content/plugins/akismet/akismet.php:726
 #, php-format
 msgid "and there's <a href=\"%2$s\">%1$s comment</a> in your spam queue right now."
 msgid_plural "and there are <a href=\"%2$s\">%1$s comments</a> in your spam queue right now."
 msgstr[0] "ただ今 <a href=\"%2$s\">%1$s 個のコメント</a>をスパムとして捕らえています。"
 
-#: wp-content/plugins/akismet/akismet.php:728
+#: wp-content/plugins/akismet/akismet.php:731
 #, php-format
 msgid "but there's nothing in your <a href='%1$s'>spam queue</a> at the moment."
 msgstr "でも今のところ <a href='%1$s'>スパム</a> はありません。"
 
-#: wp-content/plugins/akismet/akismet.php:731
+#: wp-content/plugins/akismet/akismet.php:734
 #, php-format
 msgid "%1$s %2$s|akismet_rightnow"
 msgstr "%1$s%2$s|akismet_rightnow"
 
-#: wp-content/plugins/akismet/akismet.php:746
+#: wp-content/plugins/akismet/akismet.php:749
 msgid "Recheck Queue for Spam"
 msgstr "承認待ちをスパムチェック"
 
-#: wp-content/plugins/akismet/akismet.php:763
+#: wp-content/plugins/akismet/akismet.php:766
 msgid "Check for Spam"
 msgstr "スパムチェック"
 
-#: wp-content/plugins/akismet/akismet.php:832
+#: wp-content/plugins/akismet/akismet.php:835
 #, php-format
 msgid "%1$s %2$sspam comments%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 msgstr "%1$s %2$sスパムコメント%3$s %4$sblocked by%5$s<br />%6$sAkismet%7$s"
 
-#: wp-content/plugins/akismet/akismet.php:894
+#: wp-content/plugins/akismet/akismet.php:897
 msgid "spam comments"
 msgstr "コメントスパム"
 
-#: wp-content/plugins/akismet/akismet.php:894
+#: wp-content/plugins/akismet/akismet.php:897
 msgid "blocked by"
 msgstr "blocked by"
 
@@ -7797,7 +7797,7 @@ msgstr "WordPress エラー通知"
 msgid "Please try again."
 msgstr "もう一度お試しください。"
 
-#. #-#-#-#-#  wordpress.pot (WordPress 2.6.3)  #-#-#-#-#
+#. #-#-#-#-#  wordpress.pot (PACKAGE VERSION)  #-#-#-#-#
 #. Not gettexted string WP_I18N_ERROR_TITLE
 #: wp-includes/functions.php:1807
 #: wp-load.php:46
@@ -9825,27 +9825,27 @@ msgstr "リビジョン比較"
 msgid "Date Created"
 msgstr "作成日"
 
-#: wp-includes/post.php:1237
+#: wp-includes/post.php:1243
 msgid "Content, title, and excerpt are empty."
 msgstr "本文、タイトル、抜粋が空欄です。"
 
-#: wp-includes/post.php:1353
+#: wp-includes/post.php:1359
 msgid "Could not update post in the database"
 msgstr "データベース内の投稿を更新できませんでした"
 
-#: wp-includes/post.php:1361
+#: wp-includes/post.php:1367
 msgid "Could not insert post into the database"
 msgstr "データベースに投稿を追加できませんでした"
 
-#: wp-includes/post.php:1397
+#: wp-includes/post.php:1403
 msgid "The page template is invalid."
 msgstr "ページテンプレートが不正です。"
 
-#: wp-includes/post.php:3113
+#: wp-includes/post.php:3119
 msgid "Content"
 msgstr "内容"
 
-#: wp-includes/post.php:3294
+#: wp-includes/post.php:3300
 msgid "Cannot create a revision of a revision"
 msgstr "リビジョンのリビジョンは作成できません。"
 
@@ -10414,7 +10414,7 @@ msgstr "ユーザー名またはメールアドレス:"
 
 #: wp-login.php:321
 msgid "Get New Password"
-msgstr "新しいバスワードを取得"
+msgstr "新しいパスワードを取得"
 
 #: wp-login.php:335
 #: wp-login.php:403
@@ -10783,11 +10783,6 @@ msgstr "WordPress データベースエラー: %1$s for query %2$s"
 msgid " $db->get_row(string query, output type, int offset) -- Output type must be one of: OBJECT, ARRAY_A, ARRAY_N"
 msgstr " $db->get_row(string query, output type, int offset) -- 出力の型は次のいずれかでなければなりません: OBJECT, ARRAY_A, ARRAY_N"
 
-#. Not gettexted string WP_I18N_NO_CONFIG
-#: wp-load.php:46
-msgid "There doesn't seem to be a <code>wp-config.php</code> file. I need this before we can get started. Need more help? <a href='http://codex.wordpress.org/Editing_wp-config.php'>We got it</a>. You can create a <code>wp-config.php</code> file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file.</p><p><a href='%ssetup-config.php' class='button'>Create a Configuration File</a>"
-msgstr "ファイルが見つかりません。インストールを開始するには <code>wp-config.php</code> ファイルが必要です。お困りでしたら<a href='http://wpdocs.sourceforge.jp/wp-config.php_%%E3%%81%%AE%%E7%%B7%%A8%%E9%%9B%%86'>「wp-config.php の編集」</a> を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href='%ssetup-config.php' class='button'><code>wp-config.php</code> ファイルを作成する</a>"
-
 #. Not gettexted string WP_I18N_OLD_PHP
 #: wp-settings.php:104
 msgid "Your server is running PHP version %s but WordPress requires at least 4.3."
@@ -10802,4 +10797,9 @@ msgstr "お使いのサーバーの PHP では MySQL 拡張を利用できない
 #: wp-settings.php:219
 msgid "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config.php</code> can only contain numbers, letters, and underscores."
 msgstr "<strong>エラー</strong>: <code>wp-config.php</code> 内の <code>$table_prefix</code> には半角英数字と下線のみしか使えません。"
+
+#. Not gettexted string WP_I18N_NO_CONFIG
+#: wp-load.php:46
+msgid "There doesn't seem to be a <code>wp-config.php</code> file. I need this before we can get started. Need more help? <a href='http://codex.wordpress.org/Editing_wp-config.php'>We got it</a>. You can create a <code>wp-config.php</code> file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file.</p><p><a href='%ssetup-config.php' class='button'>Create a Configuration File</a>"
+msgstr "ファイルが見つかりません。インストールを開始するには <code>wp-config.php</code> ファイルが必要です。お困りでしたら<a href='http://wpdocs.sourceforge.jp/wp-config.php_%%E3%%81%%AE%%E7%%B7%%A8%%E9%%9B%%86'>「wp-config.php の編集」</a> を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href='%ssetup-config.php' class='button'><code>wp-config.php</code> ファイルを作成する</a>"
 
