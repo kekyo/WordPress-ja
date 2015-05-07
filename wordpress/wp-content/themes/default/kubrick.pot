@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.6\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2008-03-26 13:02+0200\n"
+"POT-Creation-Date: 2008-07-11 21:16+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Permanent Link to %s"
 msgstr ""
 
-#: archive.php:33 attachment.php:28 image.php:24 sidebar.php:24 single.php:27
+#: archive.php:33 attachment.php:28 image.php:25 sidebar.php:24 single.php:27
 msgid "l, F jS, Y"
 msgstr ""
 
@@ -107,6 +107,10 @@ msgstr ""
 msgid "% Comments &#187;"
 msgstr ""
 
+#: archive.php:39 index.php:17 search.php:21
+msgid "Comments Closed"
+msgstr ""
+
 #: archive.php:52 index.php:29
 msgid "Not Found"
 msgstr ""
@@ -124,11 +128,11 @@ msgstr ""
 msgid "Permanent Link: %s"
 msgstr ""
 
-#: attachment.php:18 image.php:12 index.php:14 single.php:16
+#: attachment.php:18 image.php:13 index.php:14 single.php:16
 msgid "Read the rest of this entry &raquo;"
 msgstr ""
 
-#: attachment.php:20 image.php:14 page.php:11 single.php:18
+#: attachment.php:20 image.php:15 page.php:11 single.php:18
 msgid "Pages:"
 msgstr ""
 
@@ -137,38 +141,38 @@ msgstr ""
 msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
 msgstr ""
 
-#: attachment.php:29 image.php:26 single.php:28
+#: attachment.php:29 image.php:27 single.php:28
 #, php-format
 msgid ""
 "You can follow any responses to this entry through the <a href='%s'>RSS 2.0</"
 "a> feed."
 msgstr ""
 
-#: attachment.php:33 image.php:30 single.php:32
+#: attachment.php:33 image.php:31 single.php:32
 #, php-format
 msgid ""
 "You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel="
 "\"trackback\">trackback</a> from your own site."
 msgstr ""
 
-#: attachment.php:37 image.php:34 single.php:36
+#: attachment.php:37 image.php:35 single.php:36
 #, php-format
 msgid ""
 "Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback"
 "\">trackback</a> from your own site."
 msgstr ""
 
-#: attachment.php:41 image.php:38 single.php:40
+#: attachment.php:41 image.php:39 single.php:40
 msgid ""
 "You can skip to the end and leave a response. Pinging is currently not "
 "allowed."
 msgstr ""
 
-#: attachment.php:45 image.php:42 single.php:44
+#: attachment.php:45 image.php:43 single.php:44
 msgid "Both comments and pings are currently closed."
 msgstr ""
 
-#: attachment.php:47 image.php:44 page.php:16 single.php:46
+#: attachment.php:47 image.php:45 page.php:16
 msgid "Edit this entry."
 msgstr ""
 
@@ -485,12 +489,12 @@ msgstr ""
 msgid "%s RSS Feed"
 msgstr ""
 
-#: image.php:24
+#: image.php:25
 #, php-format
 msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
 msgstr ""
 
-#: image.php:57 single.php:58
+#: image.php:58 single.php:58
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -506,7 +510,11 @@ msgstr ""
 msgid "Read the rest of this page &raquo;"
 msgstr ""
 
-#: searchform.php:3
+#: searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:4
 msgid "Search"
 msgstr ""
 
@@ -597,4 +605,8 @@ msgstr ""
 #: sidebar.php:61
 msgid ""
 "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: single.php:46
+msgid "Edit this entry"
 msgstr ""

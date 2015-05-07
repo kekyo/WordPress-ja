@@ -1,12 +1,7 @@
 <?php
 define('WP_INSTALLING', true);
-if (!file_exists('../wp-config.php')) {
-  require_once('../wp-includes/compat.php');
-  require_once('../wp-includes/functions.php');
-  wp_die("<p><code>wp-config.php</code> ファイルが見つかりません。インストールを開始するにはこのファイルが必要です。お困りでしたら<a href='http://codex.wordpress.org/Editing_wp-config.php'>こちら</a> (英語) を参照してください。ウィザード形式で <code>wp-config.php</code> ファイルを作成することもできますが、すべてのサーバーにおいて正常に動作するわけではありません。最も安全な方法は手動でファイルを作成することです。</p><p><a href='setup-config.php' class='button'><code>wp-config.php</code> ファイルを作成する</a></p>", "WordPress &rsaquo; エラー");
-}
 
-require_once('../wp-config.php');
+require_once('../wp-load.php');
 require_once('./includes/upgrade.php');
 
 if (isset($_GET['step']))
@@ -21,7 +16,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><?php _e('WordPress &rsaquo; Installation'); ?></title>
-	<?php wp_admin_css( 'css/install' ); ?>
+	<?php wp_admin_css( 'install', true ); ?>
 </head>
 <body>
 <h1 id="logo"><img alt="WordPress" src="images/wordpress-logo.png" /></h1>
@@ -59,7 +54,7 @@ switch($step) {
 			<td colspan="2"><label><input type="checkbox" name="blog_public" value="1" checked="checked" /> <?php _e('Allow my blog to appear in search engines like Google and Technorati.'); ?></label></td>
 		</tr>
 	</table>
-	<input type="submit" name="Submit" value="<?php _e('Install WordPress'); ?>" class="button" />
+	<p class="step"><input type="submit" name="Submit" value="<?php _e('Install WordPress'); ?>" class="button" /></p>
 </form>
 
 <?php
@@ -103,7 +98,7 @@ switch($step) {
 	</tr>
 </table>
 
-<p><a href="../wp-login.php" class="button"><?php _e('Log In'); ?></a>
+<p class="step"><a href="../wp-login.php" class="button"><?php _e('Log In'); ?></a></p>
 
 <?php
 		break;

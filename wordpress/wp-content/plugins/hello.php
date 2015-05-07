@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/#
 Description: これはただのプラグインではありません。Louis Armstrong によって歌われた最も有名な二つの単語、Hello, Dolly に要約された同一世代のすべての人々の希望と情熱を象徴するものです。このプラグインが有効にされると、すべての管理画面の右上に <cite>Hello, Dolly</cite> からの歌詞がランダムに表示されます。
 Author: Matt Mullenweg
 Version: 1.5
-Author URI: http://photomatt.net/
+Author URI: http://ma.tt/
 */
 
 // These are the lyrics to Hello Dolly

@@ -1,7 +1,7 @@
 
-WP Multibyte Patch 1.0
+WP Multibyte Patch 1.1
 
-動作対象: WordPress 2.5
+動作対象: WordPress 2.6
 プラグイン URI: http://eastcoder.com/code/wp-multibyte-patch/
 作者: tenpura (Email: 210pura at gmail dot com)
 
@@ -32,13 +32,6 @@ http://eastcoder.com/code/wp-multibyte-patch/
 == 前バージョンからのアップグレード ==
 
 フォルダごと中身を上書きしてください。
-本バージョンよりインストール時の日本語エクステンションの
-フォルダ名が 'default' から 'ja' に変わっています。（場所は下記）
-
- /wp-multibyte-patch/ext/ja
-
-古い日本語エクステンションのフォルダ名が 'default' である場合は
-上書きされませんので念のため削除してください。
 
 
 == 日本語エクステンションのフォルダ名について ==

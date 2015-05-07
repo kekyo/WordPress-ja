@@ -1,8 +1,9 @@
 <?php
 define('WP_INSTALLING', true);
-//These two defines are required to allow us to use require_wp_db() to load the database class while being wp-content/wp-db.php aware
+//These three defines are required to allow us to use require_wp_db() to load the database class while being wp-content/wp-db.php aware
 define('ABSPATH', dirname(dirname(__FILE__)).'/');
 define('WPINC', 'wp-includes');
+define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
 
 require_once('../wp-includes/compat.php');
 require_once('../wp-includes/functions.php');
@@ -18,7 +19,11 @@ if ( !is_writable('../'))
 
 // Check if wp-config.php has been created
 if (file_exists('../wp-config.php'))
-	wp_die("<p>wp-config.php' ファイルは既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、このファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
+	wp_die("<p>ファイル 'wp-config.php' は既に作成済みです。このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
+
+// Check if wp-config.php exists above the root directory
+if (file_exists('../../wp-config.php'))
+	wp_die("<p>WordPress をインストールしたひとつ上のディレクトリにファイル 'wp-config.php' が既に存在しています。 このファイル内の設定項目をリセットする必要があるのなら、まずこのファイルを削除してください。その後で <a href='install.php'>インストールを実行してください</a>。</p>");
 
 if (isset($_GET['step']))
 	$step = $_GET['step'];
@@ -52,12 +57,12 @@ switch($step) {
 	<li>データベースのユーザー名</li>
 	<li>データベースのパスワード</li>
 	<li>データベースのホスト名</li>
-	<li>テーブル接頭語 (1 つのデータベースに複数の WordPress を構築する場合) </li>
+	<li>テーブル接頭辞 (1 つのデータベースに複数の WordPress を構築する場合) </li>
 </ol>
 <p><strong>もし何かが原因で自動ファイル生成が動作しなくても心配しないでください。この機能は設定ファイルにデータベース情報を記入するだけです。テキストエディタで <code>wp-config-sample.php</code> を開き、データベース接続の詳細を記入してこのファイルの名前を <code>wp-config.php</code> として保存します。</strong></p>
 <p>これらのデータベース情報はインターネットサービスプロバイダーが提供しています。データベース情報がわからない場合、作業を続行する前にプロバイダーと連絡を取る必要があります。すべての準備が整っているなら&hellip;</p>
 
-<p><a href="setup-config.php?step=1" class="button">次に進みましょう !</a></p>
+<p class="step"><a href="setup-config.php?step=1" class="button">次に進みましょう !</a></p>
 <?php
 	break;
 
@@ -68,34 +73,32 @@ switch($step) {
 	<p>以下にデータベース接続のためのデータを入力してください。これらのデータについて分からない点があれば、ホストに連絡を取ってください。</p>
 	<table class="form-table">
 		<tr>
-			<th scope="row">データベース名</th>
-			<td><input name="dbname" type="text" size="25" value="wordpress" /></td>
+			<th scope="row"><label for="dbname">データベース名</label></th>
+			<td><input name="dbname" id="dbname" type="text" size="25" value="wordpress" /></td>
 			<td>WP を稼動させたいデータベースの名前。</td>
 		</tr>
 		<tr>
-			<th scope="row">ユーザー名</th>
-			<td><input name="uname" type="text" size="25" value="username" /></td>
+			<th scope="row"><label for="uname">ユーザー名</label></th>
+			<td><input name="uname" id="uname" type="text" size="25" value="username" /></td>
 			<td>MySQL のユーザー名</td>
 		</tr>
 		<tr>
-			<th scope="row">パスワード</th>
-			<td><input name="pwd" type="text" size="25" value="password" /></td>
+			<th scope="row"><label for="pwd">パスワード</label></th>
+			<td><input name="pwd" id="pwd" type="text" size="25" value="password" /></td>
 			<td>MySQL のパスワード</td>
 		</tr>
 		<tr>
-			<th scope="row">データベースのホスト名</th>
-			<td><input name="dbhost" type="text" size="25" value="localhost" /></td>
+			<th scope="row"><label for="dbhost">データベースのホスト名</label></th>
+			<td><input name="dbhost" id="dbhost" type="text" size="25" value="localhost" /></td>
 			<td>この値は 99% 変える必要はないでしょう。</td>
 		</tr>
 		<tr>
-			<th scope="row">テーブル接頭語</th>
-			<td><input name="prefix" type="text" id="prefix" value="wp_" size="25" /></td>
+			<th scope="row"><label for="prefix">テーブル接頭辞</label></th>
+			<td><input name="prefix" id="prefix" type="text" id="prefix" value="wp_" size="25" /></td>
 			<td>1 つのデータベースで複数の WordPress を動かすときに変更します。</td>
 		</tr>
 	</table>
-	<h2 class="step">
-	<input name="submit" type="submit" value="作成する" class="button" />
-	</h2>
+	<p class="step"><input name="submit" type="submit" value="作成する" class="button" /></p>
 </form>
 <?php
 	break;
@@ -147,9 +150,9 @@ switch($step) {
 
 	display_header();
 ?>
-<p>インストールの一部が完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているならば&hellip;</p>
+<p>この部分のインストールは無事完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているなら&hellip;</p>
 
-<p><a href="install.php" class="button">インストールを実行しましょう !</a></p>
+<p class="step"><a href="install.php" class="button">インストールを実行しましょう !</a></p>
 <?php
 	break;
 }

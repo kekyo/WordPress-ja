@@ -3,7 +3,7 @@
 Plugin Name: Akismet
 Plugin URI: http://akismet.com/
 Description: Akismet はコメントがスパムかどうか Akismet ウェブサービスに確認します。このプラグインを使用するには <a href="http://wordpress.com/api-keys/">WordPress.com API キー</a>が必要です。"コメント"メニュー以下で捕らえたコメントを閲覧することができます。Akismet が捕らえたスパムコメントの数を表示するにはテンプレートに <code>&lt;?php akismet_counter(); ?></code> を挿入します。<a href="http://wordpress.org/extend/plugins/stats/">WP Stats plugin</a> もご覧ください。
-Version: 2.1.4
+Version: 2.1.6
 Author: Matt Mullenweg
 Author URI: http://photomatt.net/
 */
@@ -480,7 +480,7 @@ if ( isset( $_POST['s'] ) ) {
 	if ( isset( $_GET['ctype'] ) )
 		$current_type = preg_replace( '|[^a-z]|', '', $_GET['ctype'] );
 
-	$comments = akismet_spam_comments( $current_type );
+	$comments = akismet_spam_comments( $current_type, $page );
 	$total = akismet_spam_count( $current_type );
 	$totals = akismet_spam_totals();
 ?>
@@ -706,11 +706,9 @@ if ( 'moderation.php' == $pagenow ) {
 
 // For WP >= 2.5
 function akismet_check_for_spam_button($comment_status) {
-	if ( 'moderated' != $comment_status )
+	if ( 'approved' == $comment_status )
 		return;
-	$count = wp_count_comments();
-	if ( !empty($count->moderated ) )
-		echo "<a href='edit-comments.php?page=akismet-admin&amp;recheckqueue=true&amp;noheader=true'>" . __('Check for Spam') . "</a>";
+	echo "</div><div class='alignleft'><a class='button-secondary checkforspam' href='edit-comments.php?page=akismet-admin&amp;recheckqueue=true&amp;noheader=true'>" . __('Check for Spam') . "</a>";
 }
 add_action('manage_comments_nav', 'akismet_check_for_spam_button');
 

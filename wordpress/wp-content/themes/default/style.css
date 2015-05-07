@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /*
 Theme Name: WordPress Default
 Theme URI: http://wordpress.org/
@@ -291,7 +291,7 @@ body {
 }
 
 .postmetadata {
-	clear: left;
+	clear: both;
 }
 
 .clear {
@@ -617,6 +617,10 @@ blockquote cite {
 	text-align: center;
 	}
 
+.hidden {
+	display: none;
+	}
+
 hr {
 	display: none;
 	}
@@ -633,6 +637,41 @@ a img {
 	}
 /* End Various Tags & Classes*/
 
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
 
 
 /* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.

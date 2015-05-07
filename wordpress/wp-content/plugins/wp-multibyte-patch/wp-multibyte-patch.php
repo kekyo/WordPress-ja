@@ -4,7 +4,7 @@ Plugin Name: WP Multibyte Patch
 Plugin URI: http://eastcoder.com/code/wp-multibyte-patch/
 Description: WP Multibyte Patch は本家版、日本語版 WordPress のマルチバイト文字の取り扱いに関する不具合の累積的修正と強化を行うプラグインです。 <a href="http://eastcoder.com/code/wp-multibyte-patch/">&raquo; 詳しい説明を読む</a>
 Author: tenpura
-Version: 1.0
+Version: 1.1
 Author URI: http://eastcoder.com/
 */
 
@@ -184,6 +184,9 @@ class multibyte_patch {
 
 		if('' == $text) {
 			$text = get_the_content('');
+
+			$text = strip_shortcodes( $text );
+
 			$text = apply_filters('the_content', $text);
 			$text = str_replace(']]>', ']]&gt;', $text);
 			$text = strip_tags($text);
