@@ -6138,7 +6138,7 @@ msgstr "もう一度ログインしてください。"
 msgid "Sidebar %d"
 msgstr "サイドバー %d"
 
-#: wp-includes/wp-db.php:2835
+#: wp-includes/wp-db.php:2949
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が必要です。"
 
