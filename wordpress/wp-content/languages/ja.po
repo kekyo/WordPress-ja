@@ -1,5 +1,5 @@
-# Translation of 3.1.1 in Japanese
-# This file is distributed under the same license as the 3.1.1 ja package.
+# Translation of 3.1.2 in Japanese
+# This file is distributed under the same license as the 3.1.2 ja package.
 #
 # WordPress 日本語版作成チーム / WP ja translation team
 # <http://groups.google.com/group/wp-ja-pkg/web/members>
@@ -10,10 +10,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.1.1 ja\n"
+"Project-Id-Version: 3.1.2 ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2011-04-04 16:14:17+00:00\n"
-"PO-Revision-Date: 2011-04-08 21:17+0900\n"
+"POT-Creation-Date: 2011-04-26 19:14:07+00:00\n"
+"PO-Revision-Date: 2011-04-27 22:39+0900\n"
 "Last-Translator: tenpura <210pura@gmail.com>\n"
 "Language-Team: wp-ja <wpja.team@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -255,12 +255,12 @@ msgid "%d queries. %s seconds."
 msgstr "%d個のクエリーと%s秒を要しました。"
 
 #: wp-includes/theme-compat/sidebar.php:21
-#: wp-includes/post-template.php:1416
+#: wp-includes/post-template.php:1415
 #: wp-includes/js/tinymce/langs/wp-langs.php:256
 #: wp-admin/edit-form-advanced.php:156
 #: wp-admin/comment.php:155
 #: wp-admin/includes/class-wp-posts-list-table.php:274
-#: wp-admin/includes/class-wp-posts-list-table.php:780
+#: wp-admin/includes/class-wp-posts-list-table.php:779
 #: wp-admin/includes/plugin-install.php:127
 #: wp-admin/includes/class-wp-comments-list-table.php:252
 #: wp-admin/includes/class-wp-comments-list-table.php:523
@@ -327,7 +327,7 @@ msgstr "アーカイブ"
 #: wp-admin/edit-link-form.php:28
 #: wp-admin/includes/class-wp-posts-list-table.php:277
 #: wp-admin/includes/class-wp-links-list-table.php:82
-#: wp-admin/press-this.php:517
+#: wp-admin/press-this.php:522
 msgid "Categories"
 msgstr "カテゴリー"
 
@@ -456,7 +456,7 @@ msgstr "%1$s - %2$s へのコメント"
 #: wp-admin/edit-comments.php:116
 #: wp-admin/edit-comments.php:146
 #: wp-admin/includes/class-wp-posts-list-table.php:284
-#: wp-admin/includes/class-wp-posts-list-table.php:900
+#: wp-admin/includes/class-wp-posts-list-table.php:899
 #: wp-admin/includes/class-wp-comments-list-table.php:216
 #: wp-admin/includes/file.php:16
 #: wp-admin/includes/template.php:1461
@@ -667,7 +667,7 @@ msgid "Last updated"
 msgstr "最終更新日時"
 
 #: wp-includes/deprecated.php:1898
-#: wp-includes/post-template.php:1152
+#: wp-includes/post-template.php:1151
 msgid "Missing Attachment"
 msgstr "添付ファイルが見つかりません"
 
@@ -682,7 +682,7 @@ msgid "View all posts in %s"
 msgstr "%s の投稿をすべて表示"
 
 #: wp-includes/category-template.php:161
-#: wp-admin/includes/class-wp-posts-list-table.php:618
+#: wp-admin/includes/class-wp-posts-list-table.php:617
 #: wp-admin/includes/upgrade.php:109
 msgid "Uncategorized"
 msgstr "未分類"
@@ -903,9 +903,9 @@ msgstr "不一致"
 #: wp-includes/script-loader.php:270
 #: wp-includes/script-loader.php:332
 #: wp-includes/js/tinymce/langs/wp-langs.php:29
-#: wp-admin/includes/class-wp-posts-list-table.php:998
-#: wp-admin/includes/class-wp-posts-list-table.php:1000
-#: wp-admin/includes/class-wp-posts-list-table.php:1003
+#: wp-admin/includes/class-wp-posts-list-table.php:997
+#: wp-admin/includes/class-wp-posts-list-table.php:999
+#: wp-admin/includes/class-wp-posts-list-table.php:1002
 #: wp-admin/includes/internal-linking.php:118
 #: wp-admin/includes/template.php:503
 #: wp-admin/includes/class-wp-plugins-list-table.php:269
@@ -936,7 +936,7 @@ msgstr "一致するものが見つかりませんでした。"
 #: wp-admin/includes/widgets.php:182
 #: wp-admin/includes/meta-boxes.php:294
 #: wp-admin/includes/meta-boxes.php:683
-#: wp-admin/press-this.php:577
+#: wp-admin/press-this.php:582
 msgid "Add"
 msgstr "追加"
 
@@ -968,7 +968,7 @@ msgstr "OK"
 #: wp-includes/script-loader.php:350
 #: wp-includes/js/tinymce/langs/wp-langs.php:30
 #: wp-admin/includes/dashboard.php:146
-#: wp-admin/includes/class-wp-posts-list-table.php:995
+#: wp-admin/includes/class-wp-posts-list-table.php:994
 #: wp-admin/includes/image-edit.php:74
 #: wp-admin/includes/media.php:1298
 #: wp-admin/includes/media.php:1560
@@ -981,10 +981,10 @@ msgstr "OK"
 #: wp-admin/includes/class-wp-terms-list-table.php:364
 #: wp-admin/includes/meta-boxes.php:104
 #: wp-admin/includes/meta-boxes.php:150
-#: wp-admin/press-this.php:130
-#: wp-admin/press-this.php:160
-#: wp-admin/press-this.php:188
-#: wp-admin/press-this.php:310
+#: wp-admin/press-this.php:135
+#: wp-admin/press-this.php:165
+#: wp-admin/press-this.php:193
+#: wp-admin/press-this.php:315
 #: wp-admin/widgets.php:311
 msgid "Cancel"
 msgstr "キャンセル"
@@ -993,7 +993,7 @@ msgstr "キャンセル"
 #: wp-includes/script-loader.php:351
 #: wp-admin/includes/dashboard.php:682
 #: wp-admin/includes/class-wp-posts-list-table.php:194
-#: wp-admin/includes/class-wp-posts-list-table.php:543
+#: wp-admin/includes/class-wp-posts-list-table.php:542
 #: wp-admin/includes/class-wp-comments-list-table.php:412
 #: wp-admin/includes/class-wp-users-list-table.php:245
 #: wp-admin/includes/class-wp-plugins-list-table.php:382
@@ -1035,7 +1035,7 @@ msgstr "これ以外のコメントは見つかりません。"
 #: wp-admin/includes/dashboard.php:540
 #: wp-admin/includes/meta-boxes.php:215
 #: wp-admin/includes/meta-boxes.php:216
-#: wp-admin/press-this.php:489
+#: wp-admin/press-this.php:494
 msgid "Publish"
 msgstr "公開"
 
@@ -1053,15 +1053,15 @@ msgstr "レビュー待ちとして保存"
 #: wp-includes/script-loader.php:334
 #: wp-admin/includes/dashboard.php:537
 #: wp-admin/includes/meta-boxes.php:31
-#: wp-admin/press-this.php:487
+#: wp-admin/press-this.php:492
 msgid "Save Draft"
 msgstr "下書きとして保存"
 
 #: wp-includes/script-loader.php:335
 #: wp-includes/post.php:584
 #: wp-includes/post.php:604
-#: wp-admin/includes/class-wp-posts-list-table.php:807
-#: wp-admin/includes/class-wp-posts-list-table.php:949
+#: wp-admin/includes/class-wp-posts-list-table.php:806
+#: wp-admin/includes/class-wp-posts-list-table.php:948
 #: wp-admin/includes/template.php:1628
 #: wp-admin/includes/meta-boxes.php:116
 #: wp-admin/includes/meta-boxes.php:146
@@ -1093,8 +1093,8 @@ msgstr "非公開"
 #: wp-includes/post.php:585
 #: wp-includes/post.php:605
 #: wp-admin/admin-ajax.php:1290
-#: wp-admin/includes/class-wp-posts-list-table.php:592
-#: wp-admin/includes/class-wp-posts-list-table.php:946
+#: wp-admin/includes/class-wp-posts-list-table.php:591
+#: wp-admin/includes/class-wp-posts-list-table.php:945
 #: wp-admin/includes/meta-boxes.php:68
 #: wp-admin/includes/meta-boxes.php:90
 msgid "Published"
@@ -1205,70 +1205,70 @@ msgstr "前ページへ"
 msgid "Home"
 msgstr "ホーム"
 
-#: wp-includes/post-template.php:1213
+#: wp-includes/post-template.php:1212
 msgid "This post is password protected. To view it please enter your password below:"
 msgstr "この投稿はパスワードで保護されています。表示するにはパスワードを入力してください:"
 
-#: wp-includes/post-template.php:1214
+#: wp-includes/post-template.php:1213
 #: wp-admin/includes/meta-boxes.php:145
 msgid "Password:"
 msgstr "パスワード:"
 
-#: wp-includes/post-template.php:1214
+#: wp-includes/post-template.php:1213
 #: wp-admin/includes/dashboard.php:171
 msgid "Submit"
 msgstr "実行"
 
-#: wp-includes/post-template.php:1277
+#: wp-includes/post-template.php:1276
 msgctxt "revision date format"
 msgid "j F, Y @ G:i"
 msgstr "Y年n月j日 @ G:i"
 
-#: wp-includes/post-template.php:1279
+#: wp-includes/post-template.php:1278
 msgid "%1$s [Autosave]"
 msgstr "%1$s [自動保存]"
 
-#: wp-includes/post-template.php:1281
+#: wp-includes/post-template.php:1280
 msgid "%1$s [Current Revision]"
 msgstr "%1$s [現在のリビジョン]"
 
-#: wp-includes/post-template.php:1347
+#: wp-includes/post-template.php:1346
 msgctxt "post revision"
 msgid "%1$s by %2$s"
 msgstr "%2$s @ %1$s "
 
-#: wp-includes/post-template.php:1374
+#: wp-includes/post-template.php:1373
 #: wp-admin/includes/class-wp-posts-list-table.php:192
-#: wp-admin/includes/class-wp-posts-list-table.php:548
+#: wp-admin/includes/class-wp-posts-list-table.php:547
 #: wp-admin/includes/class-wp-comments-list-table.php:193
 #: wp-admin/includes/class-wp-comments-list-table.php:402
 #: wp-admin/includes/class-wp-media-list-table.php:354
 msgid "Restore"
 msgstr "復元"
 
-#: wp-includes/post-template.php:1397
+#: wp-includes/post-template.php:1396
 msgid "Compare Revisions"
 msgstr "リビジョン比較"
 
 #. translators: column name in revisons
-#: wp-includes/post-template.php:1413
+#: wp-includes/post-template.php:1412
 msgctxt "revisions column name"
 msgid "Old"
 msgstr "旧"
 
 #. translators: column name in revisons
-#: wp-includes/post-template.php:1414
+#: wp-includes/post-template.php:1413
 msgctxt "revisions column name"
 msgid "New"
 msgstr "新"
 
 #. translators: column name in revisons
-#: wp-includes/post-template.php:1415
+#: wp-includes/post-template.php:1414
 msgctxt "revisions column name"
 msgid "Date Created"
 msgstr "作成日"
 
-#: wp-includes/post-template.php:1417
+#: wp-includes/post-template.php:1416
 #: wp-admin/includes/media.php:1796
 msgid "Actions"
 msgstr "操作"
@@ -2423,7 +2423,7 @@ msgstr "ユーザー名"
 #: wp-admin/user-new.php:309
 #: wp-admin/install.php:229
 #: wp-admin/options-writing.php:111
-#: wp-admin/includes/class-wp-posts-list-table.php:795
+#: wp-admin/includes/class-wp-posts-list-table.php:794
 #: wp-admin/includes/file.php:1007
 msgid "Password"
 msgstr "パスワード"
@@ -2520,13 +2520,13 @@ msgstr "%1$s %2$s 検索結果: &#8220;%3$s&#8221; フィード"
 
 #: wp-includes/general-template.php:1808
 #: wp-includes/general-template.php:1813
-#: wp-admin/press-this.php:615
+#: wp-admin/press-this.php:620
 msgid "HTML"
 msgstr "HTML"
 
 #: wp-includes/general-template.php:1809
 #: wp-includes/general-template.php:1814
-#: wp-admin/press-this.php:616
+#: wp-admin/press-this.php:621
 msgid "Visual"
 msgstr "ビジュアル"
 
@@ -2648,7 +2648,7 @@ msgstr "無効な投稿"
 #: wp-includes/post.php:582
 #: wp-includes/post.php:603
 #: wp-admin/admin-ajax.php:1299
-#: wp-admin/includes/class-wp-posts-list-table.php:953
+#: wp-admin/includes/class-wp-posts-list-table.php:952
 #: wp-admin/includes/template.php:1630
 #: wp-admin/includes/meta-boxes.php:78
 #: wp-admin/includes/meta-boxes.php:98
@@ -2658,7 +2658,7 @@ msgstr "下書き"
 
 #: wp-includes/post.php:583
 #: wp-admin/admin-ajax.php:1296
-#: wp-admin/includes/class-wp-posts-list-table.php:952
+#: wp-admin/includes/class-wp-posts-list-table.php:951
 #: wp-admin/includes/meta-boxes.php:74
 #: wp-admin/includes/meta-boxes.php:96
 msgid "Pending Review"
@@ -2710,7 +2710,7 @@ msgstr "新規ページを追加"
 
 #: wp-includes/post.php:1162
 #: wp-admin/edit.php:200
-#: wp-admin/press-this.php:589
+#: wp-admin/press-this.php:594
 msgid "Edit Post"
 msgstr "投稿編集"
 
@@ -2793,7 +2793,7 @@ msgstr "ページテンプレートが不正です。"
 #: wp-includes/js/tinymce/langs/wp-langs.php:451
 #: wp-admin/admin-ajax.php:1284
 #: wp-admin/includes/dashboard.php:509
-#: wp-admin/includes/class-wp-posts-list-table.php:743
+#: wp-admin/includes/class-wp-posts-list-table.php:742
 #: wp-admin/includes/media.php:1067
 #: wp-admin/includes/media.php:1838
 #: wp-admin/includes/media.php:2154
@@ -3497,7 +3497,7 @@ msgstr "印刷"
 #: wp-includes/js/tinymce/langs/wp-langs.php:308
 #: wp-admin/custom-header.php:440
 #: wp-admin/custom-background.php:184
-#: wp-admin/includes/class-wp-posts-list-table.php:556
+#: wp-admin/includes/class-wp-posts-list-table.php:555
 #: wp-admin/includes/class-wp-themes-list-table.php:170
 #: wp-admin/includes/class-wp-upgrader.php:1356
 #: wp-admin/includes/class-wp-upgrader.php:1413
@@ -4922,8 +4922,8 @@ msgid "Quote"
 msgstr "引用"
 
 #: wp-includes/js/tinymce/wp-mce-help.php:232
-#: wp-admin/press-this.php:160
-#: wp-admin/press-this.php:188
+#: wp-admin/press-this.php:165
+#: wp-admin/press-this.php:193
 msgid "Insert Image"
 msgstr "画像の挿入"
 
@@ -6061,8 +6061,8 @@ msgstr "例: <code>http://wordpress.org/</code> &#8212; <code>http://</code> を
 #: wp-admin/includes/nav-menu.php:1109
 #: wp-admin/includes/class-wp-terms-list-table.php:101
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:144
-#: wp-admin/press-this.php:146
-#: wp-admin/press-this.php:181
+#: wp-admin/press-this.php:151
+#: wp-admin/press-this.php:186
 msgid "Description"
 msgstr "説明"
 
@@ -7231,8 +7231,8 @@ msgstr "<a href=\"http://wpdocs.sourceforge.jp/Tools_Tools_SubPanel\" target=\"_
 #: wp-admin/options-writing.php:88
 #: wp-admin/options-writing.php:92
 #: wp-admin/includes/dashboard.php:486
-#: wp-admin/press-this.php:322
-#: wp-admin/press-this.php:472
+#: wp-admin/press-this.php:327
+#: wp-admin/press-this.php:477
 msgid "Press This"
 msgstr "Press This"
 
@@ -7372,7 +7372,7 @@ msgid "Discussion"
 msgstr "ディスカッション"
 
 #: wp-admin/edit-form-advanced.php:152
-#: wp-admin/includes/class-wp-posts-list-table.php:748
+#: wp-admin/includes/class-wp-posts-list-table.php:747
 #: wp-admin/includes/class-wp-terms-list-table.php:102
 #: wp-admin/includes/class-wp-terms-list-table.php:343
 #: wp-admin/includes/meta-boxes.php:510
@@ -7583,7 +7583,7 @@ msgstr "このコメントをゴミ箱に移します。"
 #: wp-admin/includes/nav-menu.php:123
 #: wp-admin/includes/nav-menu.php:531
 #: wp-admin/includes/class-wp-links-list-table.php:81
-#: wp-admin/press-this.php:175
+#: wp-admin/press-this.php:180
 msgid "URL"
 msgstr "URL"
 
@@ -8346,26 +8346,26 @@ msgstr "項目を更新できませんでした。"
 
 #: wp-admin/admin-ajax.php:1284
 #: wp-admin/includes/class-wp-posts-list-table.php:286
-#: wp-admin/includes/class-wp-posts-list-table.php:756
+#: wp-admin/includes/class-wp-posts-list-table.php:755
 msgid "Date"
 msgstr "日付"
 
 #: wp-admin/admin-ajax.php:1284
-#: wp-admin/includes/class-wp-posts-list-table.php:940
+#: wp-admin/includes/class-wp-posts-list-table.php:939
 #: wp-admin/edit-form-comment.php:35
 msgid "Status"
 msgstr "ステータス"
 
 #: wp-admin/admin-ajax.php:1293
-#: wp-admin/includes/class-wp-posts-list-table.php:597
-#: wp-admin/includes/class-wp-posts-list-table.php:947
+#: wp-admin/includes/class-wp-posts-list-table.php:596
+#: wp-admin/includes/class-wp-posts-list-table.php:946
 #: wp-admin/includes/meta-boxes.php:71
 #: wp-admin/includes/meta-boxes.php:94
 msgid "Scheduled"
 msgstr "予約済み"
 
 #: wp-admin/admin-ajax.php:1307
-#: wp-admin/includes/class-wp-posts-list-table.php:582
+#: wp-admin/includes/class-wp-posts-list-table.php:581
 #: wp-admin/includes/class-wp-comments-list-table.php:353
 #: wp-admin/includes/internal-linking.php:51
 #: wp-admin/includes/class-wp-media-list-table.php:276
@@ -8791,7 +8791,7 @@ msgstr "デフォルトの投稿フォーマット"
 
 #: wp-admin/options-writing.php:68
 #: wp-admin/includes/meta-boxes.php:257
-#: wp-admin/press-this.php:504
+#: wp-admin/press-this.php:509
 msgid "Standard"
 msgstr "標準"
 
@@ -9313,7 +9313,7 @@ msgstr "リセット"
 #: wp-admin/includes/dashboard.php:540
 #: wp-admin/includes/meta-boxes.php:219
 #: wp-admin/includes/meta-boxes.php:220
-#: wp-admin/press-this.php:492
+#: wp-admin/press-this.php:497
 msgid "Submit for Review"
 msgstr "レビュー待ちとして送信"
 
@@ -9335,8 +9335,8 @@ msgid "This widget requires JavaScript."
 msgstr "このウィジェットには JavaScript が必要です。"
 
 #: wp-admin/includes/dashboard.php:575
-#: wp-admin/includes/class-wp-posts-list-table.php:528
-#: wp-admin/includes/class-wp-posts-list-table.php:534
+#: wp-admin/includes/class-wp-posts-list-table.php:527
+#: wp-admin/includes/class-wp-posts-list-table.php:533
 #: wp-admin/includes/class-wp-terms-list-table.php:255
 #: wp-admin/includes/class-wp-media-list-table.php:205
 #: wp-admin/includes/class-wp-media-list-table.php:218
@@ -9345,7 +9345,7 @@ msgid "Edit &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; を編集する"
 
 #: wp-admin/includes/dashboard.php:575
-#: wp-admin/includes/class-wp-posts-list-table.php:573
+#: wp-admin/includes/class-wp-posts-list-table.php:572
 #: wp-admin/includes/class-wp-media-list-table.php:267
 msgid "Y/m/d g:i:s A"
 msgstr "Y年n月j日 g:i:s a"
@@ -9400,7 +9400,7 @@ msgstr "スパム"
 
 #: wp-admin/includes/dashboard.php:686
 #: wp-admin/includes/class-wp-posts-list-table.php:197
-#: wp-admin/includes/class-wp-posts-list-table.php:552
+#: wp-admin/includes/class-wp-posts-list-table.php:551
 #: wp-admin/includes/media.php:1293
 #: wp-admin/includes/class-wp-comments-list-table.php:198
 #: wp-admin/includes/class-wp-comments-list-table.php:406
@@ -9554,39 +9554,39 @@ msgctxt "column name"
 msgid "Title"
 msgstr "タイトル"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:543
+#: wp-admin/includes/class-wp-posts-list-table.php:542
 msgid "Edit this item"
 msgstr "この項目を編集"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:544
+#: wp-admin/includes/class-wp-posts-list-table.php:543
 msgid "Edit this item inline"
 msgstr "この項目をインラインで編集"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:544
+#: wp-admin/includes/class-wp-posts-list-table.php:543
 #: wp-admin/includes/class-wp-comments-list-table.php:413
 #: wp-admin/includes/class-wp-terms-list-table.php:260
 msgid "Quick&nbsp;Edit"
 msgstr "クイック編集"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:548
+#: wp-admin/includes/class-wp-posts-list-table.php:547
 msgid "Restore this item from the Trash"
 msgstr "この項目をゴミ箱から復元する"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:550
+#: wp-admin/includes/class-wp-posts-list-table.php:549
 msgid "Move this item to the Trash"
 msgstr "この項目をゴミ箱へ移動する "
 
-#: wp-admin/includes/class-wp-posts-list-table.php:550
+#: wp-admin/includes/class-wp-posts-list-table.php:549
 #: wp-admin/includes/class-wp-media-list-table.php:340
 #: wp-admin/includes/class-wp-media-list-table.php:356
 msgid "Trash"
 msgstr "ゴミ箱"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:552
+#: wp-admin/includes/class-wp-posts-list-table.php:551
 msgid "Delete this item permanently"
 msgstr "この項目を完全に削除する"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:556
+#: wp-admin/includes/class-wp-posts-list-table.php:555
 #: wp-admin/includes/class-wp-themes-list-table.php:170
 #: wp-admin/includes/class-wp-upgrader.php:1356
 #: wp-admin/includes/class-wp-upgrader.php:1413
@@ -9595,24 +9595,24 @@ msgstr "この項目を完全に削除する"
 msgid "Preview &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; をプレビュー"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:558
+#: wp-admin/includes/class-wp-posts-list-table.php:557
 #: wp-admin/includes/class-wp-media-list-table.php:345
 #: wp-admin/includes/class-wp-media-list-table.php:364
 msgid "View &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; を表示"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:558
+#: wp-admin/includes/class-wp-posts-list-table.php:557
 #: wp-admin/includes/class-wp-media-list-table.php:345
 #: wp-admin/includes/class-wp-media-list-table.php:364
 msgid "View"
 msgstr "表示"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:570
+#: wp-admin/includes/class-wp-posts-list-table.php:569
 #: wp-admin/includes/class-wp-media-list-table.php:265
 msgid "Unpublished"
 msgstr "未公開"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:580
+#: wp-admin/includes/class-wp-posts-list-table.php:579
 #: wp-admin/includes/plugin-install.php:313
 #: wp-admin/includes/class-wp-comments-list-table.php:331
 #: wp-admin/includes/theme-install.php:165
@@ -9622,62 +9622,62 @@ msgstr "未公開"
 msgid "%s ago"
 msgstr "%s前"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:595
+#: wp-admin/includes/class-wp-posts-list-table.php:594
 msgid "Missed schedule"
 msgstr "予約投稿の失敗"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:599
+#: wp-admin/includes/class-wp-posts-list-table.php:598
 msgid "Last Modified"
 msgstr "最終編集日"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:638
+#: wp-admin/includes/class-wp-posts-list-table.php:637
 #: wp-admin/includes/class-wp-media-list-table.php:250
 msgid "No Tags"
 msgstr "タグなし"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:731
+#: wp-admin/includes/class-wp-posts-list-table.php:730
 msgid "Bulk Edit"
 msgstr "一括編集"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:731
+#: wp-admin/includes/class-wp-posts-list-table.php:730
 #: wp-admin/includes/class-wp-comments-list-table.php:413
 #: wp-admin/includes/class-wp-terms-list-table.php:335
 msgid "Quick Edit"
 msgstr "クイック編集"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:776
-#: wp-admin/includes/class-wp-posts-list-table.php:850
-#: wp-admin/includes/class-wp-posts-list-table.php:870
-#: wp-admin/includes/class-wp-posts-list-table.php:902
-#: wp-admin/includes/class-wp-posts-list-table.php:911
-#: wp-admin/includes/class-wp-posts-list-table.php:943
-#: wp-admin/includes/class-wp-posts-list-table.php:964
+#: wp-admin/includes/class-wp-posts-list-table.php:775
+#: wp-admin/includes/class-wp-posts-list-table.php:849
+#: wp-admin/includes/class-wp-posts-list-table.php:869
+#: wp-admin/includes/class-wp-posts-list-table.php:901
+#: wp-admin/includes/class-wp-posts-list-table.php:910
+#: wp-admin/includes/class-wp-posts-list-table.php:942
+#: wp-admin/includes/class-wp-posts-list-table.php:963
 msgid "&mdash; No Change &mdash;"
 msgstr "&mdash; 変更なし &mdash;"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:802
+#: wp-admin/includes/class-wp-posts-list-table.php:801
 msgid "&ndash;OR&ndash;"
 msgstr "&ndash;または&ndash;"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:822
+#: wp-admin/includes/class-wp-posts-list-table.php:821
 msgid "[more]"
 msgstr "[拡大表示]"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:823
+#: wp-admin/includes/class-wp-posts-list-table.php:822
 msgid "[less]"
 msgstr "[コンパクト表示]"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:846
+#: wp-admin/includes/class-wp-posts-list-table.php:845
 #: wp-admin/includes/meta-boxes.php:563
 #: wp-admin/includes/meta-boxes.php:564
 msgid "Parent"
 msgstr "親"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:848
+#: wp-admin/includes/class-wp-posts-list-table.php:847
 msgid "Main Page (no parent)"
 msgstr "メインページ (親ページなし) "
 
-#: wp-admin/includes/class-wp-posts-list-table.php:860
+#: wp-admin/includes/class-wp-posts-list-table.php:859
 #: wp-admin/includes/media.php:1087
 #: wp-admin/includes/media.php:1795
 #: wp-admin/includes/meta-boxes.php:579
@@ -9685,50 +9685,50 @@ msgstr "メインページ (親ページなし) "
 msgid "Order"
 msgstr "順序"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:867
+#: wp-admin/includes/class-wp-posts-list-table.php:866
 #: wp-admin/includes/meta-boxes.php:572
 msgid "Template"
 msgstr "テンプレート"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:872
+#: wp-admin/includes/class-wp-posts-list-table.php:871
 #: wp-admin/includes/meta-boxes.php:574
 msgid "Default Template"
 msgstr "デフォルトテンプレート"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:903
-#: wp-admin/includes/class-wp-posts-list-table.php:912
+#: wp-admin/includes/class-wp-posts-list-table.php:902
+#: wp-admin/includes/class-wp-posts-list-table.php:911
 msgid "Allow"
 msgstr "許可する"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:904
-#: wp-admin/includes/class-wp-posts-list-table.php:913
+#: wp-admin/includes/class-wp-posts-list-table.php:903
+#: wp-admin/includes/class-wp-posts-list-table.php:912
 msgid "Do not allow"
 msgstr "許可しない"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:909
+#: wp-admin/includes/class-wp-posts-list-table.php:908
 #: wp-admin/includes/class-wp-comments-list-table.php:217
 msgid "Pings"
 msgstr "トラックバック/ピンバック"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:925
+#: wp-admin/includes/class-wp-posts-list-table.php:924
 msgid "Allow Comments"
 msgstr "コメントを許可"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:930
+#: wp-admin/includes/class-wp-posts-list-table.php:929
 msgid "Allow Pings"
 msgstr "トラックバック/ピンバックを許可"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:962
-#: wp-admin/includes/class-wp-posts-list-table.php:965
+#: wp-admin/includes/class-wp-posts-list-table.php:961
+#: wp-admin/includes/class-wp-posts-list-table.php:964
 #: wp-admin/includes/template.php:1635
 msgid "Sticky"
 msgstr "先頭に固定表示"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:966
+#: wp-admin/includes/class-wp-posts-list-table.php:965
 msgid "Not Sticky"
 msgstr "通常どおり表示"
 
-#: wp-admin/includes/class-wp-posts-list-table.php:974
+#: wp-admin/includes/class-wp-posts-list-table.php:973
 msgid "Make this post sticky"
 msgstr "この投稿を先頭に固定表示"
 
@@ -11124,8 +11124,8 @@ msgid "Upload file and import"
 msgstr "ファイルをアップロードしてインポート"
 
 #: wp-admin/includes/template.php:960
-#: wp-admin/press-this.php:516
-#: wp-admin/press-this.php:566
+#: wp-admin/press-this.php:521
+#: wp-admin/press-this.php:571
 msgid "Click to toggle"
 msgstr "クリックで切替"
 
@@ -12012,7 +12012,7 @@ msgstr "ホーム"
 #: wp-admin/includes/nav-menu.php:847
 #: wp-admin/includes/meta-boxes.php:328
 #: wp-admin/includes/meta-boxes.php:658
-#: wp-admin/press-this.php:523
+#: wp-admin/press-this.php:528
 msgid "Most Used"
 msgstr "よく使うもの"
 
@@ -12646,7 +12646,7 @@ msgid "Publish on: <b>%1$s</b>"
 msgstr "公開日時: <b>%1$s</b>"
 
 #: wp-admin/includes/meta-boxes.php:352
-#: wp-admin/press-this.php:545
+#: wp-admin/press-this.php:550
 msgid "+ %s"
 msgstr "+ %s"
 
@@ -13014,77 +13014,77 @@ msgstr "このプラグインは既に最新版がインストール済みです
 msgid "Installed"
 msgstr "インストール済み"
 
-#: wp-admin/press-this.php:127
+#: wp-admin/press-this.php:132
 msgid "Embed Code"
 msgstr "埋め込むコード"
 
-#: wp-admin/press-this.php:130
+#: wp-admin/press-this.php:135
 msgid "Insert Video"
 msgstr "動画の挿入"
 
-#: wp-admin/press-this.php:156
+#: wp-admin/press-this.php:161
 msgid "Click to insert."
 msgstr "画像をクリックして挿入"
 
-#: wp-admin/press-this.php:258
+#: wp-admin/press-this.php:263
 msgid "Unable to retrieve images or no images on page."
 msgstr "画像を取得できない、またはページに画像がありません。"
 
-#: wp-admin/press-this.php:310
+#: wp-admin/press-this.php:315
 msgid "click images to select"
 msgstr "クリックして画像を選択"
 
-#: wp-admin/press-this.php:310
+#: wp-admin/press-this.php:315
 msgid "Add from URL"
 msgstr "URL から追加"
 
-#: wp-admin/press-this.php:310
+#: wp-admin/press-this.php:315
 msgid "Refresh"
 msgstr "リフレッシュ"
 
-#: wp-admin/press-this.php:420
+#: wp-admin/press-this.php:425
 msgid "Loading..."
 msgstr "読み込み中..."
 
-#: wp-admin/press-this.php:502
+#: wp-admin/press-this.php:507
 msgid "Post Format:"
 msgstr "投稿フォーマット:"
 
-#: wp-admin/press-this.php:539
+#: wp-admin/press-this.php:544
 msgid "You cannot modify this Taxonomy."
 msgstr "この分類は編集できません。"
 
-#: wp-admin/press-this.php:569
-#: wp-admin/press-this.php:573
+#: wp-admin/press-this.php:574
+#: wp-admin/press-this.php:578
 msgid "Post Tags"
 msgstr "投稿タグ"
 
-#: wp-admin/press-this.php:582
+#: wp-admin/press-this.php:587
 msgid "Choose from the most used tags in Post Tags"
 msgstr "よく使われている投稿タグから選択"
 
-#: wp-admin/press-this.php:589
+#: wp-admin/press-this.php:594
 msgid "Your post has been saved."
 msgstr "投稿を保存しました。"
 
-#: wp-admin/press-this.php:589
+#: wp-admin/press-this.php:594
 msgid "View post"
 msgstr "投稿を表示"
 
-#: wp-admin/press-this.php:589
+#: wp-admin/press-this.php:594
 msgid "Close Window"
 msgstr "ウインドウを閉じる"
 
-#: wp-admin/press-this.php:604
-#: wp-admin/press-this.php:605
+#: wp-admin/press-this.php:609
+#: wp-admin/press-this.php:610
 msgid "Insert an Image"
 msgstr "画像の挿入"
 
-#: wp-admin/press-this.php:609
+#: wp-admin/press-this.php:614
 msgid "Embed a Video"
 msgstr "動画のコードを埋め込む"
 
-#: wp-admin/press-this.php:629
+#: wp-admin/press-this.php:634
 msgid "via "
 msgstr "引用元: "
 
