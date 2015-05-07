@@ -3,7 +3,7 @@
 
 /*
 WPLANG: ja
-Plugin Version: 1.1.4
+Plugin Version: 1.1.5
 Description: Japanese Locale Extension.
 Author: tenpura
 Extension URI: http://eastcoder.com/code/wp-multibyte-patch/
@@ -110,11 +110,19 @@ class multibyte_patch_ext extends multibyte_patch {
 
 	function admin_custom_css() {
 	    $url =  dirname(WP_PLUGIN_URL . '/' . plugin_basename(__FILE__)) . '/admin.css';
+
+		if(is_ssl())
+			$url = preg_replace("/^http\:\/\//i", 'https://', $url);
+
 	    echo "\n" . '<link rel="stylesheet" type="text/css" href="' . $url . '" />' . "\n";
 	}
 
 	function word_count_js(&$scripts) {
 		$src =  dirname(WP_PLUGIN_URL . '/' . plugin_basename(__FILE__)) . '/word-count.js';
+
+		if(is_ssl())
+			$src = preg_replace("/^http\:\/\//i", 'https://', $src);
+
 		$scripts->add('word-count', $src, array('jquery'), '20090422');
 	}
 
