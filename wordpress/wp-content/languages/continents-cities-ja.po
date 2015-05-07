@@ -1,11 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR WordPress
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Japanese (UTF-8) translation for WordPress
+#
+# Copyright (c) 2005-2009
+# このファイルは WordPress 本体と同じライセンスのもと配布されています。
+# This file is distributed under the same license as the WordPress package.
+#
+# WordPress 日本語版作成チーム / WP ja translation team
+# <http://groups.google.com/group/wp-ja-pkg/web/members>
+#
+#  誤字脱字誤訳、あるいはよりよい訳などありましたら以下までぜひお知らせください。
+#  また、翻訳、校正、コミットをお手伝いしていただける方も随時募集中です。
+#  連絡先 / Contact: wpja.team@gmail.com (件名か内容に「日本語リソース」と入れてください)
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: wordpress 2.8 beta1 ja\n"
+"Project-Id-Version: WordPress ja\n"
 "Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
 "POT-Creation-Date: 2009-05-18 11:07+0000\n"
 "PO-Revision-Date: 2009-06-11 02:17-0500\n"
@@ -17,6 +25,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: wp-admin/includes/continents-cities.php:7
